@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { Attendance } from "../attendance/Attendance"
+import { Attendance } from "../students/Attendance"
 
 export const ApplicationViews = () => {
 	return (
