@@ -1,0 +1,25 @@
+.students{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.student{
+    background-color: bisque;
+    border:2px dotted brown;
+    padding: 0.8rem;
+    margin: 0.5rem;
+    width:25rem;
+    font-size: 1.2rem;
+}
+
+.student__header{
+    font-size: larger;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+.student__footer{
+    margin: 1rem 0 0.25rem 0;
+    font-style: oblique;
+}

@@ -27,10 +27,11 @@ export const Attendance = () => {
                 {attendance.map((student) => {
                     return (
                         <>
-                            <Student key={`ticket--${student.id}`}
+                            <Student key={`student__${student.id}`}
                                 studentImg={student.imgLink}
-                                 studentId={student.id}
-                                 studentName={student.fullName}
+                                studentId={student.id}
+                                studentName={student.fullName}
+                                id={student.userId}
                             />
                         </>
                     );

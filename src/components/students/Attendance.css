@@ -1,9 +1,11 @@
-h1{
+h1 {
     font-weight: lighter;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:rgb(30, 68, 121)
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(30, 68, 121);
 }
-
+Link {
+    text-decoration: none;
+}
 .attendance {
     display: flex;
     flex-direction: column;
@@ -46,4 +48,3 @@ h1{
     height: 20px;
     width: 20px;
 }
-
