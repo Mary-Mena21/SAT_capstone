@@ -6,11 +6,11 @@ h1 {
 Link {
     text-decoration: none;
 }
-.attendance {
+.students {
     display: flex;
     flex-direction: column;
 }
-.attendance_card {
+.student_card {
     /* background-color:rgb(219, 235, 248); */
     background-color: rgba(255, 192, 203, 0.493);
     border: 1px dotted rgb(133, 42, 54);

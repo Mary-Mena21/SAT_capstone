@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import "./Attendance.css";
+import "./Students.css";
 
-export const Student = ({ studentImg, studentId, studentName, id }) => {
+export const Student = ({ studentImg, userId, studentName, id }) => {
     return (
         <div className="container">
-            <section key={studentId} className="attendance_card">
+            <section key={id} className="student_card">
                 <div className="student_card_container">
                     <img src={studentImg} className="student_img" />
-                    <Link to={`/attendance/${id}`}>
+                    <Link to={`/students/${id}`}>
                         <h3 className="student_info">{studentName}</h3>
                     </Link>
                     <input

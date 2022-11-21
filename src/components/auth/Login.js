@@ -10,14 +10,17 @@ export const Login = () => {
     const handleLogin = (e) => {
         e.preventDefault()
 
-        return fetch(`http://localhost:8033/users?email=${email}`)
+        return fetch(
+            `http://localhost:8033/users?email=${email}`
+        )
             .then(res => res.json())
             .then(foundUsers => {
                 if (foundUsers.length === 1) {
                     const user = foundUsers[0]
-                    localStorage.setItem("SST_user", JSON.stringify({
+                    localStorage.setItem("SAT_user", JSON.stringify({
                         id: user.id,
-                        staff: user.isStaff
+                        teacher: user.isTeacher
+
                     }))
 
                     navigate("/")
