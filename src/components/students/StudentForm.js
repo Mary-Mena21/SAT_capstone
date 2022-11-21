@@ -2,10 +2,10 @@ import { useState } from "react"
 
 export const StudentForm = () => {
     const [inputs, setInputs] = useState({
-        fullNName :"",
+        fullName :"",
         email :"",
         classId :"",
-        DOB :"",
+        dob :"",
         phone :"",
         address :"",
         studentImg :""
@@ -35,10 +35,13 @@ export const StudentForm = () => {
     };
     /* ------------------------------ */
     const SendToAPI = {
-        fullNName: inputs.fullNName,
+        fullName: inputs.fullName,
         email: inputs.email,
-        name: inputs.name,
-        price: inputs.price,
+        classId: inputs.classId,
+        dob: inputs.dob,
+        phone: inputs.phone,
+        address: inputs.address,
+        studentImg: inputs.studentImg,
     };
     /* ------------------------------ */
 
@@ -65,16 +68,16 @@ export const StudentForm = () => {
                         </li>
                         <br />
                         <li>
-                            <label htmlFor="name">
-                                Enter Product type :🈯
+                            <label htmlFor="email">
+                                Email:
                                 <input
-                                    type="number"
-                                    name="productTypeId"
-                                    value={inputs.productTypeId}
+                                    type="email"
+                                    name="email"
+                                    value={inputs.email}
                                     onChange={(evt) => {
                                         const copy = { ...inputs };
-                                        copy.productTypeId =
-                                            evt.target.valueAsNumber;
+                                        copy.email =
+                                            evt.target.value;
                                         setInputs(copy);
                                     }}
                                 />
@@ -82,37 +85,89 @@ export const StudentForm = () => {
                         </li>
                         <br />
                         <li>
-                            <label htmlFor="name">
-                                Enter product name : 🈚
+                            <label htmlFor="classId">
+                            classId:
+                                <input
+                                    type="number"
+                                    name="classId"
+                                    value={inputs.classId}
+                                    onChange={(evt) => {
+                                        const copy = { ...inputs };
+                                        copy.classId = evt.target.valueAsNumber;
+                                        setInputs(copy);
+                                    }}
+                                />
+                            </label>
+                    </li>
+                    
+                        <br />
+                        <li>
+                            <label htmlFor="dob">
+                                DOB:
                                 <input
                                     type="text"
-                                    name="name"
-                                    value={inputs.name}
-                                    onChange={(evt) => {
-                                        const copy = { ...inputs };
-                                        copy.name = evt.target.value;
-                                        setInputs(copy);
-                                    }}
-                                />
-                            </label>
-                        </li>
-                        <br />
-                        <li>
-                            <label htmlFor="name">
-                                Enter Product price :🈴
-                                <input
-                                    type="number"
                                     name="price"
-                                    value={inputs.price}
+                                    value={inputs.dob}
                                     onChange={(evt) => {
                                         const copy = { ...inputs };
-                                        copy.price = evt.target.valueAsNumber;
+                                        copy.dob = evt.target.value;
                                         setInputs(copy);
                                     }}
                                 />
                             </label>
                         </li>
 
+                        <br />
+                        <li>
+                            <label htmlFor="phone">
+                                Phone:
+                                <input
+                                    type="phoneNumber"
+                                    name="phone"
+                                    value={inputs.phone}
+                                    onChange={(evt) => {
+                                        const copy = { ...inputs };
+                                        copy.phone = evt.target.value;
+                                        setInputs(copy);
+                                    }}
+                                />
+                            </label>
+                        </li>
+                    
+                        <br />
+                        <li>
+                            <label htmlFor="address">
+                            Address:
+                                <input
+                                    type="address"
+                                    name="address"
+                                    value={inputs.address}
+                                    onChange={(evt) => {
+                                        const copy = { ...inputs };
+                                        copy.address = evt.target.value;
+                                        setInputs(copy);
+                                    }}
+                                />
+                            </label>
+                        </li>
+                    
+                        <br />
+                        <li>
+                            <label htmlFor="studentImg">
+                            studentImg:
+                                <input
+                                    type="studentImg"
+                                    name="studentImg"
+                                    value={inputs.studentImg}
+                                    onChange={(evt) => {
+                                        const copy = { ...inputs };
+                                        copy.studentImg = evt.target.value;
+                                        setInputs(copy);
+                                    }}
+                                />
+                            </label>
+                        </li>
+                    
                         <br />
                         <li>
                             <input type="submit" />
