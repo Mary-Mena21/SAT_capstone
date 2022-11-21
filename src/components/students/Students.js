@@ -1,19 +1,24 @@
 import { useEffect, useState } from "react";
 import { Student } from "./Student";
-import "./Attendance.css";
+import "./Students.css";
 
-export const Attendance = () => {
-    const [attendance, setAttendance] = useState([]);
-    const classId = [1, 2, 3];
+export const Students = () => {
+    const [Students, setStudents] = useState([]);
+
+    const localSATUser = localStorage.getItem("SAT_user");
+    const satUserObject = JSON.parse(localSATUser);
+    console.log(satUserObject);
     useEffect(
         () => {
             const fetchData = async () => {
                 const response = await fetch(
-                    `http://localhost:8033/users?userTypeId=2&classId=1`
+                    //`http://localhost:8033/Students?_expand=user&classId=1`
+                    `http://localhost:8033/students?_expand=user&classId=${satUserObject.id}`
+                    //`http://localhost:8033/Students?_expand=user`
                     //`http://localhost:8033/classes/1?_embed=users`
                 );
-                const attendanceArray = await response.json();
-                setAttendance(attendanceArray);
+                const StudentsArray = await response.json();
+                setStudents(StudentsArray);
             };
             fetchData();
         },
@@ -22,16 +27,17 @@ export const Attendance = () => {
 
     return (
         <>
-            <h1>Attendance</h1>
-            <article className="attendance">
-                {attendance.map((student) => {
+            <h1>Students</h1>
+            <article className="Students">
+                {Students.map((student) => {
                     return (
                         <>
-                            <Student key={`student__${student.id}`}
-                                studentImg={student.imgLink}
-                                studentId={student.id}
-                                studentName={student.fullName}
-                                id={student.userId}
+                            <Student
+                                key={`student__${student.id}`}
+                                id={student.id}
+                                studentImg={student.studentImg}
+                                studentName={student.user.fullName}
+                                userId={student.userId}
                             />
                         </>
                     );
@@ -40,14 +46,14 @@ export const Attendance = () => {
         </>
     );
 };
-
+// studentId={student.id}
 /*     return (
         <>
-            <h1>Attendance</h1>
-            <article className="attendance">
-                {attendance.map((student) => {
+            <h1>Students</h1>
+            <article className="Students">
+                {Students.map((student) => {
                     return (
-                        <section key={student.id} className="attendanceM">
+                        <section key={student.id} className="StudentsM">
                             <div className="student_card_container">
                                 <img
                                     src={student.imgLink}

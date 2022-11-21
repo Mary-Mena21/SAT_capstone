@@ -9,10 +9,10 @@ export const NavBar = () => {
         <ul className="navbar">
             
             
-        <li className="navBar_item"><Link className="navBar_link" to="/attendance">Attendance</Link></li>
+        <li className="navBar_item"><Link className="navBar_link" to="/students">Students</Link></li>
         <li className="navBar_item"><Link className="navBar_link" to="/">Home</Link></li>
-    {/*     <li className="navBar_item"><Link className="navBar_link" to="/addNewStudent">Add New Student</Link></li>
-        <li className="navBar_item"><Link className="navBar_link" to="/contacts">Contacts</Link></li>
+        <li className="navBar_item"><Link className="navBar_link" to="/addNewStudent">Add New Student</Link></li>
+    {/*     <li className="navBar_item"><Link className="navBar_link" to="/contacts">Contacts</Link></li>
         <li className="navBar_item"><Link className="navBar_link" to="/birthdays">BirthDays</Link></li>
         <li className="navBar_item"><Link className="navBar_link" to="/lessons">Lessons</Link></li> */}
             
@@ -22,7 +22,7 @@ export const NavBar = () => {
             
             <li className="navbar__item navbar__logout">
                 <Link className="navbar__link" to="" onClick={() => {
-                    localStorage.removeItem("SST_user")
+                    localStorage.removeItem("SAT_user")
                     navigate("/", {replace: true})
                 }}>Logout</Link>
             </li>
