@@ -23,6 +23,18 @@
       "fullName": "Thomas Mena",
       "email": "tmena@me.com",
       "isTeacher": true
+    },
+    {
+      "email": "sanymamdoh@yahoo.com",
+      "fullName": "sany yousif",
+      "isTeacher": false,
+      "id": 5
+    },
+    {
+      "email": "marianashokry@yahoo.com",
+      "fullName": "MARIAN MENA",
+      "isTeacher": true,
+      "id": 6
     }
   ],
   "teachers": [
