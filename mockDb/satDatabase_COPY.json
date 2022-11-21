@@ -1,212 +1,204 @@
 {
-    "userTypes": [
-        {
-            "id": 1,
-            "type": "teacher"
-        },
-        {
-            "id": 2,
-            "type": "student"
-        }
-    ],
     "users": [
         {
             "id": 1,
             "name": "Mariana Mena",
             "email": "mmena@me.com",
-            "userTypeId": 1
+            "isTeacher": true
         },
         {
             "id": 2,
             "name": "Danny Mena",
             "email": "dmena@me.com",
-            "userTypeId": 1
+            "isTeacher": true
         },
         {
             "id": 3,
             "name": "Gena Mena",
             "email": "gmena@me.com",
-            "userTypeId": 1
+            "isTeacher": true
         },
         {
             "id": 4,
             "name": "Thomas Mena",
             "email": "tmena@me.com",
-            "userTypeId": 1
+            "isTeacher": true
         },
         {
             "id": 5,
             "name": "Holy Markos",
             "email": "hmena@me.com",
-            "userTypeId": 2
+            "isTeacher": false
         },
         {
             "id": 6,
             "name": "Jack Faddy",
             "email": "jmena@me.com",
-            "userTypeId": 2
+            "isTeacher": false
         },
         {
             "id": 7,
             "name": "Andrew Shady",
             "email": "ashady@me.com",
-            "userTypeId": 2
+            "isTeacher": false
         },
         {
             "id": 8,
             "name": "Thomas Samy",
             "email": "tsamy@me.com",
-            "userTypeId": 2
+            "isTeacher": false
         },
         {
             "id": 9,
             "name": "Ramy Mena",
             "email": "rmena@me.com",
-            "userTypeId": 2
+            "isTeacher": false
         },
         {
             "id": 10,
             "name": "Sandra Mena",
             "email": "smena@me.com",
-            "userTypeId": 2
+            "isTeacher": false
         },
         {
             "id": 11,
             "name": "Celine Mena",
             "email": "cmena@me.com",
-            "userTypeId": 2
+            "isTeacher": false
         },
         {
             "id": 12,
             "name": "Sany Mena",
             "email": "smena@me.com",
-            "userTypeId": 2
+            "isTeacher": false
         }
     ],
-    "teachers": [
+    "userInfo": [
         {
             "id": 1,
-            "userId": 1,
-            "classId": 1
+            "classId": 1,
+            "dob": "",
+            "phone": "",
+            "address": "",
+            "userImg": ""
         },
         {
             "id": 2,
-            "userId": 2,
-            "classId": 1
+            "classId": 1,
+            "dob": "",
+            "phone": "",
+            "address": "",
+            "userImg": ""
         },
         {
             "id": 3,
-            "userId": 3,
-            "classId": 2
+            "classId": 2,
+            "dob": "",
+            "phone": "",
+            "address": "",
+            "userImg": ""
         },
         {
             "id": 4,
-            "userId": 4,
-            "classId": 2
-        }
-    ],
-    "students": [
+            "classId": 2,
+            "dob": "",
+            "phone": "",
+            "address": "",
+            "userImg": ""
+        },
         {
-            "id": 1,
-            "userId": 5,
+            "id": 5,
             "classId": 1,
             "dob": "01/06/2017",
             "phone": "785-153478",
             "address": "1008 Meb Ct, Mt. Juliet, TN 37122",
-            "studentImg": "https://media.istockphoto.com/id/1399611907/photo/portrait-of-happy-smiling-little-girl-against-blue-studio-background-cheerful-mixed-race-kid.jpg?s=612x612&w=0&k=20&c=rDehRs_EaCuPVi7K30TgcYfJnJsaBG1oWmfKdbAckww="
+            "userImg": "https://media.istockphoto.com/id/1399611907/photo/portrait-of-happy-smiling-little-girl-against-blue-studio-background-cheerful-mixed-race-kid.jpg?s=612x612&w=0&k=20&c=rDehRs_EaCuPVi7K30TgcYfJnJsaBG1oWmfKdbAckww="
         },
         {
-            "id": 2,
-            "userId": 2,
+            "id": 6,
             "classId": 1,
             "dob": "06/06/2017",
             "phone": "375-985159",
             "address": " 3565 N Mt Juliet Rd, Mt. Juliet, TN 37122",
-            "studentImg": "https://media.istockphoto.com/id/1327679894/photo/smiling-friendly-dark-skinned-boy-on-light-blue-background.jpg?s=612x612&w=0&k=20&c=Q6vA9kfs4TKmyjH3w0kW6Slt_RKUZCOAqD55CzZmo60="
+            "userImg": "https://media.istockphoto.com/id/1327679894/photo/smiling-friendly-dark-skinned-boy-on-light-blue-background.jpg?s=612x612&w=0&k=20&c=Q6vA9kfs4TKmyjH3w0kW6Slt_RKUZCOAqD55CzZmo60="
         },
         {
-            "id": 3,
-            "userId": 3,
+            "id": 7,
             "classId": 1,
             "dob": "07/04/2017",
             "phone": "321-458745",
             "address": "1003 Woodridge Pl, Mt. Juliet, TN 37122",
-            "studentImg": "https://media.istockphoto.com/id/1234009542/photo/cute-asian-boy-looking-at-camera-and-smiling-happily.jpg?s=612x612&w=0&k=20&c=ZjK-d2Op3_8fWhDbFHOuh2MmhLcihej4F_tE3ZnP-C4="
+            "userImg": "https://media.istockphoto.com/id/1234009542/photo/cute-asian-boy-looking-at-camera-and-smiling-happily.jpg?s=612x612&w=0&k=20&c=ZjK-d2Op3_8fWhDbFHOuh2MmhLcihej4F_tE3ZnP-C4="
         },
         {
-            "id": 4,
-            "userId": 4,
+            "id": 8,
             "classId": 1,
             "dob": "09/05/2017",
             "phone": "458-658624",
             "address": "11902 Lebanon Rd, Mt. Juliet, TN 37122",
-            "studentImg": "https://media.istockphoto.com/id/175602017/photo/serious-boy.jpg?s=612x612&w=0&k=20&c=jX4YnMhL69Kd4RZPj6syz8lwQXREgyQ15hdBQ1-lv88="
+            "userImg": "https://media.istockphoto.com/id/175602017/photo/serious-boy.jpg?s=612x612&w=0&k=20&c=jX4YnMhL69Kd4RZPj6syz8lwQXREgyQ15hdBQ1-lv88="
         },
         {
-            "id": 5,
-            "userId": 5,
+            "id": 9,
             "classId": 2,
             "dob": "10/15/2017",
             "phone": "615-785485",
             "address": "1008 Meb Ct, Mt. Juliet, TN 37122",
-            "studentImg": "https://media.istockphoto.com/id/1400096550/photo/portrait-of-a-cute-little-asian-boy-wearing-casual-clothes-while-smiling-and-looking-excited.jpg?s=612x612&w=0&k=20&c=OGQbPhtkB5GfM95276LQjT3K23pSBTNtN0Gw_1LMvEk="
+            "userImg": "https://media.istockphoto.com/id/1400096550/photo/portrait-of-a-cute-little-asian-boy-wearing-casual-clothes-while-smiling-and-looking-excited.jpg?s=612x612&w=0&k=20&c=OGQbPhtkB5GfM95276LQjT3K23pSBTNtN0Gw_1LMvEk="
         },
         {
-            "id": 6,
-            "userId": 6,
+            "id": 10,
             "classId": 2,
             "dob": "03/04/2018",
             "phone": "615-6089966",
             "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
-            "studentImg": "https://www.seekpng.com/png/detail/19-199271_png-school-children-play-school-kids.png"
+            "userImg": "https://www.seekpng.com/png/detail/19-199271_png-school-children-play-school-kids.png"
         },
         {
-            "id": 7,
-            "userId": 7,
+            "id": 11,
             "classId": 2,
             "dob": "06/08/2017",
             "phone": "615-6069166",
             "address": "9315 Lebanon Rd, Mt. Juliet, TN 37122",
-            "studentImg": "https://media.istockphoto.com/id/1399611777/photo/portrait-of-a-smiling-little-brown-haired-boy-looking-at-the-camera-happy-kid-with-good.jpg?b=1&s=170667a&w=0&k=20&c=_vhKiD4p9X8X5BBJ5gKiWasG95XFvwVa8nq6Ogbpn9k="
+            "userImg": "https://media.istockphoto.com/id/1399611777/photo/portrait-of-a-smiling-little-brown-haired-boy-looking-at-the-camera-happy-kid-with-good.jpg?b=1&s=170667a&w=0&k=20&c=_vhKiD4p9X8X5BBJ5gKiWasG95XFvwVa8nq6Ogbpn9k="
         },
         {
-            "id": 8,
-            "userId": 8,
+            "id": 12,
             "classId": 2,
             "dob": "07/09/2017",
             "phone": "615-6055745",
             "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
-            "studentImg": "https://media.istockphoto.com/id/1191680618/photo/smiling-and-cute-kid-looking-at-camera-and-showing-like-isolated-on-blue.jpg?s=612x612&w=0&k=20&c=7yFK4KhwIjcE2zSxpy9YAFzVA2kA0WSPOUtH7CUGhJo="
+            "userImg": "https://media.istockphoto.com/id/1191680618/photo/smiling-and-cute-kid-looking-at-camera-and-showing-like-isolated-on-blue.jpg?s=612x612&w=0&k=20&c=7yFK4KhwIjcE2zSxpy9YAFzVA2kA0WSPOUtH7CUGhJo="
         }
     ],
 
-    "studentAttendance": [
+    "attendance": [
         {
             "id": 1,
             "date": "",
             "classesId": 1,
-            "studentId": 1,
+            "userInfoId": 1,
             "attend": true
         },
         {
             "id": 2,
             "date": "",
             "classesId": 1,
-            "studentId": 2,
+            "userInfoId": 2,
             "attend": true
         },
         {
             "id": 3,
             "date": "",
             "classesId": 1,
-            "studentId": 3,
+            "userInfoId": 3,
             "attend": true
         },
         {
             "id": 4,
             "date": "",
             "classesId": 1,
-            "studentId": 4,
+            "userInfoId": 4,
             "attend": true
         }
     ],

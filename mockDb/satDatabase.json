@@ -1,14 +1,4 @@
 {
-  "userTypes": [
-    {
-      "id": 1,
-      "type": "teacher"
-    },
-    {
-      "id": 2,
-      "type": "student"
-    }
-  ],
   "users": [
     {
       "id": 1,
@@ -87,6 +77,12 @@
       "fullName": "MARIAN MENA",
       "isTeacher": true,
       "id": 13
+    },
+    {
+      "email": "sanymamdoh@yahoo.com",
+      "fullName": "sany yousif",
+      "isTeacher": true,
+      "id": 14
     }
   ],
   "teachers": [
