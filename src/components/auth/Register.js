@@ -11,7 +11,10 @@ export const Register = (props) => {
     let navigate = useNavigate();
 
     const registerNewUser = () => {
-        return fetch("http://localhost:8033/users", {
+        return fetch(
+            "http://localhost:8033/users"
+            //`http://localhost:8033/teachers?_expand=user`
+            , {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
