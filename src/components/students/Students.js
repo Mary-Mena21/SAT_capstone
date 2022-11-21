@@ -12,10 +12,9 @@ export const Students = () => {
         () => {
             const fetchData = async () => {
                 const response = await fetch(
-                    //`http://localhost:8033/Students?_expand=user&classId=1`
-                    `http://localhost:8033/students?_expand=user&classId=${satUserObject.id}`
-                    //`http://localhost:8033/Students?_expand=user`
-                    //`http://localhost:8033/classes/1?_embed=users`
+                    //`http://localhost:8033/students?_expand=user&classId=${satUserObject.id}`
+                    `http://localhost:8033/students?&classId=${satUserObject.id}`
+
                 );
                 const StudentsArray = await response.json();
                 setStudents(StudentsArray);
@@ -36,7 +35,7 @@ export const Students = () => {
                                 key={`student__${student.id}`}
                                 id={student.id}
                                 studentImg={student.studentImg}
-                                studentName={student.user.fullName}
+                                studentName={student.fullName}
                                 userId={student.userId}
                             />
                         </>
