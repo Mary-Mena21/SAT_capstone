@@ -34,9 +34,13 @@ export const Students = () => {
                             <Student
                                 key={`student__${student.id}`}
                                 id={student.id}
-                                studentImg={student.studentImg}
                                 studentName={student.fullName}
-                                userId={student.userId}
+                                studentEmail={student.email}
+                                studentClassId={student.classIs}
+                                studentDob={student.dob}
+                                studentPhone={student.phone}
+                                studentAddress={student.address}
+                                studentImg={student.studentImg}
                             />
                         </>
                     );
