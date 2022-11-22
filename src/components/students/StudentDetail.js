@@ -2,10 +2,19 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { StudentDelete } from "./StudentDelete";
 
-
 import "./StudentDetail.css";
+import { StudentEdit } from "./StudentEdit";
 
-export const StudentDetails = () => {
+export const StudentDetails = ({
+    id,
+    studentName,
+    studentEmail,
+    studentClassId,
+    studentPhone,
+    studentDob,
+    studentAddress,
+    studentImg, }) => {
+  
     const { studentDetail_Id } = useParams();
     const [studentDetail, setStudentDetail] = useState({});
 
@@ -24,11 +33,10 @@ export const StudentDetails = () => {
         fetchData();
     }, []);
 
-    
-    return (<>
-        <section className="student">
-               
-        <img src={studentDetail?.studentImg} className="student_img" />
+    return (
+        <>
+            <section key={`student__${id}`} className="student">
+                <img src={studentDetail?.studentImg} className="student_img" />
                 <header className="student__header">
                     {studentDetail?.fullName}
                 </header>
@@ -37,11 +45,20 @@ export const StudentDetails = () => {
                 <div>address: {studentDetail?.address}</div>
                 <footer className="student__footer">
                     Date Of Birth:{studentDetail.dob}
-            </footer>
-            <StudentDelete
-            id={studentDetail.id} />
-        </section>
-     
+                </footer>
+                <StudentDelete id={studentDetail.id} />
+                
+                <StudentEdit
+                id= {id}
+                studentName= {studentName}
+                studentEmail= {studentEmail}
+                studentClassId= {studentClassId}
+                studentDob= {studentDob}
+                studentAddress= {studentAddress}
+                studentImg= {studentImg}
+                />
+
+            </section>
         </>
     );
 };
