@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Students.css";
 
-export const Student = ({ studentImg, userId, studentName, id }) => {
+export const Student = ({ studentImg, studentName, id }) => {
     return (
         <div className="container">
             <section key={id} className="student_card">
