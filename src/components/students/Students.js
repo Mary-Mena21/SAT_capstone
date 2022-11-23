@@ -14,7 +14,6 @@ export const Students = () => {
                 const response = await fetch(
                     //`http://localhost:8033/students?_expand=user&classId=${satUserObject.id}`
                     `http://localhost:8033/students?&classId=${satUserObject.id}`
-
                 );
                 const StudentsArray = await response.json();
                 setStudents(StudentsArray);
@@ -23,12 +22,14 @@ export const Students = () => {
         },
         [] // When this array is empty, you are observing initial component state
     );
+    
 
     return (
         <>
             <h1>Students</h1>
             <article className="Students">
                 {Students.map((student) => {
+                    
                     return (
                         <>
                             <Student
@@ -41,11 +42,25 @@ export const Students = () => {
                                 studentPhone={student.phone}
                                 studentAddress={student.address}
                                 studentImg={student.studentImg}
+                                
                             />
                         </>
                     );
                 })}
             </article>
+            
+            <section>
+            <button
+                onClick={(clickEvent) => {
+                    {
+                        /*  handleSaveButtonClick(clickEvent); */
+                    }
+                }}
+                className="btn btn-primary"
+            >
+                Submit Ticket
+            </button>
+        </section>
         </>
     );
 };
