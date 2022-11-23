@@ -134,30 +134,37 @@
     {
       "id": 1,
       "date": "",
-      "classesId": 1,
+      "classId": 1,
       "studentId": 1,
       "attend": true
     },
     {
       "id": 2,
       "date": "",
-      "classesId": 1,
+      "classId": 1,
       "studentId": 2,
       "attend": true
     },
     {
       "id": 3,
       "date": "",
-      "classesId": 1,
+      "classId": 1,
       "studentId": 3,
       "attend": true
     },
     {
       "id": 4,
       "date": "",
-      "classesId": 1,
+      "classId": 1,
       "studentId": 4,
-      "attend": true
+      "attend": false
+    },
+    {
+      "id": 5,
+      "date": "",
+      "classId": 2,
+      "studentId": 4,
+      "attend": false
     }
   ],
   "classes": [

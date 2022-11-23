@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 export const StudentDelete = ({ id,studentName}) => {
     const navigate = useNavigate();
     /* ------------------------delete-------------------------- */
-    console.log(id,studentName);
+    //console.log(id,studentName);
     return (
         <>
             <button
