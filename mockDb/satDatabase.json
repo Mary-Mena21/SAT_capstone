@@ -1,12 +1,6 @@
 {
   "users": [
     {
-      "id": 1,
-      "fullName": "Mariana Mena",
-      "email": "mmena@me.com",
-      "isTeacher": true
-    },
-    {
       "id": 2,
       "fullName": "Danny Mena",
       "email": "dmena@me.com",
@@ -38,11 +32,6 @@
     }
   ],
   "teachers": [
-    {
-      "id": 1,
-      "userId": 1,
-      "classId": 1
-    },
     {
       "id": 2,
       "userId": 2,

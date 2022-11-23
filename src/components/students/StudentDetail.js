@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { StudentDelete } from "./StudentDelete";
@@ -13,16 +14,17 @@ export const StudentDetails = ({
     studentPhone,
     studentDob,
     studentAddress,
-    studentImg, }) => {
-  
+    studentImg,
+}) => {
     const { studentDetail_Id } = useParams();
     const [studentDetail, setStudentDetail] = useState({});
+    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch(
                 //`http://localhost:8033/Students/${studentDetail_Id}?_expand=user`
-                `http://localhost:8033/Students/${studentDetail_Id}`
+                `http://localhost:8033/students/${studentDetail_Id}`
                 //`http://localhost:8033/users/${studentDetail_Id}?userTypeId=2&classId=1`
             );
             const student = await response.json();
@@ -46,18 +48,29 @@ export const StudentDetails = ({
                 <footer className="student__footer">
                     Date Of Birth:{studentDetail.dob}
                 </footer>
-                <StudentDelete id={studentDetail.id} />
-                
-                <StudentEdit
-                id= {id}
-                studentName= {studentName}
-                studentEmail= {studentEmail}
-                studentClassId= {studentClassId}
-                studentDob= {studentDob}
-                studentAddress= {studentAddress}
-                studentImg= {studentImg}
+                <StudentDelete
+                    id={studentDetail.id}
+                    studentName={studentDetail.fullName}
                 />
 
+                <button
+                    onClick={() => {
+                        <StudentEdit
+                            id={studentDetail.id}
+                            studentName={studentDetail.fullName}
+                            studentEmail={studentDetail.email}
+                            studentClassId={studentDetail.classId}
+                            studentPhone={studentDetail.phone}
+                            studentDob={studentDetail.dob}
+                            studentAddress={studentDetail.address}
+                            studentImg={studentDetail.studentImg}
+                        />;
+                        navigate(`/studentEdit`); 
+                    }}
+                    className="btn btn-primary"
+                >
+                    Edit Student
+                </button>
             </section>
         </>
     );
