@@ -165,6 +165,20 @@
       "classId": 2,
       "studentId": 4,
       "attend": false
+    },
+    {
+      "date": "11/23/2022",
+      "classId": 1,
+      "studentId": 1,
+      "attend": false,
+      "id": 6
+    },
+    {
+      "date": "11/23/2022",
+      "classId": 1,
+      "studentId": 2,
+      "attend": false,
+      "id": 7
     }
   ],
   "classes": [
