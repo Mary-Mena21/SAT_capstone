@@ -8,6 +8,7 @@ export const Student = ({ studentImg, studentName, id }) => {
     return (
         <>
             <section>
+                <h1>hi</h1>
                 <div className="container">
                     <section key={id} className="student_card">
                         <div className="student_card_container">
@@ -16,17 +17,15 @@ export const Student = ({ studentImg, studentName, id }) => {
                                 <h3 className="student_info">{studentName}</h3>
                             </Link>
 
-{/*                             <input
+                            <input
                                 type="checkbox"
                                 className="checkbox"
-                                //onchange="handleChange(event)"
                                 onChange={(evt) => {
-                                     const copy = { ...inputAttend };
+{/*                                     const copy = { ...inputAttend };
                                     copy.attend = evt.target.checked;
-                                    setInputAttend(copy); 
+                                    setInputAttend(copy); */}
                                 }}
-                            /> */}
-                            
+                            />
                         </div>
                     </section>
                 </div>
@@ -35,9 +34,6 @@ export const Student = ({ studentImg, studentName, id }) => {
     );
 };
 /* -------------------------------------- */
-
-
-
 
 // export const StudentAttendance = () => {
 //     const [inputAttend, setInputAttend] = useState({
@@ -51,7 +47,6 @@ export const Student = ({ studentImg, studentName, id }) => {
 //     const localSATUser = localStorage.getItem("SAT_user");
 //     const satUserObject = JSON.parse(localSATUser);
 
-
 // /* ------------------------------ */
 //     //  fetch(`http://localhost:8033/studentAttendance`, {
 //     //     method: "POST",
@@ -64,7 +59,6 @@ export const Student = ({ studentImg, studentName, id }) => {
 //     //     .then(() => {
 //     //        // navigate("/tickets");
 //     //     });
-
 
 //     /* ------------------------------ */
 //     //Perform the fetch() to POST the object to the API
@@ -111,7 +105,7 @@ export const Student = ({ studentImg, studentName, id }) => {
 //             setInputAttend(copy);
 //         }}
 //     />
-            
+
 //                      <section>
 //             <button
 //             onClick={(clickEvent) => {
@@ -121,7 +115,7 @@ export const Student = ({ studentImg, studentName, id }) => {
 //         >
 //             Submit Ticket
 //                 </button>
-//                 </section> 
+//                 </section>
 //         </>
 //     )
 // }

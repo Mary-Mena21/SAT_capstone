@@ -165,6 +165,20 @@
       "classId": 2,
       "studentId": 4,
       "attend": false
+    },
+    {
+      "date": "11/23/2022",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true,
+      "id": 6
+    },
+    {
+      "date": "11/23/2022",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true,
+      "id": 7
     }
   ],
   "classes": [
@@ -188,98 +202,98 @@
     {
       "id": 1,
       "grade": "G1",
-      "bookfullName": "G1: The Mighty Fatherhood of God",
+      "bookName": "G1: The Mighty Fatherhood of God",
       "bookImg": "http://www.suscopts.org/ssc/wp-content/uploads/2020/09/1st-Grade-1.jpg",
       "gradeBookLink": "https://drive.google.com/file/d/1_QHjkwvEGXjIFMP1nw3TFTRlvPAd82Ur/view"
     },
     {
       "id": 2,
       "grade": "G2",
-      "bookfullName": "G2: The Loving Motherhood of the",
+      "bookName": "G2: The Loving Motherhood of the",
       "bookImg": "http://www.suscopts.org/ssc/wp-content/uploads/2020/09/2nd-Grade-1.jpg",
       "gradeBookLink": "https://drive.google.com/file/d/1NaQd1CKR_03PFXWMznxcYCeQBwv-NtbF/view"
     },
     {
       "id": 3,
       "grade": "G3",
-      "bookfullName": "G3: The Golden Rule",
+      "bookName": "G3: The Golden Rule",
       "bookImg": "http://www.suscopts.org/ssc/wp-content/uploads/2020/09/3rd-Grade-1.jpg",
       "gradeBookLink": "https://drive.google.com/file/d/1GhVFuvwa4e8-ZFZR-IpsauOsugYxMQLR/view"
     },
     {
       "id": 4,
       "grade": "G4",
-      "bookfullName": "G4: Growing in Discipline",
+      "bookName": "G4: Growing in Discipline",
       "bookImg": "http://www.suscopts.org/ssc/wp-content/uploads/2020/09/4th-Grade-1.jpg",
       "gradeBookLink": "https://drive.google.com/file/d/1S36_Di0_O5vULcFnXG5UVp5D4D8DHDq9/view"
     },
     {
       "id": 5,
       "grade": "G5",
-      "bookfullName": "G5: Life of Faith, Trust and Morality",
+      "bookName": "G5: Life of Faith, Trust and Morality",
       "bookImg": "http://www.suscopts.org/ssc/wp-content/uploads/2020/09/5th-Grade-1.jpg",
       "gradeBookLink": "https://drive.google.com/file/d/1pnRLPHPug0hDGrMsFhm5kGd037vgmjrr/view"
     },
     {
       "id": 6,
       "grade": "G6",
-      "bookfullName": "G6: The Living Bible",
+      "bookName": "G6: The Living Bible",
       "bookImg": "https://www.suscopts.org/ssc/wp-content/uploads/2020/09/6th-Grade-1.jpg",
       "gradeBookLink": "https://drive.google.com/file/d/1XblBUV43ylHFWJcgLkCPWPh4x-tp1wYu/view"
     },
     {
       "id": 7,
       "grade": "G7",
-      "bookfullName": "G7: Chrsitian Discernment",
+      "bookName": "G7: Chrsitian Discernment",
       "bookImg": "https://www.suscopts.org/ssc/wp-content/uploads/2020/09/7th-Grade-1.jpg",
       "gradeBookLink": "https://drive.google.com/file/d/1D-E-iOLNoL4h6lPCDN4BtHn6D3DaAd0a/view"
     },
     {
       "id": 8,
       "grade": "G8",
-      "bookfullName": "G8: Choosing my Faith",
+      "bookName": "G8: Choosing my Faith",
       "bookImg": "https://www.suscopts.org/ssc/wp-content/uploads/2020/09/8th-Grade-1.jpg",
       "gradeBookLink": "https://drive.google.com/file/d/1pjzeXHHlDHKXVlBYTwTQwzOAmK_4sENF/view"
     },
     {
       "id": 9,
       "grade": "G9",
-      "bookfullName": "G9: Self-Control & Independence",
+      "bookName": "G9: Self-Control & Independence",
       "bookImg": "https://www.suscopts.org/ssc/wp-content/uploads/2020/09/9th-Grade-2.jpg",
       "gradeBookLink": "https://drive.google.com/file/d/1l609QOhNVcUJhc6pIqYu2Ru3qFf_4k7R/view"
     },
     {
       "id": 10,
       "grade": "G10",
-      "bookfullName": "G10: Repentance",
+      "bookName": "G10: Repentance",
       "bookImg": "https://www.suscopts.org/ssc/wp-content/uploads/2020/09/10th-Grade-1.jpg",
       "gradeBookLink": "https://drive.google.com/file/d/1UJa45qfICjrYXqoUo098Wdf5nUk8ifXt/view"
     },
     {
       "id": 11,
       "grade": "G11",
-      "bookfullName": "G11: Consecration",
+      "bookName": "G11: Consecration",
       "bookImg": "https://www.suscopts.org/ssc/wp-content/uploads/2020/09/11th-Grade-1.jpg",
       "gradeBookLink": "https://drive.google.com/file/d/1bo4A6Urh9aKoQ0KWiTHLsp8LJU_LtmdN/view"
     },
     {
       "id": 12,
       "grade": "G12",
-      "bookfullName": "G12: Service",
+      "bookName": "G12: Service",
       "bookImg": "https://www.suscopts.org/ssc/wp-content/uploads/2020/09/12th-Grade-1.jpg",
       "gradeBookLink": "https://drive.google.com/file/d/1C6_P03qV-O_85urqa5kX-l56FMOrQBBm/view"
     },
     {
       "id": 13,
       "grade": "PK",
-      "bookfullName": "PK: God’s Wonderful Works",
+      "bookName": "PK: God’s Wonderful Works",
       "bookImg": "http://www.suscopts.org/ssc/wp-content/uploads/2020/09/pre-k_small.jpg",
       "gradeBookLink": "https://drive.google.com/file/d/1VZEn2PSWmyNoeknwRdfUy6XFY_7QRhbx/view"
     },
     {
       "id": 14,
       "grade": 14,
-      "bookfullName": "KG: God Loves Me",
+      "bookName": "KG: God Loves Me",
       "bookImg": "http://www.suscopts.org/ssc/wp-content/uploads/2020/09/kindergarten-1-2.jpg",
       "gradeBookLink": "https://drive.google.com/file/d/1Ga8v0hTuT-IR4RglRVhj-c6C2DOzhz7j/view"
     }
