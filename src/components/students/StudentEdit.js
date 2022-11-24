@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { StudentDetails } from "./StudentDetail";
 //import { StudentForm } from "./StudentForm";
-import { useParams } from "react-router-dom";
+//import { useParams } from "react-router-dom";
 export const StudentEdit = ({
     id,
     studentName,
@@ -13,7 +13,7 @@ export const StudentEdit = ({
     studentImg,
 }) => {
     //console.log(studentName);
-    const { studentDetail_Id } = useParams();
+   // const { studentDetail_Id } = useParams();
     const [editStudent, setEditStudent] = useState({
         fullName: "",
         email: "",
@@ -25,18 +25,19 @@ export const StudentEdit = ({
     });
     /* -------------Display----------------- */
     /* async */
-    useEffect(() => {
-        const fetchData = async () => {
-            const response = await fetch(
-                //`http://localhost:8088/customers?_expand=user&userId=${honeyUserObject.id}`
-               // `http://localhost:8033/students/2`
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         const response = await fetch(
+    //             //`http://localhost:8088/customers?_expand=user&userId=${honeyUserObject.id}`
+    //             `http://localhost:8033/students/${id}`
 
-            );
-            const data = await response.json();
-            setEditStudent(data[0]); //Try to make new Ticket and update it? ????????????????
-        };
-        fetchData();
-    }, []);
+    //         );
+    //         const data = await response.json();
+    //         setEditStudent(data); //Try to make new Ticket and update it? ????????????????
+    //         console.log(data);
+    //     };
+    //     fetchData();
+    // }, []);
     //here we are fetching the api to display (GET)the existing data from the current user
     //api is the router in the browser
     /* ------------------------------ */
@@ -64,15 +65,16 @@ export const StudentEdit = ({
         event.preventDefault();
         editStudentInfo(editStudent);
 
-        {      <StudentDetails
-              id= {id}
-              studentName= {studentName}
-              studentEmail= {studentEmail}
-              studentClassId= {studentClassId}
-              studentDob= {studentDob}
-              studentAddress= {studentAddress}
-              studentImg= {studentImg}
-              />}
+
+        // {      <StudentDetails
+        //       id= {id}
+        //       studentName= {studentName}
+        //       studentEmail= {studentEmail}
+        //       studentClassId= {studentClassId}
+        //       studentDob= {studentDob}
+        //       studentAddress= {studentAddress}
+        //       studentImg= {studentImg}
+        //       />}
     };
     /* ------------------------------ */
     return (
@@ -85,6 +87,8 @@ export const StudentEdit = ({
                             Name:
                             <br />
                             <input
+                            required
+                            autoFocus
                                 type="text"
                                 name="fullName"
                                 value={editStudent.fullName}
@@ -103,6 +107,8 @@ export const StudentEdit = ({
                             Email:
                             <br />
                             <input
+                            required
+                            autoFocus
                                 type="email"
                                 name="email"
                                 value={editStudent.email}
@@ -121,6 +127,8 @@ export const StudentEdit = ({
                             classId:
                             <br />
                             <input
+                            required
+                            autoFocus
                                 type="number"
                                 name="classId"
                                 value={editStudent.classId}
@@ -139,6 +147,8 @@ export const StudentEdit = ({
                             DOB:
                             <br />
                             <input
+                            required
+                            autoFocus
                                 type="text"
                                 name="dob"
                                 value={editStudent.dob}
@@ -157,6 +167,8 @@ export const StudentEdit = ({
                             Phone:
                             <br />
                             <input
+                            required
+                            autoFocus
                                 type="text"
                                 name="phone"
                                 value={editStudent.phone}
@@ -175,6 +187,8 @@ export const StudentEdit = ({
                             Address:
                             <br />
                             <input
+                            required
+                            autoFocus
                                 type="text"
                                 name="address"
                                 value={editStudent.address}
@@ -193,6 +207,8 @@ export const StudentEdit = ({
                             studentImg:
                             <br />
                             <input
+                            required
+                            autoFocus
                                 type="text"
                                 name="studentImg"
                                 value={editStudent.studentImg}
@@ -215,7 +231,7 @@ export const StudentEdit = ({
                 }}
                 className="btn btn-primary"
             >
-                Edit
+                Save Edit Student
             </button>
         </>
     );

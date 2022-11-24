@@ -47,6 +47,8 @@ export const StudentForm = () => {
                             Name:
                             <br />
                             <input
+                            required
+                            autoFocus
                                 type="text"
                                 name="fullName"
                                 value={inputs.fullName}
@@ -65,6 +67,8 @@ export const StudentForm = () => {
                             Email:
                             <br />
                             <input
+                            required
+                            autoFocus
                                 type="email"
                                 name="email"
                                 value={inputs.email}
@@ -83,6 +87,8 @@ export const StudentForm = () => {
                             classId:
                             <br />
                             <input
+                            required
+                            autoFocus
                                 type="number"
                                 name="classId"
                                 value={inputs.classId}
@@ -101,6 +107,8 @@ export const StudentForm = () => {
                             DOB:
                             <br />
                             <input
+                            required
+                            autoFocus
                                 type="date"
                                 name="price"
                                 value={inputs.dob}
@@ -119,6 +127,8 @@ export const StudentForm = () => {
                             Phone:
                             <br />
                             <input
+                            required
+                            autoFocus
                                 type="phoneNumber"
                                 name="phone"
                                 value={inputs.phone}
@@ -137,6 +147,8 @@ export const StudentForm = () => {
                             Address:
                             <br />
                             <input
+                            required
+                            autoFocus
                                 type="address"
                                 name="address"
                                 value={inputs.address}
@@ -155,6 +167,8 @@ export const StudentForm = () => {
                             studentImg:
                             <br />
                             <input
+                            required
+                            autoFocus
                                 type="studentImg"
                                 name="studentImg"
                                 value={inputs.studentImg}

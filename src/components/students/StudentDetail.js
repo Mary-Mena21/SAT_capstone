@@ -52,25 +52,29 @@ export const StudentDetails = ({
                     id={studentDetail.id}
                     studentName={studentDetail.fullName}
                 />
+                <button className="Dbtn">Display Edit Form</button>
+            </section>
 
-                <button
-                    onClick={() => {
-                        <StudentEdit
-                            id={studentDetail.id}
-                            studentName={studentDetail.fullName}
-                            studentEmail={studentDetail.email}
-                            studentClassId={studentDetail.classId}
-                            studentPhone={studentDetail.phone}
-                            studentDob={studentDetail.dob}
-                            studentAddress={studentDetail.address}
-                            studentImg={studentDetail.studentImg}
-                        />;
-                        navigate(`/studentEdit`); 
-                    }}
-                    className="btn btn-primary"
-                >
-                    Edit Student
-                </button>
+            <section className="student">
+               
+                {/*     <button> */}
+                {/*  onClick={() => { */}
+                <StudentEdit
+                    id={studentDetail.id}
+                    studentName={studentDetail.fullName}
+                    studentEmail={studentDetail.email}
+                    studentClassId={studentDetail.classId}
+                    studentPhone={studentDetail.phone}
+                    studentDob={studentDetail.dob}
+                    studentAddress={studentDetail.address}
+                    studentImg={studentDetail.studentImg}
+                />
+                {/* navigate(`/studentEdit`);  */}
+                {/* }}
+                    className="btn btn-primary" */}
+                {/*  > */}
+                {/*                     Edit Student
+                </button> */}
             </section>
         </>
     );
