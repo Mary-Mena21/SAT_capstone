@@ -28,8 +28,8 @@ export const StudentDetails = ({
                 //`http://localhost:8033/users/${studentDetail_Id}?userTypeId=2&classId=1`
             );
             const student = await response.json();
-            //console.log(student);
-            //console.log(studentDetail);
+            console.log(studentDetail_Id);
+            console.log(id);
             setStudentDetail(student);
         };
         fetchData();
@@ -48,10 +48,12 @@ export const StudentDetails = ({
                 <footer className="student__footer">
                     Date Of Birth:{studentDetail.dob}
                 </footer>
+                
                 <StudentDelete
                     id={studentDetail.id}
                     studentName={studentDetail.fullName}
                 />
+                
                 <button className="Dbtn">Display Edit Form</button>
             </section>
 

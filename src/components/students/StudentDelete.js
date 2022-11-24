@@ -9,8 +9,8 @@ export const StudentDelete = ({ id,studentName}) => {
                 onClick={() => {
                     fetch(`http://localhost:8033/students/${id}`, {
                         method: "DELETE",
-                    }).then( navigate("/Students"));
-
+                    }).then();
+                    navigate("/Students")
                 }}
                 className="btn btn-primary"
             >

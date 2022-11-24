@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import "./Attendance.css";
+//import "./Attendance.css";
 
 export const Attendance = () => {
     const [attendance, setAttendance] = useState([]);

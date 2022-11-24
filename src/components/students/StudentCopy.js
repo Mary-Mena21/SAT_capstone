@@ -4,17 +4,66 @@ import { Students } from "./Students";
 import { Link } from "react-router-dom";
 import "./Students.css";
 
-export const Student = ({     id,
+export const StudentCopy = ({
+    id,
     studentName,
     studentEmail,
     studentClassId,
     studentPhone,
     studentDob,
     studentAddress,
-    studentImg, }) => {
+    studentImg,
+}) => {
+    /* -------------------------------------- */
+
+    let NewDate = new Date(Date.now()).toLocaleDateString();
+    const navigate = useNavigate();
+    const localSATUser = localStorage.getItem("SAT_user");
+    const satUserObject = JSON.parse(localSATUser);
+    let classId = satUserObject.id;
+    let userId = id;
+   // let attend= studentAttend
+
+    const [inputAttend, setInputAttend] = useState({
+        date: NewDate,
+        classId: classId,
+        studentId: userId,
+        attend: false,
+    });
+
+    /* ------------------------------ */
+
+    /* -------------Add----------------- */
+    const sendAttendance = async (SendToAPI) => {
+        const fetchOptions = {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(SendToAPI),
+        };
+        const response = await fetch(
+            `http://localhost:8033/studentAttendance`,
+            fetchOptions
+        );
+        const responseJson = await response.json();
+        return responseJson;
+    };
+    /* ------------------------------ */
+    // const handleSaveButtonClick = (event,copy) => {
+    //     //event.preventDefault();
+    //     sendAttendance(copy);
+    // };
+
+    // const handleSubmit = (event) => {
+    //     event.preventDefault();
+    //     sendAttendance(inputAttend);
+    //     // navigate("/students");
+    // };
+    /* ------------------------------ */
+
     return (
         <>
-            
             <section>
                 <div className="container">
                     <section key={id} className="student_card">
@@ -23,16 +72,22 @@ export const Student = ({     id,
                             <Link to={`/students/${id}`}>
                                 <h3 className="student_info">{studentName}</h3>
                             </Link>
+                            <div>
+                                <input
+                                    type="checkbox"
+                                    className="checkbox"
+                                    
+                                    onChange={(evt) => {
+                                        const copy = { ...inputAttend };
+                                        copy.attend = evt.target.checked;
+                                        console.log(copy);
+                                        setInputAttend(copy);
+                                        sendAttendance(copy);
+                                        // handleSaveButtonClick(evt,copy);
 
-                            <input
-                                type="checkbox"
-                                className="checkbox"
-                                onChange={(evt) => {
-{/*                                     const copy = { ...inputAttend };
-                                    copy.attend = evt.target.checked;
-                                    setInputAttend(copy); */}
-                                }}
-                            />
+                                    }}
+                                />
+                            </div>
                         </div>
                     </section>
                 </div>
@@ -41,6 +96,12 @@ export const Student = ({     id,
     );
 };
 /* -------------------------------------- */
+
+//checked={inputAttend.attend}
+//const value = target.type === 'checkbox' ? target.checked : target.value;
+// onClick={(clickEvent) => {
+//     handleSaveButtonClick(clickEvent);
+// }}
 
 // export const StudentAttendance = () => {
 //     const [inputAttend, setInputAttend] = useState({
@@ -100,6 +161,7 @@ export const Student = ({     id,
 
 //     //here we are fetching the api to add (POST) new data to api
 //     /* ------------------------------ */
+
 //     return (
 //         <>
 //         <input

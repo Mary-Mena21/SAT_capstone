@@ -14,7 +14,7 @@ export const Students = () => {
     //let id=id
 
     const [Students, setStudents] = useState([]);
-
+    
     const [inputAttend, setInputAttend] = useState({
         date: NewDate,
         classId: classId,
@@ -63,17 +63,6 @@ export const Students = () => {
             <h1>Students</h1>
             <article className="Students">
                 {Students.map((student) => {
-                    <>
-                        key={`student__${student.id}`}
-                        id={student.id}
-                        studentName={student.fullName}
-                        studentEmail={student.email}
-                        studentClassId={student.classIs}
-                        studentDob={student.dob}
-                        studentPhone={student.phone}
-                        studentAddress={student.address}
-                        studentImg={student.studentImg}
-                    </>;
                     return (
                         <>
                             <section>
@@ -106,7 +95,7 @@ export const Students = () => {
                                                         evt.target.checked;
                                                     setInputAttend(copy);
                                                 }}
-                                                /*onClick={(clickEvent) => {
+                                                /*                                                 onClick={(clickEvent) => {
                                                     handleSaveButtonClick(clickEvent);
                                                 }} */
                                             />
@@ -114,6 +103,18 @@ export const Students = () => {
                                     </section>
                                 </div>
                             </section>
+
+                            {/*                              <Student
+                                key={`student__${student.id}`}
+                                id={student.id}
+                                studentName={student.fullName}
+                                studentEmail={student.email}
+                                studentClassId={student.classIs}
+                                studentDob={student.dob}
+                                studentPhone={student.phone}
+                                studentAddress={student.address}
+                                studentImg={student.studentImg}
+                            />  */}
                         </>
                     );
                 })}
@@ -157,17 +158,3 @@ export const Students = () => {
         </>
     );
 }; */
-
-{
-    /*                              <Student
-                                key={`student__${student.id}`}
-                                id={student.id}
-                                studentName={student.fullName}
-                                studentEmail={student.email}
-                                studentClassId={student.classIs}
-                                studentDob={student.dob}
-                                studentPhone={student.phone}
-                                studentAddress={student.address}
-                                studentImg={student.studentImg}
-                            />  */
-}

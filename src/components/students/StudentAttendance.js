@@ -65,8 +65,7 @@ export const StudentAttendance = () => {
     /* ------------------------------ */
     return (
         <>
-            <Student
-            />
+            <Student/>
         <input
         type="checkbox"
         className="checkbox"
