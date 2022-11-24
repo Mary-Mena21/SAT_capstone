@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { StudentDetails } from "./StudentDetail";
 //import { StudentForm } from "./StudentForm";
-//import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 export const StudentEdit = ({
     id,
     studentName,
@@ -13,9 +13,12 @@ export const StudentEdit = ({
     studentImg,
 }) => {
     //console.log(studentName);
-   // const { studentDetail_Id } = useParams();
+    const { studentDetail_Id } = useParams();
     
     const [editStudent, setEditStudent] = useState({
+        id: id,
+        studentName: studentName,
+
         fullName: "",
         email: "",
         classId: 0,
@@ -26,19 +29,20 @@ export const StudentEdit = ({
     });
     /* -------------Display----------------- */
     /* async */
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //         const response = await fetch(
-    //             //`http://localhost:8088/customers?_expand=user&userId=${honeyUserObject.id}`
-    //             `http://localhost:8033/students/${id}`
+    useEffect(() => {
+        console.log(id);
+        const fetchData = async () => {
+            const response = await fetch(
+                //`http://localhost:8088/customers?_expand=user&userId=${honeyUserObject.id}`
+                `http://localhost:8033/students/${studentDetail_Id}`
 
-    //         );
-    //         const data = await response.json();
-    //         setEditStudent(data); //Try to make new Ticket and update it? ????????????????
-    //         console.log(data);
-    //     };
-    //     fetchData();
-    // }, []);
+            );
+            const data = await response.json();
+            setEditStudent(data); //Try to make new Ticket and update it? ????????????????
+            console.log(data);
+        };
+        fetchData();
+    }, []);
     //here we are fetching the api to display (GET)the existing data from the current user
     //api is the router in the browser
     /* ------------------------------ */
@@ -63,7 +67,7 @@ export const StudentEdit = ({
     //api is the url for the json file that will be changed
     /* ------------------------------ */
     const handleSaveButtonClick = (event) => {
-        event.preventDefault();
+         //event.preventDefault();
         editStudentInfo(editStudent);
 
 
@@ -170,7 +174,7 @@ export const StudentEdit = ({
                             <input
                             required
                             autoFocus
-                                type="text"
+                                type="phone"
                                 name="phone"
                                 value={editStudent.phone}
                                 onChange={(evt) => {
@@ -190,7 +194,7 @@ export const StudentEdit = ({
                             <input
                             required
                             autoFocus
-                                type="text"
+                                type="address"
                                 name="address"
                                 value={editStudent.address}
                                 onChange={(evt) => {
@@ -210,7 +214,7 @@ export const StudentEdit = ({
                             <input
                             required
                             autoFocus
-                                type="text"
+                                type="link"
                                 name="studentImg"
                                 value={editStudent.studentImg}
                                 onChange={(evt) => {

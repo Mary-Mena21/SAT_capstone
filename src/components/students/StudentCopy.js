@@ -22,6 +22,7 @@ export const StudentCopy = ({
     const satUserObject = JSON.parse(localSATUser);
     let classId = satUserObject.id;
     let userId = id;
+   // let attend= studentAttend
 
     const [inputAttend, setInputAttend] = useState({
         date: NewDate,
@@ -49,10 +50,10 @@ export const StudentCopy = ({
         return responseJson;
     };
     /* ------------------------------ */
-    const handleSaveButtonClick = (event) => {
-        event.preventDefault();
-        sendAttendance(inputAttend);
-    };
+    // const handleSaveButtonClick = (event,copy) => {
+    //     //event.preventDefault();
+    //     sendAttendance(copy);
+    // };
 
     // const handleSubmit = (event) => {
     //     event.preventDefault();
@@ -75,12 +76,15 @@ export const StudentCopy = ({
                                 <input
                                     type="checkbox"
                                     className="checkbox"
-                                    checked={inputAttend.attend}
+                                    
                                     onChange={(evt) => {
                                         const copy = { ...inputAttend };
                                         copy.attend = evt.target.checked;
+                                        console.log(copy);
                                         setInputAttend(copy);
-                                        handleSaveButtonClick(evt);
+                                        sendAttendance(copy);
+                                        // handleSaveButtonClick(evt,copy);
+
                                     }}
                                 />
                             </div>
