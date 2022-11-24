@@ -1,13 +1,13 @@
 {
   "users": [
     {
-      "id": 2,
+      "id": 1,
       "fullName": "Danny Mena",
       "email": "dmena@me.com",
       "isTeacher": true
     },
     {
-      "id": 3,
+      "id": 2,
       "fullName": "Gena Mena",
       "email": "gmena@me.com",
       "isTeacher": true
@@ -165,20 +165,6 @@
       "classId": 2,
       "studentId": 4,
       "attend": false
-    },
-    {
-      "date": "11/23/2022",
-      "classId": 1,
-      "studentId": 1,
-      "attend": true,
-      "id": 6
-    },
-    {
-      "date": "11/23/2022",
-      "classId": 1,
-      "studentId": 1,
-      "attend": true,
-      "id": 7
     }
   ],
   "classes": [

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Student } from "./Student";
 import "./Students.css";
 
-export const Students = ({ id }) => {
+export const Students = () => {
     let NewDate = new Date(Date.now()).toLocaleDateString();
     const navigate = useNavigate();
     const localSATUser = localStorage.getItem("SAT_user");
@@ -14,6 +14,7 @@ export const Students = ({ id }) => {
     //let id=id
 
     const [Students, setStudents] = useState([]);
+    
     const [inputAttend, setInputAttend] = useState({
         date: NewDate,
         classId: classId,
@@ -86,7 +87,6 @@ export const Students = ({ id }) => {
                                             <input
                                                 type="checkbox"
                                                 className="checkbox"
-                                              
                                                 onChange={(evt) => {
                                                     const copy = {
                                                         ...inputAttend,
@@ -95,17 +95,16 @@ export const Students = ({ id }) => {
                                                         evt.target.checked;
                                                     setInputAttend(copy);
                                                 }}
-/*                                                 onClick={(clickEvent) => {
+                                                /*                                                 onClick={(clickEvent) => {
                                                     handleSaveButtonClick(clickEvent);
                                                 }} */
                                             />
-
                                         </div>
                                     </section>
                                 </div>
                             </section>
 
-                             <Student
+                            {/*                              <Student
                                 key={`student__${student.id}`}
                                 id={student.id}
                                 studentName={student.fullName}
@@ -115,7 +114,7 @@ export const Students = ({ id }) => {
                                 studentPhone={student.phone}
                                 studentAddress={student.address}
                                 studentImg={student.studentImg}
-                            /> 
+                            />  */}
                         </>
                     );
                 })}

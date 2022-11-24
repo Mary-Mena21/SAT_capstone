@@ -4,11 +4,17 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./Students.css";
 
-export const Student = ({ studentImg, studentName, id }) => {
+export const Student = ({     id,
+    studentName,
+    studentEmail,
+    studentClassId,
+    studentPhone,
+    studentDob,
+    studentAddress,
+    studentImg, }) => {
     return (
         <>
             <section>
-                <h1>hi</h1>
                 <div className="container">
                     <section key={id} className="student_card">
                         <div className="student_card_container">

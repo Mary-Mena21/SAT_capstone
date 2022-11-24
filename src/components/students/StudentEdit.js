@@ -14,6 +14,7 @@ export const StudentEdit = ({
 }) => {
     //console.log(studentName);
    // const { studentDetail_Id } = useParams();
+    
     const [editStudent, setEditStudent] = useState({
         fullName: "",
         email: "",

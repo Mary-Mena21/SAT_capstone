@@ -3,7 +3,7 @@ import { Students } from "../students/Students";
 import { StudentDetails } from "../students/StudentDetail";
 import { StudentForm } from "../students/StudentForm";
 import { StudentEdit } from "../students/StudentEdit";
-import { Attendance } from "../attendance/Attendance";
+import { Attendance } from "../students/Attendance";
 import { StudentAttendance } from "../students/StudentAttendance";
 import { Student } from "../students/Student";
 
