@@ -148,6 +148,16 @@
       "address": "968 TOM HAILEY",
       "studentImg": "MM",
       "id": 10
+    },
+    {
+      "fullName": "MARIANA MENA",
+      "email": "MARIANA1MENA1@GMAIL.COM",
+      "classId": 1,
+      "dob": "2022-11-02",
+      "phone": "6156022553",
+      "address": "968 TOM HAILEY",
+      "studentImg": "MM",
+      "id": 11
     }
   ],
   "studentAttendance": [

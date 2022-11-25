@@ -136,7 +136,7 @@ export const StudentForm = () => {
                                 onChange={(evt) => {
                                     const copy = { ...inputs };
                                     copy.dob = evt.target.value;
-                                    const date = new Date(copy.dob).toLocaleDateString();
+                                    const date = new Date(copy.dob).toLocaleDateString("en-US")
                                     console.log(date)
                                     setInputs(copy)
                                 }}
