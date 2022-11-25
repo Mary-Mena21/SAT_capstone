@@ -1,18 +1,38 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+//import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import "react-datepicker/dist/react-datepicker.css";
+import DatePicker from "react-datepicker";
+
+
+// import ReactDatePicker from "react-datepicker";
+// import { Button, ButtonBase } from "@mui/material";
+// import { DatePicker, DesktopDatePicker } from "@mui/x-date-pickers";
+//import { Moment } from "react-moment";
 
 export const StudentForm = () => {
     const navigate = useNavigate();
+    const localSATUser = localStorage.getItem("SAT_user");
+    const satUserObject = JSON.parse(localSATUser);
+    let classId = satUserObject.id;
+    //const dateToFormat = "19/04/1980";
+    //<Moment>{dateToFormat}</Moment>;
+
+    const [startDate, setStartDate] = useState(new Date());
+
     const [inputs, setInputs] = useState({
         fullName: "",
         email: "",
-        classId: "",
+        classId: classId,
         dob: "",
         phone: "",
         address: "",
         studentImg: "",
     });
 
+    /* -------------Date----------------- */
+    //let NewDate = new Date(Date.now()).toLocaleDateString();
+    //const [startDate, setStartDate] = useState(inputs.dob);
     /* -------------Add----------------- */
     const sendNewStudent = async (SendToAPI) => {
         const fetchOptions = {
@@ -26,6 +46,7 @@ export const StudentForm = () => {
             `http://localhost:8033/students`,
             fetchOptions
         );
+        navigate("/students");
         const responseJson = await response.json();
         return responseJson;
     };
@@ -33,7 +54,7 @@ export const StudentForm = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         sendNewStudent(inputs);
-        navigate("/students");
+        // navigate("/students");
     };
     /* ------------------------------ */
 
@@ -47,8 +68,8 @@ export const StudentForm = () => {
                             Name:
                             <br />
                             <input
-                            required
-                            autoFocus
+                                required
+                                autoFocus
                                 type="text"
                                 name="fullName"
                                 value={inputs.fullName}
@@ -67,8 +88,8 @@ export const StudentForm = () => {
                             Email:
                             <br />
                             <input
-                            required
-                            autoFocus
+                                required
+                                autoFocus
                                 type="email"
                                 name="email"
                                 value={inputs.email}
@@ -87,8 +108,8 @@ export const StudentForm = () => {
                             classId:
                             <br />
                             <input
-                            required
-                            autoFocus
+                                required
+                                autoFocus
                                 type="number"
                                 name="classId"
                                 value={inputs.classId}
@@ -107,15 +128,17 @@ export const StudentForm = () => {
                             DOB:
                             <br />
                             <input
-                            required
-                            autoFocus
+                                required
+                                autoFocus
                                 type="date"
-                                name="price"
+                                name="dob"
                                 value={inputs.dob}
                                 onChange={(evt) => {
                                     const copy = { ...inputs };
                                     copy.dob = evt.target.value;
-                                    setInputs(copy);
+                                    const date = new Date(copy.dob).toLocaleDateString("en-US")
+                                    console.log(date)
+                                    setInputs(copy)
                                 }}
                             />
                         </label>
@@ -127,9 +150,9 @@ export const StudentForm = () => {
                             Phone:
                             <br />
                             <input
-                            required
-                            autoFocus
-                                type="phoneNumber"
+                                required
+                                autoFocus
+                                type="telephone"
                                 name="phone"
                                 value={inputs.phone}
                                 onChange={(evt) => {
@@ -147,8 +170,8 @@ export const StudentForm = () => {
                             Address:
                             <br />
                             <input
-                            required
-                            autoFocus
+                                required
+                                autoFocus
                                 type="address"
                                 name="address"
                                 value={inputs.address}
@@ -167,9 +190,9 @@ export const StudentForm = () => {
                             studentImg:
                             <br />
                             <input
-                            required
-                            autoFocus
-                                type="studentImg"
+                                required
+                                autoFocus
+                                type="text"
                                 name="studentImg"
                                 value={inputs.studentImg}
                                 onChange={(evt) => {
@@ -186,6 +209,11 @@ export const StudentForm = () => {
                         <input type="submit" />
                     </li>
                     <br />
+                    <DatePicker
+                        selected={startDate}
+                        format='mm/dd/yyyy'
+                        onChange={(date) => setStartDate(date)}
+                    />
                 </form>
             </fieldset>
         </>

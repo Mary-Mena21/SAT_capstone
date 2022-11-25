@@ -25,6 +25,7 @@ export const StudentCopy = ({
    // let attend= studentAttend
 
     const [inputAttend, setInputAttend] = useState({
+        id:0,
         date: NewDate,
         classId: classId,
         studentId: userId,

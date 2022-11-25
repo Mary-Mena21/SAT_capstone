@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { StudentCopy } from "./StudentCopy";
+
 import "./Students.css";
 
 export const StudentsCopy = () => {
     const [Students, setStudents] = useState([]);
 
+    const navigate = useNavigate();
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
     console.log(satUserObject);
@@ -53,13 +56,11 @@ export const StudentsCopy = () => {
             <section>
             <button
                 onClick={(clickEvent) => {
-                    {
-                        /*  handleSaveButtonClick(clickEvent); */
-                    }
+                    navigate("/attendance")
                 }}
                 className="btn btn-primary"
             >
-                Submit TicketMMM
+                Take Attend
             </button>
         </section>
         </>
