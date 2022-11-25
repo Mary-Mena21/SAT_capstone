@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { StudentDetails } from "./StudentDetail";
 //import { StudentForm } from "./StudentForm";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 export const StudentEdit = ({
     id,
     studentName,
@@ -13,6 +13,8 @@ export const StudentEdit = ({
     studentImg,
 }) => {
     //console.log(studentName);
+    const navigate = useNavigate();
+
     const { studentDetail_Id } = useParams();
     
     const [editStudent, setEditStudent] = useState({
@@ -60,6 +62,7 @@ export const StudentEdit = ({
             //`http://localhost:8033/Students/${studentDetail_Id}`,
             fetchOptions
         );
+        navigate("/studentsCopy")
         const responseJson = await response.json();
         return responseJson;
     };
@@ -154,12 +157,12 @@ export const StudentEdit = ({
                             <input
                             required
                             autoFocus
-                                type="text"
+                                type="date"
                                 name="dob"
                                 value={editStudent.dob}
                                 onChange={(evt) => {
                                     const copy = { ...editStudent };
-                                    copy.dob = evt.target.valueAsDate;
+                                    copy.dob = evt.target.value;
                                     setEditStudent(copy);
                                 }}
                             />
