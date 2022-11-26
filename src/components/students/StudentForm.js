@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 //import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import "react-datepicker/dist/react-datepicker.css";
 import DatePicker from "react-datepicker";
-
+import moment from 'moment';
 
 // import ReactDatePicker from "react-datepicker";
 // import { Button, ButtonBase } from "@mui/material";
@@ -18,13 +18,14 @@ export const StudentForm = () => {
     //const dateToFormat = "19/04/1980";
     //<Moment>{dateToFormat}</Moment>;
 
-    const [startDate, setStartDate] = useState(new Date());
+   // let shortDate = new Date("01/12/2021");
+    //const [startDate, setStartDate] = useState(new Date());
 
     const [inputs, setInputs] = useState({
         fullName: "",
-        email: "",
+        email:"",
         classId: classId,
-        dob: "",
+        dob:Date.now(),
         phone: "",
         address: "",
         studentImg: "",
@@ -35,6 +36,8 @@ export const StudentForm = () => {
     //const [startDate, setStartDate] = useState(inputs.dob);
     /* -------------Add----------------- */
     const sendNewStudent = async (SendToAPI) => {
+        console.log(SendToAPI);
+        console.log(JSON.stringify(SendToAPI));
         const fetchOptions = {
             method: "POST",
             headers: {
@@ -53,6 +56,7 @@ export const StudentForm = () => {
     /* ------------------------------ */
     const handleSubmit = (event) => {
         event.preventDefault();
+        //console.log(inputs);
         sendNewStudent(inputs);
         // navigate("/students");
     };
@@ -135,9 +139,12 @@ export const StudentForm = () => {
                                 value={inputs.dob}
                                 onChange={(evt) => {
                                     const copy = { ...inputs };
+                                    //moment(copy.dob).format('L')
+                                    
+                                    new Date(copy.dob)
                                     copy.dob = evt.target.value;
-                                    const date = new Date(copy.dob).toLocaleDateString("en-US")
-                                    console.log(date)
+                                        //toLocaleDateString()
+                                    //console.log(date)
                                     setInputs(copy)
                                 }}
                             />
@@ -210,9 +217,14 @@ export const StudentForm = () => {
                     </li>
                     <br />
                     <DatePicker
-                        selected={startDate}
-                        format='mm/dd/yyyy'
-                        onChange={(date) => setStartDate(date)}
+                        // selected={inputs.dob}
+                        // format='mm/dd/yyyy'
+                        // //onChange={(date) => setInputs(date)}
+                        // onChange={(evt) => {
+                        //     const copy = { ...inputs };
+                        //     copy.dob = evt.target.value;
+                        //     setInputs(copy)
+                        // }}
                     />
                 </form>
             </fieldset>

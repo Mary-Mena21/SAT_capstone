@@ -16,6 +16,7 @@ export const NavBar = () => {
         <li className="navBar_item"><Link className="navBar_link" to="/studentForm">StudentForm</Link></li>
         <li className="navBar_item"><Link className="navBar_link" to="/attendance">Attendance</Link></li>
         <li className="navBar_item"><Link className="navBar_link" to="/gradeBook">GradeBookList</Link></li>
+        <li className="navBar_item"><Link className="navBar_link" to="/birthdays">StudentsBirthdays</Link></li>
     {/*     <li className="navBar_item"><Link className="navBar_link" to="/contacts">Contacts</Link></li>
         <li className="navBar_item"><Link className="navBar_link" to="/birthdays">BirthDays</Link></li>
         <li className="navBar_item"><Link className="navBar_link" to="/lessons">Lessons</Link></li> */}
