@@ -33,6 +33,11 @@
   ],
   "teachers": [
     {
+      "id": 1,
+      "userId": 1,
+      "classId": 1
+    },
+    {
       "id": 2,
       "userId": 2,
       "classId": 1
@@ -54,7 +59,7 @@
       "fullName": "Holy Markos",
       "email": "hmena@me.com",
       "classId": 1,
-      "dob": "01-06-2017",
+      "dob": "2017-01-01",
       "phone": "785-153478",
       "address": "1008 Meb Ct, Mt. Juliet, TN 37122",
       "studentImg": "https://media.istockphoto.com/id/1399611907/photo/portrait-of-happy-smiling-little-girl-against-blue-studio-background-cheerful-mixed-race-kid.jpg?s=612x612&w=0&k=20&c=rDehRs_EaCuPVi7K30TgcYfJnJsaBG1oWmfKdbAckww="
@@ -64,7 +69,7 @@
       "fullName": "Jack Faddy",
       "email": "jmena@me.com",
       "classId": 1,
-      "dob": "06-06-2017",
+      "dob": "2017-06-02",
       "phone": "375-985159",
       "address": " 3565 N Mt Juliet Rd, Mt. Juliet, TN 37122",
       "studentImg": "https://media.istockphoto.com/id/1327679894/photo/smiling-friendly-dark-skinned-boy-on-light-blue-background.jpg?s=612x612&w=0&k=20&c=Q6vA9kfs4TKmyjH3w0kW6Slt_RKUZCOAqD55CzZmo60="
@@ -74,7 +79,7 @@
       "fullName": "Andrew Shady",
       "email": "ashady@me.com",
       "classId": 1,
-      "dob": "07-04-2017",
+      "dob": "2017-07-03",
       "phone": "321-458745",
       "address": "1003 Woodridge Pl, Mt. Juliet, TN 37122",
       "studentImg": "https://media.istockphoto.com/id/1234009542/photo/cute-asian-boy-looking-at-camera-and-smiling-happily.jpg?s=612x612&w=0&k=20&c=ZjK-d2Op3_8fWhDbFHOuh2MmhLcihej4F_tE3ZnP-C4="
@@ -84,7 +89,7 @@
       "fullName": "Thomas Samy",
       "email": "tsamy@me.com",
       "classId": 1,
-      "dob": "09-05-2017",
+      "dob": "2017-09-04",
       "phone": "458-658624",
       "address": "11902 Lebanon Rd, Mt. Juliet, TN 37122",
       "studentImg": "https://media.istockphoto.com/id/175602017/photo/serious-boy.jpg?s=612x612&w=0&k=20&c=jX4YnMhL69Kd4RZPj6syz8lwQXREgyQ15hdBQ1-lv88="
@@ -94,7 +99,7 @@
       "fullName": "Ramy Mena",
       "email": "rmena@me.com",
       "classId": 2,
-      "dob": "10-15-2017",
+      "dob": "2017-15-10",
       "phone": "615-785485",
       "address": "1008 Meb Ct, Mt. Juliet, TN 37122",
       "studentImg": "https://media.istockphoto.com/id/1400096550/photo/portrait-of-a-cute-little-asian-boy-wearing-casual-clothes-while-smiling-and-looking-excited.jpg?s=612x612&w=0&k=20&c=OGQbPhtkB5GfM95276LQjT3K23pSBTNtN0Gw_1LMvEk="
@@ -104,7 +109,7 @@
       "fullName": "Sandra Mena",
       "email": "smena@me.com",
       "classId": 2,
-      "dob": "03-04-2018",
+      "dob": "2018-04-02",
       "phone": "615-6089966",
       "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
       "studentImg": "https://www.seekpng.com/png/detail/19-199271_png-school-children-play-school-kids.png"
@@ -114,7 +119,7 @@
       "fullName": "Celine Mena",
       "email": "cmena@me.com",
       "classId": 2,
-      "dob": "06-08-2017",
+      "dob": "2017-08-03",
       "phone": "615-6069166",
       "address": "9315 Lebanon Rd, Mt. Juliet, TN 37122",
       "studentImg": "https://media.istockphoto.com/id/1399611777/photo/portrait-of-a-smiling-little-brown-haired-boy-looking-at-the-camera-happy-kid-with-good.jpg?b=1&s=170667a&w=0&k=20&c=_vhKiD4p9X8X5BBJ5gKiWasG95XFvwVa8nq6Ogbpn9k="
@@ -124,42 +129,90 @@
       "fullName": "Sany Mena",
       "email": "smena@me.com",
       "classId": 2,
-      "dob": "07-09-2017",
+      "dob": "2017-09-04",
       "phone": "615-6055745",
       "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
       "studentImg": "https://media.istockphoto.com/id/1191680618/photo/smiling-and-cute-kid-looking-at-camera-and-showing-like-isolated-on-blue.jpg?s=612x612&w=0&k=20&c=7yFK4KhwIjcE2zSxpy9YAFzVA2kA0WSPOUtH7CUGhJo="
     },
     {
-      "fullName": "MARIANA MENA",
-      "email": "MARIANA1MENA1@GMAIL.COM",
+      "id": 9,
+      "fullName": "Ramy Mena",
+      "email": "rmena@me.com",
       "classId": 1,
-      "dob": "2022-11-07",
-      "phone": "6156022553",
-      "address": "968 TOM HAILEY",
-      "studentImg": "MM",
-      "id": 9
+      "dob": "2017-15-05",
+      "phone": "615-785485",
+      "address": "1008 Meb Ct, Mt. Juliet, TN 37122",
+      "studentImg": "https://media.istockphoto.com/id/1400096550/photo/portrait-of-a-cute-little-asian-boy-wearing-casual-clothes-while-smiling-and-looking-excited.jpg?s=612x612&w=0&k=20&c=OGQbPhtkB5GfM95276LQjT3K23pSBTNtN0Gw_1LMvEk="
     },
     {
-      "fullName": "MARIANA MENA",
-      "email": "MARIANA1MENA1@GMAIL.COM",
+      "id": 10,
+      "fullName": "Sandra Mena",
+      "email": "smena@me.com",
       "classId": 1,
-      "dob": "2022-11-02",
-      "phone": "6156022553",
-      "address": "968 TOM HAILEY",
-      "studentImg": "MM",
-      "id": 10
+      "dob": "2018-04-06",
+      "phone": "615-6089966",
+      "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
+      "studentImg": "https://www.seekpng.com/png/detail/19-199271_png-school-children-play-school-kids.png"
     },
     {
-      "fullName": "MARIANA MENA",
-      "email": "MARIANA1MENA1@GMAIL.COM",
+      "id": 11,
+      "fullName": "Celine Mena",
+      "email": "cmena@me.com",
       "classId": 1,
-      "dob": "2022-11-02",
-      "phone": "6156022553",
-      "address": "968 TOM HAILEY",
-      "studentImg": "MM",
-      "id": 11
-    }
-  ],
+      "dob": "2017-08-07",
+      "phone": "615-6069166",
+      "address": "9315 Lebanon Rd, Mt. Juliet, TN 37122",
+      "studentImg": "https://media.istockphoto.com/id/1399611777/photo/portrait-of-a-smiling-little-brown-haired-boy-looking-at-the-camera-happy-kid-with-good.jpg?b=1&s=170667a&w=0&k=20&c=_vhKiD4p9X8X5BBJ5gKiWasG95XFvwVa8nq6Ogbpn9k="
+    },
+    {
+      "id": 12,
+      "fullName": "Sany Mena",
+      "email": "smena@me.com",
+      "classId": 1,
+      "dob": "2017-09-08",
+      "phone": "615-6055745",
+      "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
+      "studentImg": "https://media.istockphoto.com/id/1191680618/photo/smiling-and-cute-kid-looking-at-camera-and-showing-like-isolated-on-blue.jpg?s=612x612&w=0&k=20&c=7yFK4KhwIjcE2zSxpy9YAFzVA2kA0WSPOUtH7CUGhJo="
+    }, {
+        "id": 9,
+        "fullName": "Ramy Mena",
+        "email": "rmena@me.com",
+        "classId": 1,
+        "dob": "2017-15-09",
+        "phone": "615-785485",
+        "address": "1008 Meb Ct, Mt. Juliet, TN 37122",
+        "studentImg": "https://media.istockphoto.com/id/1400096550/photo/portrait-of-a-cute-little-asian-boy-wearing-casual-clothes-while-smiling-and-looking-excited.jpg?s=612x612&w=0&k=20&c=OGQbPhtkB5GfM95276LQjT3K23pSBTNtN0Gw_1LMvEk="
+      },
+      {
+        "id": 10,
+        "fullName": "Sandra Mena",
+        "email": "smena@me.com",
+        "classId": 1,
+        "dob": "2018-04-10",
+        "phone": "615-6089966",
+        "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
+        "studentImg": "https://www.seekpng.com/png/detail/19-199271_png-school-children-play-school-kids.png"
+      },
+      {
+        "id": 11,
+        "fullName": "Celine Mena",
+        "email": "cmena@me.com",
+        "classId": 1,
+        "dob": "2017-08-11",
+        "phone": "615-6069166",
+        "address": "9315 Lebanon Rd, Mt. Juliet, TN 37122",
+        "studentImg": "https://media.istockphoto.com/id/1399611777/photo/portrait-of-a-smiling-little-brown-haired-boy-looking-at-the-camera-happy-kid-with-good.jpg?b=1&s=170667a&w=0&k=20&c=_vhKiD4p9X8X5BBJ5gKiWasG95XFvwVa8nq6Ogbpn9k="
+      },
+      {
+        "id": 12,
+        "fullName": "Sany Mena",
+        "email": "smena@me.com",
+        "classId": 1,
+        "dob": "2017-09-12",
+        "phone": "615-6055745",
+        "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
+        "studentImg": "https://media.istockphoto.com/id/1191680618/photo/smiling-and-cute-kid-looking-at-camera-and-showing-like-isolated-on-blue.jpg?s=612x612&w=0&k=20&c=7yFK4KhwIjcE2zSxpy9YAFzVA2kA0WSPOUtH7CUGhJo="
+      }],
   "studentAttendance": [
     {
       "id": 1,

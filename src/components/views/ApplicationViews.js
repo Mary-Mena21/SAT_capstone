@@ -8,6 +8,7 @@ import { StudentAttendance } from "../students/StudentAttendance";
 import { Student } from "../students/Student";
 import { StudentsCopy } from "../students/StudentsCopy";
 import { GradeBookList } from "../gradeBooks/GradeBookList";
+import { StudentsBirthdays } from "../students/StudentsBirthdays";
 
 export const ApplicationViews = () => {
     return (
@@ -17,6 +18,9 @@ export const ApplicationViews = () => {
             <Route path="studentsCopy" element={<StudentsCopy />} />
             <Route path="student" element={<Student />} />
             <Route path="gradeBook" element={<GradeBookList />} />
+            <Route path="birthdays" element={<StudentsBirthdays />} />
+
+
 
             <Route path="studentForm" element={<StudentForm />} />
             <Route path="studentEdit" element={<StudentEdit />} />
