@@ -4,19 +4,25 @@ import { useEffect, useState } from "react";
 
 export const Attendance = () => {
     const [attendance, setAttendance] = useState([]);
+    const [filterAttendance, setFilterAttendance] = useState([]);
 
 
-        /* --------Jan--------- */
+        /* ----------------- */
         // useEffect(() => {
-        //     const Jan = birthdays.filter((birthday) =>
-        //         birthday.dob.startsWith("01", 8)
-        //     );
-        //     if (Jan) {
-        //         setFilteredBirthdays(Jan);
+        //    {/*  const Attend = attendance.filter((studentAttend) => studentAttend.date === "11/24/2022"); */}
+        //     //filterAttendance.date
+        //     if (filterAttendance.filter((studentAttend) => studentAttend.date === "11/24/2022")) {
+        //         setFilterAttendance(filterAttendance);
         //     }
-        // }, [Jan]);
-        /* --------Feb--------- */
-
+        // }, [filterAttendance]);
+        /* ----------------- */
+        /* ----------------- */
+        useEffect(() => {
+             if (filterAttendance.filter((studentAttend) => studentAttend.date === "11/24/2022")) {
+                 setFilterAttendance(filterAttendance);
+             }
+         }, [filterAttendance]);
+         /* ----------------- */
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
     console.log(satUserObject);
@@ -47,22 +53,14 @@ export const Attendance = () => {
                                 type="date"
                                 name="dob"
                                 onChange={(evt) => {
-                                    const copy = "{ ...inputs }";
-                                    {/* new Date(copy.dob)
-                                    copy.dob = evt.target.value; */}
-                                    {/* setInputs(copy) */}
+                                attendance.date = evt.target.value; 
+                                    setFilterAttendance(attendance)
                                 }}
                             />
                         </label>
 
-
-
-
-
-
-
             <article className="attendance">
-                {attendance.map((attend) => {
+                {filterAttendance.map((attend) => {
                     return (
                         <>
                             {attend.attend ? (
@@ -77,7 +75,7 @@ export const Attendance = () => {
                                                 className="student_img"
                                             />
                                             <div>{attend.attend}</div>
-                                            {/* <div>{attend.student.dob}</div> */}
+                                            <div>{attend.date}</div> 
                                             <h3 className="student_info">
                                                 {attend.student.fullName}
                                             </h3>
