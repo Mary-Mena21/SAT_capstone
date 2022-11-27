@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+//import { Link, useNavigate } from "react-router-dom";
 
 export const StudentsBirthdays = () => {
     const [birthdays, setBirthdays] = useState([]);
+    const [filteredBirthdays, setFilteredBirthdays] = useState([]);
 
     const [Jan, setJan] = useState(false);
     const [Feb, setFeb] = useState(false);
@@ -19,7 +20,8 @@ export const StudentsBirthdays = () => {
 
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
-    const navigate = useNavigate();
+    //const navigate = useNavigate();
+
 
     /* --------Jan--------- */
     useEffect(() => {
@@ -27,7 +29,7 @@ export const StudentsBirthdays = () => {
             birthday.dob.startsWith("01", 8)
         );
         if (Jan) {
-            setBirthdays(Jan);
+            setFilteredBirthdays(Jan);
         }
     }, [Jan]);
     /* --------Feb--------- */
@@ -36,7 +38,7 @@ export const StudentsBirthdays = () => {
             birthday.dob.startsWith("02", 8)
         );
         if (Feb) {
-            setBirthdays(Feb);
+            setFilteredBirthdays(Feb);
         }
     }, [Feb]);
     /* --------Mar--------- */
@@ -45,7 +47,7 @@ export const StudentsBirthdays = () => {
             birthday.dob.startsWith("03", 8)
         );
         if (Mar) {
-            setBirthdays(Mar);
+            setFilteredBirthdays(Mar);
         }
     }, [Mar]);
     /* --------Apr--------- */
@@ -54,7 +56,7 @@ export const StudentsBirthdays = () => {
             birthday.dob.startsWith("04", 8)
         );
         if (Apr) {
-            setBirthdays(Apr);
+            setFilteredBirthdays(Apr);
         }
     }, [Apr]);
     /* --------May--------- */
@@ -63,7 +65,7 @@ export const StudentsBirthdays = () => {
             birthday.dob.startsWith("05", 8)
         );
         if (May) {
-            setBirthdays(May);
+            setFilteredBirthdays(May);
         }
     }, [May]);
     /* --------Jun--------- */
@@ -72,7 +74,7 @@ export const StudentsBirthdays = () => {
             birthday.dob.startsWith("06", 8)
         );
         if (Jun) {
-            setBirthdays(Jun);
+            setFilteredBirthdays(Jun);
         }
     }, [Jun]);
     /* --------Jul--------- */
@@ -81,7 +83,7 @@ export const StudentsBirthdays = () => {
             birthday.dob.startsWith("07", 8)
         );
         if (Jul) {
-            setBirthdays(Jul);
+            setFilteredBirthdays(Jul);
         }
     }, [Jul]);
     /* --------Aug--------- */
@@ -90,7 +92,7 @@ export const StudentsBirthdays = () => {
             birthday.dob.startsWith("08", 8)
         );
         if (Aug) {
-            setBirthdays(Aug);
+            setFilteredBirthdays(Aug);
         }
     }, [Aug]);
     /* --------Sep--------- */
@@ -99,7 +101,7 @@ export const StudentsBirthdays = () => {
             birthday.dob.startsWith("09", 8)
         );
         if (Sep) {
-            setBirthdays(Sep);
+            setFilteredBirthdays(Sep);
         }
     }, [Sep]);
     /* --------Oct--------- */
@@ -108,7 +110,7 @@ export const StudentsBirthdays = () => {
             birthday.dob.startsWith("10", 8)
         );
         if (Oct) {
-            setBirthdays(Oct);
+            setFilteredBirthdays(Oct);
         }
     }, [Oct]);
     /* --------Nov--------- */
@@ -117,7 +119,7 @@ export const StudentsBirthdays = () => {
             birthday.dob.startsWith("11", 8)
         );
         if (Nov) {
-            setBirthdays(Nov);
+            setFilteredBirthdays(Nov);
         }
     }, [Nov]);
     /* --------Dec--------- */
@@ -126,11 +128,11 @@ export const StudentsBirthdays = () => {
             birthday.dob.startsWith("12", 8)
         );
         if (Dec) {
-            setBirthdays(Dec);
+            setFilteredBirthdays(Dec);
         }
     }, [Dec]);
 
-    //const Birthday = () => {
+
         useEffect(() => {
             const fetchData = async () => {
                 const response = await fetch(
@@ -141,24 +143,12 @@ export const StudentsBirthdays = () => {
             };
             fetchData();
         }, []);
-    //}
-
-
-    /* ------------------------------ */
-    const handleButtonClick = (event) => {
-        event.preventDefault();
-        setBirthdays(birthdays);
-    };
-    /* ------------------------------ */
 
 
     return (
         <>
             <h1>Birthdays Of The Month</h1>
-            {/* <button onClick={(evt) => { setBirthdays(true) }}>setBirthdays</button> */}
-            {/* <button onClick={(evt) => {setBirthdays(birthdays)}}>All</button> */}
-            
-            <button onClick={(evt) => {setJan(true)}}>January</button>
+            <button onClick={() => {setJan(true)}}>January</button>
             <button
                 onClick={() => {
                     setFeb(true);
@@ -237,14 +227,12 @@ export const StudentsBirthdays = () => {
                 December
             </button>
 
-            <h3>Grade birthdays</h3>
 
             <article className="container">
-                {birthdays.map((birthday) => {
+                {filteredBirthdays.map((birthday) => {
                     return (
                         <>
                             <section key={birthday.id} className="student_card">
-                                {/*  <div className="student_card "> */}
                                 <img
                                 className="student_img"
                                 src={birthday.studentImg}

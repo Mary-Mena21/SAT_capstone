@@ -173,46 +173,48 @@
       "phone": "615-6055745",
       "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
       "studentImg": "https://media.istockphoto.com/id/1191680618/photo/smiling-and-cute-kid-looking-at-camera-and-showing-like-isolated-on-blue.jpg?s=612x612&w=0&k=20&c=7yFK4KhwIjcE2zSxpy9YAFzVA2kA0WSPOUtH7CUGhJo="
-    }, {
-        "id": 9,
-        "fullName": "Ramy Mena",
-        "email": "rmena@me.com",
-        "classId": 1,
-        "dob": "2017-15-09",
-        "phone": "615-785485",
-        "address": "1008 Meb Ct, Mt. Juliet, TN 37122",
-        "studentImg": "https://media.istockphoto.com/id/1400096550/photo/portrait-of-a-cute-little-asian-boy-wearing-casual-clothes-while-smiling-and-looking-excited.jpg?s=612x612&w=0&k=20&c=OGQbPhtkB5GfM95276LQjT3K23pSBTNtN0Gw_1LMvEk="
-      },
-      {
-        "id": 10,
-        "fullName": "Sandra Mena",
-        "email": "smena@me.com",
-        "classId": 1,
-        "dob": "2018-04-10",
-        "phone": "615-6089966",
-        "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
-        "studentImg": "https://www.seekpng.com/png/detail/19-199271_png-school-children-play-school-kids.png"
-      },
-      {
-        "id": 11,
-        "fullName": "Celine Mena",
-        "email": "cmena@me.com",
-        "classId": 1,
-        "dob": "2017-08-11",
-        "phone": "615-6069166",
-        "address": "9315 Lebanon Rd, Mt. Juliet, TN 37122",
-        "studentImg": "https://media.istockphoto.com/id/1399611777/photo/portrait-of-a-smiling-little-brown-haired-boy-looking-at-the-camera-happy-kid-with-good.jpg?b=1&s=170667a&w=0&k=20&c=_vhKiD4p9X8X5BBJ5gKiWasG95XFvwVa8nq6Ogbpn9k="
-      },
-      {
-        "id": 12,
-        "fullName": "Sany Mena",
-        "email": "smena@me.com",
-        "classId": 1,
-        "dob": "2017-09-12",
-        "phone": "615-6055745",
-        "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
-        "studentImg": "https://media.istockphoto.com/id/1191680618/photo/smiling-and-cute-kid-looking-at-camera-and-showing-like-isolated-on-blue.jpg?s=612x612&w=0&k=20&c=7yFK4KhwIjcE2zSxpy9YAFzVA2kA0WSPOUtH7CUGhJo="
-      }],
+    },
+    {
+      "id": 9,
+      "fullName": "Ramy Mena",
+      "email": "rmena@me.com",
+      "classId": 1,
+      "dob": "2017-15-09",
+      "phone": "615-785485",
+      "address": "1008 Meb Ct, Mt. Juliet, TN 37122",
+      "studentImg": "https://media.istockphoto.com/id/1400096550/photo/portrait-of-a-cute-little-asian-boy-wearing-casual-clothes-while-smiling-and-looking-excited.jpg?s=612x612&w=0&k=20&c=OGQbPhtkB5GfM95276LQjT3K23pSBTNtN0Gw_1LMvEk="
+    },
+    {
+      "id": 10,
+      "fullName": "Sandra Mena",
+      "email": "smena@me.com",
+      "classId": 1,
+      "dob": "2018-04-10",
+      "phone": "615-6089966",
+      "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
+      "studentImg": "https://www.seekpng.com/png/detail/19-199271_png-school-children-play-school-kids.png"
+    },
+    {
+      "id": 11,
+      "fullName": "Celine Mena",
+      "email": "cmena@me.com",
+      "classId": 1,
+      "dob": "2017-08-11",
+      "phone": "615-6069166",
+      "address": "9315 Lebanon Rd, Mt. Juliet, TN 37122",
+      "studentImg": "https://media.istockphoto.com/id/1399611777/photo/portrait-of-a-smiling-little-brown-haired-boy-looking-at-the-camera-happy-kid-with-good.jpg?b=1&s=170667a&w=0&k=20&c=_vhKiD4p9X8X5BBJ5gKiWasG95XFvwVa8nq6Ogbpn9k="
+    },
+    {
+      "id": 12,
+      "fullName": "Sany Mena",
+      "email": "smena@me.com",
+      "classId": 1,
+      "dob": "2017-09-12",
+      "phone": "615-6055745",
+      "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
+      "studentImg": "https://media.istockphoto.com/id/1191680618/photo/smiling-and-cute-kid-looking-at-camera-and-showing-like-isolated-on-blue.jpg?s=612x612&w=0&k=20&c=7yFK4KhwIjcE2zSxpy9YAFzVA2kA0WSPOUtH7CUGhJo="
+    }
+  ],
   "studentAttendance": [
     {
       "id": 1,
@@ -303,6 +305,83 @@
       "date": "11/25/2022",
       "classId": 1,
       "studentId": 3,
+      "attend": true
+    },
+    {
+      "id": 14,
+      "date": "11/26/2022",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 15,
+      "date": "11/26/2022",
+      "classId": 1,
+      "studentId": 2,
+      "attend": true
+    },
+    {
+      "id": 16,
+      "date": "11/26/2022",
+      "classId": 1,
+      "studentId": 3,
+      "attend": true
+    },
+    {
+      "id": 17,
+      "date": "11/26/2022",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 18,
+      "date": "11/26/2022",
+      "classId": 1,
+      "studentId": 2,
+      "attend": true
+    },
+    {
+      "id": 19,
+      "date": "11/26/2022",
+      "classId": 1,
+      "studentId": 3,
+      "attend": true
+    },
+    {
+      "id": 20,
+      "date": "11/26/2022",
+      "classId": 1,
+      "studentId": 4,
+      "attend": true
+    },
+    {
+      "id": 21,
+      "date": "11/26/2022",
+      "classId": 1,
+      "studentId": 4,
+      "attend": false
+    },
+    {
+      "id": 22,
+      "date": "11/26/2022",
+      "classId": 1,
+      "studentId": 3,
+      "attend": false
+    },
+    {
+      "id": 23,
+      "date": "11/26/2022",
+      "classId": 1,
+      "studentId": 9,
+      "attend": true
+    },
+    {
+      "id": 24,
+      "date": "11/26/2022",
+      "classId": 1,
+      "studentId": 10,
       "attend": true
     }
   ],
@@ -479,6 +558,56 @@
     {
       "id": 14,
       "classGrade": "KG"
+    }
+  ],
+  "months": [
+    {
+      "id": 1,
+      "month": "Jan"
+    },
+    {
+      "id": 2,
+      "month": "Feb"
+    },
+    {
+      "id": 3,
+      "month": "Mars"
+    },
+    {
+      "id": 4,
+      "month": "Apr"
+    },
+    {
+      "id": 4,
+      "month": "May"
+    },
+    {
+      "id": 5,
+      "month": "Jun"
+    },
+    {
+      "id": 7,
+      "month": "Jul"
+    },
+    {
+      "id": 8,
+      "month": "Aug"
+    },
+    {
+      "id": 9,
+      "month": "Sept"
+    },
+    {
+      "id": 10,
+      "month": "Oct"
+    },
+    {
+      "id": 11,
+      "month": "Nov"
+    },
+    {
+      "id": 12,
+      "month": "Dec"
     }
   ]
 }
