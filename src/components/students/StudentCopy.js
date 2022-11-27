@@ -77,7 +77,6 @@ export const StudentCopy = ({
                                 <input
                                     type="checkbox"
                                     className="checkbox"
-                                    
                                     onChange={(evt) => {
                                         const copy = { ...inputAttend };
                                         copy.attend = evt.target.checked;

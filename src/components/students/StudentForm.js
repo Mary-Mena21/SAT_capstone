@@ -106,7 +106,7 @@ export const StudentForm = () => {
                         </label>
                     </li>
 
-                    <br />
+                    {/* <br />
                     <li>
                         <label htmlFor="classId">
                             classId:
@@ -124,7 +124,7 @@ export const StudentForm = () => {
                                 }}
                             />
                         </label>
-                    </li>
+                    </li> */}
 
                     <br />
                     <li>
@@ -216,7 +216,7 @@ export const StudentForm = () => {
                         <input type="submit" />
                     </li>
                     <br />
-                    <DatePicker
+{/*                     <DatePicker
                         // selected={inputs.dob}
                         // format='mm/dd/yyyy'
                         // //onChange={(date) => setInputs(date)}
@@ -225,7 +225,7 @@ export const StudentForm = () => {
                         //     copy.dob = evt.target.value;
                         //     setInputs(copy)
                         // }}
-                    />
+                    /> */}
                 </form>
             </fieldset>
         </>

@@ -4,13 +4,32 @@ import { StudentCopy } from "./StudentCopy";
 
 import "./Students.css";
 
-export const StudentsCopy = () => {
+export const StudentsCopy = ({ searchTermState }) => {
     const [Students, setStudents] = useState([]);
+    const [filteredStudent, setFiltered] = useState([]);
 
     const navigate = useNavigate();
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
     console.log(satUserObject);
+
+    useEffect(() => {
+        //console.log(searchTermState);
+        const searchedStudent = Students.filter((student) => {
+            console.log(searchTermState.toLowerCase());
+            console.log(
+                student.fullName
+                    .toLowerCase()
+                    .startsWith(searchTermState.toLowerCase())
+            );
+            return student.fullName
+                .toLowerCase()
+                .startsWith(searchTermState.toLowerCase());
+        });
+    if (!searchedStudent){setFiltered(Students)}
+        setFiltered(searchedStudent);
+    }, [searchTermState]);
+
     useEffect(
         () => {
             const fetchData = async () => {
@@ -25,17 +44,16 @@ export const StudentsCopy = () => {
         },
         [] // When this array is empty, you are observing initial component state
     );
-    
 
     return (
         <>
+        <button onClick={()=>{setFiltered(Students)}}>displayStudent</button> 
+
             <h1>StudentsCopy</h1>
             <article className="Students">
-                {Students.map((student) => {
-                    
+                {filteredStudent.map((student) => {
                     return (
                         <>
-                            
                             <StudentCopy
                                 key={`student__${student.id}`}
                                 id={student.id}
@@ -46,23 +64,21 @@ export const StudentsCopy = () => {
                                 studentPhone={student.phone}
                                 studentAddress={student.address}
                                 studentImg={student.studentImg}
-                                
                             />
                         </>
                     );
                 })}
             </article>
-            
             <section>
-            <button
-                onClick={(clickEvent) => {
-                    navigate("/attendance")
-                }}
-                className="btn btn-primary"
-            >
-                Take Attend
-            </button>
-        </section>
+                <button
+                    onClick={(clickEvent) => {
+                        navigate("/attendance");
+                    }}
+                    className="btn btn-primary"
+                >
+                    Take Attend
+                </button>
+            </section>
         </>
     );
 };

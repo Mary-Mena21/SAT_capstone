@@ -6,8 +6,8 @@ export const StudentContainer = () => {
     const [searchTerms, setSearchTerms]= useState("")
     return (
         <>
-        <StudentSearch />
-        <StudentsCopy />
+            <StudentSearch setterFunction={setSearchTerms } />
+            <StudentsCopy searchTermState={ searchTerms} />
         </>
     )
 }
