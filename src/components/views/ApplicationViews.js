@@ -11,6 +11,7 @@ import { GradeBookList } from "../gradeBooks/GradeBookList";
 import { StudentsBirthdays } from "../students/StudentsBirthdays";
 import { StudentSearch } from "../students/StudentSearch";
 import { StudentContainer } from "../students/StudentContainer";
+import { StudentAttendanceCalender } from "../students/StudentAttendanceCalender";
 
 export const ApplicationViews = () => {
     return (
@@ -29,7 +30,12 @@ export const ApplicationViews = () => {
 
             <Route path="studentForm" element={<StudentForm />} />
             <Route path="studentEdit" element={<StudentEdit />} />
-            <Route path="attendance" element={<Attendance />} />
+            <Route path="attendance" element={
+                <>
+                <StudentAttendanceCalender/>
+                <Attendance />
+                </>
+            } />
             <Route
                 path="students/:studentDetail_Id"
                 element={<StudentDetails />}
