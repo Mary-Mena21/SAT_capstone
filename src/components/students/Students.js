@@ -1,8 +1,7 @@
-import prototype from "prop-types";
+
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { Student } from "./Student";
 import "./Students.css";
 
 export const Students = () => {
@@ -132,42 +131,4 @@ export const Students = () => {
         </>
     );
 };
-// studentId={student.id}
 
-/*     return (
-        <>
-            <h1>Students</h1>
-            <article className="Students">
-                {Students.map((student) => {
-                    return (
-                        <section key={student.id} className="StudentsM">
-                            <div className="student_card_container">
-                                <img
-                                    src={student.imgLink}
-                                    className="student_img"
-                                />
-                                <li className="student_info">
-                                    student Name : {student.fullName}
-                                </li>
-                            </div>
-                        </section>
-                    );
-                })}
-            </article>
-        </>
-    );
-}; */
-
-{
-    /*                              <Student
-                                key={`student__${student.id}`}
-                                id={student.id}
-                                studentName={student.fullName}
-                                studentEmail={student.email}
-                                studentClassId={student.classIs}
-                                studentDob={student.dob}
-                                studentPhone={student.phone}
-                                studentAddress={student.address}
-                                studentImg={student.studentImg}
-                            />  */
-}

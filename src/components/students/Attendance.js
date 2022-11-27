@@ -5,6 +5,18 @@ import { useEffect, useState } from "react";
 export const Attendance = () => {
     const [attendance, setAttendance] = useState([]);
 
+
+        /* --------Jan--------- */
+        // useEffect(() => {
+        //     const Jan = birthdays.filter((birthday) =>
+        //         birthday.dob.startsWith("01", 8)
+        //     );
+        //     if (Jan) {
+        //         setFilteredBirthdays(Jan);
+        //     }
+        // }, [Jan]);
+        /* --------Feb--------- */
+
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
     console.log(satUserObject);
@@ -24,7 +36,31 @@ export const Attendance = () => {
 
     return (
         <>
-            <h1>Attendance</h1>
+            <h1>Attendance 101</h1>
+
+            <label htmlFor="dob">
+                            ATTENDANCE DATE: 
+                            <br />
+                            <input
+                                required
+                                autoFocus
+                                type="date"
+                                name="dob"
+                                onChange={(evt) => {
+                                    const copy = "{ ...inputs }";
+                                    {/* new Date(copy.dob)
+                                    copy.dob = evt.target.value; */}
+                                    {/* setInputs(copy) */}
+                                }}
+                            />
+                        </label>
+
+
+
+
+
+
+
             <article className="attendance">
                 {attendance.map((attend) => {
                     return (
@@ -41,6 +77,7 @@ export const Attendance = () => {
                                                 className="student_img"
                                             />
                                             <div>{attend.attend}</div>
+                                            {/* <div>{attend.student.dob}</div> */}
                                             <h3 className="student_info">
                                                 {attend.student.fullName}
                                             </h3>
