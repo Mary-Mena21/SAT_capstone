@@ -383,6 +383,55 @@
       "classId": 1,
       "studentId": 10,
       "attend": true
+    },
+    {
+      "id": 25,
+      "date": "11/26/2022",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 26,
+      "date": "11/26/2022",
+      "classId": 1,
+      "studentId": 2,
+      "attend": true
+    },
+    {
+      "id": 27,
+      "date": "11/26/2022",
+      "classId": 1,
+      "studentId": 3,
+      "attend": true
+    },
+    {
+      "id": 28,
+      "date": "11/26/2022",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 29,
+      "date": "11/26/2022",
+      "classId": 1,
+      "studentId": 2,
+      "attend": true
+    },
+    {
+      "id": 30,
+      "date": "11/26/2022",
+      "classId": 1,
+      "studentId": 3,
+      "attend": true
+    },
+    {
+      "id": 31,
+      "date": "11/26/2022",
+      "classId": 1,
+      "studentId": 4,
+      "attend": true
     }
   ],
   "classes": [
