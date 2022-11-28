@@ -13,6 +13,7 @@ import { StudentSearch } from "../students/StudentSearch";
 import { StudentContainer } from "../students/StudentContainer";
 import { StudentAttendanceCalender } from "../students/StudentAttendanceCalender";
 import { StudentAttendanceContainer } from "../students/StudentAttendanceContainer";
+import { StudentChart } from "../students/StudentChart";
 
 export const ApplicationViews = () => {
     return (
@@ -23,6 +24,7 @@ export const ApplicationViews = () => {
             <Route path="student" element={<Student />} />
             <Route path="gradeBook" element={<GradeBookList />} />
             <Route path="birthdays" element={<StudentsBirthdays />} />
+            <Route path="birthdays" element={<StudentChart />} />
 
             <Route path="studentForm" element={<StudentForm />} />
             <Route path="studentEdit" element={<StudentEdit />} />
