@@ -26,7 +26,7 @@ export const StudentsCopy = ({ searchTermState }) => {
                 .toLowerCase()
                 .startsWith(searchTermState.toLowerCase());
         });
-    if (!searchedStudent){setFiltered(Students)}
+   // if (!searchedStudent){setFiltered(Students)}
         setFiltered(searchedStudent);
     }, [searchTermState]);
 
@@ -76,7 +76,7 @@ export const StudentsCopy = ({ searchTermState }) => {
                     }}
                     className="btn btn-primary"
                 >
-                    Take Attend
+                    RECORD ATTENDANCE
                 </button>
             </section>
         </>

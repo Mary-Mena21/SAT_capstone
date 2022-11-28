@@ -15,8 +15,12 @@ export const StudentCopy = ({
     studentImg,
 }) => {
     /* -------------------------------------- */
-
-    let NewDate = new Date(Date.now()).toLocaleDateString();
+//     const formatYmd = date => date.split("-").reverse().join("-");
+// formatYmd(new Date());  
+    //let NewDate = new Date(Date.now()).toLocaleDateString();
+    //let NewDate = Date.now();
+    let NewDate = new Date(Date.now()).toJSON().slice(0, 10);
+    //let NewDate = formatYmd(new Date());
     const navigate = useNavigate();
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
