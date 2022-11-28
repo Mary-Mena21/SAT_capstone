@@ -2,30 +2,34 @@ import { useEffect, useState } from "react";
 
 //import "./Attendance.css";
 
-export const Attendance = () => {
+export const Attendance = ({attendTermState,dateM}) => {
     const [attendance, setAttendance] = useState([]);
     const [filterAttendance, setFilterAttendance] = useState([]);
 
 
         /* ----------------- */
-        // useEffect(() => {
-        //    {/*  const Attend = attendance.filter((studentAttend) => studentAttend.date === "11/24/2022"); */}
-        //     //filterAttendance.date
-        //     if (filterAttendance.filter((studentAttend) => studentAttend.date === "11/24/2022")) {
-        //         setFilterAttendance(filterAttendance);
-        //     }
-        // }, [filterAttendance]);
-        /* ----------------- */
-        /* ----------------- */
         useEffect(() => {
-             if (filterAttendance.filter((studentAttend) => studentAttend.date === "11/24/2022")) {
-                 setFilterAttendance(filterAttendance);
-             }
-         }, [filterAttendance]);
-         /* ----------------- */
+            const AttendRecord = attendance.filter((studentAttend) => {
+                console.log("m", attendance);
+                //return studentAttend.date=== "11/24/2022"
+            return studentAttend.date.startsWith(attendTermState)
+                
+            });
+            setFilterAttendance(AttendRecord);
+        }, [attendTermState]);
+    /* ----------------- */
+    
+        /* ----------------- */
+        // useEffect(() => {
+        //      if (filterAttendance.filter((studentAttend) => studentAttend.date === "11/24/2022")) {
+        //          setFilterAttendance(filterAttendance);
+        //      }
+        //  }, [filterAttendance]);
+    /* ----------------- */
+    
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
-    console.log(satUserObject);
+    //console.log(satUserObject);
     useEffect(
         () => {
             const fetchData = async () => {
@@ -43,8 +47,8 @@ export const Attendance = () => {
     return (
         <>
             <h1>Attendance 101</h1>
-
-            <label htmlFor="dob">
+            <button onClick={()=>{setFilterAttendance(attendance)}}>displayStudent</button> 
+{/*             <label htmlFor="dob">
                             ATTENDANCE DATE: 
                             <br />
                             <input
@@ -57,7 +61,7 @@ export const Attendance = () => {
                                     setFilterAttendance(attendance)
                                 }}
                             />
-                        </label>
+                        </label> */}
 
             <article className="attendance">
                 {filterAttendance.map((attend) => {
