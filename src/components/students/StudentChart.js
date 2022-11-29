@@ -1,19 +1,20 @@
-import {Bar}from "react-chartjs-2"
-
-
-export const StudentChart = ({chartData}) => {
-    return<>
-    <Br data={chartData} options{}/>
-    </>
-};
-
-
-
-
 // import React from "react";
+// import { Bar } from "react-chartjs-2"
+// import {Chart as ChartJS} from "chart.js/auto"
 
-// function StudentChart() {
-//   return <div>StudentChart</div>;
-// }
+// export const StudentChart = ({chartData}) => {
+//     return<>
+//      <Bar data={chartData}/> 
+//     </>
+// };
 
-// export default StudentChart;
+
+
+
+// // import React from "react";
+
+// // function StudentChart() {
+// //   return <div>StudentChart</div>;
+// // }
+
+// // export default StudentChart;

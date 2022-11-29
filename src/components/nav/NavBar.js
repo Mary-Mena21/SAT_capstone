@@ -12,12 +12,14 @@ export const NavBar = () => {
          {/* <li className="navBar_item"><Link className="navBar_link" to="/student">Student</Link></li> */}
         {/* <li className="navBar_item"><Link className="navBar_link" to="/students">Students</Link></li> */}
         <li className="navBar_item"><Link className="navBar_link" to="/">Home</Link></li>
-        <li className="navBar_item"><Link className="navBar_link" to="/studentChart">StudentChart</Link></li>
+        <li className="navBar_item"><Link className="navBar_link" to="/studentBarChart">StudentBarChart</Link></li>
+        <li className="navBar_item"><Link className="navBar_link" to="/cameraProfile">CameraProfile</Link></li>
      <li className="navBar_item"><Link className="navBar_link" to="/StudentsCopy">StudentsCopy</Link></li> 
         <li className="navBar_item"><Link className="navBar_link" to="/studentForm">StudentForm</Link></li>
         <li className="navBar_item"><Link className="navBar_link" to="/attendance">Attendance</Link></li>
         <li className="navBar_item"><Link className="navBar_link" to="/gradeBook">GradeBookList</Link></li>
         <li className="navBar_item"><Link className="navBar_link" to="/birthdays">StudentsBirthdays</Link></li>
+        <li className="navBar_item"><Link className="navBar_link" to="/studentContact">StudentContact</Link></li>
     {/*     <li className="navBar_item"><Link className="navBar_link" to="/contacts">Contacts</Link></li>
         <li className="navBar_item"><Link className="navBar_link" to="/birthdays">BirthDays</Link></li>
         <li className="navBar_item"><Link className="navBar_link" to="/lessons">Lessons</Link></li> */}

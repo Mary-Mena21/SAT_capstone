@@ -2,31 +2,29 @@ import { useEffect, useState } from "react";
 
 //import "./Attendance.css";
 
-export const Attendance = ({attendTermState,dateM}) => {
+export const Attendance = ({ attendTermState, dateM }) => {
     const [attendance, setAttendance] = useState([]);
     const [filterAttendance, setFilterAttendance] = useState([]);
 
+    /* ----------------- */
+    useEffect(() => {
+        const AttendRecord = attendance.filter((studentAttend) => {
+            //console.log("m", attendance);
+            //return studentAttend.date=== "11/24/2022"
+            return studentAttend.date.startsWith(attendTermState);
+        });
+        setFilterAttendance(AttendRecord);
+    }, [attendTermState]);
+    /* ----------------- */
 
-        /* ----------------- */
-        useEffect(() => {
-            const AttendRecord = attendance.filter((studentAttend) => {
-                console.log("m", attendance);
-                //return studentAttend.date=== "11/24/2022"
-            return studentAttend.date.startsWith(attendTermState)
-                
-            });
-            setFilterAttendance(AttendRecord);
-        }, [attendTermState]);
     /* ----------------- */
-    
-        /* ----------------- */
-        // useEffect(() => {
-        //      if (filterAttendance.filter((studentAttend) => studentAttend.date === "11/24/2022")) {
-        //          setFilterAttendance(filterAttendance);
-        //      }
-        //  }, [filterAttendance]);
+    // useEffect(() => {
+    //      if (filterAttendance.filter((studentAttend) => studentAttend.date === "11/24/2022")) {
+    //          setFilterAttendance(filterAttendance);
+    //      }
+    //  }, [filterAttendance]);
     /* ----------------- */
-    
+
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
     //console.log(satUserObject);
@@ -47,21 +45,6 @@ export const Attendance = ({attendTermState,dateM}) => {
     return (
         <>
             <h1>Attendance 101</h1>
-            <button onClick={()=>{setFilterAttendance(attendance)}}>displayStudent</button> 
-{/*             <label htmlFor="dob">
-                            ATTENDANCE DATE: 
-                            <br />
-                            <input
-                                required
-                                autoFocus
-                                type="date"
-                                name="dob"
-                                onChange={(evt) => {
-                                attendance.date = evt.target.value; 
-                                    setFilterAttendance(attendance)
-                                }}
-                            />
-                        </label> */}
 
             <article className="attendance">
                 {filterAttendance.map((attend) => {
@@ -79,7 +62,7 @@ export const Attendance = ({attendTermState,dateM}) => {
                                                 className="student_img"
                                             />
                                             <div>{attend.attend}</div>
-                                            <div>{attend.date}</div> 
+                                            <div>{attend.date}</div>
                                             <h3 className="student_info">
                                                 {attend.student.fullName}
                                             </h3>
@@ -96,3 +79,36 @@ export const Attendance = ({attendTermState,dateM}) => {
         </>
     );
 };
+
+
+
+            // <label>today Attendance102: </label>
+            // <button
+            //     onClick={() => {
+            //             attendance.map((data) => {
+            //                 let NewDate = new Date(Date.now())
+            //                     .toJSON()
+            //                     .slice(0, 10);
+            //                 if ((data.date = NewDate)) {
+            //                     setFilterAttendance(attendance);
+            //                 }
+            //             })
+            //         ;
+            //     }}
+            // >
+            //     displayStudent
+            // </button>
+            {/*             <label htmlFor="dob">
+                            ATTENDANCE DATE: 
+                            <br />
+                            <input
+                                required
+                                autoFocus
+                                type="date"
+                                name="dob"
+                                onChange={(evt) => {
+                                attendance.date = evt.target.value; 
+                                    setFilterAttendance(attendance)
+                                }}
+                            />
+                        </label> */}
