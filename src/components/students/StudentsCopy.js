@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { StudentCopy } from "./StudentCopy";
 
+//import Camera from 'react-camera';
+import Webcam from "react-webcam";
 import "./Students.css";
 
 export const StudentsCopy = ({ searchTermState }) => {
@@ -47,7 +49,7 @@ export const StudentsCopy = ({ searchTermState }) => {
 
     return (
         <>
-        <button onClick={()=>{setFiltered(Students)}}>displayStudent</button> 
+        <button onClick={()=>{setFiltered(Students)}}>displayStudent100</button> 
 
             <h1>StudentsCopy</h1>
             <article className="Students">
@@ -79,6 +81,16 @@ export const StudentsCopy = ({ searchTermState }) => {
                     RECORD ATTENDANCE
                 </button>
             </section>
+
+{/*              <Camera
+  ref={(cam) => {
+    this.camera = cam;
+  }}
+>
+  <button onClick={this.takePicture}>
+    <i className="fas fa-camera"></i> &nbsp; Take photo
+  </button>
+</Camera>  */}
         </>
     );
 };
