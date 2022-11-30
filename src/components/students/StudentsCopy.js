@@ -49,6 +49,8 @@ export const StudentsCopy = ({ searchTermState }) => {
 
     return (
         <>
+  
+            <>hi</>
         <button onClick={()=>{setFiltered(Students)}}>displayStudent100</button> 
 
             <h1>StudentsCopy</h1>
@@ -71,6 +73,8 @@ export const StudentsCopy = ({ searchTermState }) => {
                     );
                 })}
             </article>
+
+
             <section>
                 <button
                     onClick={(clickEvent) => {
@@ -118,3 +122,4 @@ export const StudentsCopy = ({ searchTermState }) => {
         </>
     );
 }; */
+{/*             <img src="image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAAAAQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAAHRyWFlaAAABZAAAABRnWFlaAAABeAAAABRiWFlaAAABjAAAABRyVFJDAAABoAAAAChnVFJDAAABoAAAAChiVFJDAAABoAAAACh3dHB0AAAByAAAABRjcHJ0AAAB3AAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAFgAAAAcAHMAUgBHAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA..."/> */}

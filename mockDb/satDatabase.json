@@ -1,595 +1,693 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "fullName": "Danny Mena",
-            "email": "dmena@me.com",
-            "isTeacher": true
-        },
-        {
-            "id": 2,
-            "fullName": "Gena Mena",
-            "email": "gmena@me.com",
-            "isTeacher": true
-        },
-        {
-            "id": 4,
-            "fullName": "Thomas Mena",
-            "email": "tmena@me.com",
-            "isTeacher": true
-        },
-        {
-            "email": "sanymamdoh@yahoo.com",
-            "fullName": "sany yousif",
-            "isTeacher": false,
-            "id": 5
-        },
-        {
-            "email": "marianashokry@yahoo.com",
-            "fullName": "MARIAN MENA",
-            "isTeacher": true,
-            "id": 6
-        }
-    ],
-    "teachers": [
-        {
-            "id": 1,
-            "userId": 1,
-            "classId": 1
-        },
-        {
-            "id": 2,
-            "userId": 2,
-            "classId": 1
-        },
-        {
-            "id": 3,
-            "userId": 3,
-            "classId": 2
-        },
-        {
-            "id": 4,
-            "userId": 4,
-            "classId": 2
-        }
-    ],
-    "students": [
-        {
-            "id": 1,
-            "fullName": "Holy Markos",
-            "email": "hmena@me.com",
-            "classId": 1,
-            "dob": "2017-01-01",
-            "phone": "785-153478",
-            "address": "1008 Meb Ct, Mt. Juliet, TN 37122",
-            "studentImg": "https://media.istockphoto.com/id/1399611907/photo/portrait-of-happy-smiling-little-girl-against-blue-studio-background-cheerful-mixed-race-kid.jpg?s=612x612&w=0&k=20&c=rDehRs_EaCuPVi7K30TgcYfJnJsaBG1oWmfKdbAckww="
-        },
-        {
-            "id": 2,
-            "fullName": "Jack Faddy",
-            "email": "jmena@me.com",
-            "classId": 1,
-            "dob": "2017-06-02",
-            "phone": "375-985159",
-            "address": " 3565 N Mt Juliet Rd, Mt. Juliet, TN 37122",
-            "studentImg": "https://media.istockphoto.com/id/1327679894/photo/smiling-friendly-dark-skinned-boy-on-light-blue-background.jpg?s=612x612&w=0&k=20&c=Q6vA9kfs4TKmyjH3w0kW6Slt_RKUZCOAqD55CzZmo60="
-        },
-        {
-            "id": 3,
-            "fullName": "Andrew Shady",
-            "email": "ashady@me.com",
-            "classId": 1,
-            "dob": "2017-07-03",
-            "phone": "321-458745",
-            "address": "1003 Woodridge Pl, Mt. Juliet, TN 37122",
-            "studentImg": "https://media.istockphoto.com/id/1234009542/photo/cute-asian-boy-looking-at-camera-and-smiling-happily.jpg?s=612x612&w=0&k=20&c=ZjK-d2Op3_8fWhDbFHOuh2MmhLcihej4F_tE3ZnP-C4="
-        },
-        {
-            "id": 4,
-            "fullName": "Thomas Samy",
-            "email": "tsamy@me.com",
-            "classId": 1,
-            "dob": "2017-09-04",
-            "phone": "458-658624",
-            "address": "11902 Lebanon Rd, Mt. Juliet, TN 37122",
-            "studentImg": "https://media.istockphoto.com/id/175602017/photo/serious-boy.jpg?s=612x612&w=0&k=20&c=jX4YnMhL69Kd4RZPj6syz8lwQXREgyQ15hdBQ1-lv88="
-        },
-        {
-            "id": 5,
-            "fullName": "Ramy Mena",
-            "email": "rmena@me.com",
-            "classId": 2,
-            "dob": "2017-15-10",
-            "phone": "615-785485",
-            "address": "1008 Meb Ct, Mt. Juliet, TN 37122",
-            "studentImg": "https://media.istockphoto.com/id/1400096550/photo/portrait-of-a-cute-little-asian-boy-wearing-casual-clothes-while-smiling-and-looking-excited.jpg?s=612x612&w=0&k=20&c=OGQbPhtkB5GfM95276LQjT3K23pSBTNtN0Gw_1LMvEk="
-        },
-        {
-            "id": 6,
-            "fullName": "Sandra Mena",
-            "email": "smena@me.com",
-            "classId": 2,
-            "dob": "2018-04-02",
-            "phone": "615-6089966",
-            "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
-            "studentImg": "https://www.seekpng.com/png/detail/19-199271_png-school-children-play-school-kids.png"
-        },
-        {
-            "id": 7,
-            "fullName": "Celine Mena",
-            "email": "cmena@me.com",
-            "classId": 2,
-            "dob": "2017-08-03",
-            "phone": "615-6069166",
-            "address": "9315 Lebanon Rd, Mt. Juliet, TN 37122",
-            "studentImg": "https://media.istockphoto.com/id/1399611777/photo/portrait-of-a-smiling-little-brown-haired-boy-looking-at-the-camera-happy-kid-with-good.jpg?b=1&s=170667a&w=0&k=20&c=_vhKiD4p9X8X5BBJ5gKiWasG95XFvwVa8nq6Ogbpn9k="
-        },
-        {
-            "id": 8,
-            "fullName": "Sany Mena",
-            "email": "smena@me.com",
-            "classId": 2,
-            "dob": "2017-09-04",
-            "phone": "615-6055745",
-            "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
-            "studentImg": "https://media.istockphoto.com/id/1191680618/photo/smiling-and-cute-kid-looking-at-camera-and-showing-like-isolated-on-blue.jpg?s=612x612&w=0&k=20&c=7yFK4KhwIjcE2zSxpy9YAFzVA2kA0WSPOUtH7CUGhJo="
-        },
-        {
-            "id": 9,
-            "fullName": "Ramy Mena",
-            "email": "rmena@me.com",
-            "classId": 1,
-            "dob": "2017-15-05",
-            "phone": "615-785485",
-            "address": "1008 Meb Ct, Mt. Juliet, TN 37122",
-            "studentImg": "https://media.istockphoto.com/id/1400096550/photo/portrait-of-a-cute-little-asian-boy-wearing-casual-clothes-while-smiling-and-looking-excited.jpg?s=612x612&w=0&k=20&c=OGQbPhtkB5GfM95276LQjT3K23pSBTNtN0Gw_1LMvEk="
-        },
-        {
-            "id": 10,
-            "fullName": "Sandra Mena",
-            "email": "smena@me.com",
-            "classId": 1,
-            "dob": "2018-04-06",
-            "phone": "615-6089966",
-            "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
-            "studentImg": "https://www.seekpng.com/png/detail/19-199271_png-school-children-play-school-kids.png"
-        },
-        {
-            "id": 11,
-            "fullName": "Celine Mena",
-            "email": "cmena@me.com",
-            "classId": 1,
-            "dob": "2017-08-07",
-            "phone": "615-6069166",
-            "address": "9315 Lebanon Rd, Mt. Juliet, TN 37122",
-            "studentImg": "https://media.istockphoto.com/id/1399611777/photo/portrait-of-a-smiling-little-brown-haired-boy-looking-at-the-camera-happy-kid-with-good.jpg?b=1&s=170667a&w=0&k=20&c=_vhKiD4p9X8X5BBJ5gKiWasG95XFvwVa8nq6Ogbpn9k="
-        },
-        {
-            "id": 12,
-            "fullName": "Sany Mena",
-            "email": "smena@me.com",
-            "classId": 1,
-            "dob": "2017-09-08",
-            "phone": "615-6055745",
-            "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
-            "studentImg": "https://media.istockphoto.com/id/1191680618/photo/smiling-and-cute-kid-looking-at-camera-and-showing-like-isolated-on-blue.jpg?s=612x612&w=0&k=20&c=7yFK4KhwIjcE2zSxpy9YAFzVA2kA0WSPOUtH7CUGhJo="
-        },
-        {
-            "id": 9,
-            "fullName": "Ramy Mena",
-            "email": "rmena@me.com",
-            "classId": 1,
-            "dob": "2017-15-09",
-            "phone": "615-785485",
-            "address": "1008 Meb Ct, Mt. Juliet, TN 37122",
-            "studentImg": "https://media.istockphoto.com/id/1400096550/photo/portrait-of-a-cute-little-asian-boy-wearing-casual-clothes-while-smiling-and-looking-excited.jpg?s=612x612&w=0&k=20&c=OGQbPhtkB5GfM95276LQjT3K23pSBTNtN0Gw_1LMvEk="
-        },
-        {
-            "id": 10,
-            "fullName": "Sandra Mena",
-            "email": "smena@me.com",
-            "classId": 1,
-            "dob": "2018-04-10",
-            "phone": "615-6089966",
-            "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
-            "studentImg": "https://www.seekpng.com/png/detail/19-199271_png-school-children-play-school-kids.png"
-        },
-        {
-            "id": 11,
-            "fullName": "Celine Mena",
-            "email": "cmena@me.com",
-            "classId": 1,
-            "dob": "2017-08-11",
-            "phone": "615-6069166",
-            "address": "9315 Lebanon Rd, Mt. Juliet, TN 37122",
-            "studentImg": "https://media.istockphoto.com/id/1399611777/photo/portrait-of-a-smiling-little-brown-haired-boy-looking-at-the-camera-happy-kid-with-good.jpg?b=1&s=170667a&w=0&k=20&c=_vhKiD4p9X8X5BBJ5gKiWasG95XFvwVa8nq6Ogbpn9k="
-        },
-        {
-            "id": 12,
-            "fullName": "Sany Mena",
-            "email": "smena@me.com",
-            "classId": 1,
-            "dob": "2017-09-12",
-            "phone": "615-6055745",
-            "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
-            "studentImg": "https://media.istockphoto.com/id/1191680618/photo/smiling-and-cute-kid-looking-at-camera-and-showing-like-isolated-on-blue.jpg?s=612x612&w=0&k=20&c=7yFK4KhwIjcE2zSxpy9YAFzVA2kA0WSPOUtH7CUGhJo="
-        },
-        {
-            "fullName": "MARIANA MENA",
-            "email": "MARIANA1MENA1@GMAIL.COM",
-            "classId": 1,
-            "dob": "2022-11-16",
-            "phone": "6156022553",
-            "address": "968 TOM HAILEY",
-            "studentImg": "MM",
-            "id": 13
-        }
-    ],
-    "studentAttendance": [
-        {
-            "id": 31,
-            "date": "2022-11-13",
-            "classId": 1,
-            "studentId": 1,
-            "attend": true
-        },
-        {
-            "id": 32,
-            "date": "2022-11-13",
-            "classId": 1,
-            "studentId": 2,
-            "attend": true
-        },
-        {
-            "id": 33,
-            "date": "2022-11-13",
-            "classId": 1,
-            "studentId": 3,
-            "attend": true
-        },
-        {
-            "id": 34,
-            "date": "2022-11-13",
-            "classId": 1,
-            "studentId": 4,
-            "attend": true
-        },
-        {
-            "id": 35,
-            "date": "2022-11-13",
-            "classId": 1,
-            "studentId": 9,
-            "attend": true
-        },
-        {
-            "id": 36,
-            "date": "2022-11-13",
-            "classId": 1,
-            "studentId": 10,
-            "attend": true
-        },
-        {
-            "id": 37,
-            "date": "2022-11-20",
-            "classId": 1,
-            "studentId": 11,
-            "attend": true
-        },
-        {
-            "id": 38,
-            "date": "2022-11-20",
-            "classId": 1,
-            "studentId": 12,
-            "attend": true
-        },
-        {
-            "id": 39,
-            "date": "2022-11-20",
-            "classId": 1,
-            "studentId": 9,
-            "attend": true
-        },
-        {
-            "id": 40,
-            "date": "2022-11-20",
-            "classId": 1,
-            "studentId": 10,
-            "attend": true
-        },
-        {
-            "id": 41,
-            "date": "2022-11-27",
-            "classId": 1,
-            "studentId": 11,
-            "attend": true
-        },
-        {
-            "id": 42,
-            "date": "2022-11-27",
-            "classId": 1,
-            "studentId": 12,
-            "attend": true
-        },
-        {
-            "id": 43,
-            "date": "2022-11-27",
-            "classId": 1,
-            "studentId": 1,
-            "attend": true
-        },
-        {
-            "id": 44,
-            "date": "2022-11-27",
-            "classId": 1,
-            "studentId": 2,
-            "attend": true
-        },
-        {
-            "id": 45,
-            "date": "2022-11-28",
-            "classId": 1,
-            "studentId": 1,
-            "attend": true
-        },
-        {
-            "id": 46,
-            "date": "2022-11-28",
-            "classId": 1,
-            "studentId": 2,
-            "attend": true
-        }
-    ],
-    "classes": [
-        {
-            "id": 1,
-            "classGradeId": 1,
-            "gradeBookId": 1
-        },
-        {
-            "id": 2,
-            "classGradeId": 2,
-            "gradeBookId": 2
-        },
-        {
-            "id": 3,
-            "classGradeId": 3,
-            "gradeBookId": 3
-        }
-    ],
-    "gradeBooks": [
-        {
-            "id": 1,
-            "grade": "G1",
-            "bookName": "G1: The Mighty Fatherhood of God",
-            "bookImg": "http://www.suscopts.org/ssc/wp-content/uploads/2020/09/1st-Grade-1.jpg",
-            "gradeBookPdf": "https://drive.google.com/file/d/1_QHjkwvEGXjIFMP1nw3TFTRlvPAd82Ur/preview",
-            "gradeBookLink": "https://drive.google.com/file/d/1_QHjkwvEGXjIFMP1nw3TFTRlvPAd82Ur/view",
-            "pdf": "G1.pdf"
-        },
-        {
-            "id": 2,
-            "grade": "G2",
-            "bookName": "G2: The Loving Motherhood of the",
-            "bookImg": "http://www.suscopts.org/ssc/wp-content/uploads/2020/09/2nd-Grade-1.jpg",
-            "gradeBookPdf": "https://drive.google.com/file/d/1NaQd1CKR_03PFXWMznxcYCeQBwv-NtbF/preview",
-            "gradeBookLink": "https://drive.google.com/file/d/1NaQd1CKR_03PFXWMznxcYCeQBwv-NtbF/view",
-            "pdf": "G2.pdf"
-        },
-        {
-            "id": 3,
-            "grade": "G3",
-            "bookName": "G3: The Golden Rule",
-            "bookImg": "http://www.suscopts.org/ssc/wp-content/uploads/2020/09/3rd-Grade-1.jpg",
-            "gradeBookPdf": "https://drive.google.com/file/d/1GhVFuvwa4e8-ZFZR-IpsauOsugYxMQLR/preview",
-            "gradeBookLink": "https://drive.google.com/file/d/1GhVFuvwa4e8-ZFZR-IpsauOsugYxMQLR/view",
-            "pdf": "G3.pdf"
-        },
-        {
-            "id": 4,
-            "grade": "G4",
-            "bookName": "G4: Growing in Discipline",
-            "bookImg": "http://www.suscopts.org/ssc/wp-content/uploads/2020/09/4th-Grade-1.jpg",
-            "gradeBookPdf": "https://drive.google.com/file/d/1S36_Di0_O5vULcFnXG5UVp5D4D8DHDq9/preview",
-            "gradeBookLink": "https://drive.google.com/file/d/1S36_Di0_O5vULcFnXG5UVp5D4D8DHDq9/view",
-            "pdf": "G4.pdf"
-        },
-        {
-            "id": 5,
-            "grade": "G5",
-            "bookName": "G5: Life of Faith, Trust and Morality",
-            "bookImg": "http://www.suscopts.org/ssc/wp-content/uploads/2020/09/5th-Grade-1.jpg",
-            "gradeBookPdf": "https://drive.google.com/file/d/1pnRLPHPug0hDGrMsFhm5kGd037vgmjrr/preview",
-            "gradeBookLink": "https://drive.google.com/file/d/1pnRLPHPug0hDGrMsFhm5kGd037vgmjrr/view",
-            "pdf": "G5.pdf"
-        },
-        {
-            "id": 6,
-            "grade": "G6",
-            "bookName": "G6: The Living Bible",
-            "bookImg": "https://www.suscopts.org/ssc/wp-content/uploads/2020/09/6th-Grade-1.jpg",
-            "gradeBookPdf": "https://drive.google.com/file/d/1XblBUV43ylHFWJcgLkCPWPh4x-tp1wYu/preview",
-            "gradeBookLink": "https://drive.google.com/file/d/1XblBUV43ylHFWJcgLkCPWPh4x-tp1wYu/view",
-            "pdf": "G6.pdf"
-        },
-        {
-            "id": 7,
-            "grade": "G7",
-            "bookName": "G7: Chrsitian Discernment",
-            "bookImg": "https://www.suscopts.org/ssc/wp-content/uploads/2020/09/7th-Grade-1.jpg",
-            "gradeBookPdf": "https:///drive.google.com/file/d/1D-E-iOLNoL4h6lPCDN4BtHn6D3DaAd0a/preview",
-            "gradeBookLink": "https://drive.google.com/file/d/1D-E-iOLNoL4h6lPCDN4BtHn6D3DaAd0a/view",
-            "pdf": "G7.pdf"
-        },
-        {
-            "id": 8,
-            "grade": "G8",
-            "bookName": "G8: Choosing my Faith",
-            "bookImg": "https://www.suscopts.org/ssc/wp-content/uploads/2020/09/8th-Grade-1.jpg",
-            "gradeBookPdf": "https://drive.google.com/file/d/1pjzeXHHlDHKXVlBYTwTQwzOAmK_4sENF/preview",
-            "gradeBookLink": "https://drive.google.com/file/d/1pjzeXHHlDHKXVlBYTwTQwzOAmK_4sENF/view",
-            "pdf": "G8.pdf"
-        },
-        {
-            "id": 9,
-            "grade": "G9",
-            "bookName": "G9: Self-Control & Independence",
-            "bookImg": "https://www.suscopts.org/ssc/wp-content/uploads/2020/09/9th-Grade-2.jpg",
-            "gradeBookPdf": "https://drive.google.com/file/d/1l609QOhNVcUJhc6pIqYu2Ru3qFf_4k7R/preview",
-            "gradeBookLink": "https://drive.google.com/file/d/1l609QOhNVcUJhc6pIqYu2Ru3qFf_4k7R/view",
-            "pdf": "G9.pdf"
-        },
-        {
-            "id": 10,
-            "grade": "G10",
-            "bookName": "G10: Repentance",
-            "bookImg": "https://www.suscopts.org/ssc/wp-content/uploads/2020/09/10th-Grade-1.jpg",
-            "gradeBookPdf": "https://drive.google.com/file/d/1UJa45qfICjrYXqoUo098Wdf5nUk8ifXt/preview",
-            "gradeBookLink": "https://drive.google.com/file/d/1UJa45qfICjrYXqoUo098Wdf5nUk8ifXt/view",
-            "pdf": "G10.pdf"
-        },
-        {
-            "id": 11,
-            "grade": "G11",
-            "bookName": "G11: Consecration",
-            "bookImg": "https://www.suscopts.org/ssc/wp-content/uploads/2020/09/11th-Grade-1.jpg",
-            "gradeBookPdf": "https://drive.google.com/file/d/1bo4A6Urh9aKoQ0KWiTHLsp8LJU_LtmdN/preview",
-            "gradeBookLink": "https://drive.google.com/file/d/1bo4A6Urh9aKoQ0KWiTHLsp8LJU_LtmdN/view",
-            "pdf": "G11.pdf"
-        },
-        {
-            "id": 12,
-            "grade": "G12",
-            "bookName": "G12: Service",
-            "bookImg": "https://www.suscopts.org/ssc/wp-content/uploads/2020/09/12th-Grade-1.jpg",
-            "gradeBookPdf": "https://drive.google.com/file/d/1C6_P03qV-O_85urqa5kX-l56FMOrQBBm/preview",
-            "gradeBookLink": "https://drive.google.com/file/d/1C6_P03qV-O_85urqa5kX-l56FMOrQBBm/view",
-            "pdf": "G12.pdf"
-        },
-        {
-            "id": 13,
-            "grade": "PK",
-            "bookName": "PK: God’s Wonderful Works",
-            "bookImg": "http://www.suscopts.org/ssc/wp-content/uploads/2020/09/pre-k_small.jpg",
-            "gradeBookPdf": "https://drive.google.com/file/d/1VZEn2PSWmyNoeknwRdfUy6XFY_7QRhbx/preview",
-            "gradeBookLink": "https://drive.google.com/file/d/1VZEn2PSWmyNoeknwRdfUy6XFY_7QRhbx/view",
-            "pdf": "G13.pdf"
-        },
-        {
-            "id": 14,
-            "grade": 14,
-            "bookName": "KG: God Loves Me",
-            "bookImg": "http://www.suscopts.org/ssc/wp-content/uploads/2020/09/kindergarten-1-2.jpg",
-            "gradeBookPdf": "https://drive.google.com/file/d/1Ga8v0hTuT-IR4RglRVhj-c6C2DOzhz7j/preview",
-            "gradeBookLink": "https://drive.google.com/file/d/1Ga8v0hTuT-IR4RglRVhj-c6C2DOzhz7j/view",
-            "pdf": "G14.pdf"
-        }
-    ],
-    "classGrade": [
-        {
-            "id": 1,
-            "classGrade": "G1"
-        },
-        {
-            "id": 2,
-            "classGrade": "G2"
-        },
-        {
-            "id": 3,
-            "classGrade": "G3"
-        },
-        {
-            "id": 4,
-            "classGrade": "G4"
-        },
-        {
-            "id": 5,
-            "classGrade": "G5"
-        },
-        {
-            "id": 6,
-            "classGrade": "G6"
-        },
-        {
-            "id": 7,
-            "classGrade": "G7"
-        },
-        {
-            "id": 8,
-            "classGrade": "G8"
-        },
-        {
-            "id": 9,
-            "classGrade": "G9"
-        },
-        {
-            "id": 10,
-            "classGrade": "G10"
-        },
-        {
-            "id": 11,
-            "classGrade": "G11"
-        },
-        {
-            "id": 12,
-            "classGrade": "G12"
-        },
-        {
-            "id": 13,
-            "classGrade": "PK"
-        },
-        {
-            "id": 14,
-            "classGrade": "KG"
-        }
-    ],
-    "months": [
-        {
-            "id": 1,
-            "month": "Jan"
-        },
-        {
-            "id": 2,
-            "month": "Feb"
-        },
-        {
-            "id": 3,
-            "month": "Mars"
-        },
-        {
-            "id": 4,
-            "month": "Apr"
-        },
-        {
-            "id": 4,
-            "month": "May"
-        },
-        {
-            "id": 5,
-            "month": "Jun"
-        },
-        {
-            "id": 7,
-            "month": "Jul"
-        },
-        {
-            "id": 8,
-            "month": "Aug"
-        },
-        {
-            "id": 9,
-            "month": "Sept"
-        },
-        {
-            "id": 10,
-            "month": "Oct"
-        },
-        {
-            "id": 11,
-            "month": "Nov"
-        },
-        {
-            "id": 12,
-            "month": "Dec"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Danny Mena",
+      "email": "dmena@me.com",
+      "isTeacher": true
+    },
+    {
+      "id": 2,
+      "fullName": "Gena Mena",
+      "email": "gmena@me.com",
+      "isTeacher": true
+    },
+    {
+      "id": 4,
+      "fullName": "Thomas Mena",
+      "email": "tmena@me.com",
+      "isTeacher": true
+    },
+    {
+      "email": "sanymamdoh@yahoo.com",
+      "fullName": "sany yousif",
+      "isTeacher": false,
+      "id": 5
+    },
+    {
+      "email": "marianashokry@yahoo.com",
+      "fullName": "MARIAN MENA",
+      "isTeacher": true,
+      "id": 6
+    }
+  ],
+  "teachers": [
+    {
+      "id": 1,
+      "userId": 1,
+      "classId": 1
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "classId": 1
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "classId": 2
+    },
+    {
+      "id": 4,
+      "userId": 4,
+      "classId": 2
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "fullName": "Holy Markos",
+      "email": "hmena@me.com",
+      "classId": 1,
+      "dob": "2017-01-01",
+      "phone": "785-153478",
+      "address": "1008 Meb Ct, Mt. Juliet, TN 37122",
+      "studentImg": "https://media.istockphoto.com/id/1399611907/photo/portrait-of-happy-smiling-little-girl-against-blue-studio-background-cheerful-mixed-race-kid.jpg?s=612x612&w=0&k=20&c=rDehRs_EaCuPVi7K30TgcYfJnJsaBG1oWmfKdbAckww="
+    },
+    {
+      "id": 2,
+      "fullName": "Jack Faddy",
+      "email": "jmena@me.com",
+      "classId": 1,
+      "dob": "2017-06-02",
+      "phone": "375-985159",
+      "address": " 3565 N Mt Juliet Rd, Mt. Juliet, TN 37122",
+      "studentImg": "https://media.istockphoto.com/id/1327679894/photo/smiling-friendly-dark-skinned-boy-on-light-blue-background.jpg?s=612x612&w=0&k=20&c=Q6vA9kfs4TKmyjH3w0kW6Slt_RKUZCOAqD55CzZmo60="
+    },
+    {
+      "id": 3,
+      "fullName": "Andrew Shady",
+      "email": "ashady@me.com",
+      "classId": 1,
+      "dob": "2017-07-03",
+      "phone": "321-458745",
+      "address": "1003 Woodridge Pl, Mt. Juliet, TN 37122",
+      "studentImg": "https://media.istockphoto.com/id/1234009542/photo/cute-asian-boy-looking-at-camera-and-smiling-happily.jpg?s=612x612&w=0&k=20&c=ZjK-d2Op3_8fWhDbFHOuh2MmhLcihej4F_tE3ZnP-C4="
+    },
+    {
+      "id": 4,
+      "fullName": "Thomas Samy",
+      "email": "tsamy@me.com",
+      "classId": 1,
+      "dob": "2017-09-04",
+      "phone": "458-658624",
+      "address": "11902 Lebanon Rd, Mt. Juliet, TN 37122",
+      "studentImg": "https://media.istockphoto.com/id/175602017/photo/serious-boy.jpg?s=612x612&w=0&k=20&c=jX4YnMhL69Kd4RZPj6syz8lwQXREgyQ15hdBQ1-lv88="
+    },
+    {
+      "id": 5,
+      "fullName": "Ramy Mena",
+      "email": "rmena@me.com",
+      "classId": 2,
+      "dob": "2017-15-10",
+      "phone": "615-785485",
+      "address": "1008 Meb Ct, Mt. Juliet, TN 37122",
+      "studentImg": "https://media.istockphoto.com/id/1400096550/photo/portrait-of-a-cute-little-asian-boy-wearing-casual-clothes-while-smiling-and-looking-excited.jpg?s=612x612&w=0&k=20&c=OGQbPhtkB5GfM95276LQjT3K23pSBTNtN0Gw_1LMvEk="
+    },
+    {
+      "id": 6,
+      "fullName": "Sandra Mena",
+      "email": "smena@me.com",
+      "classId": 2,
+      "dob": "2018-04-02",
+      "phone": "615-6089966",
+      "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
+      "studentImg": "https://www.seekpng.com/png/detail/19-199271_png-school-children-play-school-kids.png"
+    },
+    {
+      "id": 7,
+      "fullName": "Celine Mena",
+      "email": "cmena@me.com",
+      "classId": 2,
+      "dob": "2017-08-03",
+      "phone": "615-6069166",
+      "address": "9315 Lebanon Rd, Mt. Juliet, TN 37122",
+      "studentImg": "https://media.istockphoto.com/id/1399611777/photo/portrait-of-a-smiling-little-brown-haired-boy-looking-at-the-camera-happy-kid-with-good.jpg?b=1&s=170667a&w=0&k=20&c=_vhKiD4p9X8X5BBJ5gKiWasG95XFvwVa8nq6Ogbpn9k="
+    },
+    {
+      "id": 8,
+      "fullName": "Sany Mena",
+      "email": "smena@me.com",
+      "classId": 2,
+      "dob": "2017-09-04",
+      "phone": "615-6055745",
+      "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
+      "studentImg": "https://media.istockphoto.com/id/1191680618/photo/smiling-and-cute-kid-looking-at-camera-and-showing-like-isolated-on-blue.jpg?s=612x612&w=0&k=20&c=7yFK4KhwIjcE2zSxpy9YAFzVA2kA0WSPOUtH7CUGhJo="
+    },
+    {
+      "id": 9,
+      "fullName": "Ramy Mena",
+      "email": "rmena@me.com",
+      "classId": 1,
+      "dob": "2017-15-05",
+      "phone": "615-785485",
+      "address": "1008 Meb Ct, Mt. Juliet, TN 37122",
+      "studentImg": "https://media.istockphoto.com/id/1400096550/photo/portrait-of-a-cute-little-asian-boy-wearing-casual-clothes-while-smiling-and-looking-excited.jpg?s=612x612&w=0&k=20&c=OGQbPhtkB5GfM95276LQjT3K23pSBTNtN0Gw_1LMvEk="
+    },
+    {
+      "id": 10,
+      "fullName": "Sandra Mena",
+      "email": "smena@me.com",
+      "classId": 1,
+      "dob": "2018-04-06",
+      "phone": "615-6089966",
+      "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
+      "studentImg": "https://www.seekpng.com/png/detail/19-199271_png-school-children-play-school-kids.png"
+    },
+    {
+      "id": 11,
+      "fullName": "Celine Mena",
+      "email": "cmena@me.com",
+      "classId": 1,
+      "dob": "2017-08-07",
+      "phone": "615-6069166",
+      "address": "9315 Lebanon Rd, Mt. Juliet, TN 37122",
+      "studentImg": "https://media.istockphoto.com/id/1399611777/photo/portrait-of-a-smiling-little-brown-haired-boy-looking-at-the-camera-happy-kid-with-good.jpg?b=1&s=170667a&w=0&k=20&c=_vhKiD4p9X8X5BBJ5gKiWasG95XFvwVa8nq6Ogbpn9k="
+    },
+    {
+      "id": 12,
+      "fullName": "Sany Mena",
+      "email": "smena@me.com",
+      "classId": 1,
+      "dob": "2017-09-08",
+      "phone": "615-6055745",
+      "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
+      "studentImg": "https://media.istockphoto.com/id/1191680618/photo/smiling-and-cute-kid-looking-at-camera-and-showing-like-isolated-on-blue.jpg?s=612x612&w=0&k=20&c=7yFK4KhwIjcE2zSxpy9YAFzVA2kA0WSPOUtH7CUGhJo="
+    },
+    {
+      "id": 9,
+      "fullName": "Ramy Mena",
+      "email": "rmena@me.com",
+      "classId": 1,
+      "dob": "2017-15-09",
+      "phone": "615-785485",
+      "address": "1008 Meb Ct, Mt. Juliet, TN 37122",
+      "studentImg": "https://media.istockphoto.com/id/1400096550/photo/portrait-of-a-cute-little-asian-boy-wearing-casual-clothes-while-smiling-and-looking-excited.jpg?s=612x612&w=0&k=20&c=OGQbPhtkB5GfM95276LQjT3K23pSBTNtN0Gw_1LMvEk="
+    },
+    {
+      "id": 10,
+      "fullName": "Sandra Mena",
+      "email": "smena@me.com",
+      "classId": 1,
+      "dob": "2018-04-10",
+      "phone": "615-6089966",
+      "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
+      "studentImg": "https://www.seekpng.com/png/detail/19-199271_png-school-children-play-school-kids.png"
+    },
+    {
+      "id": 11,
+      "fullName": "Celine Mena",
+      "email": "cmena@me.com",
+      "classId": 1,
+      "dob": "2017-08-11",
+      "phone": "615-6069166",
+      "address": "9315 Lebanon Rd, Mt. Juliet, TN 37122",
+      "studentImg": "https://media.istockphoto.com/id/1399611777/photo/portrait-of-a-smiling-little-brown-haired-boy-looking-at-the-camera-happy-kid-with-good.jpg?b=1&s=170667a&w=0&k=20&c=_vhKiD4p9X8X5BBJ5gKiWasG95XFvwVa8nq6Ogbpn9k="
+    },
+    {
+      "id": 12,
+      "fullName": "Sany Mena",
+      "email": "smena@me.com",
+      "classId": 1,
+      "dob": "2017-09-12",
+      "phone": "615-6055745",
+      "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
+      "studentImg": "https://media.istockphoto.com/id/1191680618/photo/smiling-and-cute-kid-looking-at-camera-and-showing-like-isolated-on-blue.jpg?s=612x612&w=0&k=20&c=7yFK4KhwIjcE2zSxpy9YAFzVA2kA0WSPOUtH7CUGhJo="
+    },
+    {
+      "fullName": "Sany Yousifhhhh",
+      "email": "sanymamdoh@yahoo.com",
+      "classId": 1,
+      "dob": "2022-11-08",
+      "phone": "6156020494",
+      "address": "358, British Woods Dr .",
+      "studentImg": "1.jpg",
+      "id": 22
+    }
+  ],
+  "studentAttendance": [
+    {
+      "id": 31,
+      "date": "2022-11-13",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 32,
+      "date": "2022-11-13",
+      "classId": 1,
+      "studentId": 2,
+      "attend": true
+    },
+    {
+      "id": 33,
+      "date": "2022-11-13",
+      "classId": 1,
+      "studentId": 3,
+      "attend": true
+    },
+    {
+      "id": 34,
+      "date": "2022-11-13",
+      "classId": 1,
+      "studentId": 4,
+      "attend": true
+    },
+    {
+      "id": 35,
+      "date": "2022-11-13",
+      "classId": 1,
+      "studentId": 9,
+      "attend": true
+    },
+    {
+      "id": 36,
+      "date": "2022-11-13",
+      "classId": 1,
+      "studentId": 10,
+      "attend": true
+    },
+    {
+      "id": 37,
+      "date": "2022-11-20",
+      "classId": 1,
+      "studentId": 11,
+      "attend": true
+    },
+    {
+      "id": 38,
+      "date": "2022-11-20",
+      "classId": 1,
+      "studentId": 12,
+      "attend": true
+    },
+    {
+      "id": 39,
+      "date": "2022-11-20",
+      "classId": 1,
+      "studentId": 9,
+      "attend": true
+    },
+    {
+      "id": 40,
+      "date": "2022-11-20",
+      "classId": 1,
+      "studentId": 10,
+      "attend": true
+    },
+    {
+      "id": 41,
+      "date": "2022-11-27",
+      "classId": 1,
+      "studentId": 11,
+      "attend": true
+    },
+    {
+      "id": 42,
+      "date": "2022-11-27",
+      "classId": 1,
+      "studentId": 12,
+      "attend": true
+    },
+    {
+      "id": 43,
+      "date": "2022-11-27",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 44,
+      "date": "2022-11-27",
+      "classId": 1,
+      "studentId": 2,
+      "attend": true
+    },
+    {
+      "id": 45,
+      "date": "2022-11-28",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 46,
+      "date": "2022-11-28",
+      "classId": 1,
+      "studentId": 2,
+      "attend": true
+    },
+    {
+      "id": 47,
+      "date": "2022-11-30",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 48,
+      "date": "2022-11-30",
+      "classId": 1,
+      "studentId": 2,
+      "attend": true
+    },
+    {
+      "id": 49,
+      "date": "2022-11-30",
+      "classId": 1,
+      "studentId": 3,
+      "attend": true
+    },
+    {
+      "id": 50,
+      "date": "2022-11-29",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 52,
+      "date": "2022-11-29",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 53,
+      "date": "2022-11-29",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 54,
+      "date": "2022-11-29",
+      "classId": 1,
+      "studentId": 2,
+      "attend": true
+    },
+    {
+      "id": 55,
+      "date": "2022-11-29",
+      "classId": 1,
+      "studentId": 3,
+      "attend": true
+    },
+    {
+      "id": 56,
+      "date": "2022-11-29",
+      "classId": 1,
+      "studentId": 10,
+      "attend": true
+    },
+    {
+      "id": 57,
+      "date": "2022-11-29",
+      "classId": 1,
+      "studentId": 10,
+      "attend": false
+    },
+    {
+      "id": 58,
+      "date": "2022-11-30",
+      "classId": 1,
+      "studentId": 19,
+      "attend": true
+    },
+    {
+      "id": 59,
+      "date": "2022-11-30",
+      "classId": 1,
+      "studentId": 18,
+      "attend": true
+    },
+    {
+      "id": 60,
+      "date": "2022-11-30",
+      "classId": 1,
+      "studentId": 19,
+      "attend": true
+    },
+    {
+      "id": 61,
+      "date": "2022-11-30",
+      "classId": 1,
+      "studentId": 18,
+      "attend": true
+    }
+  ],
+  "classes": [
+    {
+      "id": 1,
+      "classGradeId": 1,
+      "gradeBookId": 1
+    },
+    {
+      "id": 2,
+      "classGradeId": 2,
+      "gradeBookId": 2
+    },
+    {
+      "id": 3,
+      "classGradeId": 3,
+      "gradeBookId": 3
+    }
+  ],
+  "gradeBooks": [
+    {
+      "id": 1,
+      "grade": "G1",
+      "bookName": "G1: The Mighty Fatherhood of God",
+      "bookImg": "http://www.suscopts.org/ssc/wp-content/uploads/2020/09/1st-Grade-1.jpg",
+      "gradeBookPdf": "https://drive.google.com/file/d/1_QHjkwvEGXjIFMP1nw3TFTRlvPAd82Ur/preview",
+      "gradeBookLink": "https://drive.google.com/file/d/1_QHjkwvEGXjIFMP1nw3TFTRlvPAd82Ur/view",
+      "pdf": "G1.pdf"
+    },
+    {
+      "id": 2,
+      "grade": "G2",
+      "bookName": "G2: The Loving Motherhood of the",
+      "bookImg": "http://www.suscopts.org/ssc/wp-content/uploads/2020/09/2nd-Grade-1.jpg",
+      "gradeBookPdf": "https://drive.google.com/file/d/1NaQd1CKR_03PFXWMznxcYCeQBwv-NtbF/preview",
+      "gradeBookLink": "https://drive.google.com/file/d/1NaQd1CKR_03PFXWMznxcYCeQBwv-NtbF/view",
+      "pdf": "G2.pdf"
+    },
+    {
+      "id": 3,
+      "grade": "G3",
+      "bookName": "G3: The Golden Rule",
+      "bookImg": "http://www.suscopts.org/ssc/wp-content/uploads/2020/09/3rd-Grade-1.jpg",
+      "gradeBookPdf": "https://drive.google.com/file/d/1GhVFuvwa4e8-ZFZR-IpsauOsugYxMQLR/preview",
+      "gradeBookLink": "https://drive.google.com/file/d/1GhVFuvwa4e8-ZFZR-IpsauOsugYxMQLR/view",
+      "pdf": "G3.pdf"
+    },
+    {
+      "id": 4,
+      "grade": "G4",
+      "bookName": "G4: Growing in Discipline",
+      "bookImg": "http://www.suscopts.org/ssc/wp-content/uploads/2020/09/4th-Grade-1.jpg",
+      "gradeBookPdf": "https://drive.google.com/file/d/1S36_Di0_O5vULcFnXG5UVp5D4D8DHDq9/preview",
+      "gradeBookLink": "https://drive.google.com/file/d/1S36_Di0_O5vULcFnXG5UVp5D4D8DHDq9/view",
+      "pdf": "G4.pdf"
+    },
+    {
+      "id": 5,
+      "grade": "G5",
+      "bookName": "G5: Life of Faith, Trust and Morality",
+      "bookImg": "http://www.suscopts.org/ssc/wp-content/uploads/2020/09/5th-Grade-1.jpg",
+      "gradeBookPdf": "https://drive.google.com/file/d/1pnRLPHPug0hDGrMsFhm5kGd037vgmjrr/preview",
+      "gradeBookLink": "https://drive.google.com/file/d/1pnRLPHPug0hDGrMsFhm5kGd037vgmjrr/view",
+      "pdf": "G5.pdf"
+    },
+    {
+      "id": 6,
+      "grade": "G6",
+      "bookName": "G6: The Living Bible",
+      "bookImg": "https://www.suscopts.org/ssc/wp-content/uploads/2020/09/6th-Grade-1.jpg",
+      "gradeBookPdf": "https://drive.google.com/file/d/1XblBUV43ylHFWJcgLkCPWPh4x-tp1wYu/preview",
+      "gradeBookLink": "https://drive.google.com/file/d/1XblBUV43ylHFWJcgLkCPWPh4x-tp1wYu/view",
+      "pdf": "G6.pdf"
+    },
+    {
+      "id": 7,
+      "grade": "G7",
+      "bookName": "G7: Chrsitian Discernment",
+      "bookImg": "https://www.suscopts.org/ssc/wp-content/uploads/2020/09/7th-Grade-1.jpg",
+      "gradeBookPdf": "https:///drive.google.com/file/d/1D-E-iOLNoL4h6lPCDN4BtHn6D3DaAd0a/preview",
+      "gradeBookLink": "https://drive.google.com/file/d/1D-E-iOLNoL4h6lPCDN4BtHn6D3DaAd0a/view",
+      "pdf": "G7.pdf"
+    },
+    {
+      "id": 8,
+      "grade": "G8",
+      "bookName": "G8: Choosing my Faith",
+      "bookImg": "https://www.suscopts.org/ssc/wp-content/uploads/2020/09/8th-Grade-1.jpg",
+      "gradeBookPdf": "https://drive.google.com/file/d/1pjzeXHHlDHKXVlBYTwTQwzOAmK_4sENF/preview",
+      "gradeBookLink": "https://drive.google.com/file/d/1pjzeXHHlDHKXVlBYTwTQwzOAmK_4sENF/view",
+      "pdf": "G8.pdf"
+    },
+    {
+      "id": 9,
+      "grade": "G9",
+      "bookName": "G9: Self-Control & Independence",
+      "bookImg": "https://www.suscopts.org/ssc/wp-content/uploads/2020/09/9th-Grade-2.jpg",
+      "gradeBookPdf": "https://drive.google.com/file/d/1l609QOhNVcUJhc6pIqYu2Ru3qFf_4k7R/preview",
+      "gradeBookLink": "https://drive.google.com/file/d/1l609QOhNVcUJhc6pIqYu2Ru3qFf_4k7R/view",
+      "pdf": "G9.pdf"
+    },
+    {
+      "id": 10,
+      "grade": "G10",
+      "bookName": "G10: Repentance",
+      "bookImg": "https://www.suscopts.org/ssc/wp-content/uploads/2020/09/10th-Grade-1.jpg",
+      "gradeBookPdf": "https://drive.google.com/file/d/1UJa45qfICjrYXqoUo098Wdf5nUk8ifXt/preview",
+      "gradeBookLink": "https://drive.google.com/file/d/1UJa45qfICjrYXqoUo098Wdf5nUk8ifXt/view",
+      "pdf": "G10.pdf"
+    },
+    {
+      "id": 11,
+      "grade": "G11",
+      "bookName": "G11: Consecration",
+      "bookImg": "https://www.suscopts.org/ssc/wp-content/uploads/2020/09/11th-Grade-1.jpg",
+      "gradeBookPdf": "https://drive.google.com/file/d/1bo4A6Urh9aKoQ0KWiTHLsp8LJU_LtmdN/preview",
+      "gradeBookLink": "https://drive.google.com/file/d/1bo4A6Urh9aKoQ0KWiTHLsp8LJU_LtmdN/view",
+      "pdf": "G11.pdf"
+    },
+    {
+      "id": 12,
+      "grade": "G12",
+      "bookName": "G12: Service",
+      "bookImg": "https://www.suscopts.org/ssc/wp-content/uploads/2020/09/12th-Grade-1.jpg",
+      "gradeBookPdf": "https://drive.google.com/file/d/1C6_P03qV-O_85urqa5kX-l56FMOrQBBm/preview",
+      "gradeBookLink": "https://drive.google.com/file/d/1C6_P03qV-O_85urqa5kX-l56FMOrQBBm/view",
+      "pdf": "G12.pdf"
+    },
+    {
+      "id": 13,
+      "grade": "PK",
+      "bookName": "PK: God’s Wonderful Works",
+      "bookImg": "http://www.suscopts.org/ssc/wp-content/uploads/2020/09/pre-k_small.jpg",
+      "gradeBookPdf": "https://drive.google.com/file/d/1VZEn2PSWmyNoeknwRdfUy6XFY_7QRhbx/preview",
+      "gradeBookLink": "https://drive.google.com/file/d/1VZEn2PSWmyNoeknwRdfUy6XFY_7QRhbx/view",
+      "pdf": "G13.pdf"
+    },
+    {
+      "id": 14,
+      "grade": 14,
+      "bookName": "KG: God Loves Me",
+      "bookImg": "http://www.suscopts.org/ssc/wp-content/uploads/2020/09/kindergarten-1-2.jpg",
+      "gradeBookPdf": "https://drive.google.com/file/d/1Ga8v0hTuT-IR4RglRVhj-c6C2DOzhz7j/preview",
+      "gradeBookLink": "https://drive.google.com/file/d/1Ga8v0hTuT-IR4RglRVhj-c6C2DOzhz7j/view",
+      "pdf": "G14.pdf"
+    }
+  ],
+  "classGrade": [
+    {
+      "id": 1,
+      "classGrade": "G1"
+    },
+    {
+      "id": 2,
+      "classGrade": "G2"
+    },
+    {
+      "id": 3,
+      "classGrade": "G3"
+    },
+    {
+      "id": 4,
+      "classGrade": "G4"
+    },
+    {
+      "id": 5,
+      "classGrade": "G5"
+    },
+    {
+      "id": 6,
+      "classGrade": "G6"
+    },
+    {
+      "id": 7,
+      "classGrade": "G7"
+    },
+    {
+      "id": 8,
+      "classGrade": "G8"
+    },
+    {
+      "id": 9,
+      "classGrade": "G9"
+    },
+    {
+      "id": 10,
+      "classGrade": "G10"
+    },
+    {
+      "id": 11,
+      "classGrade": "G11"
+    },
+    {
+      "id": 12,
+      "classGrade": "G12"
+    },
+    {
+      "id": 13,
+      "classGrade": "PK"
+    },
+    {
+      "id": 14,
+      "classGrade": "KG"
+    }
+  ],
+  "months": [
+    {
+      "id": 1,
+      "month": "Jan"
+    },
+    {
+      "id": 2,
+      "month": "Feb"
+    },
+    {
+      "id": 3,
+      "month": "Mars"
+    },
+    {
+      "id": 4,
+      "month": "Apr"
+    },
+    {
+      "id": 4,
+      "month": "May"
+    },
+    {
+      "id": 5,
+      "month": "Jun"
+    },
+    {
+      "id": 7,
+      "month": "Jul"
+    },
+    {
+      "id": 8,
+      "month": "Aug"
+    },
+    {
+      "id": 9,
+      "month": "Sept"
+    },
+    {
+      "id": 10,
+      "month": "Oct"
+    },
+    {
+      "id": 11,
+      "month": "Nov"
+    },
+    {
+      "id": 12,
+      "month": "Dec"
+    }
+  ]
 }
