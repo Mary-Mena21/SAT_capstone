@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 //import { Link, useNavigate } from "react-router-dom";
-import m1 from "../Images/m1.jpg"
+import m1 from "../images/m1.jpg"
+//import  "./Images"
 export const StudentsBirthdays = () => {
     const [birthdays, setBirthdays] = useState([]);
     const [filteredBirthdays, setFilteredBirthdays] = useState([]);
@@ -147,8 +148,9 @@ export const StudentsBirthdays = () => {
 
     return (
         <>
-            <>mmm</>
-        <img src={m1}  height="200" width="200" alt="med1" />
+       {/*  <img src={Images/m1.jpg}  height="200" width="200" alt="med1" /> */}
+       {/*  <img src={m1}  height="200" width="200" alt="med1" /> */}
+        <img src={require('../images/m1.jpg')}  height="200" width="200" alt="med1" />
             
             <h1>Birthdays Of The Month</h1>
             <button onClick={() => {setJan(true)}}>January</button>
