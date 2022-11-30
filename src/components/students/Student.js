@@ -19,7 +19,8 @@ export const Student = ({     id,
                 <div className="container">
                     <section key={id} className="student_card">
                         <div className="student_card_container">
-                            <img src={studentImg} className="student_img" />
+                            {/* <img src={studentImg} className="student_img" /> */}
+                            <img src={require(`../images/${studentImg}`)} className="student_img" />
                             <Link to={`/students/${id}`}>
                                 <h3 className="student_info">{studentName}</h3>
                             </Link>

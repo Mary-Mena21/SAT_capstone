@@ -82,10 +82,11 @@ export const Students = () => {
                                         className="student_card"
                                     >
                                         <div className="student_card_container">
-                                            <img
+                                         {/*    <img
                                                 src={student.studentImg}
                                                 className="student_img"
-                                            />
+                                            /> */}
+                                            <img src={require(`../images/${student.studentImg}`)} className="student_img" />
                                             <Link
                                                 to={`/students/${student.id}`}
                                             >

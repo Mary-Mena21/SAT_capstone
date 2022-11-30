@@ -38,7 +38,8 @@ export const StudentDetails = ({
     return (
         <>
             <section key={`student__${id}`} className="student">
-                <img src={studentDetail?.studentImg} className="student_img" />
+                {/* <img src={require(`../images/${studentDetail.studentImg}`)} className="student_img" /> */}
+                {/* <img src={studentDetail?.studentImg} className="student_img" /> */}
                 <header className="student__header">
                     {studentDetail?.fullName}
                 </header>

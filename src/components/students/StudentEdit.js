@@ -209,7 +209,7 @@ export const StudentEdit = ({
                         </label>
                     </li>
 
-                    <br />
+                   {/*  <br />
                     <li>
                         <label htmlFor="studentImg">
                             studentImg:
@@ -227,7 +227,7 @@ export const StudentEdit = ({
                                 }}
                             />
                         </label>
-                    </li>
+                    </li> */}
 
                     <br />
                 </form>
