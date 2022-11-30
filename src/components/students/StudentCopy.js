@@ -18,9 +18,10 @@ export const StudentCopy = ({
 }) => {
     /* -------------------------------------- */
 
-
     const current = new Date();
-    const date = `${current.getFullYear()}-${current.getMonth()+1}-${current.getDate()}`;
+    const date = `${current.getFullYear()}-${
+        current.getMonth() + 1
+    }-${current.getDate()}`;
     //Date.now()
     //let NewDate = new Date(Date.now()).toJSON().slice(0, 10);
     const navigate = useNavigate();
@@ -30,7 +31,7 @@ export const StudentCopy = ({
     let userId = id;
 
     const [inputAttend, setInputAttend] = useState({
-        id:0,
+        id: 0,
         date: date,
         classId: classId,
         studentId: userId,
@@ -74,10 +75,10 @@ export const StudentCopy = ({
                 <div className="container">
                     <section key={id} className="student_card">
                         <div className="student_card_container">
-                            
-                            {/* <img src={require(`src/components/Images/${studentImg}`)} className="student_img" /> */}
-                           <img src={require(`${studentImg}/Images`)} className="student_img" /> 
-                            <img src={studentImg} className="student_img" />
+
+                            {/* <img src={studentImg} className="student_img" /> */}
+
+         <img src={require(`../images/${studentImg}`)} className="student_img" />
 
                             <Link to={`/students/${id}`}>
                                 <h3 className="student_info">{studentName}</h3>
@@ -93,18 +94,18 @@ export const StudentCopy = ({
                                         setInputAttend(copy);
                                         sendAttendance(copy);
                                         // handleSaveButtonClick(evt,copy);
-
                                     }}
                                 />
                             </div>
                         </div>
                     </section>
-                    
                 </div>
             </section>
         </>
     );
 };
+
+/* <img src={require('../images/m1.jpg')} className="student_img" /> */
 /* -------------------------------------- */
 //src\components\Images
 //checked={inputAttend.attend}
@@ -198,7 +199,5 @@ export const StudentCopy = ({
 //         </>
 //     )
 // }
-
-
 
 //That girl has total Demin energy ngl
