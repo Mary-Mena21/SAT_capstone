@@ -128,8 +128,8 @@ export const StudentEdit = ({
                             />
                         </label>
                     </li>
-
-                    <br />
+{
+                   /*  <br />
                     <li>
                         <label htmlFor="classId">
                             classId:
@@ -147,7 +147,7 @@ export const StudentEdit = ({
                                 }}
                             />
                         </label>
-                    </li>
+                    </li> */}
 
                     <br />
                     <li>

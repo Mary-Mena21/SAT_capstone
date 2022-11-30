@@ -28,7 +28,7 @@ export const StudentForm = () => {
         dob:Date.now(),
         phone: "",
         address: "",
-        studentImg: "",
+        studentImg:"",
     });
 
     /* -------------Date----------------- */
@@ -94,6 +94,8 @@ export const StudentForm = () => {
                             <input
                                 required
                                 autoFocus
+                                //pattern=".+@globex\.com"
+                                //size="30" 
                                 type="email"
                                 name="email"
                                 value={inputs.email}
@@ -105,26 +107,6 @@ export const StudentForm = () => {
                             />
                         </label>
                     </li>
-
-                    {/* <br />
-                    <li>
-                        <label htmlFor="classId">
-                            classId:
-                            <br />
-                            <input
-                                required
-                                autoFocus
-                                type="number"
-                                name="classId"
-                                value={inputs.classId}
-                                onChange={(evt) => {
-                                    const copy = { ...inputs };
-                                    copy.classId = evt.target.valueAsNumber;
-                                    setInputs(copy);
-                                }}
-                            />
-                        </label>
-                    </li> */}
 
                     <br />
                     <li>
@@ -161,6 +143,7 @@ export const StudentForm = () => {
                                 autoFocus
                                 type="telephone"
                                 name="phone"
+                                //pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                                 value={inputs.phone}
                                 onChange={(evt) => {
                                     const copy = { ...inputs };
@@ -192,6 +175,73 @@ export const StudentForm = () => {
                     </li>
 
                     <br />
+                    <div className="main">
+                    <div className="uploadimage">
+                        <label htmlFor="imgs">Upload Image</label>
+                        </div> 
+                        <input id="imgs" type="file" accept="image/png,image/jpeg" path="E:\FrontEnd\Workspace\SAT_capstone\src\components\image" files={inputs.studentImg} onChange={(evt) => {
+                            const copy = { ...inputs };
+                            copy.studentImg= evt.target.files[0].name;
+                            setInputs(copy)
+                        }} />
+                </div> 
+
+                <br />
+                <li>
+                    <input
+                        type="submit"
+                        //value="Send Request"
+                    />
+                </li>
+                <br />
+
+                    
+                </form>
+            </fieldset>
+        </>
+    );
+};
+//<img src="{{ asset('your/url') . '/' . $row->yourimg }}" alt="" class="image">
+//src\components\Images\1.jpg
+
+//src={require('./images/react-logo.png')}
+
+//var filename = $('input[type=file]').val().replace(/C:\\fakepath\\/i, '')
+
+//  function extractFilename(path) {
+//     if (path.substring(0, 12) == "C:\\fakepath\\")
+//       return path.substring(12);
+//     var x;
+//     x = path.lastIndexOf('/');
+//     if (x >= 0)
+//       return path.substring(x+1);
+//     x = path.lastIndexOf('\\');
+//     if (x >= 0)
+//       return path.substring(x+1);
+//     return path;
+//   }
+
+{/* <input id="imgs" type="file" accept="image/png,image/jpeg,.txt,.doc,.pdf" onChange={(e)=>setInputs(e.target.files)} /> */ }
+                    
+{/*                     <DatePicker
+                        // selected={inputs.dob}
+                        // format='mm/dd/yyyy'
+                        // //onChange={(date) => setInputs(date)}
+                        // onChange={(evt) => {
+                        //     const copy = { ...inputs };
+                        //     copy.dob = evt.target.value;
+                        //     setInputs(copy)
+                        // }}
+                    /> */}
+
+                                                //console.log(M);
+                            // if (M.slice(0, 12) === "C:\\fakepath\\")
+                            // {M.replace("C:\\fakepath\\","./images/")}
+                            //M.split("fakepath\\")
+                           
+                            //copy.studentImg = M;
+
+                                          {/*       <br />
                     <li>
                         <label htmlFor="studentImg">
                             studentImg:
@@ -209,25 +259,25 @@ export const StudentForm = () => {
                                 }}
                             />
                         </label>
-                    </li>
+                    </li> */}
 
-                    <br />
+
+                    {/* <br />
                     <li>
-                        <input type="submit" />
-                    </li>
-                    <br />
-{/*                     <DatePicker
-                        // selected={inputs.dob}
-                        // format='mm/dd/yyyy'
-                        // //onChange={(date) => setInputs(date)}
-                        // onChange={(evt) => {
-                        //     const copy = { ...inputs };
-                        //     copy.dob = evt.target.value;
-                        //     setInputs(copy)
-                        // }}
-                    /> */}
-                </form>
-            </fieldset>
-        </>
-    );
-};
+                        <label htmlFor="classId">
+                            classId:
+                            <br />
+                            <input
+                                required
+                                autoFocus
+                                type="number"
+                                name="classId"
+                                value={inputs.classId}
+                                onChange={(evt) => {
+                                    const copy = { ...inputs };
+                                    copy.classId = evt.target.valueAsNumber;
+                                    setInputs(copy);
+                                }}
+                            />
+                        </label>
+                    </li> */}

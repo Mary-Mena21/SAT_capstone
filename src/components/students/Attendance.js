@@ -79,36 +79,3 @@ export const Attendance = ({ attendTermState, dateM }) => {
         </>
     );
 };
-
-
-
-            // <label>today Attendance102: </label>
-            // <button
-            //     onClick={() => {
-            //             attendance.map((data) => {
-            //                 let NewDate = new Date(Date.now())
-            //                     .toJSON()
-            //                     .slice(0, 10);
-            //                 if ((data.date = NewDate)) {
-            //                     setFilterAttendance(attendance);
-            //                 }
-            //             })
-            //         ;
-            //     }}
-            // >
-            //     displayStudent
-            // </button>
-            {/*             <label htmlFor="dob">
-                            ATTENDANCE DATE: 
-                            <br />
-                            <input
-                                required
-                                autoFocus
-                                type="date"
-                                name="dob"
-                                onChange={(evt) => {
-                                attendance.date = evt.target.value; 
-                                    setFilterAttendance(attendance)
-                                }}
-                            />
-                        </label> */}

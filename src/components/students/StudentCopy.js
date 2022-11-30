@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { Students } from "./Students";
 import { Link } from "react-router-dom";
 import "./Students.css";
+//import "../Images"
+//import Image from "../Images."
 
 export const StudentCopy = ({
     id,
@@ -16,17 +18,20 @@ export const StudentCopy = ({
 }) => {
     /* -------------------------------------- */
 
-    let NewDate = new Date(Date.now()).toJSON().slice(0, 10);
+
+    const current = new Date();
+    const date = `${current.getFullYear()}-${current.getMonth()+1}-${current.getDate()}`;
+    //Date.now()
+    //let NewDate = new Date(Date.now()).toJSON().slice(0, 10);
     const navigate = useNavigate();
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
     let classId = satUserObject.id;
     let userId = id;
-   // let attend= studentAttend
 
     const [inputAttend, setInputAttend] = useState({
         id:0,
-        date: NewDate,
+        date: date,
         classId: classId,
         studentId: userId,
         attend: false,
@@ -69,7 +74,11 @@ export const StudentCopy = ({
                 <div className="container">
                     <section key={id} className="student_card">
                         <div className="student_card_container">
+                            
+                            {/* <img src={require(`src/components/Images/${studentImg}`)} className="student_img" /> */}
+                           <img src={require(`${studentImg}/Images`)} className="student_img" /> 
                             <img src={studentImg} className="student_img" />
+
                             <Link to={`/students/${id}`}>
                                 <h3 className="student_info">{studentName}</h3>
                             </Link>
@@ -90,13 +99,14 @@ export const StudentCopy = ({
                             </div>
                         </div>
                     </section>
+                    
                 </div>
             </section>
         </>
     );
 };
 /* -------------------------------------- */
-
+//src\components\Images
 //checked={inputAttend.attend}
 //const value = target.type === 'checkbox' ? target.checked : target.value;
 // onClick={(clickEvent) => {
@@ -188,3 +198,7 @@ export const StudentCopy = ({
 //         </>
 //     )
 // }
+
+
+
+//That girl has total Demin energy ngl
