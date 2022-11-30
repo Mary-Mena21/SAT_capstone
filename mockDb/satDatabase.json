@@ -172,7 +172,7 @@
       "dob": "2017-09-08",
       "phone": "615-6055745",
       "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
-      "studentImg": "Samy Mena"
+      "studentImg": "Samy Mena.jpg"
     },
     {
       "id": 9,
@@ -223,6 +223,26 @@
       "address": "358, British Woods Dr .",
       "studentImg": "m1.jpg",
       "id": 22
+    },
+    {
+      "fullName": "Thomas Samy",
+      "email": "sanymamdoh@yahoo.com",
+      "classId": 1,
+      "dob": "2022-11-16",
+      "phone": "6156020494",
+      "address": "358, British Woods Dr .",
+      "studentImg": "Thomas Samy.jpg",
+      "id": 23
+    },
+    {
+      "fullName": "MARIAN MENA",
+      "email": "marianashokry@yahoo.com",
+      "classId": 1,
+      "dob": "2022-11-08",
+      "phone": "6156022555",
+      "address": "University St Station Bay C",
+      "studentImg": "Me0.png",
+      "id": 24
     }
   ],
   "studentAttendance": [
@@ -412,28 +432,91 @@
       "id": 58,
       "date": "2022-11-30",
       "classId": 1,
-      "studentId": 19,
+      "studentId": 22,
       "attend": true
     },
     {
       "id": 59,
       "date": "2022-11-30",
       "classId": 1,
-      "studentId": 18,
+      "studentId": 23,
       "attend": true
     },
     {
       "id": 60,
       "date": "2022-11-30",
       "classId": 1,
-      "studentId": 19,
+      "studentId": 22,
       "attend": true
     },
     {
       "id": 61,
       "date": "2022-11-30",
       "classId": 1,
-      "studentId": 18,
+      "studentId": 12,
+      "attend": true
+    },
+    {
+      "id": 62,
+      "date": "2022-11-30",
+      "classId": 1,
+      "studentId": 11,
+      "attend": true
+    },
+    {
+      "id": 63,
+      "date": "2022-11-30",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 64,
+      "date": "2022-11-30",
+      "classId": 1,
+      "studentId": 24,
+      "attend": true
+    },
+    {
+      "id": 65,
+      "date": "2022-11-30",
+      "classId": 1,
+      "studentId": 23,
+      "attend": true
+    },
+    {
+      "id": 66,
+      "date": "2022-11-30",
+      "classId": 1,
+      "studentId": 22,
+      "attend": true
+    },
+    {
+      "id": 67,
+      "date": "2022-11-30",
+      "classId": 1,
+      "studentId": 12,
+      "attend": true
+    },
+    {
+      "id": 68,
+      "date": "2022-11-30",
+      "classId": 1,
+      "studentId": 11,
+      "attend": true
+    },
+    {
+      "id": 69,
+      "date": "2022-11-30",
+      "classId": 1,
+      "studentId": 10,
+      "attend": true
+    },
+    {
+      "id": 70,
+      "date": "2022-11-30",
+      "classId": 1,
+      "studentId": 9,
       "attend": true
     }
   ],

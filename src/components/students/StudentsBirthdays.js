@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 //import { Link, useNavigate } from "react-router-dom";
-import m1 from "../images/m1.jpg"
+import m1 from "../images/m1.jpg";
 //import  "./Images"
 export const StudentsBirthdays = () => {
     const [birthdays, setBirthdays] = useState([]);
@@ -22,7 +22,6 @@ export const StudentsBirthdays = () => {
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
     //const navigate = useNavigate();
-
 
     /* --------Jan--------- */
     useEffect(() => {
@@ -133,27 +132,36 @@ export const StudentsBirthdays = () => {
         }
     }, [Dec]);
 
-
-        useEffect(() => {
-            const fetchData = async () => {
-                const response = await fetch(
-                    `http://localhost:8033/students?&classId=${satUserObject.id}`
-                );
-                const birthdaysArray = await response.json();
-                setBirthdays(birthdaysArray);
-            };
-            fetchData();
-        }, []);
-
+    useEffect(() => {
+        const fetchData = async () => {
+            const response = await fetch(
+                `http://localhost:8033/students?&classId=${satUserObject.id}`
+            );
+            const birthdaysArray = await response.json();
+            setBirthdays(birthdaysArray);
+        };
+        fetchData();
+    }, []);
 
     return (
         <>
-       {/*  <img src={Images/m1.jpg}  height="200" width="200" alt="med1" /> */}
-       {/*  <img src={m1}  height="200" width="200" alt="med1" /> */}
-        <img src={require('../images/m1.jpg')}  height="200" width="200" alt="med1" />
-            
+            {/*  <img src={Images/m1.jpg}  height="200" width="200" alt="med1" /> */}
+            {/*  <img src={m1}  height="200" width="200" alt="med1" /> */}
+            <img
+                src={require("../images/m1.jpg")}
+                height="200"
+                width="200"
+                alt="med1"
+            />
+
             <h1>Birthdays Of The Month</h1>
-            <button onClick={() => {setJan(true)}}>January</button>
+            <button
+                onClick={() => {
+                    setJan(true);
+                }}
+            >
+                January
+            </button>
             <button
                 onClick={() => {
                     setFeb(true);
@@ -232,22 +240,29 @@ export const StudentsBirthdays = () => {
                 December
             </button>
 
-
             <article className="container">
                 {filteredBirthdays.map((birthday) => {
                     return (
                         <>
                             <section key={birthday.id} className="student_card">
-                                <img
+                                {/*                <img
                                 className="student_img"
                                 src={birthday.studentImg}
                                 height={"10%"}
                                 width={"10%"}
-                            />
-                                <h3 className="student_info">
+                                /> */}
+                                <img
+                                    src={require(`../images/${birthday.studentImg}`)}
+                                    className="student_img"
+                                />
+                                <h3
+                                    className="student_info"
+                                    height={"10%"}
+                                    width={"10%"}
+                                >
                                     {" "}
                                     Name:{birthday.fullName}
-                                    <br/>
+                                    <br />
                                     Birthday: {birthday.dob}
                                 </h3>
                             </section>

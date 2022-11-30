@@ -23,7 +23,7 @@ export const StudentCopy = ({
         current.getMonth() + 1
     }-${current.getDate()}`;
     //Date.now()
-    //let NewDate = new Date(Date.now()).toJSON().slice(0, 10);
+    let NewDate = new Date(Date.now()).toJSON().slice(0, 10);
     const navigate = useNavigate();
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
@@ -32,7 +32,7 @@ export const StudentCopy = ({
 
     const [inputAttend, setInputAttend] = useState({
         id: 0,
-        date: date,
+        date: NewDate,
         classId: classId,
         studentId: userId,
         attend: false,

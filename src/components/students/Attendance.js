@@ -9,20 +9,10 @@ export const Attendance = ({ attendTermState, dateM }) => {
     /* ----------------- */
     useEffect(() => {
         const AttendRecord = attendance.filter((studentAttend) => {
-            //console.log("m", attendance);
-            //return studentAttend.date=== "11/24/2022"
             return studentAttend.date.startsWith(attendTermState);
         });
         setFilterAttendance(AttendRecord);
     }, [attendTermState]);
-    /* ----------------- */
-
-    /* ----------------- */
-    // useEffect(() => {
-    //      if (filterAttendance.filter((studentAttend) => studentAttend.date === "11/24/2022")) {
-    //          setFilterAttendance(filterAttendance);
-    //      }
-    //  }, [filterAttendance]);
     /* ----------------- */
 
     const localSATUser = localStorage.getItem("SAT_user");
@@ -39,7 +29,7 @@ export const Attendance = ({ attendTermState, dateM }) => {
             };
             fetchData();
         },
-        [] // When this array is empty, you are observing initial component state
+        []
     );
 
     return (
@@ -57,15 +47,10 @@ export const Attendance = ({ attendTermState, dateM }) => {
                                         className="student_card"
                                     >
                                         <div className="student_card_container">
-                                            <img
-                                                src={attend.student.studentImg}
-                                                className="student_img"
-                                            />
+                                           {<img src={require(`../images/${attend.student.studentImg}`)}  className="student_img" />}
                                             <div>{attend.attend}</div>
                                             <div>{attend.date}</div>
-                                            <h3 className="student_info">
-                                                {attend.student.fullName}
-                                            </h3>
+                                            <h3 className="student_info">{attend.student.fullName}</h3>
                                         </div>
                                     </section>
                                 </div>
