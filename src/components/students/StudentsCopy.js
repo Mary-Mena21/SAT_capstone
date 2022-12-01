@@ -49,10 +49,7 @@ export const StudentsCopy = ({ searchTermState }) => {
 
     return (
         <>
-  
-            <>hi</>
         <button onClick={()=>{setFiltered(Students)}}>displayStudent100</button> 
-
             <h1>StudentsCopy</h1>
             <article className="Students">
                 {filteredStudent.map((student) => {

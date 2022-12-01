@@ -43,11 +43,6 @@
       "classId": 1
     },
     {
-      "id": 3,
-      "userId": 3,
-      "classId": 2
-    },
-    {
       "id": 4,
       "userId": 4,
       "classId": 2
@@ -68,7 +63,7 @@
       "id": 2,
       "fullName": "Jack Faddy",
       "email": "jmena@me.com",
-      "classId": 1,
+      "classId": 2,
       "dob": "2017-06-02",
       "phone": "375-985159",
       "address": " 3565 N Mt Juliet Rd, Mt. Juliet, TN 37122",
@@ -166,8 +161,8 @@
     },
     {
       "id": 12,
-      "fullName": "Samy Mena",
-      "email": "smena@me.com",
+      "fullName": "Deana Ehab",
+      "email": "smenaehab@me.com",
       "classId": 1,
       "dob": "2017-09-08",
       "phone": "615-6055745",
@@ -213,36 +208,6 @@
       "phone": "615-6055745",
       "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
       "studentImg": "Sany Mena.jpg"
-    },
-    {
-      "fullName": "Sany Yousifhhhh",
-      "email": "sanymamdoh@yahoo.com",
-      "classId": 1,
-      "dob": "2022-11-08",
-      "phone": "6156020494",
-      "address": "358, British Woods Dr .",
-      "studentImg": "m1.jpg",
-      "id": 22
-    },
-    {
-      "fullName": "Thomas Samy",
-      "email": "sanymamdoh@yahoo.com",
-      "classId": 1,
-      "dob": "2022-11-16",
-      "phone": "6156020494",
-      "address": "358, British Woods Dr .",
-      "studentImg": "Thomas Samy.jpg",
-      "id": 23
-    },
-    {
-      "fullName": "MARIAN MENA",
-      "email": "marianashokry@yahoo.com",
-      "classId": 1,
-      "dob": "2022-11-08",
-      "phone": "6156022555",
-      "address": "University St Station Bay C",
-      "studentImg": "Me0.png",
-      "id": 24
     }
   ],
   "studentAttendance": [
@@ -429,27 +394,6 @@
       "attend": false
     },
     {
-      "id": 58,
-      "date": "2022-11-30",
-      "classId": 1,
-      "studentId": 22,
-      "attend": true
-    },
-    {
-      "id": 59,
-      "date": "2022-11-30",
-      "classId": 1,
-      "studentId": 23,
-      "attend": true
-    },
-    {
-      "id": 60,
-      "date": "2022-11-30",
-      "classId": 1,
-      "studentId": 22,
-      "attend": true
-    },
-    {
       "id": 61,
       "date": "2022-11-30",
       "classId": 1,
@@ -468,27 +412,6 @@
       "date": "2022-11-30",
       "classId": 1,
       "studentId": 1,
-      "attend": true
-    },
-    {
-      "id": 64,
-      "date": "2022-11-30",
-      "classId": 1,
-      "studentId": 24,
-      "attend": true
-    },
-    {
-      "id": 65,
-      "date": "2022-11-30",
-      "classId": 1,
-      "studentId": 23,
-      "attend": true
-    },
-    {
-      "id": 66,
-      "date": "2022-11-30",
-      "classId": 1,
-      "studentId": 22,
       "attend": true
     },
     {
@@ -517,6 +440,27 @@
       "date": "2022-11-30",
       "classId": 1,
       "studentId": 9,
+      "attend": true
+    },
+    {
+      "id": 71,
+      "date": "2022-11-30",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 72,
+      "date": "2022-11-30",
+      "classId": 1,
+      "studentId": 2,
+      "attend": true
+    },
+    {
+      "id": 73,
+      "date": "2022-11-30",
+      "classId": 1,
+      "studentId": 3,
       "attend": true
     }
   ],
