@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { StudentCopy } from "./StudentCopy";
+import "./StudentCopy.css"
+
 
 //import Camera from 'react-camera';
 import Webcam from "react-webcam";
@@ -28,7 +30,7 @@ export const StudentsCopy = ({ searchTermState }) => {
                 .toLowerCase()
                 .startsWith(searchTermState.toLowerCase());
         });
-   // if (!searchedStudent){setFiltered(Students)}
+        // if (!searchedStudent){setFiltered(Students)}
         setFiltered(searchedStudent);
     }, [searchTermState]);
 
@@ -49,41 +51,57 @@ export const StudentsCopy = ({ searchTermState }) => {
 
     return (
         <>
-        <button onClick={()=>{setFiltered(Students)}}>displayStudent100</button> 
-            <h1>StudentsCopy</h1>
-            <article className="Students">
-                {filteredStudent.map((student) => {
-                    return (
-                        <>
-                            <StudentCopy
-                                key={`student__${student.id}`}
-                                id={student.id}
-                                studentName={student.fullName}
-                                studentEmail={student.email}
-                                studentClassId={student.classIs}
-                                studentDob={student.dob}
-                                studentPhone={student.phone}
-                                studentAddress={student.address}
-                                studentImg={student.studentImg}
-                            />
-                        </>
-                    );
-                })}
-            </article>
-
-
-            <section>
+            <section className="page_container">
+                <h1 className="page_name">Classroom</h1>
                 <button
-                    onClick={(clickEvent) => {
-                        navigate("/attendance");
+                    className=" btn btn-primary student_btn"
+                    onClick={() => {
+                        setFiltered(Students);
                     }}
-                    className="btn btn-primary"
                 >
-                    RECORD ATTENDANCE
+                    DISPLAY STUDENT
                 </button>
-            </section>
 
-{/*              <Camera
+                <section>
+                    <button
+                        onClick={(clickEvent) => {
+                            navigate("/attendance");
+                        }}
+                        className="btn btn-primary attendance_btn"
+                    >
+                        RECORD ATTENDANCE
+                    </button>
+                </section>
+
+                <article className="Students">
+                    {filteredStudent
+                        .sort((a, b) => {
+                            return a.fullName === b.fullName
+                                ? 0
+                                : a < b
+                                ? -1
+                                : 1;
+                        })
+                        .map((student) => {
+                            return (
+                                <>
+                                    <StudentCopy
+                                        key={`student__${student.id}`}
+                                        id={student.id}
+                                        studentName={student.fullName}
+                                        studentEmail={student.email}
+                                        studentClassId={student.classIs}
+                                        studentDob={student.dob}
+                                        studentPhone={student.phone}
+                                        studentAddress={student.address}
+                                        studentImg={student.studentImg}
+                                    />
+                                </>
+                            );
+                        })}
+                </article>
+
+                {/*              <Camera
   ref={(cam) => {
     this.camera = cam;
   }}
@@ -92,6 +110,7 @@ export const StudentsCopy = ({ searchTermState }) => {
     <i className="fas fa-camera"></i> &nbsp; Take photo
   </button>
 </Camera>  */}
+            </section>
         </>
     );
 };
@@ -119,4 +138,6 @@ export const StudentsCopy = ({ searchTermState }) => {
         </>
     );
 }; */
-{/*             <img src="image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAAAAQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAAHRyWFlaAAABZAAAABRnWFlaAAABeAAAABRiWFlaAAABjAAAABRyVFJDAAABoAAAAChnVFJDAAABoAAAAChiVFJDAAABoAAAACh3dHB0AAAByAAAABRjcHJ0AAAB3AAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAFgAAAAcAHMAUgBHAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA..."/> */}
+{
+    /*             <img src="image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAAAAQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAAHRyWFlaAAABZAAAABRnWFlaAAABeAAAABRiWFlaAAABjAAAABRyVFJDAAABoAAAAChnVFJDAAABoAAAAChiVFJDAAABoAAAACh3dHB0AAAByAAAABRjcHJ0AAAB3AAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAFgAAAAcAHMAUgBHAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA..."/> */
+}

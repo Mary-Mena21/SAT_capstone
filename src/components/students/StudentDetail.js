@@ -37,6 +37,8 @@ export const StudentDetails = ({
 
     return (
         <>
+            <div className="page_Edit">
+            <h1>Student Details!</h1>
             <section key={`student__${id}`} className="student">
                 {/* <img src={require(`../images/${studentDetail.studentImg}`)} className="student_img" /> */}
                 {/* <img src={studentDetail?.studentImg} className="student_img" /> */}
@@ -55,13 +57,14 @@ export const StudentDetails = ({
                     studentName={studentDetail.fullName}
                 />
                 
-                <button className="Dbtn">Display Edit Form</button>
+                {/* <button className="Dbtn">Display Edit Form</button> */}
             </section>
 
+            <h1>Student Edit!</h1>
             <section className="student">
                
-                {/*     <button> */}
-                {/*  onClick={() => { */}
+                {/*                    <button
+    onClick={() => { */}
                 <StudentEdit
                     id={studentDetail.id}
                     studentName={studentDetail.fullName}
@@ -72,13 +75,13 @@ export const StudentDetails = ({
                     studentAddress={studentDetail.address}
                     studentImg={studentDetail.studentImg}
                 />
-                {/* navigate(`/studentEdit`);  */}
-                {/* }}
-                    className="btn btn-primary" */}
-                {/*  > */}
-                {/*                     Edit Student
-                </button> */}
-            </section>
+                        {/*  navigate(`/studentEdit`) */}
+                {/*    }}
+                    className="btn btn-primary" > 
+                                   Edit Student
+                </button> */} 
+                </section>
+                </div>
         </>
     );
 };

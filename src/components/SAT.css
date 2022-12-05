@@ -12,6 +12,9 @@ textarea {
   font-family: "Comfortaa", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
+  /* display:flex;
+  flex-wrap: wrap;
+  display: inline-flex; */
 }
 
 body {
@@ -21,6 +24,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
+  display: inline;
 }
 
 p {

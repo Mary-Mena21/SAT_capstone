@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 //import { Link, useNavigate } from "react-router-dom";
-import m1 from "../images/m1.jpg";
+//import m1 from "../images/m1.jpg";
 //import  "./Images"
 import "./StudentsBirthdays.css"
 export const StudentsBirthdays = () => {
@@ -155,78 +155,79 @@ export const StudentsBirthdays = () => {
                 alt="med1"
             /> */}
 
-            <h1>Birthdays Of The Month</h1>
-            <button
+            <h1 className="page_birthday">Birthdays Of The Month</h1>
+            <div className="button_container">
+            <button className="birthday_card_button"
                 onClick={() => {
                     setJan(true);
                 }}
             >
                 January
-            </button>
-            <button
+            </button >
+            <button className="birthday_card_button"
                 onClick={() => {
                     setFeb(true);
                 }}
             >
                 February
             </button>
-            <button
+            <button className="birthday_card_button"
                 onClick={() => {
                     setMar(true);
                 }}
             >
                 Mars
             </button>
-            <button
+            <button className="birthday_card_button"
                 onClick={() => {
                     setApr(true);
                 }}
             >
                 April
             </button>
-            <button
+            <button className="birthday_card_button"
                 onClick={() => {
                     setMay(true);
                 }}
             >
                 May
             </button>
-            <button
+            <button className="birthday_card_button"
                 onClick={() => {
                     setJun(true);
                 }}
             >
                 June
             </button>
-            <button
+            <button className="birthday_card_button"
                 onClick={() => {
                     setJul(true);
                 }}
             >
                 July
             </button>
-            <button
+            <button className="birthday_card_button"
                 onClick={() => {
                     setAug(true);
                 }}
             >
                 August
             </button>
-            <button
+            <button className="birthday_card_button"
                 onClick={() => {
                     setSep(true);
                 }}
             >
                 September
             </button>
-            <button
+            <button className="birthday_card_button"
                 onClick={() => {
                     setOct(true);
                 }}
             >
                 October
             </button>
-            <button
+            <button className="birthday_card_button"
                 onClick={() => {
                     setNov(true);
                 }}
@@ -240,12 +241,12 @@ export const StudentsBirthdays = () => {
             >
                 December
             </button>
-
+            </div>
             <article className="container">
                 {filteredBirthdays.map((birthday) => {
                     return (
                         <>
-                            <section key={birthday.id} className="student_card">
+                            <section key={birthday.id} className="student_birthday">
                                 {/*                <img
                                 className="student_img"
                                 src={birthday.studentImg}
@@ -262,9 +263,9 @@ export const StudentsBirthdays = () => {
                                     width={"10%"}
                                 >
                                     {" "}
-                                    Name:{birthday.fullName}
-                                    <br />
-                                    Birthday: {birthday.dob}
+                                    {birthday.fullName}
+                                    {" "}
+                                    {birthday.dob}
                                 </h3>
                             </section>
                         </>

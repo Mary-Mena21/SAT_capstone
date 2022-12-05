@@ -23,3 +23,12 @@
     margin: 1rem 0 0.25rem 0;
     font-style: oblique;
 }
+
+.page_Edit{
+    position:absolute; right: 11.5%;
+    top:50px; 
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: cu;
+    list-style-type: none;
+  }

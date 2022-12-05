@@ -1,5 +1,17 @@
 import { Google } from "@mui/icons-material";
 import { useEffect, useState } from "react";
+import "./StudentContact.css"
+
+
+
+
+
+
+
+
+
+
+
 
 export const StudentContact = () => {
     const [Students, setStudents] = useState([]);
@@ -19,22 +31,23 @@ export const StudentContact = () => {
         },
         [] // When this array is empty, you are observing initial component state
     );
-    return (
-
-        <article className="Students">
-        <iframe width="400" height="315" src="https://maps.google.com/maps?width=100%25&amp;height=100&amp;hl=en&amp;q=Rosemont+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" allowfullscreen></iframe>
+    return (<>
+        <h1 className="page_contact">Student Contact!</h1>
+        <article className="">
+{/*         <iframe width="400" height="200" src="https://maps.google.com/maps?width=100%25&amp;height=100&amp;hl=en&amp;q=Rosemont+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" allowfullscreen></iframe> */}
             {Students.map((student) => {
                 return (
                     <>
                         <div className="container">
-                            <section key={student.id} className="student_card">
-                                <h3 className="student_info">{student.fullName}</h3>
+                            <section key={student.id} className="student_contact">
+                                <h3 className="student_info">{student.fullName}</h3>&nbsp;&nbsp;&nbsp;
+                                
                                 <a className="student_info" target="_blank" href={`tel:${student.phone}`}>
                                 {student.phone}
                                 </a>
-
-                                <p className="student_info">Address:{student.address}
-                                    <br />
+                                <br/>
+                                <h3 className="student_info">{student.address}
+                                
 {/*                                 <a
                                 className="student_info"
                                 href="https://goo.gl/maps/PeSkZxK9HopTY6ir7"
@@ -42,8 +55,8 @@ export const StudentContact = () => {
                                 >
                                 View Map
                                 </a> */}
-
-                                </p>
+<br/>
+                                </h3>
                                 <a className="student_info" href={`${student.email}`}>
                                 Email: {student.email}
                               </a>
@@ -52,6 +65,7 @@ export const StudentContact = () => {
                     </>
                 );
             })}
-            </article>
+        </article>
+        </>
     );
 };

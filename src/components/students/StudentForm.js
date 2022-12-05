@@ -1,14 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-//import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import "react-datepicker/dist/react-datepicker.css";
-import DatePicker from "react-datepicker";
-import moment from 'moment';
+import "./StudentForm.css";
 
-// import ReactDatePicker from "react-datepicker";
-// import { Button, ButtonBase } from "@mui/material";
-// import { DatePicker, DesktopDatePicker } from "@mui/x-date-pickers";
-//import { Moment } from "react-moment";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 
 export const StudentForm = () => {
     const navigate = useNavigate();
@@ -18,17 +14,17 @@ export const StudentForm = () => {
     //const dateToFormat = "19/04/1980";
     //<Moment>{dateToFormat}</Moment>;
 
-   // let shortDate = new Date("01/12/2021");
+    // let shortDate = new Date("01/12/2021");
     //const [startDate, setStartDate] = useState(new Date());
 
     const [inputs, setInputs] = useState({
         fullName: "",
-        email:"",
+        email: "",
         classId: classId,
-        dob:Date.now(),
+        dob: Date.now(),
         phone: "",
         address: "",
-        studentImg:"",
+        studentImg: "",
     });
 
     /* -------------Date----------------- */
@@ -64,13 +60,128 @@ export const StudentForm = () => {
 
     return (
         <>
-            <fieldset className="student_form">
-                <h1>Add New Student!</h1>
+            <fieldset className=" page_container">
+                <h1 className="page_name">New Student!</h1>
                 <form onSubmit={handleSubmit}>
-                    <li>
+                    <Form.Floating className="mb-2">
+                        <Form.Control
+                            required
+                            autoFocus
+                            type="text"
+                            name="fullName"
+                            placeholder="full name"
+                            value={inputs.fullName}
+                            onChange={(evt) => {
+                                const copy = { ...inputs };
+                                copy.fullName = evt.target.value;
+                                setInputs(copy);
+                            }}
+                        />
+                        <label htmlFor="">Full name</label>
+                    </Form.Floating>
+
+                    <Form.Floating className="mb-2">
+                        <Form.Control
+                            required
+                            autoFocus
+                            type="email"
+                            name="email"
+                            placeholder="name@example.com"
+                            value={inputs.email}
+                            onChange={(evt) => {
+                                const copy = { ...inputs };
+                                copy.email = evt.target.value;
+                                setInputs(copy);
+                            }}
+                        />
+                        <label htmlFor="">Email address</label>
+                    </Form.Floating>
+
+                    <Form.Floating className="mb-2">
+                        <Form.Control
+                            required
+                            autoFocus
+                            type="date"
+                            name="dob"
+                            placeholder="date"
+                            value={inputs.dob}
+                            onChange={(evt) => {
+                                const copy = { ...inputs };
+                                new Date(copy.dob);
+                                copy.dob = evt.target.value;
+                                //toLocaleDateString()
+                                //console.log(date)
+                                setInputs(copy);
+                            }}
+                        />
+                        <label htmlFor="">Date of birth</label>
+                    </Form.Floating>
+
+                    <Form.Floating className="mb-2">
+                        <Form.Control
+                            required
+                            autoFocus
+                            type="telephone"
+                            name="phone"
+                            placeholder="Cell phone"
+                            //pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            value={inputs.phone}
+                            onChange={(evt) => {
+                                const copy = { ...inputs };
+                                copy.phone = evt.target.value;
+                                setInputs(copy);
+                            }}
+                        />
+                        <label htmlFor="">Cell phone</label>
+                    </Form.Floating>
+
+                    <Form.Floating className="mb-2">
+                        <Form.Control
+                            required
+                            autoFocus
+                            type="address"
+                            name="address"
+                            placeholder="Address"
+                            value={inputs.address}
+                            onChange={(evt) => {
+                                const copy = { ...inputs };
+                                copy.address = evt.target.value;
+                                setInputs(copy);
+                            }}
+                        />
+                        <label htmlFor="">Address</label>
+                    </Form.Floating>
+
+                    <Form.Group className="mb-2">
+                        {/*  <Form.Label>upload Image</Form.Label> */}
+                        <Form.Control
+                            size="lg"
+                            id="imgs"
+                            type="file"
+                            accept="image/png,image/jpeg"
+                            path="E:\FrontEnd\Workspace\SAT_capstone\src\components\image"
+                            files={inputs.studentImg}
+                            onChange={(evt) => {
+                                const copy = { ...inputs };
+                                copy.studentImg = evt.target.files[0].name;
+                                setInputs(copy);
+                            }}
+                        />
+                    </Form.Group>
+
+                    <Button type="submit" variant="secondary" size="md">
+                        SUBMIT
+                    </Button>
+                </form>
+            </fieldset>
+        </>
+    );
+};
+
+{
+    /*                     <li>
                         <label htmlFor="fullName">
                             Name:
-                            <br />
                             <input
                                 required
                                 autoFocus
@@ -84,18 +195,18 @@ export const StudentForm = () => {
                                 }}
                             />
                         </label>
-                    </li>
+                    </li> */
+}
 
-                    <br />
-                    <li>
+{
+    /*                     <li>
                         <label htmlFor="email">
                             Email:
-                            <br />
                             <input
                                 required
                                 autoFocus
                                 //pattern=".+@globex\.com"
-                                //size="30" 
+                                //size="30"
                                 type="email"
                                 name="email"
                                 value={inputs.email}
@@ -106,13 +217,13 @@ export const StudentForm = () => {
                                 }}
                             />
                         </label>
-                    </li>
+                    </li> */
+}
 
-                    <br />
-                    <li>
+{
+    /*                     <li>
                         <label htmlFor="dob">
                             DOB:
-                            <br />
                             <input
                                 required
                                 autoFocus
@@ -121,23 +232,21 @@ export const StudentForm = () => {
                                 value={inputs.dob}
                                 onChange={(evt) => {
                                     const copy = { ...inputs };
-                                    //moment(copy.dob).format('L')
-                                    
-                                    new Date(copy.dob)
+                                    new Date(copy.dob);
                                     copy.dob = evt.target.value;
-                                        //toLocaleDateString()
+                                    //toLocaleDateString()
                                     //console.log(date)
-                                    setInputs(copy)
+                                    setInputs(copy);
                                 }}
                             />
                         </label>
-                    </li>
+                    </li> */
+}
 
-                    <br />
-                    <li>
+{
+    /*                     <li>
                         <label htmlFor="phone">
                             Phone:
-                            <br />
                             <input
                                 required
                                 autoFocus
@@ -152,13 +261,13 @@ export const StudentForm = () => {
                                 }}
                             />
                         </label>
-                    </li>
+                    </li> */
+}
 
-                    <br />
-                    <li>
+{
+    /*                     <li>
                         <label htmlFor="address">
                             Address:
-                            <br />
                             <input
                                 required
                                 autoFocus
@@ -172,112 +281,58 @@ export const StudentForm = () => {
                                 }}
                             />
                         </label>
-                    </li>
+                    </li> */
+}
+{
+    /*                     <div className="main">
+                        <div className="uploadimage">
+                            <label htmlFor="imgs">Upload Image</label>
+                        </div>
+                        <input
+                            id="imgs"
+                            type="file"
+                            accept="image/png,image/jpeg"
+                            path="E:\FrontEnd\Workspace\SAT_capstone\src\components\image"
+                            files={inputs.studentImg}
+                            onChange={(evt) => {
+                                const copy = { ...inputs };
+                                copy.studentImg = evt.target.files[0].name;
+                                setInputs(copy);
+                            }}
+                        />
+                    </div> */
+}
 
-                    <br />
-                    <div className="main">
-                    <div className="uploadimage">
-                        <label htmlFor="imgs">Upload Image</label>
-                        </div> 
-                        <input id="imgs" type="file" accept="image/png,image/jpeg" path="E:\FrontEnd\Workspace\SAT_capstone\src\components\image" files={inputs.studentImg} onChange={(evt) => {
-                            const copy = { ...inputs };
-                            copy.studentImg= evt.target.files[0].name;
-                            setInputs(copy)
-                        }} />
-                </div> 
+{
+    /*                     <li>
+                        <input
+                            type="submit"
+                            //value="Send Request"
+                        />
+                    </li>*/
+}
 
-                <br />
-                <li>
-                    <input
-                        type="submit"
-                        //value="Send Request"
+{
+    /*                 <Form.Floating className="mb-2">
+                <Form.Control
+                id=""
+                type="email"
+                placeholder="name@example.com"
+                />
+                <label htmlFor="">Email address</label>
+                </Form.Floating>
+                 */
+}
+
+{
+    /*               <Form.Floating>
+                <Form.Control
+                
+                
                     />
-                </li>
-                <br />
+                <label htmlFor="">Full Name</label>
+                </Form.Floating>
+ */
+}
 
-                    
-                </form>
-            </fieldset>
-        </>
-    );
-};
-//<img src="{{ asset('your/url') . '/' . $row->yourimg }}" alt="" class="image">
-//src\components\Images\1.jpg
-
-//src={require('./images/react-logo.png')}
-
-//var filename = $('input[type=file]').val().replace(/C:\\fakepath\\/i, '')
-
-//  function extractFilename(path) {
-//     if (path.substring(0, 12) == "C:\\fakepath\\")
-//       return path.substring(12);
-//     var x;
-//     x = path.lastIndexOf('/');
-//     if (x >= 0)
-//       return path.substring(x+1);
-//     x = path.lastIndexOf('\\');
-//     if (x >= 0)
-//       return path.substring(x+1);
-//     return path;
-//   }
-
-{/* <input id="imgs" type="file" accept="image/png,image/jpeg,.txt,.doc,.pdf" onChange={(e)=>setInputs(e.target.files)} /> */ }
-                    
-{/*                     <DatePicker
-                        // selected={inputs.dob}
-                        // format='mm/dd/yyyy'
-                        // //onChange={(date) => setInputs(date)}
-                        // onChange={(evt) => {
-                        //     const copy = { ...inputs };
-                        //     copy.dob = evt.target.value;
-                        //     setInputs(copy)
-                        // }}
-                    /> */}
-
-                                                //console.log(M);
-                            // if (M.slice(0, 12) === "C:\\fakepath\\")
-                            // {M.replace("C:\\fakepath\\","./images/")}
-                            //M.split("fakepath\\")
-                           
-                            //copy.studentImg = M;
-
-                                          {/*       <br />
-                    <li>
-                        <label htmlFor="studentImg">
-                            studentImg:
-                            <br />
-                            <input
-                                required
-                                autoFocus
-                                type="text"
-                                name="studentImg"
-                                value={inputs.studentImg}
-                                onChange={(evt) => {
-                                    const copy = { ...inputs };
-                                    copy.studentImg = evt.target.value;
-                                    setInputs(copy);
-                                }}
-                            />
-                        </label>
-                    </li> */}
-
-
-                    {/* <br />
-                    <li>
-                        <label htmlFor="classId">
-                            classId:
-                            <br />
-                            <input
-                                required
-                                autoFocus
-                                type="number"
-                                name="classId"
-                                value={inputs.classId}
-                                onChange={(evt) => {
-                                    const copy = { ...inputs };
-                                    copy.classId = evt.target.valueAsNumber;
-                                    setInputs(copy);
-                                }}
-                            />
-                        </label>
-                    </li> */}
+// style={{ height: '2.9rem', margin: '0.3rem' ,padding: '0.7rem' }}

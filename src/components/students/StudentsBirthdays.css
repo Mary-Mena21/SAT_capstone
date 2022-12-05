@@ -1,31 +1,44 @@
+.page_birthday{
+  position:absolute; right: 16%;
+  top:50px; 
+  font-size: 1.6rem;
+  text-align: center;
+  font-family: cu;
+  list-style-type: none;
+}
 
-    App {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        background-color: #282c34;
-      
-      }
-      
-      .Container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        margin: 0 10px;
-      }
+.button_container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:30rem;
+  position:absolute; right: 7%;
+  top:100px;
+}
 
+.student_birthday {
+  /* background-color:rgb(219, 235, 248); */
+  background-color: rgba(255, 192, 203, 0.493);
+  border: 1px dotted rgb(133, 42, 54);
+  border-radius: 15px;
+  padding: 0.5rem;
+  margin: 0.3rem;
+  max-width: 26rem;
+  box-shadow: 1px 1px 3px rgb(196, 196, 196);
+  position: relative;
+  top:280px;
+  left:63%;
+
+}
 
       .birthday_card_button{
     border: 0;
-    height: 5rem;
-    width: 10rem;
+    height: 3rem;
+    width: 8rem;
     line-height: 2.5;
-    margin-top: 10px;
-    padding: 10px 40px;
-    font-size: 1rem;
+    margin: 2px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
     text-align: center;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
@@ -37,11 +50,12 @@
                                       rgba(0, 0, 0, 0));
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
                 inset -2px -2px 3px rgba(0, 0, 0, .6);
+                
 }
 
 button:hover {
     background-color: rgb(224, 119, 119);
-    color:;
+
 }
 
 button:active {

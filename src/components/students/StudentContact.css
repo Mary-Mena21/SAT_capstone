@@ -1,0 +1,23 @@
+.page_contact{
+    position:absolute;
+    top:50px; 
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: cu;
+    list-style-type: none;
+  }
+
+.student_contact{
+    /* background-color:rgb(219, 235, 248); */
+    background-color: rgba(255, 192, 203, 0.493);
+    border: 1px dotted rgb(133, 42, 54);
+    border-radius: 15px;
+    padding: 0.5rem;
+    margin: 0.3rem;
+    max-width: 26rem;
+    box-shadow: 1px 1px 3px rgb(196, 196, 196);
+    position: relative;
+    top: 50px;
+    
+
+}

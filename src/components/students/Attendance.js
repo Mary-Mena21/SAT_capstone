@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-//import "./Attendance.css";
+import "./Attendance.css";
 
 export const Attendance = ({ attendTermState, dateM }) => {
     const [attendance, setAttendance] = useState([]);
@@ -18,23 +18,24 @@ export const Attendance = ({ attendTermState, dateM }) => {
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
     //console.log(satUserObject);
-    useEffect(
-        () => {
-            const fetchData = async () => {
-                const response = await fetch(
-                    `http://localhost:8033/studentAttendance?_expand=student&classId=${satUserObject.id}`
-                );
-                const attendanceArray = await response.json();
-                setAttendance(attendanceArray);
-            };
-            fetchData();
-        },
-        []
-    );
+    useEffect(() => {
+        const fetchData = async () => {
+            const response = await fetch(
+                `http://localhost:8033/studentAttendance?_expand=student&classId=${satUserObject.id}`
+            );
+            const attendanceArray = await response.json();
+            attendanceArray.sort((a,b) => {
+                return a.fullName === b.fullName ? 0 : a < b ? -1 : 1
+            });
+            setAttendance(attendanceArray);
+            console.log("attendanceArray" + attendanceArray);
+        };
+        fetchData();
+    }, []);
 
     return (
         <>
-            <h1>Attendance 101</h1>
+            <h1 className="page_name">Attendance</h1>
 
             <article className="attendance">
                 {filterAttendance.map((attend) => {
@@ -47,10 +48,17 @@ export const Attendance = ({ attendTermState, dateM }) => {
                                         className="student_card"
                                     >
                                         <div className="student_card_container">
-                                           {<img src={require(`../images/${attend.student.studentImg}`)}  className="student_img" />}
+                                            {
+                                                <img
+                                                    src={require(`../images/${attend.student.studentImg}`)}
+                                                    className="student_img"
+                                                />
+                                            }
                                             <div>{attend.attend}</div>
                                             <div>{attend.date}</div>
-                                            <h3 className="student_info">{attend.student.fullName}</h3>
+                                            <h3 className="student_info">
+                                                {attend.student.fullName}
+                                            </h3>
                                         </div>
                                     </section>
                                 </div>

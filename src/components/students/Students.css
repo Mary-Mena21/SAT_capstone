@@ -9,6 +9,7 @@ Link {
 .students {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .student_card {
     /* background-color:rgb(219, 235, 248); */
@@ -19,6 +20,10 @@ Link {
     margin: 0.3rem;
     max-width: 26rem;
     box-shadow: 1px 1px 3px rgb(196, 196, 196);
+    /* position: relative; */
+    /* top: 100px; */
+/*     left:63%; */
+
 }
 
 .student_card_container {
@@ -26,6 +31,8 @@ Link {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    
 }
 
 .student_img {

@@ -93,7 +93,6 @@ export const StudentEdit = ({
                     <li>
                         <label htmlFor="fullName">
                             Name:
-                            <br />
                             <input
                             required
                             autoFocus
@@ -109,11 +108,9 @@ export const StudentEdit = ({
                         </label>
                     </li>
 
-                    <br />
                     <li>
                         <label htmlFor="email">
                             Email:
-                            <br />
                             <input
                             required
                             autoFocus
@@ -149,11 +146,9 @@ export const StudentEdit = ({
                         </label>
                     </li> */}
 
-                    <br />
                     <li>
                         <label htmlFor="dob">
-                            DOB:
-                            <br />
+                            Birthday:
                             <input
                             required
                             autoFocus
@@ -169,11 +164,9 @@ export const StudentEdit = ({
                         </label>
                     </li>
 
-                    <br />
                     <li>
                         <label htmlFor="phone">
                             Phone:
-                            <br />
                             <input
                             required
                             autoFocus
@@ -189,11 +182,9 @@ export const StudentEdit = ({
                         </label>
                     </li>
 
-                    <br />
                     <li>
                         <label htmlFor="address">
                             Address:
-                            <br />
                             <input
                             required
                             autoFocus
@@ -229,7 +220,6 @@ export const StudentEdit = ({
                         </label>
                     </li> */}
 
-                    <br />
                 </form>
             </fieldset>
 

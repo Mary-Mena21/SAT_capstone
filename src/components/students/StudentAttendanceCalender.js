@@ -1,9 +1,10 @@
-export const StudentAttendanceCalender = ({setterFunction,dateM}) => {
+import "./StudentAttendanceCalender.css";
+export const StudentAttendanceCalender = ({ setterFunction, dateM }) => {
     return(
         <>
             <div>
-                <>container</>
-                <input
+                {/* <>container</> */}
+                <input className="page_attendance"
                 required
                 autoFocus
                 type="date"
