@@ -1,13 +1,17 @@
-import { useState } from "react"
-import { Attendance } from "./Attendance"
-import { StudentAttendanceCalender } from "./StudentAttendanceCalender"
+import { useState } from "react";
+import { Attendance } from "./Attendance";
+import { StudentAttendanceCalender } from "./StudentAttendanceCalender";
+import "./StudentAttendanceContainer.css";
 
 export const StudentAttendanceContainer = () => {
-    const [attendTerms, setAttendTerms]= useState("")
+    const [attendTerms, setAttendTerms] = useState("");
 
-    return (<>
-        <StudentAttendanceCalender setterFunction={ setAttendTerms} />
-        <Attendance attendTermState={attendTerms} />
-    </>
-    )
-}
+    return (
+        <>
+            <div className="card_container_calender">
+                <StudentAttendanceCalender setterFunction={setAttendTerms} />
+                <Attendance attendTermState={attendTerms} />
+            </div>
+        </>
+    );
+};
