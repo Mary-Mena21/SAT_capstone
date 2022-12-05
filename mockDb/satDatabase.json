@@ -268,6 +268,16 @@
       "address": "University St Station Bay C",
       "studentImg": "m1.jpg",
       "id": 23
+    },
+    {
+      "fullName": "Sany Yousif",
+      "email": "sanymamdoh@yahoo.com",
+      "classId": 1,
+      "dob": "2022-12-21",
+      "phone": "6156020494",
+      "address": "358, British Woods Dr .",
+      "studentImg": "Sheren Mena.png",
+      "id": 24
     }
   ],
   "studentAttendance": [
