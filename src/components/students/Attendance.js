@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import "./Attendance.css";
 
-export const Attendance = ({ attendTermState, dateM }) => {
+export const Attendance = ({ attendTermState }) => {
     const [attendance, setAttendance] = useState([]);
     const [filterAttendance, setFilterAttendance] = useState([]);
 
@@ -24,8 +24,8 @@ export const Attendance = ({ attendTermState, dateM }) => {
                 `http://localhost:8033/studentAttendance?_expand=student&classId=${satUserObject.id}`
             );
             const attendanceArray = await response.json();
-            attendanceArray.sort((a,b) => {
-                return a.fullName === b.fullName ? 0 : a < b ? -1 : 1
+            attendanceArray.sort((a, b) => {
+                return a.fullName === b.fullName ? 0 : a < b ? -1 : 1;
             });
             setAttendance(attendanceArray);
             console.log("attendanceArray" + attendanceArray);
@@ -35,36 +35,37 @@ export const Attendance = ({ attendTermState, dateM }) => {
 
     return (
         <>
-            <h1 className="page_name">Attendance</h1>
-
-            <article className="attendance">
+            <article /* className="container_A" */>
+                {/* <h1 className="page_attendance">Attendance</h1> */}
                 {filterAttendance.map((attend) => {
                     return (
                         <>
-                            {attend.attend ? (
-                                <div className="container">
-                                    <section
-                                        key={attend.id}
-                                        className="student_card"
-                                    >
-                                        <div className="student_card_container">
-                                            {
-                                                <img
-                                                    src={require(`../images/${attend.student.studentImg}`)}
-                                                    className="student_img"
-                                                />
-                                            }
-                                            <div>{attend.attend}</div>
-                                            <div>{attend.date}</div>
-                                            <h3 className="student_info">
-                                                {attend.student.fullName}
-                                            </h3>
-                                        </div>
-                                    </section>
-                                </div>
-                            ) : (
-                                ""
-                            )}
+                            <div /* className="card_container_A" */>
+                                {attend.attend ? (
+                                    <div className="">
+                                        <section
+                                            key={attend.id}
+                                            className="student_card_A"
+                                        >
+                                            <div className="student_card_container_A">
+                                                {
+                                                    <img
+                                                        src={require(`../images/${attend.student.studentImg}`)}
+                                                        className="student_img_A"
+                                                    />
+                                                }
+                                                <div>{attend.attend}</div>
+                                                <div>{attend.date}</div>
+                                                <h3 className="student_info_A">
+                                                    {attend.student.fullName}
+                                                </h3>
+                                            </div>
+                                        </section>
+                                    </div>
+                                ) : (
+                                    ""
+                                )}
+                            </div>
                         </>
                     );
                 })}
