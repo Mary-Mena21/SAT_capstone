@@ -154,7 +154,7 @@ export const StudentsBirthdays = () => {
                 width="200"
                 alt="med1"
             /> */}
-
+            <section className="birthday_container">
             <h1 className="page_birthday">Birthdays Of The Month</h1>
             <div className="button_container">
             <button className="birthday_card_button"
@@ -242,11 +242,12 @@ export const StudentsBirthdays = () => {
                 December
             </button>
             </div>
-            <article className="container">
+            <article className="">
                 {filteredBirthdays.map((birthday) => {
                     return (
                         <>
-                            <section key={birthday.id} className="student_birthday">
+                            <div className=""></div>
+                            <section key={birthday.id} className="student_birthday_B">
                                 {/*                <img
                                 className="student_img"
                                 src={birthday.studentImg}
@@ -255,23 +256,22 @@ export const StudentsBirthdays = () => {
                                 /> */}
                                 <img
                                     src={require(`../images/${birthday.studentImg}`)}
-                                    className="student_img"
+                                    className="student_img_B"
                                 />
-                                <h3
-                                    className="student_info"
-                                    height={"10%"}
-                                    width={"10%"}
-                                >
+                                <h3 className="student_info_B">
                                     {" "}
                                     {birthday.fullName}
-                                    {" "}
-                                    {birthday.dob}
                                 </h3>
+                                <h3 className="student_info_B">
+                                {" "}
+                                {birthday.dob}
+                            </h3>
                             </section>
                         </>
                     );
                 })}
-            </article>
+                </article>
+                </section>
         </>
     );
 };
