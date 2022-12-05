@@ -13,18 +13,16 @@ import { StudentSearch } from "../students/StudentSearch";
 import { StudentContainer } from "../students/StudentContainer";
 import { StudentAttendanceCalender } from "../students/StudentAttendanceCalender";
 import { StudentAttendanceContainer } from "../students/StudentAttendanceContainer";
-import { StudentChartData } from "../students/StudentChartData.";
 import { StudentContact } from "../students/StudentContact";
 import { StudentBarChart } from "../students/StudentBarChart";
-import { CameraProfile } from "../students/CameraProfile";
-import { Camera } from "../students/Camera";
+import { Camera} from "../students/Camera";
 //import { Camera } from "@mui/icons-material";
 
 
 export const ApplicationViews = () => {
     return (
         <Routes>
-            {/* <Route path="students/attendance1" element={<StudentAttendance />} />  */}
+            <Route path="students/attendance1" element={<StudentAttendance />} />  
             <Route path="students" element={<Students />} />
             <Route path="studentsCopy" element={<StudentContainer />} />
             <Route path="student" element={<Student />} />
@@ -32,8 +30,9 @@ export const ApplicationViews = () => {
             <Route path="birthdays" element={<StudentsBirthdays />} />
             <Route path="studentBarChart" element={<StudentBarChart />} />
             <Route path="studentContact" element={<StudentContact />} />
-            <Route path="cameraProfile" element={<CameraProfile />} />
-            <Route path="camera" element={<Camera />} />
+            <Route path="cameraProfile" element={<Camera
+                 />} />
+           
 
             <Route path="studentForm" element={<StudentForm />} />
             <Route path="studentEdit" element={<StudentEdit />} />

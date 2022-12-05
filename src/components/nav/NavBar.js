@@ -1,46 +1,166 @@
-import { Link, useNavigate } from "react-router-dom"
-import "./NavBar.css"
+import { Link, useNavigate } from "react-router-dom";
+import "./NavBar.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+//import { ToggleButton } from 'react-bootstrap'
+//import background from "../images/SAT_1.jpg";
 
-export const NavBar = () => {
-    const navigate = useNavigate()
+import { useState } from "react";
+import Alert from "react-bootstrap/Alert";
+import Button from "react-bootstrap/Button";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import { FaBars, FaHome, FaFortAwesome, FaBirthdayCake } from "react-icons/fa";
+import {
+    BsFillCalendar2CheckFill,
+    BsFillPersonPlusFill,
+    BsBookHalf,
+    BsFillTelephoneFill,
+    BsBarChartLineFill,
+    BsCameraFill,
+    BsBookmarksFill,
+} from "react-icons/bs";
 
-    return(<>
-        <nav className="sidenav">
-        <ul className="navbar">
-        <a href="javascript:void(0)" className="closebtn" onclick="closeNav()">&times;</a>
-        <li className="navBar_item"><Link className="navBar_link" to="/">Home</Link></li>
-        <li className="navBar_item"><Link className="navBar_link" to="/StudentsCopy">Classroom</Link></li> 
-        <li className="navBar_item"><Link className="navBar_link" to="/studentForm">New Student</Link></li>
-        <li className="navBar_item"><Link className="navBar_link" to="/attendance">Attendance</Link></li>
-        <li className="navBar_item"><Link className="navBar_link" to="/gradeBook">Books</Link></li>
-        <li className="navBar_item"><Link className="navBar_link" to="/birthdays">Birthdays</Link></li>
-        <li className="navBar_item"><Link className="navBar_link" to="/studentContact">Contact</Link></li>
-        <li className="navBar_item"><Link className="navBar_link" to="/studentBarChart">BarChart</Link></li>
-        <li className="navBar_item"><Link className="navBar_link" to="/cameraProfile">CameraProfile</Link></li>
-        <li className="navBar_item"><Link className="navBar_link" to="/about">About</Link></li>
-            
-            <li className="navbar__item navbar__logout">
-                <Link className="navbar__link" to="" onClick={() => {
-                    localStorage.removeItem("SAT_user")
-                    navigate("/", {replace: true})
-                }}>Logout</Link>
-            </li>
+export const NavBar = ({ children }) => {
+    const [isOpen, setIsOpen] = useState(false);
+    const toggle = () => setIsOpen(!isOpen);
 
-            </ul>
-        </nav>
-        <span className="openNav" onclick="openNav()">&#9776; open</span>
-        <script>
-function openNav() {
-  document.getElementById("mySidenav")
-}
-</script>
-            
-<script>
-function closeNav() {
-  document.getElementById("mySidenav")
-}
-</script>
+    /* sideBar */
+    // const [show, setShow] = useState(false);
+    // const handleClose = () => setShow(false);
+    // const handleShow = () => setShow(true);
+
+    const navigate = useNavigate();
+    const menuItem = [
+        { path: "/", name: "Home", icon: <FaHome /> },
+        {
+            path: "/StudentsCopy", name: "Classroom", icon: <FaFortAwesome />
+        ,className:"sidebar_2"
+        },
+        {
+            path: "/studentForm",
+            name: "New Student",
+            icon: <BsFillPersonPlusFill />
+            ,className:"sidebar_2"
+        },
+        {
+            path: "/attendance",
+            name: "Attendance",
+            icon: <BsFillCalendar2CheckFill />,
+            className:"sidebar_2"
+        },
+        { path: "/birthdays", name: "Birthdays", icon: <FaBirthdayCake /> },
+        {
+            path: "/studentContact",
+            name: "Contact",
+            icon: <BsFillTelephoneFill />,
+            className:"sidebar_2"
+        },
+        { path: "/gradeBook", name: "Books", icon: <BsBookHalf /> },
+        {
+            path: "/studentBarChart",
+            name: "BarChart",
+            icon: <BsBarChartLineFill />,
+            className:"sidebar_2"
+        },
+        {
+            path: "/cameraProfile",
+            name: "CameraProfile",
+            icon: <BsCameraFill />,
+            className:"sidebar_2"
+        },
+        {
+            path: "/about", name: "About", icon: <BsBookmarksFill />,
+            className:"sidebar_2"    },
+    ];
+    return (
+        <>
+{/*             <div
+                className="background"
+                style={{
+                    backgroundImage: `url(${background})`,
+                   // backgroundAttachment: "fixed",
+                    backgroundPosition: "center",
+                    backgroundSize: "contain",
+                    backgroundRepeat: "no-repeat",
+                    height: "45rem",
+                    width:"auto"
+                }}
+            >
+            </div> */}
+            {/* -------------------img------------------- */}
+          {/*   <img className="background" src={background}/> */}
+        
+            {/* sideBar */}
+            {/*<Button variant="primary" onClick={handleShow}>
+                Launch
+            </Button>
+
+            <Offcanvas show={show} onHide={handleClose}>
+                <Offcanvas.Header closeButton>
+                    <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+                </Offcanvas.Header>
+                <Offcanvas.Body>
+                    Some text as placeholder. In real life you can have the
+                    elements you have chosen. Like, text, images, lists, etc.
+                </Offcanvas.Body>
+            </Offcanvas> */}
+            {/* sideBar */}
+            <div className="top_bar"></div>
+            <div className="sidebar_2"></div>
+            <div className="">
+                <Link
+                    className="link_text logout_link"
+                    to=""
+                    onClick={() => {
+                        localStorage.removeItem("SAT_user");
+                        navigate("/", { replace: true });
+                    }}
+                >
+                    Logout
+                </Link>
+            </div>
+            {/* sideNavBar */}
+            <div className="container ">
+                <div
+                    style={{ width: isOpen ? "200px" : "50px" }}
+                    className="sidebar"
+                >
+                    <div className="top_section">
+                        <h1
+                            style={{ display: isOpen ? "block" : "none" }}
+                            className="logo"
+                        >
+                            SAT
+                        </h1>
+                        <div
+                            style={{ marginLeft: isOpen ? "50px" : "0px" }}
+                            className="bars"
+                        >
+                            <FaBars onClick={toggle} />
+                        </div>
+                    </div>
+                    {menuItem.map((item, index) => (
+                        <Link
+                            to={item.path}
+                            key={index}
+                            className="link"
+                            activeclassName="active"
+                        >
+                            <div className="icon">{item.icon}</div>
+                            <div
+                                style={{ display: isOpen ? "block" : "none" }}
+                                className="link_text"
+                            >
+                                {item.name}
+                            </div>
+                        </Link>
+                    ))}
+                </div>
+                <main>{children}</main>
+            </div>
+            {/* sideNavBar */}
+            <div className=""></div>
+
+          <div className="bottom_bar"></div> 
         </>
-    )
-}
-
+    );
+};

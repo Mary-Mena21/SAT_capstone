@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import "./GradeBookList.css"
 
 export const GradeBookList = () => {
     const [books, setBooks] = useState([]);
@@ -14,20 +15,21 @@ export const GradeBookList = () => {
     }, []);
     return (
         <>
-            <h1>Grade Books</h1>
-            <article className="Students">
+            <h1 className="page_book">Grade Books</h1>
+            <article className="book_container">
                 {books.map((book) => {
                     return (
                         <>
+                            <article >
                             {/* <div>{book.bookName}</div> */}
                             <a href={book.gradeBookPdf} target="_blank">
-                                <img className="student_card"
+                                <img className="student_book"
                                     src={book.bookImg}
                                     height={"10%"}
                                     width={"10%"}
                                 />
                             </a>
-                            
+                            </article>
                         </>
                     );
                 })}

@@ -23,7 +23,7 @@ export const StudentCopy = ({
         current.getMonth() + 1
     }-${current.getDate()}`;
     //Date.now()
-    let NewDate = new Date(Date.now()).toJSON().slice(0, 10);
+    let NewDate = new Date(Date.now()).toJSON().slice(0, 10)
     const navigate = useNavigate();
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
@@ -56,30 +56,16 @@ export const StudentCopy = ({
         const responseJson = await response.json();
         return responseJson;
     };
-    /* ------------------------------ */
-    // const handleSaveButtonClick = (event,copy) => {
-    //     //event.preventDefault();
-    //     sendAttendance(copy);
-    // };
-
-    // const handleSubmit = (event) => {
-    //     event.preventDefault();
-    //     sendAttendance(inputAttend);
-    //     // navigate("/students");
-    // };
-    /* ------------------------------ */
 
     return (
         <>
             <section>
-                <div className="container">
+                <div className="">
+                {/* <div className="container"> */}
                     <section key={id} className="student_card">
                         <div className="student_card_container">
-
                             {/* <img src={studentImg} className="student_img" /> */}
-
          <img src={require(`../images/${studentImg}`)} className="student_img" />
-
                             <Link to={`/students/${id}`}>
                                 <h3 className="student_info">{studentName}</h3>
                             </Link>

@@ -1,0 +1,34 @@
+.page_studentForm{
+    position:absolute;
+    top:50px; 
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: cu;
+    list-style-type: none;
+    
+}
+
+/* .page_name{
+    position:absolute; right: 21%;
+    top:50px; 
+    font-size: 2rem;
+    text-align: center;
+    font-family: cu;
+} */
+
+.page_container{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.page_name{
+        font-size: 2rem;
+        text-align: center;
+        font-family: cu;
+        /* 0000000 */
+    }
+    
