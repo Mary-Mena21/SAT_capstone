@@ -817,13 +817,6 @@
       "classId": 1,
       "studentId": 11,
       "attend": true
-    },
-    {
-      "id": 118,
-      "date": "2022-12-06",
-      "classId": 1,
-      "studentId": 12,
-      "attend": true
     }
   ],
   "classes": [
