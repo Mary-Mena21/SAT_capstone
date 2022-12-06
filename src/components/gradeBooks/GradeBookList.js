@@ -15,7 +15,7 @@ export const GradeBookList = () => {
     }, []);
     return (
         <>
-            <h1 className="page_book">Grade Books</h1>
+            <h1 className="page_book">Grade Books!</h1>
             <article className="book_container">
                 {books.map((book) => {
                     return (
@@ -25,8 +25,8 @@ export const GradeBookList = () => {
                             <a href={book.gradeBookPdf} target="_blank">
                                 <img className="student_book"
                                     src={book.bookImg}
-                                    height={"10%"}
-                                    width={"10%"}
+                                    height={"auto"}
+                                    width={"150rem"}
                                 />
                             </a>
                             </article>
