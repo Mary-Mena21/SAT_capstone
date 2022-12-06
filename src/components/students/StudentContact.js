@@ -29,9 +29,9 @@ export const StudentContact = () => {
                 {Students.map((student) => {
                     return (
                         <>
-                            <div className="">
-                                <section
-                                    key={student.id}
+                            <div key={`student--${student.id}`}>
+                                <section 
+                                    
                                     className="student_contact"
                                 >
                                     <h3 className="student_info">

@@ -22,7 +22,7 @@ import { Camera} from "../students/Camera";
 export const ApplicationViews = () => {
     return (
         <Routes>
-            <Route path="students/attendance1" element={<StudentAttendance />} />  
+            <Route path="students/attendance" element={<StudentAttendance />} />  
             <Route path="students" element={<Students />} />
             <Route path="studentsCopy" element={<StudentContainer />} />
             <Route path="student" element={<Student />} />
@@ -44,3 +44,4 @@ export const ApplicationViews = () => {
         </Routes>
     );
 };
+/* students/attendance1 */
