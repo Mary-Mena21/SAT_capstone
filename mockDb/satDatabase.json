@@ -784,13 +784,6 @@
       "attend": true
     },
     {
-      "date": "12/6/2022",
-      "classId": 1,
-      "studentId": 1,
-      "attend": false,
-      "id": 112
-    },
-    {
       "id": 113,
       "date": "2022-12-06",
       "classId": 1,
