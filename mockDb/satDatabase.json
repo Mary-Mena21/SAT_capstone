@@ -278,6 +278,46 @@
       "address": "358, British Woods Dr .",
       "studentImg": "Sheren Mena.png",
       "id": 24
+    },
+    {
+      "fullName": "Sany Yousif",
+      "email": "sanymamdoh@yahoo.com",
+      "classId": 1,
+      "dob": "2018-07-06",
+      "phone": "6156020494",
+      "address": "358, British Woods Dr .",
+      "studentImg": "hj.jpg",
+      "id": 25
+    },
+    {
+      "fullName": "MARIAN MENA",
+      "email": "marianashokry@yahoo.com",
+      "classId": 1,
+      "dob": "2022-12-22",
+      "phone": "6156022555",
+      "address": "University St Station Bay C",
+      "studentImg": "ui.jpg",
+      "id": 26
+    },
+    {
+      "fullName": "MARIAN MENA",
+      "email": "marianashokry@yahoo.com",
+      "classId": 1,
+      "dob": "2022-12-20",
+      "phone": "6156022555",
+      "address": "University St Station Bay C",
+      "studentImg": "24.jpg",
+      "id": 27
+    },
+    {
+      "fullName": "Sany Yousif",
+      "email": "sanymamdoh@yahoo.com",
+      "classId": 1,
+      "dob": "2022-12-02",
+      "phone": "6156020494",
+      "address": "358, British Woods Dr .",
+      "studentImg": "24.jpg",
+      "id": 28
     }
   ],
   "studentAttendance": [
@@ -741,6 +781,48 @@
       "date": "2022-12-05",
       "classId": 1,
       "studentId": 10,
+      "attend": true
+    },
+    {
+      "id": 113,
+      "date": "2022-12-06",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 114,
+      "date": "2022-12-06",
+      "classId": 1,
+      "studentId": 4,
+      "attend": true
+    },
+    {
+      "id": 115,
+      "date": "2022-12-06",
+      "classId": 1,
+      "studentId": 9,
+      "attend": true
+    },
+    {
+      "id": 116,
+      "date": "2022-12-06",
+      "classId": 1,
+      "studentId": 10,
+      "attend": true
+    },
+    {
+      "id": 117,
+      "date": "2022-12-06",
+      "classId": 1,
+      "studentId": 11,
+      "attend": true
+    },
+    {
+      "id": 118,
+      "date": "2022-12-06",
+      "classId": 1,
+      "studentId": 12,
       "attend": true
     }
   ],
