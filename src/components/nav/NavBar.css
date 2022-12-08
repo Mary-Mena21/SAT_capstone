@@ -5,9 +5,11 @@
     margin:0;
     padding:0;
     text-decoration: none;
+   /*  background: #ebe8d0; */
     /* background-color:#ebe8d0; */
 }
 body {padding: 0;
+    top: 0;
 margin: 0;}
 /* .container{
     display:flex;
@@ -33,18 +35,17 @@ margin: 0;}
     
 }
 
-.sidebar_2{
-    background: #ebe8d0; ;
+/* .sidebar_2{
+    background: #ebe8d0;
     color:  #f3b530;
     width:100%;
     height: 100%;
     transition: all 0.5s;
     position:fixed;
     z-index: -300;
-/*     left:900px; */
     top:48px;
     bottom:20px;
-}
+} */
 
 .top_section{
     display: flex;
@@ -95,15 +96,15 @@ margin: 0;}
     
 } 
 .bottom_bar{
+    position: absolute;
     background-color: #83312c;
     height:48px;
     text-decoration: none;
     left:0;
     right:0;
-    top:0;
+    bottom:0;
     width: 100%;
     padding: 0;
-    
     bottom:0;
 } 
 
@@ -120,10 +121,9 @@ margin: 0;}
     font-family:"Josefin Sans", "sans-serif";
 }
 
-.background{
+/* .background{
     z-index: auto;
     margin: 48px 0 0 0;
-    /* position: relative; */
     position: relative;
     top: 50%;
     left: 0px;
@@ -139,8 +139,7 @@ margin: 0;}
     margin: 16px 0;
     position: relative;
     display: inline-block !important;
-
-}
+} */
 
 /* background-image: url("/static/media/SAT_4.6739d98e7adfe186333c.jpg"); background-position: center center; background-size: cover; background-repeat: no-repeat; height: 768.8px; width: 1477.6px; */
 

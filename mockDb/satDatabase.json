@@ -807,6 +807,41 @@
       "classId": 1,
       "studentId": 9,
       "attend": true
+    },
+    {
+      "id": 128,
+      "date": "2022-12-08",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 129,
+      "date": "2022-12-08",
+      "classId": 1,
+      "studentId": 4,
+      "attend": true
+    },
+    {
+      "id": 130,
+      "date": "2022-12-08",
+      "classId": 1,
+      "studentId": 9,
+      "attend": true
+    },
+    {
+      "id": 131,
+      "date": "2022-12-08",
+      "classId": 1,
+      "studentId": 10,
+      "attend": true
+    },
+    {
+      "id": 132,
+      "date": "2022-12-08",
+      "classId": 1,
+      "studentId": 12,
+      "attend": true
     }
   ],
   "classes": [

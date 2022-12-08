@@ -52,7 +52,7 @@
     width: 0;
 }
 /* --------------- */
-.navbar {
+/* .navbar {
     display: flex;
     flex-wrap: nowrap;
     justify-content: left;
@@ -76,8 +76,8 @@ li {
 .openNav {
     font-size: 30px;
     cursor: pointer;
-}
- */
+} */
+ 
 /* .navbar__logout {
     margin-left: auto;
 }
