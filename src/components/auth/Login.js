@@ -20,9 +20,7 @@ export const Login = () => {
                     localStorage.setItem("SAT_user", JSON.stringify({
                         id: user.id,
                         teacher: user.isTeacher
-
                     }))
-
                     navigate("/")
                 }
                 else {

@@ -4,8 +4,10 @@ import "./StudentContact.css";
 
 export const StudentContact = () => {
     const [Students, setStudents] = useState([]);
+
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
+    
     useEffect(
         () => {
             const fetchData = async () => {
