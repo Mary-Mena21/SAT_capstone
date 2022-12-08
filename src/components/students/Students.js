@@ -59,8 +59,8 @@ export const Students = () => {
 
     return (
         <>
-            <h1>Students</h1>
-            <article className="Students">
+        <article className="Students">
+            <h1 className="page_students">Students</h1>
                 {Students.map((student) => {
                     <>
                         key={`student__${student.id}`}
@@ -94,7 +94,7 @@ export const Students = () => {
                                                     {student.fullName}
                                                 </h3>
                                             </Link>
-
+{/* -----------------------------------BarChart------------------------------------- */}
                                             <input
                                                 type="checkbox"
                                                 className="checkbox"
@@ -110,6 +110,8 @@ export const Students = () => {
                                                     handleSaveButtonClick(clickEvent);
                                                 }} */
                                             />
+{/* -----------------------------------BarChart------------------------------------- */}
+                                            
                                         </div>
                                     </section>
                                 </div>
@@ -119,7 +121,7 @@ export const Students = () => {
                 })}
             </article>
 
-            <section>
+{/*             <section>
                 <button
                     onClick={(clickEvent) => {
                         handleSaveButtonClick(clickEvent);
@@ -128,7 +130,7 @@ export const Students = () => {
                 >
                     Submit Ticket
                 </button>
-            </section>
+            </section> */}
         </>
     );
 };

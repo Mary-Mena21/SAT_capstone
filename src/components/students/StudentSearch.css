@@ -28,4 +28,13 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
+
+    /* background-color: #fed9ff; */
+  /*   width: 600px;
+    height: 100vh;
+    overflow-x: hidden; */
+    /* overflow-y: auto; */
+   /*  text-align: center; */
+    /* padding: 20px; */
 }

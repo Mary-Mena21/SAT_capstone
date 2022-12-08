@@ -10,6 +10,7 @@ Link {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 .student_card {
     /* background-color:rgb(219, 235, 248); */
@@ -55,3 +56,13 @@ Link {
     height: 20px;
     width: 20px;
 }
+
+
+.page_students{
+    /*     position:absolute; */
+/*         right: 25%;
+        top:50px;  */
+        font-size: 2rem;
+        text-align: center;
+        font-family: cu;
+    }
