@@ -1,6 +1,6 @@
 
 //import logo from "./logo.svg";
-//import "./App.css";
+import "./StudentBarChart.css";
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -57,7 +57,7 @@ export const StudentBarChart = () => {
                     });
               HG.push(classCount.length);
               classCount = [];
-              console.log(HG);
+              //console.log(HG);
             });
             
 
@@ -65,10 +65,32 @@ export const StudentBarChart = () => {
                 labels: uniqueDates,
                 datasets: [
                     {
-                        label: "MMM",
+                        label: "Student attend",
                         data: HG,
-                        borderColor: "rgb(53, 162, 235)",
-                        backgroundColor: "rgba(53, 162, 235, 0.4)",
+                        // borderColor: "rgb(53, 162, 235)",
+                        // backgroundColor: "rgba(53, 162, 235, 0.4)",
+
+                        backgroundColor:
+                        [
+                          'rgba(255, 99, 132, 0.5)',
+                          'rgba(255, 159, 64, 0.5)',
+                          'rgba(255, 205, 86, 0.5)',
+                          'rgba(75, 192, 192, 0.5)',
+                          'rgba(54, 162, 235, 0.5)',
+                          'rgba(153, 102, 255, 0.5)',
+                          'rgba(201, 203, 207, 0.5)'
+                        ],
+                      borderColor:
+                        [
+                          'rgb(255, 99, 132)',
+                          'rgb(255, 159, 64)',
+                          'rgb(255, 205, 86)',
+                          'rgb(75, 192, 192)',
+                          'rgb(54, 162, 235)',
+                          'rgb(153, 102, 255)',
+                          'rgb(201, 203, 207)'
+                        ],
+                        borderWidth: 1
                     },
                 ],
             });
@@ -81,7 +103,7 @@ export const StudentBarChart = () => {
                     },
                     title: {
                         display: true,
-                        text: "Whom'st let the dogs out",
+                        text: "Average Weakly Attendance",
                     },
                 },
             });
@@ -89,7 +111,7 @@ export const StudentBarChart = () => {
         fetchData();
     }, []);
     return (
-        <div className="App">
+        <div className="BarChart">
             <Bar options={chartOptions} data={chartData} />
         </div>
     );
