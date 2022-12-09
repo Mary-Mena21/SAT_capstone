@@ -1,37 +1,42 @@
-.page_camera{
-    position:absolute; right: 22%;
-    top:55px; 
-    font-size: 1.6rem;
-    text-align: center;
+.page_camera_style {
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+   /*  flex-wrap: wrap; */
+    font-size: 2rem;
+   /*  text-align: center; */
     font-family: cu;
-    list-style-type: none;
-  }
+}
 
-  .student_camera{
-    position:absolute; right: 19%;
-    top:100px; 
-    font-size: 1.6rem;
-    text-align: center;
-    font-family: cu;
-    list-style-type: none;
-  }
+.student_camera_style {
+  position: relative;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+ /*  flex-wrap: wrap; */
+  font-size: 2rem;
+ /*  text-align: center; */
+  font-family: cu;
+  left: 10px;
+}
 
-  .retake_camera{
-    position:absolute; right: 0%;
-    top:220px; 
+/* .retake_camera {
     font-size: 1.6rem;
     text-align: center;
     font-family: cu;
-    list-style-type: none;
-    width: 200px;
-  }
+    top: 200px;
+}
 
-  .capture_camera{
-    position:absolute; right: 0%;
-    top:220px; 
+.capture_camera {
+    top: 200px;
     font-size: 1.6rem;
     text-align: center;
     font-family: cu;
-    list-style-type: none;
-    width: 200px;
-  }
+} */
+/* .capture_camera{
+  border-radius: 10px;
+  border:1px solid brown;
+} */

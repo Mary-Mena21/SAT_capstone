@@ -51,8 +51,8 @@ export const StudentsCopy = ({ searchTermState }) => {
 
     return (
         <>
+        <h1 className="page_name">Classroom</h1>
             <section className="page_container">
-                <h1 className="page_name">Classroom</h1>
                 <button
                     className=" btn btn-primary student_btn"
                     onClick={() => {
@@ -73,7 +73,7 @@ export const StudentsCopy = ({ searchTermState }) => {
                     </button>
                 </section>
 
-                <article className="Students">
+                <article className="students overflow_students_btn">
                     {filteredStudent
                         .sort((a, b) => {
                             return a.fullName === b.fullName

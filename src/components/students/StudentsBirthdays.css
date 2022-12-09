@@ -9,7 +9,7 @@
 
 
 .page_birthday{
- /*  position:absolute; right: 16%; */
+  position:absolute;
   top:50px; 
   font-size: 1.6rem;
   text-align: center;
@@ -18,6 +18,7 @@
 }
 
 .button_container{
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -35,12 +36,12 @@
   padding: 0.5rem;
   margin: 0.3rem;
   max-width: 26rem;
-  min-width: 20rem;
+  min-width: 21rem;
   box-shadow: 1px 1px 3px rgb(196, 196, 196);
-  position: relative;
-  top:10px;
+  top:100px;
+  left:10px;
   /* left:63%; */
-
+position: relative;
 }
 
       .birthday_card_button{
@@ -97,3 +98,9 @@ button:active {
       sans-serif;
   color: rgb(5, 96, 96);
 }
+
+/* .overflow-birthday{
+  overflow-y:scroll;
+  top:10px;
+  height: 50vh;
+} */

@@ -1,6 +1,7 @@
 
 //import logo from "./logo.svg";
 import "./StudentBarChart.css";
+//import Typography from '@mui/material/Typography';
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -110,10 +111,15 @@ export const StudentBarChart = () => {
         };
         fetchData();
     }, []);
-    return (
+  return (
+    <>
+    <div className="overflow-auto_chart">
         <div className="BarChart">
             <Bar options={chartOptions} data={chartData} />
-        </div>
+      </div>
+        <div></div>
+       </div>
+      </>
     );
 };
 

@@ -35,7 +35,7 @@ export const Attendance = ({ attendTermState }) => {
 
     return (
         <>
-            <article /* className="container_A" */>
+            <article className="container_A overflow-auto_A">
                 {/* <h1 className="page_attendance">Attendance</h1> */}
                 {filterAttendance.map((attend) => {
                     return (

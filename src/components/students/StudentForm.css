@@ -1,10 +1,9 @@
 .page_studentForm{
-    position:absolute;
-    top:50px; 
-    font-size: 1.6rem;
+    top:150px; 
+    font-size: 2rem;
     text-align: center;
     font-family: cu;
-    list-style-type: none;
+    /* list-style-type: none; */
     
 }
 
@@ -17,7 +16,10 @@
 } */
 
 .page_container{
+    top: 50px;
+    position: relative;
     display:flex;
+    margin-left: 10px;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;

@@ -25,12 +25,14 @@ export const StudentContact = () => {
     return (
         <>
             <section className="contact_container">
-            <h1 className="page_contact">Student Contact!</h1>
+                <h1 className="page_contact">Student Contact!</h1>
+                <div className="overflow-auto">
             <article className="">
                 {/*         <iframe width="400" height="200" src="https://maps.google.com/maps?width=100%25&amp;height=100&amp;hl=en&amp;q=Rosemont+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" allowfullscreen></iframe> */}
                 {Students.map((student) => {
                     return (
                         <>
+                        
                             <div key={`student--${student.id}`}>
                                 <section 
                                     
@@ -60,10 +62,12 @@ export const StudentContact = () => {
                                     </a>
                                 </section>
                             </div>
-                        </>
+                            
+                            </>
                     );
                 })}
                 </article>
+                </div>
                 </section>
         </>
     );

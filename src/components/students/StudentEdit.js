@@ -1,7 +1,13 @@
 import { useEffect, useState } from "react";
 import { StudentDetails } from "./StudentDetail";
-//import { StudentForm } from "./StudentForm";
 import { useNavigate, useParams } from "react-router-dom";
+import "react-datepicker/dist/react-datepicker.css";
+
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+
+import "./StudentEdit.css";
+
 export const StudentEdit = ({
     id,
     studentName,
@@ -16,7 +22,7 @@ export const StudentEdit = ({
     const navigate = useNavigate();
 
     const { studentDetail_Id } = useParams();
-    
+
     const [editStudent, setEditStudent] = useState({
         id: id,
         studentName: studentName,
@@ -37,7 +43,6 @@ export const StudentEdit = ({
             const response = await fetch(
                 //`http://localhost:8088/customers?_expand=user&userId=${honeyUserObject.id}`
                 `http://localhost:8033/students/${studentDetail_Id}`
-
             );
             const data = await response.json();
             setEditStudent(data); //Try to make new Ticket and update it? ????????????????
@@ -62,7 +67,7 @@ export const StudentEdit = ({
             //`http://localhost:8033/Students/${studentDetail_Id}`,
             fetchOptions
         );
-        navigate("/studentsCopy")
+        navigate("/studentsCopy");
         const responseJson = await response.json();
         return responseJson;
     };
@@ -70,9 +75,8 @@ export const StudentEdit = ({
     //api is the url for the json file that will be changed
     /* ------------------------------ */
     const handleSaveButtonClick = (event) => {
-         //event.preventDefault();
+        //event.preventDefault();
         editStudentInfo(editStudent);
-
 
         // {      <StudentDetails
         //       id= {id}
@@ -89,118 +93,125 @@ export const StudentEdit = ({
         <>
             <fieldset className="student_form">
                 {/* <h1>Add New Student!</h1> */}
-                <form>
-                    <li>
-                        <label htmlFor="fullName">
-                            Name:
-                            <input
-                            required
-                            autoFocus
-                                type="text"
-                                name="fullName"
-                                value={editStudent.fullName}
-                                onChange={(evt) => {
-                                    const copy = { ...editStudent };
-                                    copy.fullName = evt.target.value;
-                                    setEditStudent(copy);
-                                }}
-                            />
-                        </label>
-                    </li>
+                <Form.Floating className="mb-2">
+                    <Form.Control
+                        required
+                        autoFocus
+                        type="text"
+                        name="fullName"
+                        value={editStudent.fullName}
+                        onChange={(evt) => {
+                            const copy = { ...editStudent };
+                            copy.fullName = evt.target.value;
+                            setEditStudent(copy);
+                        }}
+                    />
+                    <label htmlFor="">Full name</label>
+                </Form.Floating>
 
-                    <li>
-                        <label htmlFor="email">
-                            Email:
-                            <input
-                            required
-                            autoFocus
-                                type="email"
-                                name="email"
-                                value={editStudent.email}
-                                onChange={(evt) => {
-                                    const copy = { ...editStudent };
-                                    copy.email = evt.target.value;
-                                    setEditStudent(copy);
-                                }}
-                            />
-                        </label>
-                    </li>
+                <Form.Floating className="mb-2">
+                    <Form.Control
+                        required
+                        autoFocus
+                        type="email"
+                        name="email"
+                        value={editStudent.email}
+                        onChange={(evt) => {
+                            const copy = { ...editStudent };
+                            copy.email = evt.target.value;
+                            setEditStudent(copy);
+                        }}
+                    />
+                    <label htmlFor="">Email address</label>
+                </Form.Floating>
+
+                <Form.Floating className="mb-2">
+                    <Form.Control
+                        required
+                        autoFocus
+                        type="date"
+                        name="dob"
+                        value={editStudent.dob}
+                        onChange={(evt) => {
+                            const copy = { ...editStudent };
+                            copy.dob = evt.target.value;
+                            setEditStudent(copy);
+                        }}
+                    />
+                    <label htmlFor="">Date of birth</label>
+                </Form.Floating>
+
+                <Form.Floating className="mb-2">
+                    <Form.Control
+                        required
+                        autoFocus
+                        type="phone"
+                        name="phone"
+                        value={editStudent.phone}
+                        onChange={(evt) => {
+                            const copy = { ...editStudent };
+                            copy.phone = evt.target.value;
+                            setEditStudent(copy);
+                        }}
+                    />
+                    <label htmlFor="">Cell phone</label>
+                </Form.Floating>
+
+                <Form.Floating className="mb-2">
+                    <Form.Control
+                        required
+                        autoFocus
+                        type="address"
+                        name="address"
+                        value={editStudent.address}
+                        onChange={(evt) => {
+                            const copy = { ...editStudent };
+                            copy.address = evt.target.value;
+                            setEditStudent(copy);
+                        }}
+                    />
+                    <label htmlFor="">Address</label>
+                </Form.Floating>
+
+                <Button
+                    type="submit"
+                    variant="secondary"
+                    size="md"
+                    onClick={(clickEvent) => {
+                        handleSaveButtonClick(clickEvent);
+                    }}
+                    className="btn btn-primary"
+                >
+                    Save Edit Student
+                </Button>
+            </fieldset>
+        </>
+    );
+};
+//onChange={(event) => updateEditStudent({...editStudent, fullName: event.target.
 {
-                   /*  <br />
-                    <li>
-                        <label htmlFor="classId">
-                            classId:
-                            <br />
-                            <input
-                            required
-                            autoFocus
-                                type="number"
-                                name="classId"
-                                value={editStudent.classId}
-                                onChange={(evt) => {
-                                    const copy = { ...editStudent };
-                                    copy.classId = evt.target.valueAsNumber;
-                                    setEditStudent(copy);
-                                }}
-                            />
-                        </label>
-                    </li> */}
-
-                    <li>
-                        <label htmlFor="dob">
-                            Birthday:
-                            <input
-                            required
-                            autoFocus
-                                type="date"
-                                name="dob"
-                                value={editStudent.dob}
-                                onChange={(evt) => {
-                                    const copy = { ...editStudent };
-                                    copy.dob = evt.target.value;
-                                    setEditStudent(copy);
-                                }}
-                            />
-                        </label>
-                    </li>
-
-                    <li>
-                        <label htmlFor="phone">
-                            Phone:
-                            <input
-                            required
-                            autoFocus
-                                type="phone"
-                                name="phone"
-                                value={editStudent.phone}
-                                onChange={(evt) => {
-                                    const copy = { ...editStudent };
-                                    copy.phone = evt.target.value;
-                                    setEditStudent(copy);
-                                }}
-                            />
-                        </label>
-                    </li>
-
-                    <li>
-                        <label htmlFor="address">
-                            Address:
-                            <input
-                            required
-                            autoFocus
-                                type="address"
-                                name="address"
-                                value={editStudent.address}
-                                onChange={(evt) => {
-                                    const copy = { ...editStudent };
-                                    copy.address = evt.target.value;
-                                    setEditStudent(copy);
-                                }}
-                            />
-                        </label>
-                    </li>
-
-                   {/*  <br />
+    /*  <br />
+     <li>
+         <label htmlFor="classId">
+             classId:
+             <br />
+             <input
+             required
+             autoFocus
+                 type="number"
+                 name="classId"
+                 value={editStudent.classId}
+                 onChange={(evt) => {
+                     const copy = { ...editStudent };
+                     copy.classId = evt.target.valueAsNumber;
+                     setEditStudent(copy);
+                 }}
+             />
+         </label>
+     </li> */
+}
+{
+    /*  <br />
                     <li>
                         <label htmlFor="studentImg">
                             studentImg:
@@ -218,20 +229,5 @@ export const StudentEdit = ({
                                 }}
                             />
                         </label>
-                    </li> */}
-
-                </form>
-            </fieldset>
-
-            <button
-                onClick={(clickEvent) => {
-                    handleSaveButtonClick(clickEvent);
-                }}
-                className="btn btn-primary"
-            >
-                Save Edit Student
-            </button>
-        </>
-    );
-};
-//onChange={(event) => updateEditStudent({...editStudent, fullName: event.target.
+                    </li> */
+}

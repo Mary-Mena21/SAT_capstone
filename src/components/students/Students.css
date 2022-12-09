@@ -6,11 +6,18 @@ h1 {
 Link {
     text-decoration: none;
 }
-.students {
+.students_class {
+    position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: center;
+    align-items: center;
+
+    top:400px;
     
+
+   
 }
 .student_card {
     /* background-color:rgb(219, 235, 248); */
@@ -20,6 +27,7 @@ Link {
     padding: 0.5rem;
     margin: 0.3rem;
     max-width: 26rem;
+    min-width: 20rem;
     box-shadow: 1px 1px 3px rgb(196, 196, 196);
     /* position: relative; */
     /* top: 100px; */
@@ -28,6 +36,7 @@ Link {
 }
 
 .student_card_container {
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -53,16 +62,33 @@ Link {
 
 .checkbox {
     margin: 1rem;
-    height: 20px;
+    height:30px;
     width: 20px;
 }
 
 
-.page_students{
-    /*     position:absolute; */
+.page_students_class{
+        position:relative;
 /*         right: 25%;
         top:50px;  */
+        display: flex;
+        /* flex-direction: nowrap; */
         font-size: 2rem;
         text-align: center;
         font-family: cu;
+        /* text-align:center; */
+        justify-content: center;
+        top:50px
+    }
+    .container_class{
+         position:relative;
+        top: 50px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        overflow-y: scroll;
+        height: 75vh;
+        /* left: 25%; */
     }

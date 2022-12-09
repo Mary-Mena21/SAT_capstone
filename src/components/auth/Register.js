@@ -2,6 +2,9 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
 
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+
 export const Register = (props) => {
     const [user, setUser] = useState({
         email: "",
@@ -12,15 +15,16 @@ export const Register = (props) => {
 
     const registerNewUser = () => {
         return fetch(
-            "http://localhost:8033/users"
+            "http://localhost:8033/users",
             //`http://localhost:8033/teachers?_expand=user`
-            , {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(user),
-        })
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(user),
+            }
+        )
             .then((res) => res.json())
             .then((createdUser) => {
                 if (createdUser.hasOwnProperty("id")) {
@@ -62,32 +66,40 @@ export const Register = (props) => {
 
     return (
         <main style={{ textAlign: "center" }}>
-            <form className="form--login" onSubmit={handleRegister}>
-                <h1 className="h3 mb-3 font-weight-normal">
-                    Please Register for Sunday School Tracker
+            <form className="" onSubmit={handleRegister}>
+                <h1 className="page_login" /* "h3 mb-3 font-weight-normal" */>
+                    Please Register for Sunday School Attendance Tracker
                 </h1>
                 <fieldset>
-                    <label htmlFor="fullName"> Full Name </label>
-                    <input
-                        onChange={updateUser}
-                        type="text"
-                        id="fullName"
-                        className="form-control"
-                        placeholder="Enter your name"
-                        required
-                        autoFocus
-                    />
+                    {/* <label htmlFor="fullName"> Full Name </label> */}
+                    <Form.Floating className="mb-2">
+                        <Form.Control
+                            onChange={updateUser}
+                            type="text"
+                            id="fullName"
+                            className="form-control"
+                            placeholder="Enter your name"
+                            required
+                            autoFocus
+                        />
+                        <label htmlFor="">Full name</label>
+                    </Form.Floating>
                 </fieldset>
                 <fieldset>
-                    <label htmlFor="email"> Email address </label>
-                    <input
-                        onChange={updateUser}
-                        type="email"
-                        id="email"
-                        className="form-control"
-                        placeholder="Email address"
-                        required
-                    />
+                    {/* <label htmlFor="email"> Email address </label> */}
+                    <Form.Floating className="mb-2">
+                        <Form.Control
+                            onChange={updateUser}
+                            type="email"
+                            id="email"
+                            className="form-control"
+                            placeholder="Email address"
+                            required
+                            autoFocus
+                            /* width={"20em"} */
+                        />
+                        <label htmlFor="">Email address</label>
+                    </Form.Floating>
                 </fieldset>
                 <fieldset>
                     <input
@@ -102,7 +114,10 @@ export const Register = (props) => {
                     <label htmlFor="email"> I am a Teacher </label>
                 </fieldset>
                 <fieldset>
-                    <button type="submit"> Register </button>
+                    <Button type="submit" variant="secondary" size="md">
+                        {" "}
+                        Register{" "}
+                    </Button>
                 </fieldset>
             </form>
         </main>

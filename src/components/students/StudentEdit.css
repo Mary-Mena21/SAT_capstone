@@ -1,0 +1,81 @@
+.student_form{
+/*     overflow-y: scroll;
+    height:40vh; */
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+   /*  display:flow-root; */
+}
+
+
+.page_studentForm{
+    top:150px; 
+    font-size: 2rem;
+    text-align: center;
+    font-family: cu;
+    /* list-style-type: none; */
+    
+}
+
+/* .page_name{
+    position:absolute; right: 21%;
+    top:50px; 
+    font-size: 2rem;
+    text-align: center;
+    font-family: cu;
+} */
+
+.page_container{
+    top: 50px;
+    position: relative;
+    display:flex;
+    margin-left: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.page_name{
+        font-size: 2rem;
+        text-align: center;
+        font-family: cu;
+        /* 0000000 */
+    }
+    
+    .page_Edit{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        position:relative;
+        top:50px; 
+        font-size: 2rem;
+        text-align: center;
+        font-family: cu;
+        list-style-type: none;
+      }
+      .edit_container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-items: center;
+        top:50px;
+      }
+
+      .student_edit{
+        justify-content: center;
+        position: relative;
+        background-color: bisque;
+        border:2px dotted brown;
+        padding: 0.8rem;
+        margin: 0.5rem;
+        width:26rem;
+        min-width: 20rem;
+        font-size: 1.2rem;
+        list-style-type: none;
+        text-align: center;
+        left:20px;
+    }

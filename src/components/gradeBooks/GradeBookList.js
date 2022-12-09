@@ -15,7 +15,9 @@ export const GradeBookList = () => {
     }, []);
     return (
         <>
-            <h1 className="page_book">Grade Books!</h1>
+            <div className="main_container">
+        <h1 className="page_book">Grade Books!</h1>
+            <div className=" overflow-auto">
             <article className="book_container">
                 {books.map((book) => {
                     return (
@@ -33,7 +35,9 @@ export const GradeBookList = () => {
                         </>
                     );
                 })}
-            </article>
+                </article>
+                </div>
+                </div>
         </>
     );
 };

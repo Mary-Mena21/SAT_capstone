@@ -30,50 +30,69 @@ export const NavBar = ({ children }) => {
 
     const navigate = useNavigate();
     const menuItem = [
-        { path: "/", name: "Home", icon: <FaHome /> },
         {
-            path: "/StudentsCopy", name: "Classroom", icon: <FaFortAwesome />
-        ,className:"sidebar_2"
+            path: "/",
+            name: "Home",
+            icon: <FaHome />,
+            className: "sidebar_2",
         },
         {
-            path: "/studentForm",
-            name: "New Student",
-            icon: <BsFillPersonPlusFill />
-            ,className:"sidebar_2"
+            path: "/StudentsCopy",
+            name: "Classroom",
+            icon: <FaFortAwesome />,
+            className: "sidebar_2",
         },
         {
             path: "/attendance",
             name: "Attendance",
             icon: <BsFillCalendar2CheckFill />,
-            className:"sidebar_2"
+            className: "sidebar_2",
         },
-        { path: "/birthdays", name: "Birthdays", icon: <FaBirthdayCake /> },
+        {
+            path: "/studentForm",
+            name: "New Student",
+            icon: <BsFillPersonPlusFill />,
+            className: "sidebar_2",
+        },
+        {
+            path: "/birthdays",
+            name: "Birthdays",
+            icon: <FaBirthdayCake />
+        },
         {
             path: "/studentContact",
             name: "Contact",
             icon: <BsFillTelephoneFill />,
-            className:"sidebar_2"
+            className: "sidebar_2",
         },
-        { path: "/gradeBook", name: "Books", icon: <BsBookHalf /> },
+        {
+            path: "/gradeBook",
+            name: "Books",
+            icon: <BsBookHalf />,
+            className: "sidebar_2",
+        },
         {
             path: "/studentBarChart",
             name: "BarChart",
             icon: <BsBarChartLineFill />,
-            className:"sidebar_2"
+            className: "sidebar_2",
         },
         {
             path: "/cameraProfile",
             name: "CameraProfile",
             icon: <BsCameraFill />,
-            className:"sidebar_2"
+            className: "sidebar_2",
         },
         {
-            path: "/about", name: "About", icon: <BsBookmarksFill />,
-            className:"sidebar_2"    },
+            path: "/about",
+            name: "About",
+            icon: <BsBookmarksFill />,
+            className: "sidebar_2",
+        },
     ];
     return (
         <>
-{/*             <div
+            {/*             <div
                 className="background"
                 style={{
                     backgroundImage: `url(${background})`,
@@ -87,8 +106,8 @@ export const NavBar = ({ children }) => {
             >
             </div> */}
             {/* -------------------img------------------- */}
-          {/*   <img className="background" src={background}/> */}
-        
+            {/*   <img className="background" src={background}/> */}
+
             {/* sideBar */}
             {/*<Button variant="primary" onClick={handleShow}>
                 Launch
@@ -160,7 +179,7 @@ export const NavBar = ({ children }) => {
             {/* sideNavBar */}
             <div className=""></div>
 
-          <div className="bottom_bar"></div> 
+            <div className="bottom_bar"></div>
         </>
     );
 };

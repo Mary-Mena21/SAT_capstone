@@ -242,7 +242,7 @@ export const StudentsBirthdays = () => {
                 December
             </button>
             </div>
-            <article className="">
+            <article className="overflow-birthday">
                 {filteredBirthdays.map((birthday) => {
                     return (
                         <>

@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Students } from "./Students";
 import { Link } from "react-router-dom";
-import "./Students.css";
+//import "./Students.css";
+import "./StudentCopy.css";
 //import "../Images"
 //import Image from "../Images."
 
