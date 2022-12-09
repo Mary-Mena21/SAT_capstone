@@ -1,17 +1,11 @@
 .students{
     display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    justify-content: center;
+
 }
-.student{
-    background-color: bisque;
-    border:2px dotted brown;
-    padding: 0.8rem;
-    margin: 0.5rem;
-    width:25rem;
-    font-size: 1.2rem;
-}
+
 
 .student__header{
     font-size: larger;
@@ -24,11 +18,3 @@
     font-style: oblique;
 }
 
-.page_Edit{
-    position:absolute; right: 11.5%;
-    top:50px; 
-    font-size: 1.6rem;
-    text-align: center;
-    font-family: cu;
-    list-style-type: none;
-  }

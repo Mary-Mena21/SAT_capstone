@@ -61,7 +61,7 @@ export const StudentForm = () => {
     return (
         <>
             <fieldset className=" page_container">
-                <h1 className="page_name">New Student!</h1>
+                <h1 className="page_studentForm">New Student!</h1>
                 <form onSubmit={handleSubmit}>
                     <Form.Floating className="mb-2">
                         <Form.Control

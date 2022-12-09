@@ -17,8 +17,8 @@ Link {
     border: 1px dotted rgb(133, 42, 54);
     border-radius: 15px;
     padding: 0.5rem;
-    margin: 0.3rem;
-    max-width: 26rem;
+    margin: 0.2rem;
+    max-width: 30rem;
     box-shadow: 1px 1px 3px rgb(196, 196, 196);
     /* position: relative; */
     /* top: 100px; */
@@ -32,7 +32,7 @@ Link {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    
+
 }
 
 .student_img {
@@ -55,3 +55,4 @@ Link {
     height: 20px;
     width: 20px;
 }
+

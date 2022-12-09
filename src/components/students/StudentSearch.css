@@ -5,8 +5,10 @@
     top:10px; 
 }
 .page_name{
-/*     position:absolute; */
-    right: 25%;
+    position:relative;
+    display: flex;
+    justify-content: center;
+
     top:50px; 
     font-size: 2rem;
     text-align: center;
@@ -23,11 +25,13 @@
     margin:2px;
 }
 .page_container{
+    top: 50px;
     display:flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    
 
 
     /* background-color: #fed9ff; */
@@ -37,4 +41,8 @@
     /* overflow-y: auto; */
    /*  text-align: center; */
     /* padding: 20px; */
+}
+.overflow_students_btn{
+     overflow-y: scroll; 
+height:67vh
 }

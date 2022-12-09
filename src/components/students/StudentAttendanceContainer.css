@@ -1,7 +1,9 @@
 .card_container_calender{
-
+position: relative;
     display: flex;
-   /*  justify-content: center; */
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+    top:50px;
+    
 }

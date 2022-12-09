@@ -1,6 +1,19 @@
+body{
+    background-image: url("");
+}
+
 .h1, h1 {
     font-size: 2.5rem;
 }
+
+.page_login{
+    /* position:absolute; */
+    top:50px; 
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: cu;
+    list-style-type: none;
+  }
 
 fieldset {
     min-width: 0;
@@ -13,11 +26,12 @@ fieldset {
     display: inline-block;
     margin: 0 auto;
     text-align: left;
+    width: 20em;
 }
-
+/* 
 .form--login > fieldset > input[type="email"] {
-    width: 25em;
-}
+    width: 20em;
+} */
 
 .label--login {
     width: 8rem;

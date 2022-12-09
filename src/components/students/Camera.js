@@ -1,5 +1,6 @@
 import React, { useCallback, useRef, useState } from "react";
 import Webcam from "react-webcam";
+import Button from "react-bootstrap/Button";
 import "./Camera.css";
 
 export const Camera = () => {
@@ -17,29 +18,46 @@ export const Camera = () => {
         setImg(imageSrc);
     }, [webcamRef]);
 
-    return (<>
-        <h1 className="page_camera">Camera!</h1>
-        <div className="student_camera">
-            {img === null ? (
-                <>
-                    <Webcam
-                        audio={false}
-                        mirrored={true}
-                        height={200}
-                        width={200}
-                        ref={webcamRef}
-                        screenshotFormat="image/jpeg"
-                        videoConstraints={videoConstraints}
-                    />
-                    <button className="capture_camera" onClick={capture}>Capture photo</button>
-                </>
-            ) : (
-                <>
-                    <img src={img} alt="screenshot" />
-                    <button className="retake_camera" onClick={() => setImg(null)}>Retake</button>
-                </>
-            )}
-        </div>
+    return (
+        <>
+            <h1 className="page_camera_style">Camera!</h1>
+            <section className="student_camera_style">
+                {img === null ? (
+                    <>
+                        <Webcam
+                            audio={false}
+                            mirrored={true}
+                            height={200}
+                            width={200}
+                            ref={webcamRef}
+                            screenshotFormat="image/jpeg"
+                            videoConstraints={videoConstraints}
+                        />
+                        <Button
+                            type="submit"
+                            variant="secondary"
+                            size="md"
+                            /* className="capture_camera" */ onClick={capture}
+                        >
+                            Capture photo
+                        </Button>
+                    </>
+                ) : (
+                    <>
+                        <img src={img} alt="screenshot" />
+                        <Button
+                            type="submit"
+                            variant="secondary"
+                            size="md"
+                            /*  className="retake_camera" */ onClick={() =>
+                                setImg(null)
+                            }
+                        >
+                            Retake
+                        </Button>
+                    </>
+                )}
+            </section>
         </>
     );
 };
@@ -221,7 +239,7 @@ export const Camera = () => {
 //     })
 // }
 
-// handleChange = (e) => { 
+// handleChange = (e) => {
 //     e.previousDefault();
 //     let imageObject = {
 //         image_name: this.state.image_name,

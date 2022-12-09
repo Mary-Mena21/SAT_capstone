@@ -9,7 +9,7 @@
 
 
 .page_contact{
-    position:absolute;
+    position:relative;
     top:50px; 
     font-size: 2rem;
     text-align: center;
@@ -28,7 +28,14 @@
     min-width: 19rem;
     box-shadow: 1px 1px 3px rgb(196, 196, 196);
     position: relative;
-    top: 50px;
+    top: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+}
+.overflow-auto{
+  position: absolute;
+  overflow:hidden;
+  max-height: 80vh;
+  top: 100px;
+  margin-left: 20px;
 }

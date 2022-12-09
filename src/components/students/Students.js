@@ -59,8 +59,8 @@ export const Students = () => {
 
     return (
         <>
-        <article className="Students">
-            <h1 className="page_students">Students</h1>
+        <h1 className="page_students_class">Students</h1>
+        <article className="container_class">
                 {Students.map((student) => {
                     <>
                         key={`student__${student.id}`}
@@ -75,8 +75,8 @@ export const Students = () => {
                     </>;
                     return (
                         <>
-                            <section>
-                                <div className="container">
+                            <section className="Students_class">
+                               
                                     <section
                                         key={student.id}
                                         className="student_card"
@@ -94,27 +94,11 @@ export const Students = () => {
                                                     {student.fullName}
                                                 </h3>
                                             </Link>
-{/* -----------------------------------BarChart------------------------------------- */}
-                                            <input
-                                                type="checkbox"
-                                                className="checkbox"
-                                                onChange={(evt) => {
-                                                    const copy = {
-                                                        ...inputAttend,
-                                                    };
-                                                    copy.attend =
-                                                        evt.target.checked;
-                                                    setInputAttend(copy);
-                                                }}
-                                                /*onClick={(clickEvent) => {
-                                                    handleSaveButtonClick(clickEvent);
-                                                }} */
-                                            />
-{/* -----------------------------------BarChart------------------------------------- */}
+
                                             
                                         </div>
                                     </section>
-                                </div>
+                               
                             </section>
                         </>
                     );
@@ -135,3 +119,20 @@ export const Students = () => {
     );
 };
 
+{/* -----------------------------------checkbox------------------------------------- */}
+// <input
+// type="checkbox"
+// className="checkbox"
+// onChange={(evt) => {
+//     const copy = {
+//         ...inputAttend,
+//     };
+//     copy.attend =
+//         evt.target.checked;
+//     setInputAttend(copy);
+// }}
+// /*onClick={(clickEvent) => {
+//     handleSaveButtonClick(clickEvent);
+// }} */
+// />
+{/* -----------------------------------checkbox------------------------------------- */}

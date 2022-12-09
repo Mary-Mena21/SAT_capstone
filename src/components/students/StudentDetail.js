@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { StudentDelete } from "./StudentDelete";
 
+
 import "./StudentDetail.css";
 import { StudentEdit } from "./StudentEdit";
 
@@ -37,19 +38,19 @@ export const StudentDetails = ({
 
     return (
         <>
-            <div className="page_Edit">
-            <h1>Student Details!</h1>
-            <section key={`student__${id}`} className="student">
+        <h1 className="page_Edit">Student Details!</h1>
+            <div className="edit_container">
+            <section key={`student__${id}`} className="student_edit">
                 {/* <img src={require(`../images/${studentDetail.studentImg}`)} className="student_img" /> */}
                 {/* <img src={studentDetail?.studentImg} className="student_img" /> */}
                 <header className="student__header">
                     {studentDetail?.fullName}
                 </header>
-                <div>Email: {studentDetail?.email}</div>
-                <div>Phone: {studentDetail?.phone}</div>
-                <div>address: {studentDetail?.address}</div>
+                    <div>{studentDetail?.email}</div>
+                <div>{studentDetail?.phone}</div>
+                <div>{studentDetail?.address}</div>
                 <footer className="student__footer">
-                    Date Of Birth:{studentDetail.dob}
+                    {studentDetail.dob}
                 </footer>
                 
                 <StudentDelete
@@ -60,8 +61,8 @@ export const StudentDetails = ({
                 {/* <button className="Dbtn">Display Edit Form</button> */}
             </section>
 
-            <h1>Student Edit!</h1>
-            <section className="student">
+           { /* <h1 className="page_Edit">Student Edit!</h1> */}
+            <section className="student_edit">
                
                 {/*                    <button
     onClick={() => { */}

@@ -29,6 +29,12 @@
       "fullName": "MARIAN MENA",
       "isTeacher": true,
       "id": 6
+    },
+    {
+      "email": "Amarianashokry@yahoo.com",
+      "fullName": "MARIANA MENA",
+      "isTeacher": true,
+      "id": 7
     }
   ],
   "teachers": [
@@ -84,7 +90,7 @@
       "fullName": "Mario Mena",
       "email": "mamena@me.com",
       "classId": 2,
-      "dob": "2017-15-10",
+      "dob": "2017-15-06",
       "phone": "615-785485",
       "address": "1008 Meb Ct, Mt. Juliet, TN 37122",
       "studentImg": "Mario Mena.jpg"
@@ -94,7 +100,7 @@
       "fullName": "Sheren Mena",
       "email": "smena@me.com",
       "classId": 2,
-      "dob": "2018-04-02",
+      "dob": "2018-04-06",
       "phone": "615-6089966",
       "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
       "studentImg": "Sheren Mena.png"
@@ -104,7 +110,7 @@
       "fullName": "Charl Mena",
       "email": "cmena@me.com",
       "classId": 2,
-      "dob": "2017-08-03",
+      "dob": "2017-08-06",
       "phone": "615-6069166",
       "address": "9315 Lebanon Rd, Mt. Juliet, TN 37122",
       "studentImg": "Charl Mena.jpg"
@@ -181,11 +187,11 @@
     },
     {
       "id": 16,
-      "fullName": "Sany Mena",
-      "email": "smena@me.com",
+      "fullName": "Martin Nathan",
+      "email": "nmartin@me.com",
       "classId": 1,
       "dob": "2017-09-12",
-      "phone": "615-6055745",
+      "phone": "615-605-5745",
       "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
       "studentImg": "Sany Mena.jpg"
     },
@@ -200,12 +206,12 @@
       "id": 17
     },
     {
-      "fullName": "Sany Yousif",
-      "email": "sanymamdoh@yahoo.com",
+      "fullName": "Karma Josef",
+      "email": "jmartin@yahoo.com",
       "classId": 1,
-      "dob": "2022-12-21",
-      "phone": "6156020494",
-      "address": "358, British Woods Dr .",
+      "dob": "2017-08-07",
+      "phone": "368-458-3654",
+      "address": "1904 Old Hickory Blvd, Old Hickory, TN 37138",
       "studentImg": "Sheren Mena.png",
       "id": 24
     },
@@ -238,6 +244,66 @@
       "address": "University St Station Bay C",
       "studentImg": "24.jpg",
       "id": 27
+    },
+    {
+      "fullName": "Holly Steven",
+      "email": "stevenmark@yahoo.com",
+      "classId": 1,
+      "dob": "2016-12-29",
+      "phone": "478-364-9547",
+      "address": "5093 Murfreesboro Road La Vergne, TN 37086",
+      "studentImg": "27.jpg",
+      "id": 28
+    },
+    {
+      "fullName": "Goerge Sameh",
+      "email": "gmdoh_kj@gmail.com",
+      "classId": 1,
+      "dob": "2017-07-24",
+      "phone": "325-954-3214",
+      "address": "358 British Woods Dr, Nashville, TN 37122",
+      "studentImg": "31.jpg",
+      "id": 29
+    },
+    {
+      "fullName": "Emily Beshoy",
+      "email": "ebeshoy@yahoo.com",
+      "classId": 1,
+      "dob": "2017-07-11",
+      "phone": "613-705-2544",
+      "address": "904 Kelan lane, Lavergne TN, 37086",
+      "studentImg": "26.jpg",
+      "id": 30
+    },
+    {
+      "fullName": "Melany Fred",
+      "email": "mfred20@yahoo.com",
+      "classId": 1,
+      "dob": "2018-01-02",
+      "phone": "903-465-2547",
+      "address": " 3939 Old Hickory Blvd, Old Hickory, TN 37138",
+      "studentImg": "24.jpg",
+      "id": 32
+    },
+    {
+      "fullName": "Sany Yousif",
+      "email": "sanymamdoh@yahoo.com",
+      "classId": 1,
+      "dob": "2022-12-21",
+      "phone": "6156020494",
+      "address": "358, British Woods Dr .",
+      "studentImg": "15.jpg",
+      "id": 33
+    },
+    {
+      "fullName": "MARIANA MENA",
+      "email": "MARIANA1MENA1@GMAIL.COM",
+      "classId": 1,
+      "dob": "2022-12-13",
+      "phone": "6156022553",
+      "address": "968 TOM HAILEY",
+      "studentImg": "27.jpg",
+      "id": 34
     }
   ],
   "studentAttendance": [
@@ -841,6 +907,132 @@
       "date": "2022-12-08",
       "classId": 1,
       "studentId": 12,
+      "attend": true
+    },
+    {
+      "id": 133,
+      "date": "2022-12-08",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 134,
+      "date": "2022-12-08",
+      "classId": 1,
+      "studentId": 4,
+      "attend": true
+    },
+    {
+      "id": 135,
+      "date": "2022-12-08",
+      "classId": 1,
+      "studentId": 9,
+      "attend": true
+    },
+    {
+      "id": 136,
+      "date": "2022-12-08",
+      "classId": 1,
+      "studentId": 10,
+      "attend": true
+    },
+    {
+      "id": 137,
+      "date": "2022-12-08",
+      "classId": 1,
+      "studentId": 11,
+      "attend": true
+    },
+    {
+      "id": 138,
+      "date": "2022-12-08",
+      "classId": 1,
+      "studentId": 12,
+      "attend": true
+    },
+    {
+      "id": 139,
+      "date": "2022-12-08",
+      "classId": 1,
+      "studentId": 13,
+      "attend": true
+    },
+    {
+      "id": 140,
+      "date": "2022-12-08",
+      "classId": 1,
+      "studentId": 14,
+      "attend": true
+    },
+    {
+      "id": 141,
+      "date": "2022-12-08",
+      "classId": 1,
+      "studentId": 17,
+      "attend": true
+    },
+    {
+      "id": 142,
+      "date": "2022-12-08",
+      "classId": 1,
+      "studentId": 24,
+      "attend": true
+    },
+    {
+      "id": 143,
+      "date": "2022-12-08",
+      "classId": 1,
+      "studentId": 26,
+      "attend": true
+    },
+    {
+      "id": 144,
+      "date": "2022-12-08",
+      "classId": 1,
+      "studentId": 27,
+      "attend": true
+    },
+    {
+      "id": 145,
+      "date": "2022-12-08",
+      "classId": 1,
+      "studentId": 29,
+      "attend": true
+    },
+    {
+      "id": 146,
+      "date": "2022-12-08",
+      "classId": 1,
+      "studentId": 30,
+      "attend": true
+    },
+    {
+      "id": 147,
+      "date": "2022-12-08",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 148,
+      "date": "2022-12-08",
+      "classId": 1,
+      "studentId": 4,
+      "attend": true
+    },
+    {
+      "id": 149,
+      "date": "2022-12-08",
+      "classId": 1,
+      "studentId": 29,
+      "attend": true
+    },
+    {
+      "id": 150,
+      "date": "2022-12-08",
+      "classId": 1,
+      "studentId": 30,
       "attend": true
     }
   ],
