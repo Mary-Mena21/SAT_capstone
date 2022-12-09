@@ -304,6 +304,16 @@
       "address": "968 TOM HAILEY",
       "studentImg": "27.jpg",
       "id": 34
+    },
+    {
+      "fullName": "MARIANA MENA",
+      "email": "MARIANA1MENA1@GMAIL.COM",
+      "classId": 1,
+      "dob": "2022-12-27",
+      "phone": "6156022553",
+      "address": "968 TOM HAILEY",
+      "studentImg": "17.jpg",
+      "id": 35
     }
   ],
   "studentAttendance": [
@@ -1033,6 +1043,97 @@
       "date": "2022-12-08",
       "classId": 1,
       "studentId": 30,
+      "attend": true
+    },
+    {
+      "id": 151,
+      "date": "2022-12-09",
+      "classId": 1,
+      "studentId": 16,
+      "attend": true
+    },
+    {
+      "id": 152,
+      "date": "2022-12-09",
+      "classId": 1,
+      "studentId": 17,
+      "attend": true
+    },
+    {
+      "id": 153,
+      "date": "2022-12-09",
+      "classId": 1,
+      "studentId": 24,
+      "attend": true
+    },
+    {
+      "id": 154,
+      "date": "2022-12-09",
+      "classId": 1,
+      "studentId": 25,
+      "attend": true
+    },
+    {
+      "id": 155,
+      "date": "2022-12-09",
+      "classId": 1,
+      "studentId": 26,
+      "attend": true
+    },
+    {
+      "id": 156,
+      "date": "2022-12-09",
+      "classId": 1,
+      "studentId": 27,
+      "attend": true
+    },
+    {
+      "id": 157,
+      "date": "2022-12-09",
+      "classId": 1,
+      "studentId": 28,
+      "attend": true
+    },
+    {
+      "id": 158,
+      "date": "2022-12-09",
+      "classId": 1,
+      "studentId": 29,
+      "attend": true
+    },
+    {
+      "id": 159,
+      "date": "2022-12-09",
+      "classId": 1,
+      "studentId": 30,
+      "attend": true
+    },
+    {
+      "id": 160,
+      "date": "2022-12-09",
+      "classId": 1,
+      "studentId": 32,
+      "attend": true
+    },
+    {
+      "id": 161,
+      "date": "2022-12-09",
+      "classId": 1,
+      "studentId": 33,
+      "attend": true
+    },
+    {
+      "id": 162,
+      "date": "2022-12-09",
+      "classId": 1,
+      "studentId": 34,
+      "attend": true
+    },
+    {
+      "id": 163,
+      "date": "2022-12-09",
+      "classId": 1,
+      "studentId": 35,
       "attend": true
     }
   ],

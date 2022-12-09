@@ -16,6 +16,7 @@ import { StudentAttendanceContainer } from "../students/StudentAttendanceContain
 import { StudentContact } from "../students/StudentContact";
 import { StudentBarChart } from "../students/StudentBarChart";
 import { Camera} from "../students/Camera";
+import { About } from "../about/About";
 //import { Camera } from "@mui/icons-material";
 
 
@@ -30,9 +31,9 @@ export const ApplicationViews = () => {
             <Route path="birthdays" element={<StudentsBirthdays />} />
             <Route path="studentBarChart" element={<StudentBarChart />} />
             <Route path="studentContact" element={<StudentContact />} />
-            <Route path="cameraProfile" element={<Camera
-                 />} />
-           
+            <Route path="cameraProfile" element={<Camera/>} />
+            <Route path="about" element={<About/>} />
+
 
             <Route path="studentForm" element={<StudentForm />} />
             <Route path="studentEdit" element={<StudentEdit />} />
