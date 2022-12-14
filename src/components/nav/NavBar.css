@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Lobster&family=Montserrat:ital@1&family=Oswald:wght@200;400&family=Palanquin:wght@200;300;500&family=Rubik+Puddles&family=Rubik+Vinyl&family=Sail&display=swap");
+
 /* @media only screen and (min-width: 1024px) {
     .background{display:flex;}
 } */
@@ -5,6 +7,7 @@
     margin:0;
     padding:0;
     text-decoration: none;
+    /* background-color: #5F5D6B; */
    /*  background: #ebe8d0; */
     /* background-color:#ebe8d0; */
 }
@@ -22,16 +25,19 @@ margin: 0;}
     padding: 20px;
 } */
 .sidebar{
-    background: #264c57;
+    /* background: #6D7C8E; */
+    background: #6D7C8E;
     color:  #f3b530;
-    height: 100vh;
-    width: 200px;
-    transition: all 0.5s;
-    position:absolute;
+   height: 100vh;
+   /*  width: 500px; */
+     transition: all 0.5s;
+    /* position:absolute; */
     z-index: 1;
     left:0;
     top:0;
     bottom:0;
+    position: -webkit-sticky;
+    position:fixed;
     
 }
 
@@ -57,7 +63,7 @@ margin: 0;}
     color: #f3b530;
 /*     font-family:cursive;
     font-family:'Courier New', Courier, monospace; */
-    font-family:"Josefin Sans", "sans-serif";
+    font-family:"Cinzel Decorative","Lobster"," cursive","Josefin Sans", "sans-serif";
 }
 .bars{
     display: flex;
@@ -71,6 +77,8 @@ margin: 0;}
     gap: 15px;
     transition: all 0.5s;
     text-decoration: none;
+    font-family: "Roboto","Open sans","sans-serif";
+    /* text-align: start; */
 }
 .link:hover{
     background:lightskyblue;
@@ -82,10 +90,11 @@ margin: 0;}
     color: #000;
 }
 .icon, .link_text{
-    font-size: 20px;
+    font-size: 1.2rem;
+    
 }
  .top_bar{
-    position: absolute;
+   /*  position: absolute; */
     background-color: #83312c;
     height:48px;
     text-decoration: none;
@@ -96,7 +105,7 @@ margin: 0;}
     
 } 
 .bottom_bar{
-    position: absolute;
+    /* position: absolute; */
     background-color: #83312c;
     height:48px;
     text-decoration: none;
@@ -109,7 +118,9 @@ margin: 0;}
 } 
 
  .logout_link{
-    position: absolute;
+  /*   position: absolute; */
+  position: -webkit-sticky;
+  position:fixed;
     text-decoration: none;
     /* left: 80%; */
     right:2rem;
@@ -118,7 +129,7 @@ margin: 0;}
    /*  color: #fff; */
     color: #f3b530;
     /* font-family: cursive; */
-    font-family:"Josefin Sans", "sans-serif";
+    font-family:"Open Sans" ,"Josefin Sans", "sans-serif";
 }
 
 /* .background{
@@ -144,3 +155,17 @@ margin: 0;}
 /* background-image: url("/static/media/SAT_4.6739d98e7adfe186333c.jpg"); background-position: center center; background-size: cover; background-repeat: no-repeat; height: 768.8px; width: 1477.6px; */
 
 /* position: relative; left: -45px; top: -1015px; width: 994.6px; */
+
+
+X{
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Palanquin', sans-serif;
+font-family: 'Rubik Puddles', cursive;
+font-family: 'Rubik Vinyl', cursive;
+font-family: 'Sail', cursive;
+}

@@ -60,120 +60,125 @@ export const StudentForm = () => {
 
     return (
         <>
-            <fieldset className=" page_container">
-                <h1 className="page_studentForm">New Student!</h1>
-                <form onSubmit={handleSubmit}>
-                    <Form.Floating className="mb-2">
-                        <Form.Control
-                            required
-                            autoFocus
-                            type="text"
-                            name="fullName"
-                            placeholder="full name"
-                            value={inputs.fullName}
-                            onChange={(evt) => {
-                                const copy = { ...inputs };
-                                copy.fullName = evt.target.value;
-                                setInputs(copy);
-                            }}
-                        />
-                        <label htmlFor="">Full name</label>
-                    </Form.Floating>
+            <h1 className="page_studentForm">New Student!</h1>
+            <section className="form_container">
+                <fieldset className=" page_container">
+                    <form onSubmit={handleSubmit}>
+                        <Form.Floating className="mb-2">
+                            <Form.Control
+                                required
+                                autoFocus
+                                type="text"
+                                name="fullName"
+                                placeholder="full name"
+                                value={inputs.fullName}
+                                onChange={(evt) => {
+                                    const copy = { ...inputs };
+                                    copy.fullName = evt.target.value;
+                                    setInputs(copy);
+                                }}
+                            />
+                            <label htmlFor="name">Full name</label>
+                        </Form.Floating>
 
-                    <Form.Floating className="mb-2">
-                        <Form.Control
-                            required
-                            autoFocus
-                            type="email"
-                            name="email"
-                            placeholder="name@example.com"
-                            value={inputs.email}
-                            onChange={(evt) => {
-                                const copy = { ...inputs };
-                                copy.email = evt.target.value;
-                                setInputs(copy);
-                            }}
-                        />
-                        <label htmlFor="">Email address</label>
-                    </Form.Floating>
+                        <Form.Floating className="mb-2">
+                            <Form.Control
+                                required
+                                autoFocus
+                                type="email"
+                                name="email"
+                                placeholder="name@example.com"
+                                value={inputs.email}
+                                onChange={(evt) => {
+                                    const copy = { ...inputs };
+                                    copy.email = evt.target.value;
+                                    setInputs(copy);
+                                }}
+                            />
+                            <label htmlFor="email">Email address</label>
+                        </Form.Floating>
 
-                    <Form.Floating className="mb-2">
-                        <Form.Control
-                            required
-                            autoFocus
-                            type="date"
-                            name="dob"
-                            placeholder="date"
-                            value={inputs.dob}
-                            onChange={(evt) => {
-                                const copy = { ...inputs };
-                                new Date(copy.dob);
-                                copy.dob = evt.target.value;
-                                //toLocaleDateString()
-                                //console.log(date)
-                                setInputs(copy);
-                            }}
-                        />
-                        <label htmlFor="">Date of birth</label>
-                    </Form.Floating>
+                        <Form.Floating className="mb-2">
+                            <Form.Control
+                                required
+                                autoFocus
+                                type="date"
+                                name="dob"
+                                placeholder="date"
+                                value={inputs.dob}
+                                onChange={(evt) => {
+                                    const copy = { ...inputs };
+                                    new Date(copy.dob);
+                                    copy.dob = evt.target.value;
+                                    //toLocaleDateString()
+                                    //console.log(date)
+                                    setInputs(copy);
+                                }}
+                            />
+                            <label htmlFor="date">Date of birth</label>
+                        </Form.Floating>
 
-                    <Form.Floating className="mb-2">
-                        <Form.Control
-                            required
-                            autoFocus
-                            type="telephone"
-                            name="phone"
-                            placeholder="Cell phone"
-                            //pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                            value={inputs.phone}
-                            onChange={(evt) => {
-                                const copy = { ...inputs };
-                                copy.phone = evt.target.value;
-                                setInputs(copy);
-                            }}
-                        />
-                        <label htmlFor="">Cell phone</label>
-                    </Form.Floating>
+                        <Form.Floating className="mb-2">
+                            <Form.Control
+                                required
+                                autoFocus
+                                type="telephone"
+                                name="phone"
+                                placeholder="Cell phone"
+                                //pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                value={inputs.phone}
+                                onChange={(evt) => {
+                                    const copy = { ...inputs };
+                                    copy.phone = evt.target.value;
+                                    setInputs(copy);
+                                }}
+                            />
+                            <label htmlFor="phone">Cell phone</label>
+                        </Form.Floating>
 
-                    <Form.Floating className="mb-2">
-                        <Form.Control
-                            required
-                            autoFocus
-                            type="address"
-                            name="address"
-                            placeholder="Address"
-                            value={inputs.address}
-                            onChange={(evt) => {
-                                const copy = { ...inputs };
-                                copy.address = evt.target.value;
-                                setInputs(copy);
-                            }}
-                        />
-                        <label htmlFor="">Address</label>
-                    </Form.Floating>
+                        <Form.Floating className="mb-2">
+                            <Form.Control
+                                required
+                                autoFocus
+                                type="address"
+                                name="address"
+                                placeholder="Address"
+                                value={inputs.address}
+                                onChange={(evt) => {
+                                    const copy = { ...inputs };
+                                    copy.address = evt.target.value;
+                                    setInputs(copy);
+                                }}
+                            />
+                            <label htmlFor="Address">Address</label>
+                        </Form.Floating>
 
-                    <Form.Group className="mb-2">
-                        {/*  <Form.Label>upload Image</Form.Label> */}
-                        <Form.Control
-                            size="lg"
-                            id="imgs"
-                            type="file"
-                            accept="image/png,image/jpeg"
-                            path="E:\FrontEnd\Workspace\SAT_capstone\src\components\image"
-                            files={inputs.studentImg}
-                            onChange={(evt) => {
-                                const copy = { ...inputs };
-                                copy.studentImg = evt.target.files[0].name;
-                                setInputs(copy);
-                            }}
-                        />
-                    </Form.Group>
+                        <Form.Floating className="mb-2">
+                            <Form.Group className="">
+                                {/* <Form.Label>upload Image</Form.Label> */}
+                                <Form.Control
+                                    size="lg"
+                                    id="imgs"
+                                    type="file"
+                                    accept="image/png,image/jpeg"
+                                    path="E:\FrontEnd\Workspace\SAT_capstone\src\components\image"
+                                    files={inputs.studentImg}
+                                    onChange={(evt) => {
+                                        const copy = { ...inputs };
+                                        copy.studentImg =
+                                            evt.target.files[0].name;
+                                        setInputs(copy);
+                                    }}
+                                />
+                            </Form.Group>
+                        </Form.Floating>
 
-                    <Button type="submit" variant="secondary" size="md">
-                        SUBMIT
-                    </Button>
-                </form>
-            </fieldset>
+                        <Button className="button_form" type="submit" variant="secondary" size="lg">
+                            SUBMIT
+                        </Button>
+                    </form>
+                </fieldset>
+            </section>
         </>
     );
 };

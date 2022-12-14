@@ -8,7 +8,7 @@ import { useState } from "react";
 import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import { FaBars, FaHome, FaFortAwesome, FaBirthdayCake } from "react-icons/fa";
+import { FaBars, FaHome, FaFortAwesome, FaBirthdayCake, FaSignOutAlt } from "react-icons/fa";
 import {
     BsFillCalendar2CheckFill,
     BsFillPersonPlusFill,
@@ -18,6 +18,8 @@ import {
     BsCameraFill,
     BsBookmarksFill,
 } from "react-icons/bs";
+//import { IoLogOut }from "react-icons/lo";
+
 
 export const NavBar = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -38,25 +40,25 @@ export const NavBar = ({ children }) => {
         },
         {
             path: "/StudentsCopy",
-            name: "Classroom",
+            name: "Class",
             icon: <FaFortAwesome />,
             className: "sidebar_2",
         },
         {
             path: "/attendance",
-            name: "Attendance",
+            name: "Attend",
             icon: <BsFillCalendar2CheckFill />,
             className: "sidebar_2",
         },
         {
             path: "/studentForm",
-            name: "New Student",
+            name: "Student",
             icon: <BsFillPersonPlusFill />,
             className: "sidebar_2",
         },
         {
             path: "/birthdays",
-            name: "Birthdays",
+            name: "Birthday",
             icon: <FaBirthdayCake />
         },
         {
@@ -73,13 +75,13 @@ export const NavBar = ({ children }) => {
         },
         {
             path: "/studentBarChart",
-            name: "BarChart",
+            name: "Chart",
             icon: <BsBarChartLineFill />,
             className: "sidebar_2",
         },
         {
             path: "/cameraProfile",
-            name: "CameraProfile",
+            name: "Camera",
             icon: <BsCameraFill />,
             className: "sidebar_2",
         },
@@ -89,43 +91,18 @@ export const NavBar = ({ children }) => {
             icon: <BsBookmarksFill />,
             className: "sidebar_2",
         },
+        {
+            path: "/login",
+            name: "Logout",
+            icon: <FaSignOutAlt />,
+            className: "sidebar_2",
+        },
     ];
     return (
         <>
-            {/*             <div
-                className="background"
-                style={{
-                    backgroundImage: `url(${background})`,
-                   // backgroundAttachment: "fixed",
-                    backgroundPosition: "center",
-                    backgroundSize: "contain",
-                    backgroundRepeat: "no-repeat",
-                    height: "45rem",
-                    width:"auto"
-                }}
-            >
-            </div> */}
-            {/* -------------------img------------------- */}
-            {/*   <img className="background" src={background}/> */}
-
-            {/* sideBar */}
-            {/*<Button variant="primary" onClick={handleShow}>
-                Launch
-            </Button>
-
-            <Offcanvas show={show} onHide={handleClose}>
-                <Offcanvas.Header closeButton>
-                    <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-                </Offcanvas.Header>
-                <Offcanvas.Body>
-                    Some text as placeholder. In real life you can have the
-                    elements you have chosen. Like, text, images, lists, etc.
-                </Offcanvas.Body>
-            </Offcanvas> */}
-            {/* sideBar */}
-            <div className="top_bar"></div>
+           { /* <div className="top_bar"></div> */}
             <div className="sidebar_2"></div>
-            <div className="">
+{/*             <div className="">
                 <Link
                     className="link_text logout_link"
                     to=""
@@ -136,7 +113,7 @@ export const NavBar = ({ children }) => {
                 >
                     Logout
                 </Link>
-            </div>
+            </div> */}
             {/* sideNavBar */}
             <div className="container ">
                 <div
@@ -175,11 +152,25 @@ export const NavBar = ({ children }) => {
                     ))}
                 </div>
                 <main>{children}</main>
+
+
+{/*                 <li class="border-top my-3"></li>
+                <li class="mb-1">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                    Account
+                  </button>
+                <div class="collapse" id="account-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-dark rounded">Sign out</a></li>
+                </ul>
+                    </div>
+                    </li> */}
+                
             </div>
             {/* sideNavBar */}
             <div className=""></div>
 
-            <div className="bottom_bar"></div>
+           {/*  <div className="bottom_bar"></div> */}
         </>
     );
 };

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { StudentCopy } from "./StudentCopy";
-import "./StudentCopy.css"
-
+import Button from "react-bootstrap/Button";
+//import "./StudentCopy.css"
 
 //import Camera from 'react-camera';
 import Webcam from "react-webcam";
@@ -20,12 +20,12 @@ export const StudentsCopy = ({ searchTermState }) => {
     useEffect(() => {
         //console.log(searchTermState);
         const searchedStudent = Students.filter((student) => {
-            console.log(searchTermState.toLowerCase());
-            console.log(
-                student.fullName
-                    .toLowerCase()
-                    .startsWith(searchTermState.toLowerCase())
-            );
+            //console.log(searchTermState.toLowerCase());
+            //console.log(
+            //     student.fullName
+            //         .toLowerCase()
+            //         .startsWith(searchTermState.toLowerCase())
+            // );
             return student.fullName
                 .toLowerCase()
                 .startsWith(searchTermState.toLowerCase());
@@ -51,29 +51,31 @@ export const StudentsCopy = ({ searchTermState }) => {
 
     return (
         <>
-        <h1 className="page_name">Classroom</h1>
-            <section className="page_container">
-                <button
-                    className=" btn btn-primary student_btn"
-                    onClick={() => {
-                        setFiltered(Students);
-                    }}
-                >
-                    DISPLAY STUDENT
-                </button>
+            <h1 className="page_classroom">Classroom!</h1>
+            <section className="page_container_class">
+                <article className="btn_container_class">
+                    <Button
+                        variant="secondary"
+                        className=" students_btn"
+                        onClick={() => {
+                            setFiltered(Students);
+                        }}
+                    >
+                        DISPLAY STUDENT
+                    </Button>
 
-                <section>
-                    <button
+                    <Button
+                        variant="secondary"
                         onClick={(clickEvent) => {
                             navigate("/attendance");
                         }}
-                        className="btn btn-primary attendance_btn"
+                        className=" attend_btn"
                     >
                         RECORD ATTENDANCE
-                    </button>
-                </section>
+                    </Button>
+                </article>
 
-                <article className="students overflow_students_btn">
+                <article className="students_class">
                     {filteredStudent
                         .sort((a, b) => {
                             return a.fullName === b.fullName
@@ -106,9 +108,9 @@ export const StudentsCopy = ({ searchTermState }) => {
     this.camera = cam;
   }}
 >
-  <button onClick={this.takePicture}>
+  <Button onClick={this.takePicture}>
     <i className="fas fa-camera"></i> &nbsp; Take photo
-  </button>
+  </Button>
 </Camera>  */}
             </section>
         </>

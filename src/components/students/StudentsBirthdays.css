@@ -1,3 +1,7 @@
+body{
+
+}
+
 .birthday_container{
   margin-left: 0.9rem;
   display: flex;
@@ -11,10 +15,13 @@
 .page_birthday{
   position:absolute;
   top:50px; 
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   text-align: center;
-  font-family: cu;
-  list-style-type: none;
+  font-family: "Roboto";
+/*   list-style-type: none; */
+background-color: rgb(220, 181, 119, 0.8);
+padding: 6px;
+border-radius: 5px;
 }
 
 .button_container{
@@ -30,18 +37,26 @@
 
 .student_birthday_B {
   /* background-color:rgb(219, 235, 248); */
-  background-color: rgba(255, 192, 203, 0.493);
-  border: 1px dotted rgb(133, 42, 54);
-  border-radius: 15px;
+  background-color: #dcb577 ;
+ /*  border: 1px solid #4F8488; */
+  border-radius: 5px;
   padding: 0.5rem;
   margin: 0.3rem;
-  max-width: 26rem;
-  min-width: 21rem;
+  width:18rem;
+/*   max-width: 28rem;
+  min-width: 20rem; */
+  height:10rem;
   box-shadow: 1px 1px 3px rgb(196, 196, 196);
   top:100px;
   left:10px;
   /* left:63%; */
 position: relative;
+/* background-image:  url('../images/101.png'); */
+background-image:  url('../images/baloon_3.png');
+
+background-size:29%;
+text-align: center;
+background-repeat:no-repeat 
 }
 
       .birthday_card_button{
@@ -85,18 +100,34 @@ button:active {
 }
 
 .student_img_B {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   /* background-size: cover; */
   object-fit: cover;
   border-radius: 50%;
+  box-shadow: #5F5D6B 1px 1px 10px;
+  border: #ED6C5C solid 4PX;
 }
-.student_info_B {
+
+.student_info_name {
   font-size: 1.2rem;
-  font-weight: lighter;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+ /*  font-weight: lighter; */
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", */
+  font-family: "Open sans",
       sans-serif;
   color: rgb(5, 96, 96);
+  color:#0B1C3B;
+  
+}
+
+.student_info_dob{
+  font-size: 1rem;
+  /* font-weight: lighter; */
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", */
+  font-family: "Open sans","Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  color: rgb(5, 96, 96);
+  
 }
 
 /* .overflow-birthday{

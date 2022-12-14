@@ -15,11 +15,17 @@ textarea {
   /* display:flex;
   flex-wrap: wrap;
   display: inline-flex; */
-  background-color:#ebe8d0;
+ /*  background-color:#ebe8d0; */
 /*   background-image: url('./images/light_cross.png'); */
  /*  background-repeat: repeat; */
-  background-size: 17%;
+  
 
+
+ background-image:  url('./images/sun.png');
+ background-size:100%;
+text-align: center;
+background-repeat:no-repeat ;
+display:sticky;
 }
 
 body {

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import "./Attendance.css";
+import "./Students.css";
 
 export const Attendance = ({ attendTermState }) => {
     const [attendance, setAttendance] = useState([]);
@@ -35,28 +35,28 @@ export const Attendance = ({ attendTermState }) => {
 
     return (
         <>
-            <article className="container_A overflow-auto_A">
+            <article className="students_class">
                 {/* <h1 className="page_attendance">Attendance</h1> */}
                 {filterAttendance.map((attend) => {
                     return (
                         <>
-                            <div /* className="card_container_A" */>
+                            <div>
                                 {attend.attend ? (
                                     <div className="">
                                         <section
                                             key={attend.id}
-                                            className="student_card_A"
+                                            className="student_card_1"
                                         >
-                                            <div className="student_card_container_A">
+                                            <div className="student_card_container">
                                                 {
                                                     <img
                                                         src={require(`../images/${attend.student.studentImg}`)}
-                                                        className="student_img_A"
+                                                        className="student_img"
                                                     />
                                                 }
                                                 <div>{attend.attend}</div>
                                                 <div>{attend.date}</div>
-                                                <h3 className="student_info_A">
+                                                <h3 className="student_info">
                                                     {attend.student.fullName}
                                                 </h3>
                                             </div>

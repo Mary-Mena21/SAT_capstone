@@ -20,7 +20,7 @@ export const Camera = () => {
 
     return (
         <>
-            <h1 className="page_camera_style">Camera!</h1>
+            <h1 className="page_camera_style">Camera!!</h1>
             <section className="student_camera_style">
                 {img === null ? (
                     <>
@@ -32,6 +32,7 @@ export const Camera = () => {
                             ref={webcamRef}
                             screenshotFormat="image/jpeg"
                             videoConstraints={videoConstraints}
+                            download={img}
                         />
                         <Button
                             type="submit"
@@ -41,16 +42,31 @@ export const Camera = () => {
                         >
                             Capture photo
                         </Button>
+
+                        <a href='capture' download>Click to download</a>
+
+
+                        <Button
+                        type="download"
+                        variant="secondary"
+                        size="md"
+                        /* className="capture_camera" */ onClick={capture}
+                        
+                    >
+                        Download
+                    </Button>
+
                     </>
                 ) : (
-                    <>
-                        <img src={img} alt="screenshot" />
-                        <Button
+                        <>
+                                <img src={img} alt="screenshot" />
+                                
+                            <Button
                             type="submit"
                             variant="secondary"
                             size="md"
                             /*  className="retake_camera" */ onClick={() =>
-                                setImg(null)
+                                setImg(null) 
                             }
                         >
                             Retake
@@ -62,6 +78,19 @@ export const Camera = () => {
     );
 };
 /* ------------------------------------------ */
+
+// const saveFile = () => {
+//     fileSaver.saveAs(
+//       process.env.REACT_APP_CLIENT_URL + "/resources/cv.pdf",
+//       "MyCV.pdf"
+//     );
+//     };
+    
+//     <button className="cv" onClick={saveFile}>
+//         Download File
+//     </button>
+
+
 
 // function download(source) {
 //     const fileName = source.split("/").pop();

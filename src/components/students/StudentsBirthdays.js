@@ -155,7 +155,7 @@ export const StudentsBirthdays = () => {
                 alt="med1"
             /> */}
             <section className="birthday_container">
-            <h1 className="page_birthday">Birthdays Of The Month</h1>
+            <h1 className="page_birthday">Birthdays Of The Month!</h1>
             <div className="button_container">
             <button className="birthday_card_button"
                 onClick={() => {
@@ -242,7 +242,7 @@ export const StudentsBirthdays = () => {
                 December
             </button>
             </div>
-            <article className="overflow-birthday">
+            <article /* className="overflow-birthday" */>
                 {filteredBirthdays.map((birthday) => {
                     return (
                         <>
@@ -258,11 +258,13 @@ export const StudentsBirthdays = () => {
                                     src={require(`../images/${birthday.studentImg}`)}
                                     className="student_img_B"
                                 />
-                                <h3 className="student_info_B">
+                                <br />
+                                <h3 className="student_info_name">
                                     {" "}
                                     {birthday.fullName}
                                 </h3>
-                                <h3 className="student_info_B">
+                                <br />
+                                <h3 className="student_info_dob">
                                 {" "}
                                 {birthday.dob}
                             </h3>

@@ -1,12 +1,16 @@
 .page_book{
   position: relative;
-  display: flex;
+  /* display: flex; */
      top: 50px; 
     font-size: 2rem;
     text-align: center;
-    font-family: cu;
+    font-family: "Roboto", "Helvetica Neue";
     list-style-type: none;
     justify-content: center;
+   /* color:   rgb(133, 42, 54); */
+    background-color: rgb(220, 181, 119,0.5);
+padding: 6px;
+border-radius: 5px;
   }
   
   .book_container{
@@ -20,12 +24,12 @@
 
  .student_book{
 
-    background-color: rgba(255, 192, 203, 0.493);
-    border: 1px dotted rgb(133, 42, 54);
+    background-color: #DCB677;
+    border: 1px solid rgb(133, 42, 54);
     border-radius: 10px;
-    padding: 0.1rem;
+    padding: 0.5rem;
     margin: 0.2rem;
-    min-width:5rem;
+    min-width:4rem;
     height: auto;
     box-shadow: 1px 1px 3px rgb(196, 196, 196);
 

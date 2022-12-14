@@ -38,6 +38,7 @@ export const StudentDetails = ({
 
     return (
         <>
+            <section className="detail_container">
         <h1 className="page_Edit">Student Details!</h1>
             <div className="edit_container">
             <section key={`student__${id}`} className="student_edit">
@@ -83,6 +84,7 @@ export const StudentDetails = ({
                 </button> */} 
                 </section>
                 </div>
+                </section>
         </>
     );
 };

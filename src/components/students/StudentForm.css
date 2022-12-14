@@ -1,36 +1,54 @@
+
 .page_studentForm{
-    top:150px; 
-    font-size: 2rem;
+    position:relative;
+    top:50px; 
+    font-size: 1.6rem;
     text-align: center;
-    font-family: cu;
-    /* list-style-type: none; */
-    
+    font-family: "Roboto";
+    background-color: #E8B097;
+    padding: 6px 10px;
+    border-radius: 5px;
+    box-shadow: #6D7C8E 2px 2px 10px;
+
+/*     transition:all 0.2;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto; */
+   /*  border: 3px solid #4B687E; */
+    /* height: 50px; */
+/*     background-image:  url('../images/100 (18).png');
+background-size:15%;
+text-align: center;
+background-repeat:no-repeat  */
 }
 
-/* .page_name{
-    position:absolute; right: 21%;
-    top:50px; 
-    font-size: 2rem;
-    text-align: center;
-    font-family: cu;
-} */
+/* .page_studentForm:hover {
+    transform: scale(2.02);
+  } */
 
 .page_container{
-    top: 50px;
-    position: relative;
-    display:flex;
-    margin-left: 10px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
+    
+    /* top:100px; */
+   /*  display:flex; */
+    /* margin-left: 10px; */
+/*     flex-direction: column;
+    flex-wrap: wrap; */
+    /* list-style-type: none; */
+    background-color:#6D7C8E;
+    padding: 20px 10px;
+    border-radius: 20px;
+    border: 3px solid #E8B097;
+    /* width:20rem; */
+   /*  justify-items: center; */
+   box-shadow: #6D7C8E 2px 2px 10px;
 }
 
-.page_name{
-        font-size: 2rem;
-        text-align: center;
-        font-family: cu;
-        /* 0000000 */
-    }
-    
+.form_container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top:70px; 
+}
+.mb-2{
+left:10px;
+}

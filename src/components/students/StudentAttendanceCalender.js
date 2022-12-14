@@ -1,11 +1,11 @@
-import "./StudentAttendanceCalender.css";
+import "./Students.css";
 import Form from "react-bootstrap/Form";
 
 export const StudentAttendanceCalender = ({ setterFunction}) => {
     return (
         <>
-            <div className="card_container_C"></div>
-        <h1 className="page_attendance_C">Attendance</h1>
+            {/* <div className="card_container_C"></div> */}
+        <h1 className="page_students_class">Attendance!</h1>
             <Form.Floating className="mb-2 datePicker">
                 <Form.Control
                     required
