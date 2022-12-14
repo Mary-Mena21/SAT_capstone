@@ -13,13 +13,13 @@ export const Students = () => {
     //let id=id
 
     const [Students, setStudents] = useState([]);
-
+/* 
     const [inputAttend, setInputAttend] = useState({
         date: NewDate,
         classId: classId,
         studentId: 1,
         attend: false,
-    });
+    }); */
 
     /* -------------Display----------------- */
     useEffect(
@@ -36,7 +36,7 @@ export const Students = () => {
         [] // When this array is empty, you are observing initial component state
     );
     /* -------------Add----------------- */
-    const sendAttendance = async (SendToAPI) => {
+/*     const sendAttendance = async (SendToAPI) => {
         const fetchOptions = {
             method: "POST",
             headers: {
@@ -50,17 +50,17 @@ export const Students = () => {
         );
         const responseJson = await response.json();
         return responseJson;
-    };
+    }; */
     /* ------------------------------ */
-    const handleSaveButtonClick = (event) => {
+/*     const handleSaveButtonClick = (event) => {
         event.preventDefault();
         sendAttendance(inputAttend);
-    };
+    }; */
 
     return (
         <>
-        <h1 className="page_students_class">Students</h1>
-        <article className="container_class">
+        <h1 className="page_name_class">Students!</h1>
+        <article className="students_class">
                 {Students.map((student) => {
                     <>
                         key={`student__${student.id}`}
@@ -79,7 +79,7 @@ export const Students = () => {
                                
                                     <section
                                         key={student.id}
-                                        className="student_card"
+                                        className="student_card_1"
                                     >
                                         <div className="student_card_container">
                                          {/*    <img

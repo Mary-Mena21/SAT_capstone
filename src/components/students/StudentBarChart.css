@@ -5,9 +5,9 @@
     /* overflow:auto; */
    /* display:flex; */
     position: relative !important;
-    width: 90%;
+   /*  width: 90%; */
     height: auto;
-    top:50px;
+    /* top:50px; */
     align-items: center;
     
 }

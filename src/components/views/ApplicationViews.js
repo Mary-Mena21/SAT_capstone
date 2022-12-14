@@ -17,12 +17,14 @@ import { StudentContact } from "../students/StudentContact";
 import { StudentBarChart } from "../students/StudentBarChart";
 import { Camera} from "../students/Camera";
 import { About } from "../about/About";
+import { Home } from "../students/Home";
 //import { Camera } from "@mui/icons-material";
 
 
 export const ApplicationViews = () => {
     return (
         <Routes>
+            <Route path="/" element={<Home />} />  
             <Route path="students/attendance" element={<StudentAttendance />} />  
             <Route path="students" element={<Students />} />
             <Route path="studentsCopy" element={<StudentContainer />} />

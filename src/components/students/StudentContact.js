@@ -24,50 +24,55 @@ export const StudentContact = () => {
     );
     return (
         <>
+        <h1 className="page_contact">Student Contact!</h1>
             <section className="contact_container">
-                <h1 className="page_contact">Student Contact!</h1>
-                <div className="overflow-auto">
-            <article className="">
                 {/*         <iframe width="400" height="200" src="https://maps.google.com/maps?width=100%25&amp;height=100&amp;hl=en&amp;q=Rosemont+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" allowfullscreen></iframe> */}
                 {Students.map((student) => {
                     return (
                         <>
                         
                             <div key={`student--${student.id}`}>
-                                <section 
+                                <section className="student_contact">
+                                <img
+                                src={require(`../images/${student.studentImg}`)}
+                                className="student_img_contact"
+                                    />
                                     
-                                    className="student_contact"
-                                >
-                                    <h3 className="student_info">
+                                    <h3 className="student_info_contact contact_name">
                                         {student.fullName}
                                     </h3>
+                                    <br/>
                                     &nbsp;&nbsp;&nbsp;
                                     <a
-                                        className="student_info"
+                                        className="student_info_contact"
                                         target="_blank"
                                         href={`tel:${student.phone}`}
                                     >
                                         {student.phone}
                                     </a>
                                     <br />
-                                    <h3 className="student_info">
+                                    <a
+                                    className="student_info_contact"
+                                    href={`${student.email}`}
+                                >
+                                    {student.email}
+                                </a>
+                                    <br />
+
+
+                                    
+                                    <h3
+                                        className="student_info_contact">
                                         {student.address}
                                         <br />
                                     </h3>
-                                    <a
-                                        className="student_info"
-                                        href={`${student.email}`}
-                                    >
-                                        {student.email}
-                                    </a>
+                                    
                                 </section>
                             </div>
                             
                             </>
                     );
                 })}
-                </article>
-                </div>
                 </section>
         </>
     );
@@ -75,7 +80,7 @@ export const StudentContact = () => {
 
 {
     /*                                 <a
-                                className="student_info"
+                                className="student_info_contact"
                                 href="https://goo.gl/maps/PeSkZxK9HopTY6ir7"
                                 target="_blank"
                                 >

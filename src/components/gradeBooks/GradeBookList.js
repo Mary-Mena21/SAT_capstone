@@ -15,8 +15,8 @@ export const GradeBookList = () => {
     }, []);
     return (
         <>
-            <div className="main_container">
         <h1 className="page_book">Grade Books!</h1>
+            <div className="main_container">
             <div className=" overflow-auto">
             <article className="book_container">
                 {books.map((book) => {
