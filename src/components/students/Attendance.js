@@ -54,8 +54,11 @@ export const Attendance = ({ attendTermState }) => {
                                                         className="student_img"
                                                     />
                                                 }
+                                                
                                                 <div>{attend.attend}</div>
+                                                
                                                 <div>{attend.date}</div>
+                                                
                                                 <h3 className="student_info">
                                                     {attend.student.fullName}
                                                 </h3>

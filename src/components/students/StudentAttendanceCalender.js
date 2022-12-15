@@ -5,7 +5,7 @@ export const StudentAttendanceCalender = ({ setterFunction}) => {
     return (
         <>
             {/* <div className="card_container_C"></div> */}
-        <h1 className="page_students_class">Attendance!</h1>
+        <h1 className="page_attendance">Attendance!</h1>
             <Form.Floating className="mb-2 datePicker">
                 <Form.Control
                     required

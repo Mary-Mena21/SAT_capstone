@@ -1,6 +1,7 @@
 import React, { useCallback, useRef, useState } from "react";
 import Webcam from "react-webcam";
 import Button from "react-bootstrap/Button";
+import { saveAs } from 'file-saver'
 import "./Camera.css";
 
 export const Camera = () => {
@@ -16,19 +17,20 @@ export const Camera = () => {
     const capture = useCallback(() => {
         const imageSrc = webcamRef.current.getScreenshot();
         setImg(imageSrc);
+         saveAs(imageSrc, 'image.jpg')
     }, [webcamRef]);
 
     return (
         <>
-            <h1 className="page_camera_style">Camera!!</h1>
+            <h1 className="page_camera_style">Camera!</h1>
             <section className="student_camera_style">
                 {img === null ? (
                     <>
                         <Webcam
                             audio={false}
                             mirrored={true}
-                            height={200}
-                            width={200}
+                            height={300}
+                            width={300}
                             ref={webcamRef}
                             screenshotFormat="image/jpeg"
                             videoConstraints={videoConstraints}
@@ -43,24 +45,9 @@ export const Camera = () => {
                             Capture photo
                         </Button>
 
-                        <a href='capture' download>Click to download</a>
-
-
-                        <Button
-                        type="download"
-                        variant="secondary"
-                        size="md"
-                        /* className="capture_camera" */ onClick={capture}
-                        
-                    >
-                        Download
-                    </Button>
-
                     </>
                 ) : (
                         <>
-                                <img src={img} alt="screenshot" />
-                                
                             <Button
                             type="submit"
                             variant="secondary"
@@ -78,6 +65,7 @@ export const Camera = () => {
     );
 };
 /* ------------------------------------------ */
+
 
 // const saveFile = () => {
 //     fileSaver.saveAs(
