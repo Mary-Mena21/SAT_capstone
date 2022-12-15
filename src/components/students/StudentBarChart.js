@@ -1,4 +1,10 @@
 //import logo from "./logo.svg";
+
+//import Button from "@material-ui/core/Button";
+
+import ReactExport from "@ibrahimrahmani/react-export-excel";
+
+//import ReactExport from "react-export-excel";
 import "./StudentBarChart.css";
 //import Typography from '@mui/material/Typography';
 import {
@@ -13,6 +19,7 @@ import {
 
 import { Bar } from "react-chartjs-2";
 import React, { useState, useEffect } from "react";
+import { Button } from "react-bootstrap";
 
 ChartJS.register(
     CategoryScale,
@@ -33,13 +40,22 @@ export const StudentBarChart = () => {
 
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
+
+    const ExcelFile = ReactExport.ExcelFile;
+    const ExcelSheet = ReactExport.ExcelFile.ExcelSheet;
+
+    // const ExcelFile = ReactExport.ExcelFile;
+    // const ExcelSheet = ReactExport.ExcelFile.ExcelSheet;
+    // const ExcelColumn = ReactExport.ExcelFile.ExcelColumn;
+
+    //let multiDataSet =[]
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch(
                 `http://localhost:8033/studentAttendance?_expand=student&classId=${satUserObject.id}`
             );
             const attendanceArray = await response.json();
-            let Z = attendanceArray.map((s) => s.date);
+            let Z = attendanceArray.map((s) => s.date); /*--- columns ---*/
             //console.log(Z);
             let uniqueDates = Z.filter((c, index) => {
                 return Z.indexOf(c) === index;
@@ -60,85 +76,38 @@ export const StudentBarChart = () => {
                 //console.log(HG);
             });
 
+            /* {columns: Z},
+         { data: HG} */
+            // const DatasetExport = () => {
+                //const multiDataSet =()=>{ [{ columns: Z }, { data: HG }]}
+            // };
+
             setChartData({
                 labels: uniqueDates,
                 datasets: [
                     {
                         label: "Student attend",
-                        data: HG,
-                        // borderColor: "rgb(53, 162, 235)",
-                        // backgroundColor: "rgba(53, 162, 235, 0.4)",
-
-                        // backgroundColor: [
-                        //     "rgba(255, 99, 132, 0.5)",
-                        //     "rgba(255, 159, 64, 0.5)",
-                        //     "rgba(255, 205, 86, 0.5)",
-                        //     "rgba(75, 192, 192, 0.5)",
-                        //     "rgba(54, 162, 235, 0.5)",
-                        //     "rgba(153, 102, 255, 0.5)",
-                        //     "rgba(201, 203, 207, 0.5)",
-                        // ],
-                        // borderColor: [
-                        //     "rgb(255, 99, 132)",
-                        //     "rgb(255, 159, 64)",
-                        //     "rgb(255, 205, 86)",
-                        //     "rgb(75, 192, 192)",
-                        //     "rgb(54, 162, 235)",
-                        //     "rgb(153, 102, 255)",
-                        //     "rgb(201, 203, 207)",
-                        // ],
-
-                        // backgroundColor: [
-                        //     "#BA3981",
-                        //     "#2999A4",
-                        //     "#52B352",
-                        //     "#B7B907",
-                        //     "#946EAE",
-                        //     "#BE6295",
-                        // ],
-                        // borderColor: [
-                        //     "#BA3981",
-                        //     "#2999A4",
-                        //     "#52B352",
-                        //     "#B7B907",
-                        //     "#946EAE",
-                        //     "#BE6295",
-                        // ],
-
-
-                            backgroundColor:
-                            [
-                                '#E8B097',
-                                '#DCB677',
-                                '#6D7C8E',
-                            ],
-                          borderColor:
-                            [
-                                '#E8B097',
-                                '#DCB677',
-                                '#6D7C8E',
-                            ],
-
-
-                        //     backgroundColor:
-                        //     [
-                        //         '#2E9C99',
-                        //         '#FECA01',
-                        //         '#FE7EC9',
-                        //         '#458DF3',
-                        //     ],
-                        //   borderColor:
-                        //     [
-                        //         '#2E9C99',
-                        //         '#FECA01',
-                        //         '#FE7EC9',
-                        //         '#458DF3',
-                        //     ],
+                        data: HG /*--- data ---*/,
+                        backgroundColor: [
+                            "#628C67",
+                            "#DCB677",
+                            "#4B687E",
+                            "#72A075",
+                            "#ED6C5C",
+                        ],
+                        borderColor: [
+                            "#628C67",
+                            "#DCB677",
+                            "#4B687E",
+                            "#72A075",
+                            "#ED6C5C",
+                        ],
                         borderWidth: 1,
                     },
                 ],
             });
 
+            //const multiDataSet =()=>{ [{ columns: Z }, { data: HG }]}
             setChartOptions({
                 responsive: true,
                 plugins: {
@@ -154,6 +123,31 @@ export const StudentBarChart = () => {
         };
         fetchData();
     }, []);
+
+//console.log(chartData.labels);
+//console.log(chartData.datasets[0].data);
+//console.log(chartData);
+    // const columns = chartData.datasets.labels;
+    // const data = chartData.datasets[0].data;
+//const multiDataSet = [{ columns }, { data}]
+ //const multiDataSet = [{ columns: chartData.labels }, { data: chartData.datasets[0].data }]
+ //const multiDataSet = [{chartData.labels }, {chartData.datasets[0].data }]
+    
+ const multiDataSet = [
+    {
+      columns: [
+     /*    { value: "Name", widthPx: 50 }, // width in pixels
+        { value: "Date Of Birth", widthPx: 60, widthCh: 20 }, // will check for width in pixels first */
+        { value: "Salary", widthCh: 20 } // width in charachters
+      ],
+      data: [
+        /* ["Swapnil", "11/11/1990", "40k"],
+        ["Amol", "31/12/1995", "70K"], */
+        ["Ashish", "11/10/1997", "60k"]
+      ]
+    }
+  ];
+    
     return (
         <>
             <div className="overflow-auto_chart">
@@ -162,6 +156,36 @@ export const StudentBarChart = () => {
                 </div>
                 <div></div>
             </div>
+
+            {/* Excel Sheet */}
+            <div>
+                <h3>Export with Dataset</h3>
+                <ExcelFile
+                    element={<Button>Download</Button>}
+                    filename="DataSet"
+                    fileExtension="xlsx"
+                >
+                    <ExcelSheet
+                       dataSet={multiDataSet}
+                        name="DataSet"
+                    ></ExcelSheet>
+                </ExcelFile>
+            </div>
+
+            {/* <ExcelFile>
+          <ExcelSheet data={chartData} name="Employees">
+              <ExcelColumn label="Name" value="name"/>
+              <ExcelColumn label="Wallet Money" value="amount"/>
+              <ExcelColumn label="Gender" value="sex"/>
+              <ExcelColumn label="Marital Status"
+                           value={(col) => col.is_married ? "Married" : "Single"}/>
+          </ExcelSheet> */}
+            {/*           <ExcelSheet data={dataSet2} name="Leaves">
+              <ExcelColumn label="Name" value="name"/>
+              <ExcelColumn label="Total Leaves" value="total"/>
+              <ExcelColumn label="Remaining Leaves" value="remaining"/>
+          </ExcelSheet> */}
+            {/* </ExcelFile> */}
         </>
     );
 };

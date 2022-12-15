@@ -1,24 +1,20 @@
 .page_camera_style {
     position: relative;
     top: 50px;
-    display: flex;
-    justify-content: center;
-    /* flex-direction: column; */
-   /*  flex-wrap: wrap; */
     font-size: 2rem;
-   /*  text-align: center; */
-    font-family: cu;
+    font-family:  "Roboto";
+    background-color: #72A075;
+    padding: 6px 10px;
+    border-radius: 5px;
+    box-shadow: #6D7C8E 2px 2px 10px;
 }
 
 .student_camera_style {
   position: relative;
-  top: 50px;
+  top: 70px;
   display: flex;
   justify-content: center;
-  /* flex-direction: column; */
- /*  flex-wrap: wrap; */
   font-size: 2rem;
- /*  text-align: center; */
   font-family: cu;
   left: 10px;
 }

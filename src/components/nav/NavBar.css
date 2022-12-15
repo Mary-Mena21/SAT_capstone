@@ -81,8 +81,8 @@ margin: 0;}
     /* text-align: start; */
 }
 .link:hover{
-    background:lightskyblue;
-    color: #000;
+    background:#DCB677;
+    color: #0B1C3B;
     transition: all 0.5s;
 }
 .active{
