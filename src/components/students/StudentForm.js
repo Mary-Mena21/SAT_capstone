@@ -11,11 +11,6 @@ export const StudentForm = () => {
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
     let classId = satUserObject.id;
-    //const dateToFormat = "19/04/1980";
-    //<Moment>{dateToFormat}</Moment>;
-
-    // let shortDate = new Date("01/12/2021");
-    //const [startDate, setStartDate] = useState(new Date());
 
     const [inputs, setInputs] = useState({
         fullName: "",
@@ -27,13 +22,8 @@ export const StudentForm = () => {
         studentImg: "",
     });
 
-    /* -------------Date----------------- */
-    //let NewDate = new Date(Date.now()).toLocaleDateString();
-    //const [startDate, setStartDate] = useState(inputs.dob);
     /* -------------Add----------------- */
     const sendNewStudent = async (SendToAPI) => {
-        console.log(SendToAPI);
-        console.log(JSON.stringify(SendToAPI));
         const fetchOptions = {
             method: "POST",
             headers: {
@@ -52,9 +42,7 @@ export const StudentForm = () => {
     /* ------------------------------ */
     const handleSubmit = (event) => {
         event.preventDefault();
-        //console.log(inputs);
         sendNewStudent(inputs);
-        // navigate("/students");
     };
     /* ------------------------------ */
 
@@ -78,7 +66,7 @@ export const StudentForm = () => {
                                     setInputs(copy);
                                 }}
                             />
-                                <label htmlFor="name">Full name</label>
+                            <label htmlFor="name">Full name</label>
                         </Form.Floating>
 
                         <Form.Floating className="mb-2">
@@ -110,8 +98,6 @@ export const StudentForm = () => {
                                     const copy = { ...inputs };
                                     new Date(copy.dob);
                                     copy.dob = evt.target.value;
-                                    //toLocaleDateString()
-                                    //console.log(date)
                                     setInputs(copy);
                                 }}
                             />
@@ -154,8 +140,10 @@ export const StudentForm = () => {
                         </Form.Floating>
 
                         <Form.Floating className="mb-2">
-                            <Form.Group >
-                                 <Form.Label className="">upload Image</Form.Label> 
+                            <Form.Group>
+                                <Form.Label className="">
+                                    upload Image
+                                </Form.Label>
                                 <Form.Control
                                     size="lg"
                                     id="imgs"
@@ -173,7 +161,12 @@ export const StudentForm = () => {
                             </Form.Group>
                         </Form.Floating>
 
-                        <Button className="button_form" type="submit" variant="secondary" size="lg">
+                        <Button
+                            className="button_form"
+                            type="submit"
+                            variant="secondary"
+                            size="lg"
+                        >
                             SUBMIT
                         </Button>
                     </form>
@@ -182,162 +175,3 @@ export const StudentForm = () => {
         </>
     );
 };
-
-{
-    /*                     <li>
-                        <label htmlFor="fullName">
-                            Name:
-                            <input
-                                required
-                                autoFocus
-                                type="text"
-                                name="fullName"
-                                value={inputs.fullName}
-                                onChange={(evt) => {
-                                    const copy = { ...inputs };
-                                    copy.fullName = evt.target.value;
-                                    setInputs(copy);
-                                }}
-                            />
-                        </label>
-                    </li> */
-}
-
-{
-    /*                     <li>
-                        <label htmlFor="email">
-                            Email:
-                            <input
-                                required
-                                autoFocus
-                                //pattern=".+@globex\.com"
-                                //size="30"
-                                type="email"
-                                name="email"
-                                value={inputs.email}
-                                onChange={(evt) => {
-                                    const copy = { ...inputs };
-                                    copy.email = evt.target.value;
-                                    setInputs(copy);
-                                }}
-                            />
-                        </label>
-                    </li> */
-}
-
-{
-    /*                     <li>
-                        <label htmlFor="dob">
-                            DOB:
-                            <input
-                                required
-                                autoFocus
-                                type="date"
-                                name="dob"
-                                value={inputs.dob}
-                                onChange={(evt) => {
-                                    const copy = { ...inputs };
-                                    new Date(copy.dob);
-                                    copy.dob = evt.target.value;
-                                    //toLocaleDateString()
-                                    //console.log(date)
-                                    setInputs(copy);
-                                }}
-                            />
-                        </label>
-                    </li> */
-}
-
-{
-    /*                     <li>
-                        <label htmlFor="phone">
-                            Phone:
-                            <input
-                                required
-                                autoFocus
-                                type="telephone"
-                                name="phone"
-                                //pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                                value={inputs.phone}
-                                onChange={(evt) => {
-                                    const copy = { ...inputs };
-                                    copy.phone = evt.target.value;
-                                    setInputs(copy);
-                                }}
-                            />
-                        </label>
-                    </li> */
-}
-
-{
-    /*                     <li>
-                        <label htmlFor="address">
-                            Address:
-                            <input
-                                required
-                                autoFocus
-                                type="address"
-                                name="address"
-                                value={inputs.address}
-                                onChange={(evt) => {
-                                    const copy = { ...inputs };
-                                    copy.address = evt.target.value;
-                                    setInputs(copy);
-                                }}
-                            />
-                        </label>
-                    </li> */
-}
-{
-    /*                     <div className="main">
-                        <div className="uploadimage">
-                            <label htmlFor="imgs">Upload Image</label>
-                        </div>
-                        <input
-                            id="imgs"
-                            type="file"
-                            accept="image/png,image/jpeg"
-                            path="E:\FrontEnd\Workspace\SAT_capstone\src\components\image"
-                            files={inputs.studentImg}
-                            onChange={(evt) => {
-                                const copy = { ...inputs };
-                                copy.studentImg = evt.target.files[0].name;
-                                setInputs(copy);
-                            }}
-                        />
-                    </div> */
-}
-
-{
-    /*                     <li>
-                        <input
-                            type="submit"
-                            //value="Send Request"
-                        />
-                    </li>*/
-}
-
-{
-    /*                 <Form.Floating className="mb-2">
-                <Form.Control
-                id=""
-                type="email"
-                placeholder="name@example.com"
-                />
-                <label htmlFor="">Email address</label>
-                </Form.Floating>
-                 */
-}
-
-{
-    /*               <Form.Floating>
-                <Form.Control
-                
-                
-                    />
-                <label htmlFor="">Full Name</label>
-                </Form.Floating>
- */
-}
-
-// style={{ height: '2.9rem', margin: '0.3rem' ,padding: '0.7rem' }}

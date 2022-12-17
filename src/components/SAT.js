@@ -6,12 +6,10 @@ import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
 import "./SAT.css"
 
-
 export const SAT = () => {
 	return <Routes>
 		<Route path="/login" element={<Login />} />
 		<Route path="/register" element={<Register />} />
-
 		<Route path="*" element={
 			<Authorized>
 				<>
@@ -19,7 +17,6 @@ export const SAT = () => {
 					<ApplicationViews />
 				</>
 			</Authorized>
-
 		} />
 	</Routes>
 }

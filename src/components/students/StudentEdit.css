@@ -1,29 +1,15 @@
 .student_form{
-/*     overflow-y: scroll;
-    height:40vh; */
     justify-content: center;
     padding: 0px;
     margin: 0px;
-   /*  display:flow-root; */
 }
-
 
 .page_studentForm{
     top:150px; 
     font-size: 2rem;
     text-align: center;
     font-family: cu;
-    /* list-style-type: none; */
-    
 }
-
-/* .page_name{
-    position:absolute; right: 21%;
-    top:50px; 
-    font-size: 2rem;
-    text-align: center;
-    font-family: cu;
-} */
 
 .page_container{
     top: 50px;
@@ -37,13 +23,12 @@
     list-style-type: none;
 }
 
-.page_name{
+/* .page_name{
         font-size: 2rem;
         text-align: center;
         font-family: cu;
-        /* 0000000 */
     }
-    
+    */ 
     .page_Edit{
         display: flex;
         justify-content: center;

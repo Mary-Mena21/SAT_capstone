@@ -4,7 +4,7 @@
     font-size: 2rem;
     text-align: center;
     font-family: "SUNDAYMORNING-BWQE3", "Roboto", "Helvetica Neue";
-    color:#ED6C5C;
+    color: #ed6c5c;
 }
 
 .contact_container {
@@ -21,18 +21,12 @@
 
 .student_contact {
     background-color: rgb(114, 160, 117, 0.85);
-    /* background-color:rgb(219, 235, 248);  */
-    /*   background-color: #72a075;
-background-image: linear-gradient(315deg, #72a075 32%, #80D0C7 100%); */
     border: 2px solid rgb(133, 42, 54);
     border-radius: 5px;
     padding: 0.5rem;
     margin: 0.2rem;
-    /*   max-width: 30rem;
-    min-width: 19rem; */
     position: relative;
     box-shadow: 1px 1px 3px rgb(196, 196, 196);
-    /* position: relative; */
     top: 0px;
     font-family: "Open sans", "Franklin Gothic Medium", "Arial Narrow",
         "Arial, sans-serif";
@@ -49,18 +43,8 @@ background-image: linear-gradient(315deg, #72a075 32%, #80D0C7 100%); */
     background-repeat: no-repeat;
 }
 
-/* .overflow-auto{
-  position: absolute;
-  overflow:hidden;
-  max-height: 80vh;
-  top: 100px;
-  margin-left: 20px;
-} */
-
 .student_info_contact {
     font-size: 0.8rem;
-    /*  font-weight: lighter; */
-    /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", */
     font-family: "Open sans", sans-serif;
     color: rgb(5, 96, 96);
     color: #0b1c3b;
@@ -76,7 +60,6 @@ background-image: linear-gradient(315deg, #72a075 32%, #80D0C7 100%); */
 .student_img_contact {
     width: 60px;
     height: 60px;
-    /* background-size: cover; */
     object-fit: cover;
     border-radius: 50%;
     box-shadow: #5f5d6b 1px 1px 10px;

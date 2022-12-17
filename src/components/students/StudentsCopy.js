@@ -4,8 +4,6 @@ import { StudentCopy } from "./StudentCopy";
 import Button from "react-bootstrap/Button";
 import "./Students.css";
 
-
-
 export const StudentsCopy = ({ searchTermState }) => {
     const [Students, setStudents] = useState([]);
     const [filteredStudent, setFiltered] = useState([]);
@@ -13,22 +11,14 @@ export const StudentsCopy = ({ searchTermState }) => {
     const navigate = useNavigate();
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
-    console.log(satUserObject);
+    //console.log(satUserObject);
 
     useEffect(() => {
-        //console.log(searchTermState);
         const searchedStudent = Students.filter((student) => {
-            //console.log(searchTermState.toLowerCase());
-            //console.log(
-            //     student.fullName
-            //         .toLowerCase()
-            //         .startsWith(searchTermState.toLowerCase())
-            // );
             return student.fullName
                 .toLowerCase()
                 .startsWith(searchTermState.toLowerCase());
         });
-        // if (!searchedStudent){setFiltered(Students)}
         setFiltered(searchedStudent);
     }, [searchTermState]);
 
@@ -36,7 +26,6 @@ export const StudentsCopy = ({ searchTermState }) => {
         () => {
             const fetchData = async () => {
                 const response = await fetch(
-                    //`http://localhost:8033/students?_expand=user&classId=${satUserObject.id}`
                     `http://localhost:8033/students?&classId=${satUserObject.id}`
                 );
                 const StudentsArray = await response.json();
@@ -98,42 +87,8 @@ export const StudentsCopy = ({ searchTermState }) => {
                                 </>
                             );
                         })}
-                </div>
-
-                {/*              <Camera
-  ref={(cam) => {
-    this.camera = cam;
-  }}
->
-  <Button onClick={this.takePicture}>
-    <i className="fas fa-camera"></i> &nbsp; Take photo
-  </Button>
-</Camera>  */}
-           
+                </div> 
         </>
     );
 };
-// studentId={student.id}
-/*     return (
-        <>
-            <h1>Students</h1>
-            <article className="Students">
-                {Students.map((student) => {
-                    return (
-                        <section key={student.id} className="StudentsM">
-                            <div className="student_card_container">
-                                <img
-                                    src={student.imgLink}
-                                    className="student_img"
-                                />
-                                <li className="student_info">
-                                    student Name : {student.fullName}
-                                </li>
-                            </div>
-                        </section>
-                    );
-                })}
-            </article>
-        </>
-    );
-}; */
+

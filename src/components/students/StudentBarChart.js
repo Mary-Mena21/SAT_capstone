@@ -155,7 +155,7 @@ export const StudentBarChart = () => {
                     className="barChart"
                     options={chartOptions}
                     data={chartData}
-                    style={{fontSize:"8px"}}
+                    style={{ fontSize: "8px" }}
                 />
             </div>
 

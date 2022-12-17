@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 import "./Students.css";
 
 export const Attendance = ({ attendTermState }) => {
@@ -17,7 +16,7 @@ export const Attendance = ({ attendTermState }) => {
 
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
-    //console.log(satUserObject);
+
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch(
@@ -46,8 +45,6 @@ export const Attendance = ({ attendTermState }) => {
             ? -1
             : 0
     );
-    //console.log(newArr.length);
-    //console.log(sortArray[0].date);
 
     return (
         <>
@@ -65,26 +62,18 @@ export const Attendance = ({ attendTermState }) => {
                                             key={attend.id}
                                             className="student_card_attendance"
                                         >
-                                            {/* <div className="student_card_container_attendance"> */}
-                                                <div>
-                                                    <img
-                                                        src={require(`../images/${attend.student.studentImg}`)}
-                                                        className="student_img_attendance"
-                                                    />
-                                                </div>
+                                            <div>
+                                                <img
+                                                    src={require(`../images/${attend.student.studentImg}`)}
+                                                    className="student_img_attendance"
+                                                />
+                                            </div>
 
-                                                {/* <div>{attend.attend}</div> */}
-                                                {/* <br /> */}
-                                                {/* <div>{attend.date}</div> */}
-                                                <div>
-                                                    <h3 className="student_info_attendance">
-                                                        {
-                                                            attend.student
-                                                                .fullName
-                                                        }
-                                                    </h3>
-                                                </div>
-                                            {/* </div> */}
+                                            <div>
+                                                <h3 className="student_info_attendance">
+                                                    {attend.student.fullName}
+                                                </h3>
+                                            </div>
                                         </section>
                                     </div>
                                 ) : (

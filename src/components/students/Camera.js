@@ -1,7 +1,7 @@
 import React, { useCallback, useRef, useState } from "react";
 import Webcam from "react-webcam";
 import Button from "react-bootstrap/Button";
-import { saveAs } from 'file-saver'
+import { saveAs } from "file-saver";
 import "./Camera.css";
 
 export const Camera = () => {
@@ -17,7 +17,7 @@ export const Camera = () => {
     const capture = useCallback(() => {
         const imageSrc = webcamRef.current.getScreenshot();
         setImg(imageSrc);
-         saveAs(imageSrc, 'image.jpg')
+        saveAs(imageSrc, "image.jpg");
     }, [webcamRef]);
 
     return (
@@ -42,21 +42,20 @@ export const Camera = () => {
                             type="submit"
                             variant="secondary"
                             size="md"
-                            className="capture_camera" onClick={capture}
+                            className="capture_camera"
+                            onClick={capture}
                         >
                             Capture photo
                         </Button>
-
                     </>
                 ) : (
-                        <>
-                            <Button
+                    <>
+                        <Button
                             type="submit"
                             variant="secondary"
                             size="md"
-                             className="retake_camera" onClick={() =>
-                                setImg(null) 
-                            }
+                            className="retake_camera"
+                            onClick={() => setImg(null)}
                         >
                             Retake
                         </Button>
@@ -66,4 +65,3 @@ export const Camera = () => {
         </>
     );
 };
-
