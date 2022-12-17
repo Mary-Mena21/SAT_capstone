@@ -1,15 +1,19 @@
 
+import { ButtonBase } from "@mui/material";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Button } from "react-bootstrap";
+import { FaUserEdit } from "react-icons/fa";
+//import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./Students.css";
+import { StudentSearch } from "./StudentSearch";
 
 export const Students = () => {
-    let NewDate = new Date(Date.now()).toLocaleDateString();
-    const navigate = useNavigate();
+    //let NewDate = new Date(Date.now()).toLocaleDateString();
+    //const navigate = useNavigate();
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
-    let classId = satUserObject.id;
+    //let classId = satUserObject.id;
     //let id=id
 
     const [Students, setStudents] = useState([]);
@@ -59,8 +63,8 @@ export const Students = () => {
 
     return (
         <>
-        <h1 className="page_name_class">Students!</h1>
-        <article className="students_class">
+            <h1 className="page_name_class">Students!</h1>
+            <article className="students_class_group">
                 {Students.map((student) => {
                     <>
                         key={`student__${student.id}`}
@@ -75,27 +79,31 @@ export const Students = () => {
                     </>;
                     return (
                         <>
-                            <section className="Students_class">
+                            <section >
                                
                                     <section
                                         key={student.id}
-                                        className="student_card_1"
+                                        className="student_card_edit"
                                     >
                                         <div className="student_card_container">
                                          {/*    <img
                                                 src={student.studentImg}
                                                 className="student_img"
                                             /> */}
-                                            <img src={require(`../images/${student.studentImg}`)} className="student_img" />
-                                            <Link
-                                                to={`/students/${student.id}`}
-                                            >
-                                                <h3 className="student_info">
-                                                    {student.fullName}
-                                                </h3>
-                                            </Link>
+                                            <img src={require(`../images/${student.studentImg}`)}
+                                            className="student_img" />
+                                            
+                                           
+                                            <h3 className="student_info_edit">
+                                            {student.fullName}
+                                            </h3>
 
                                             
+                                            <Link
+                                            to={`/students/${student.id}`}
+                                            >
+                                            <Button variant="outline-light" size="sm"> <FaUserEdit/></Button>
+                                            </Link>
                                         </div>
                                     </section>
                                

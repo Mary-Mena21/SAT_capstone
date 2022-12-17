@@ -56,7 +56,7 @@ margin: 0;}
 .top_section{
     display: flex;
     align-items:center;
-    padding:20px 15px;
+    padding:15px;
 }
 .logo{
     font-size: 40px;
@@ -73,13 +73,22 @@ margin: 0;}
 .link{
     display: flex;
     color: #fff;
-    padding: 10px 15px;
-    gap: 15px;
+    padding: 8px 15px;
+    gap: 10px;
     transition: all 0.5s;
     text-decoration: none;
     font-family: "Roboto","Open sans","sans-serif";
     /* text-align: start; */
 }
+
+a.github_icon{
+    color: #f3b530;
+}
+a.github_icon:hover{
+    color: #0B1C3B;
+    transition: all 0.5s;
+}
+
 .link:hover{
     background:#DCB677;
     color: #0B1C3B;
@@ -93,8 +102,8 @@ margin: 0;}
     font-size: 1.2rem;
     
 }
- .top_bar{
-   /*  position: absolute; */
+ /* .top_bar{
+    position: absolute;
     background-color: #83312c;
     height:48px;
     text-decoration: none;
@@ -105,7 +114,7 @@ margin: 0;}
     
 } 
 .bottom_bar{
-    /* position: absolute; */
+    position: absolute;
     background-color: #83312c;
     height:48px;
     text-decoration: none;
@@ -115,7 +124,7 @@ margin: 0;}
     width: 100%;
     padding: 0;
     bottom:0;
-} 
+}  */
 
  .logout_link{
   /*   position: absolute; */
@@ -169,3 +178,9 @@ font-family: 'Rubik Puddles', cursive;
 font-family: 'Rubik Vinyl', cursive;
 font-family: 'Sail', cursive;
 }
+
+.hr_nav{
+    color:#ffffff;
+    background-color: #ffffff;
+}
+

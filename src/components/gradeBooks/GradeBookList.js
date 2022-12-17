@@ -15,20 +15,18 @@ export const GradeBookList = () => {
     }, []);
     return (
         <>
-        <h1 className="page_book">Grade Books!</h1>
-            <div className="main_container">
-            <div className=" overflow-auto">
+        <h1 className="page_book">Curriculum!</h1>
             <article className="book_container">
                 {books.map((book) => {
                     return (
                         <>
-                            <article >
-                            {/* <div>{book.bookName}</div> */}
+                            <article className="student_book">
+                                <div>{book.grade}</div> 
                             <a href={book.gradeBookPdf} target="_blank">
-                                <img className="student_book"
+                                <img 
                                     src={book.bookImg}
                                     height={"auto"}
-                                    width={"150rem"}
+                                    width={"120rem"}
                                 />
                             </a>
                             </article>
@@ -36,15 +34,6 @@ export const GradeBookList = () => {
                     );
                 })}
                 </article>
-                </div>
-                </div>
         </>
     );
 };
-//book.gradeBookLink
-
-//                            <iframe width="400" height="315" src={book.gradeBookLink} frameborder="0" allowfullscreen></iframe>
-//{/* <div>{book.gradeBookLink}</div> */}
-//
-                                {/* <iframe width="400" height="315" src={`${book.gradeBookPdf}`} frameborder="2"></iframe> */}
-                            {/*     <iframe src="https://drive.google.com/file/d/1_QHjkwvEGXjIFMP1nw3TFTRlvPAd82Ur/preview" width="640" height="480" allow="autoplay"  frameborder="2"></iframe> */}

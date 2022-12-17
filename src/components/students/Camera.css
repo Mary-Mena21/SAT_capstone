@@ -2,37 +2,24 @@
     position: relative;
     top: 50px;
     font-size: 2rem;
-    font-family:  "Roboto";
-    background-color: #72A075;
-    padding: 6px 10px;
-    border-radius: 5px;
-    box-shadow: #6D7C8E 2px 2px 10px;
+    font-family: "SUNDAYMORNING-BWQE3","Roboto", "Helvetica Neue";
+    color:#458DF3;
 }
+
+
 
 .student_camera_style {
   position: relative;
-  top: 70px;
-  display: flex;
-  justify-content: center;
-  font-size: 2rem;
-  font-family: cu;
-  left: 10px;
-}
-
-/* .retake_camera {
-    font-size: 1.6rem;
-    text-align: center;
-    font-family: cu;
-    top: 200px;
-}
-
-.capture_camera {
-    top: 200px;
-    font-size: 1.6rem;
-    text-align: center;
-    font-family: cu;
-} */
-/* .capture_camera{
+  top: 80px;
+  background-color: #4F8488;
+  padding: 20px;
   border-radius: 10px;
-  border:1px solid brown;
-} */
+}
+
+
+.retake_camera ,.capture_camera {
+  position: relative;
+  top: 100px;
+  padding: 10px;
+  border-radius: 10px;
+}

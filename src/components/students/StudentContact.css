@@ -1,61 +1,52 @@
-.contact_container{
-  top:60px;
- position: relative;
-  margin-left: 1rem;
-  display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction:row;
-   flex-wrap: wrap;
-   text-align: center;
-  
+.page_contact {
+    position: relative;
+    top: 50px;
+    font-size: 2rem;
+    text-align: center;
+    font-family: "SUNDAYMORNING-BWQE3", "Roboto", "Helvetica Neue";
+    color:#ED6C5C;
 }
 
-.page_contact{
-    position:relative;
-    top:50px; 
-    font-size: 1.6rem;
+.contact_container {
+    top: 70px;
+    position: relative;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     text-align: center;
-    font-family: "Roboto";
-   /*  list-style-type: none; */
-   background-color: rgb(220, 181, 119,0.9);
-padding: 6px 10px;
-border-radius: 5px;
+}
 
-background-image:  url('../images/100 (18).png');
-background-size:15%;
-text-align: center;
-background-repeat:no-repeat 
-  }
-
-.student_contact{
- 
-   background-color:rgb(114, 160, 117 , 0.85);
- /* background-color:rgb(219, 235, 248);  */
-/*   background-color: #72a075;
+.student_contact {
+    background-color: rgb(114, 160, 117, 0.85);
+    /* background-color:rgb(219, 235, 248);  */
+    /*   background-color: #72a075;
 background-image: linear-gradient(315deg, #72a075 32%, #80D0C7 100%); */
     border: 2px solid rgb(133, 42, 54);
     border-radius: 5px;
     padding: 0.5rem;
     margin: 0.2rem;
-  /*   max-width: 30rem;
+    /*   max-width: 30rem;
     min-width: 19rem; */
-position: relative;
+    position: relative;
     box-shadow: 1px 1px 3px rgb(196, 196, 196);
     /* position: relative; */
     top: 0px;
-    font-family: 'Open sans','Franklin Gothic Medium', 'Arial Narrow', 'Arial, sans-serif';
+    font-family: "Open sans", "Franklin Gothic Medium", "Arial Narrow",
+        "Arial, sans-serif";
 
-      width: 21rem;
+    width: 21rem;
     min-width: 20rem;
     height: 8rem;
-    background-image:  url('../images/100 (18).png');
+    background-image: url("../images/100 (18).png");
     /* background-image:  url('../images/100_3.png'); */
 
-background-size:15%;
-right:0px;
-text-align: center;
-background-repeat:no-repeat 
+    background-size: 15%;
+    right: 0px;
+    text-align: center;
+    background-repeat: no-repeat;
 }
 
 /* .overflow-auto{
@@ -67,31 +58,29 @@ background-repeat:no-repeat
 } */
 
 .student_info_contact {
-  font-size: 0.8rem;
- /*  font-weight: lighter; */
-  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", */
-  font-family: "Open sans",
-      sans-serif;
-  color: rgb(5, 96, 96);
-  color: #0B1C3B;
+    font-size: 0.8rem;
+    /*  font-weight: lighter; */
+    /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", */
+    font-family: "Open sans", sans-serif;
+    color: rgb(5, 96, 96);
+    color: #0b1c3b;
 }
 
-.contact_name{
-  color:#ED6C5C;
-  color:white;;
-  font-size: larger;
-  text-shadow: #628C67 1px 1px 1px;
+.contact_name {
+    color: #ed6c5c;
+    color: white;
+    font-size: larger;
+    text-shadow: #628c67 1px 1px 1px;
 }
-
 
 .student_img_contact {
-  width: 60px;
-  height: 60px;
-  /* background-size: cover; */
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: #5F5D6B 1px 1px 10px;
-  border: #ED6C5C solid 2PX;
-  position: absolute;
-  left:10px;
+    width: 60px;
+    height: 60px;
+    /* background-size: cover; */
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: #5f5d6b 1px 1px 10px;
+    border: #ed6c5c solid 2px;
+    position: absolute;
+    left: 10px;
 }

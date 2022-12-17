@@ -1,10 +1,12 @@
-import Button from 'react-bootstrap/Button';
+/* import { Form, InputGroup } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button'; */
+
 import "./StudentSearch.css"
 
 export const StudentSearch = ({ setterFunction }) => {
     return (
         <div>
-{/*             <input
+           <input
                 className="student_search"
                 onChange={(evt) => {
                     setterFunction(evt.target.value);
@@ -12,8 +14,13 @@ export const StudentSearch = ({ setterFunction }) => {
                 }}
                 type="text"
                 placeholder="Student Search"
-            /> */}
-            <Button
+            /> 
+
+{/*             <div style={{width:"40px"}} >
+            <InputGroup.Checkbox/>
+           </div> */}
+
+{/*             <Button
                 
             onChange={(evt) => {
                 setterFunction(evt.target.value);
@@ -21,7 +28,7 @@ export const StudentSearch = ({ setterFunction }) => {
             }}
             type="text"
             placeholder="Student Search"
-                variant="outline-success">Search</Button>
+                variant="outline-success">Search</Button> */}
         </div>
     );
 };

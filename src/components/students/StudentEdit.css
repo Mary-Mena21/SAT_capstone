@@ -52,8 +52,9 @@
         top:50px; 
         font-size: 2rem;
         text-align: center;
-        font-family: cu;
-        list-style-type: none;
+        font-family: "SUNDAYMORNING-BWQE3","Roboto";
+        color: #628C67;
+        /* list-style-type: none; */
       }
       .edit_container{
         position: relative;
@@ -68,8 +69,9 @@
       .student_edit{
         justify-content: center;
         position: relative;
-        background-color: bisque;
-        border:2px dotted brown;
+        background-color: #E8B097;
+        border:2px dashed brown;
+        border-radius: 20px;
         padding: 0.8rem;
         margin: 0.5rem;
         width:26rem;
@@ -78,4 +80,29 @@
         list-style-type: none;
         text-align: center;
         left:20px;
+        color:#BA3981;
+        box-shadow: #628C67 1px 1px 10px;
+    }
+
+    .student_edit:hover{
+        transform: rotate(-2deg);
+        transition: all 1s;
+    }
+
+    .student__header{
+        font-size: larger;
+        font-weight: 700;
+        line-height: 3rem;
+        font-family:"Roboto";
+        text-shadow: #4B687E;
+    }
+    
+    .student__footer{
+        margin: 1rem 0 0.25rem 0;
+        font-style: oblique;
+        text-shadow: #4B687E;
+    }
+
+    Button{
+        
     }

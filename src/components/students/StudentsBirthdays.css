@@ -15,13 +15,15 @@ body{
 .page_birthday{
   position:absolute;
   top:50px; 
-  font-size: 1.5rem;
-  text-align: center;
-  font-family: "Roboto";
+  font-size: 2rem;
+  color:#BE6295;
+  /* color:  rgb(5, 96, 96); */
+  font-family: "SUNDAYMORNING-BWQE3","Roboto";
+  /*   text-align: center; */
 /*   list-style-type: none; */
-background-color: rgb(220, 181, 119, 0.8);
-padding: 6px;
-border-radius: 5px;
+/* background-color: rgb(220, 181, 119, 0.8); */
+/* padding: 6px; */
+/* border-radius: 5px; */
 }
 
 .button_container{
@@ -39,7 +41,7 @@ border-radius: 5px;
   /* background-color:rgb(219, 235, 248); */
   background-color: #dcb577 ;
  /*  border: 1px solid #4F8488; */
-  border-radius: 5px;
+  border-radius: 5px 50px;
   padding: 0.5rem;
   margin: 0.3rem;
   width:18rem;
@@ -113,7 +115,7 @@ button:active {
   font-size: 1.2rem;
  /*  font-weight: lighter; */
   /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", */
-  font-family: "Open sans",
+  font-family: "Roboto","Open sans",
       sans-serif;
   color: rgb(5, 96, 96);
   color:#0B1C3B;
@@ -124,7 +126,7 @@ button:active {
   font-size: 1rem;
   /* font-weight: lighter; */
   /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", */
-  font-family: "Open sans","Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+  font-family: "Open sans","Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
       sans-serif;
   color: rgb(5, 96, 96);
   

@@ -57,11 +57,11 @@
   "students": [
     {
       "id": 1,
-      "fullName": "Holy Markos",
-      "email": "hmena@me.com",
+      "fullName": "Holly Markos",
+      "email": "hmarkos@me.com",
       "classId": 1,
-      "dob": "2017-01-01",
-      "phone": "785-153478",
+      "dob": "2013-01-01",
+      "phone": "785-153-5478",
       "address": "1008 Meb Ct, Mt. Juliet, TN 37122",
       "studentImg": "Holy Markos.jpg"
     },
@@ -127,31 +127,31 @@
     },
     {
       "id": 9,
-      "fullName": "Rafayel Mena",
-      "email": "rmena@me.com",
+      "fullName": "Chris Patrick",
+      "email": "cpatrick@me.com",
       "classId": 1,
-      "dob": "2017-15-05",
-      "phone": "615-785485",
+      "dob": "2014-03-01",
+      "phone": "615-785-4854",
       "address": "1008 Meb Ct, Mt. Juliet, TN 37122",
       "studentImg": "Rafayel Mena.jpg"
     },
     {
       "id": 10,
-      "fullName": "Sofy Mena",
-      "email": "smena@me.com",
+      "fullName": "Soffie Angel",
+      "email": "sangel@me.com",
       "classId": 1,
-      "dob": "2018-04-06",
-      "phone": "615-6089966",
+      "dob": "2014-03-17",
+      "phone": "615-608-9966",
       "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
       "studentImg": "Sofy Mena.png"
     },
     {
       "id": 11,
-      "fullName": "Goerge Mena",
-      "email": "cmena@me.com",
+      "fullName": "George Philip",
+      "email": "gphilip@me.com",
       "classId": 1,
       "dob": "2017-08-07",
-      "phone": "615-6069166",
+      "phone": "615-606-9166",
       "address": "9315 Lebanon Rd, Mt. Juliet, TN 37122",
       "studentImg": "Goerge Mena.jpg"
     },
@@ -160,18 +160,18 @@
       "fullName": "Deana Ehab",
       "email": "smenaehab@me.com",
       "classId": 1,
-      "dob": "2017-09-08",
-      "phone": "615-6055745",
+      "dob": "2013-09-08",
+      "phone": "615-605-5745",
       "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
       "studentImg": "Samy Mena.jpg"
     },
     {
       "id": 13,
       "fullName": "Ramy Kamel",
-      "email": "rmena@me.com",
+      "email": "rkamel@me.com",
       "classId": 1,
-      "dob": "2017-15-09",
-      "phone": "615-785485",
+      "dob": "2013-09-12",
+      "phone": "615-785-3485",
       "address": "1008 Meb Ct, Mt. Juliet, TN 37122",
       "studentImg": "Ramy Mena.jpg"
     },
@@ -180,17 +180,17 @@
       "fullName": "Sandra Mena",
       "email": "smena@me.com",
       "classId": 1,
-      "dob": "2018-04-10",
-      "phone": "615-6089966",
+      "dob": "2013-10-08",
+      "phone": "615-608-9966",
       "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
       "studentImg": "Sandra Mena.png"
     },
     {
       "id": 16,
-      "fullName": "Martin Nathan",
+      "fullName": "Martin Nathen",
       "email": "nmartin@me.com",
       "classId": 1,
-      "dob": "2017-09-12",
+      "dob": "2013-09-12",
       "phone": "615-605-5745",
       "address": "6211 Saundersville Rd, Mt. Juliet, TN 37122",
       "studentImg": "Sany Mena.jpg"
@@ -206,48 +206,48 @@
       "id": 17
     },
     {
-      "fullName": "Karma Josef",
+      "fullName": "Karma Joseph",
       "email": "jmartin@yahoo.com",
       "classId": 1,
-      "dob": "2017-08-07",
+      "dob": "2014-07-07",
       "phone": "368-458-3654",
       "address": "1904 Old Hickory Blvd, Old Hickory, TN 37138",
       "studentImg": "Sheren Mena.png",
       "id": 24
     },
     {
-      "fullName": "Beren Jackoub",
+      "fullName": "Beren Jake",
       "email": "mjacob@me.com",
       "classId": 1,
-      "dob": "2018-07-06",
+      "dob": "2014-04-06",
       "phone": "583-698-5869",
       "address": "122 British Dr, Lavergne TN 370124",
       "studentImg": "hj.jpg",
       "id": 25
     },
     {
-      "fullName": "Karla Patric",
+      "fullName": "Karla Patrick",
       "email": "patricLara@me.com",
       "classId": 1,
-      "dob": "2018-02-22",
+      "dob": "2014-07-22",
       "phone": "254-658-7896",
       "address": "685 Station Bay, Nashville TN, 37452",
       "studentImg": "ui.jpg",
       "id": 26
     },
     {
-      "fullName": "Hoala Steven",
+      "fullName": "Harper Steven",
       "email": "stevenmark@yahoo.com",
       "classId": 1,
-      "dob": "2016-12-29",
+      "dob": "2014-02-28",
       "phone": "478-364-9547",
-      "address": "5093 Murfreesboro Road La Vergne, TN 37086",
+      "address": "5093 Murfreesboro Road, La Vergne, TN 37086",
       "studentImg": "27.jpg",
       "id": 28
     },
     {
-      "fullName": "Goerge Sameh",
-      "email": "gmdoh_kj@gmail.com",
+      "fullName": "Jake Carlos",
+      "email": "gcarlos@me.com",
       "classId": 1,
       "dob": "2017-07-24",
       "phone": "325-954-3214",
@@ -259,7 +259,7 @@
       "fullName": "Emily Beshoy",
       "email": "ebeshoy@yahoo.com",
       "classId": 1,
-      "dob": "2017-07-11",
+      "dob": "2013-11-11",
       "phone": "613-705-2544",
       "address": "904 Kelan lane, Lavergne TN, 37086",
       "studentImg": "26.jpg",
@@ -269,7 +269,7 @@
       "fullName": "Melany Fred",
       "email": "mfred20@yahoo.com",
       "classId": 1,
-      "dob": "2018-01-02",
+      "dob": "2013-02-02",
       "phone": "903-465-2547",
       "address": " 3939 Old Hickory Blvd, Old Hickory, TN 37138",
       "studentImg": "24.jpg",
@@ -289,7 +289,7 @@
       "fullName": "Hany Shenoda",
       "email": "shenoda@me.com",
       "classId": 1,
-      "dob": "2017-11-27",
+      "dob": "2013-11-30",
       "phone": "658-958-5869",
       "address": "526 Nathan Lane, Old Hickory, TN 37125 ",
       "studentImg": "17.jpg",
@@ -299,19 +299,19 @@
       "fullName": "Jolly Frank",
       "email": "frankm@me.com",
       "classId": 1,
-      "dob": "2017-08-16",
+      "dob": "2014-08-16",
       "phone": "321-569-7845",
       "address": "358 St Mark Lane, Mt. Juliet TN 37122",
       "studentImg": "25.jpg",
       "id": 36
     },
     {
-      "fullName": "Sany Yousif",
-      "email": "sanymamdoh@yahoo.com",
+      "fullName": "Emma Edward",
+      "email": "gedward@me.com",
       "classId": 1,
-      "dob": "2022-12-08",
-      "phone": "6156020494",
-      "address": "358, British Woods Dr .",
+      "dob": "2014-08-14",
+      "phone": "615-589-6987",
+      "address": "368 Woods Dr, Nashville, TN 37124",
       "studentImg": "14.jpg",
       "id": 37
     },
@@ -319,9 +319,9 @@
       "fullName": "Thomas Kibby",
       "email": "thomask@GMAIL.COM",
       "classId": 1,
-      "dob": "2022-12-07",
-      "phone": "6156022553",
-      "address": "968 TOM HAILEY",
+      "dob": "2013-06-07",
+      "phone": "553-587-6584",
+      "address": "986 Green Hill Rd, Nashville, 37144",
       "studentImg": "m1.jpg",
       "id": 38
     }
@@ -1474,6 +1474,510 @@
       "classId": 1,
       "studentId": 37,
       "attend": true
+    },
+    {
+      "id": 214,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 215,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 11,
+      "attend": true
+    },
+    {
+      "id": 216,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 16,
+      "attend": true
+    },
+    {
+      "id": 217,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 26,
+      "attend": true
+    },
+    {
+      "id": 218,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 32,
+      "attend": true
+    },
+    {
+      "id": 219,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 4,
+      "attend": true
+    },
+    {
+      "id": 220,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 12,
+      "attend": true
+    },
+    {
+      "id": 221,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 17,
+      "attend": true
+    },
+    {
+      "id": 222,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 33,
+      "attend": true
+    },
+    {
+      "id": 223,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 9,
+      "attend": true
+    },
+    {
+      "id": 224,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 13,
+      "attend": true
+    },
+    {
+      "id": 225,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 24,
+      "attend": true
+    },
+    {
+      "id": 226,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 35,
+      "attend": true
+    },
+    {
+      "id": 227,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 10,
+      "attend": true
+    },
+    {
+      "id": 228,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 14,
+      "attend": true
+    },
+    {
+      "id": 229,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 25,
+      "attend": true
+    },
+    {
+      "id": 230,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 30,
+      "attend": true
+    },
+    {
+      "id": 231,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 36,
+      "attend": true
+    },
+    {
+      "id": 232,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 233,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 11,
+      "attend": true
+    },
+    {
+      "id": 234,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 16,
+      "attend": true
+    },
+    {
+      "id": 235,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 26,
+      "attend": true
+    },
+    {
+      "id": 236,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 32,
+      "attend": true
+    },
+    {
+      "id": 237,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 33,
+      "attend": true
+    },
+    {
+      "id": 238,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 28,
+      "attend": true
+    },
+    {
+      "id": 239,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 17,
+      "attend": true
+    },
+    {
+      "id": 240,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 12,
+      "attend": true
+    },
+    {
+      "id": 241,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 4,
+      "attend": true
+    },
+    {
+      "id": 242,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 9,
+      "attend": true
+    },
+    {
+      "id": 243,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 13,
+      "attend": true
+    },
+    {
+      "id": 244,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 24,
+      "attend": true
+    },
+    {
+      "id": 245,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 29,
+      "attend": true
+    },
+    {
+      "id": 246,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 35,
+      "attend": true
+    },
+    {
+      "id": 247,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 10,
+      "attend": true
+    },
+    {
+      "id": 248,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 14,
+      "attend": true
+    },
+    {
+      "id": 249,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 25,
+      "attend": true
+    },
+    {
+      "id": 250,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 30,
+      "attend": true
+    },
+    {
+      "id": 251,
+      "date": "2022-12-15",
+      "classId": 1,
+      "studentId": 36,
+      "attend": true
+    },
+    {
+      "id": 252,
+      "date": "2022-12-16",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 253,
+      "date": "2022-12-16",
+      "classId": 1,
+      "studentId": 11,
+      "attend": true
+    },
+    {
+      "id": 254,
+      "date": "2022-12-16",
+      "classId": 1,
+      "studentId": 16,
+      "attend": true
+    },
+    {
+      "id": 255,
+      "date": "2022-12-16",
+      "classId": 1,
+      "studentId": 26,
+      "attend": true
+    },
+    {
+      "id": 256,
+      "date": "2022-12-16",
+      "classId": 1,
+      "studentId": 32,
+      "attend": true
+    },
+    {
+      "id": 257,
+      "date": "2022-12-16",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 258,
+      "date": "2022-12-16",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 259,
+      "date": "2022-12-16",
+      "classId": 1,
+      "studentId": 11,
+      "attend": true
+    },
+    {
+      "id": 260,
+      "date": "2022-12-16",
+      "classId": 1,
+      "studentId": 16,
+      "attend": true
+    },
+    {
+      "id": 261,
+      "date": "2022-12-16",
+      "classId": 1,
+      "studentId": 4,
+      "attend": true
+    },
+    {
+      "id": 262,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 4,
+      "attend": true
+    },
+    {
+      "id": 263,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 12,
+      "attend": true
+    },
+    {
+      "id": 264,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 17,
+      "attend": true
+    },
+    {
+      "id": 265,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 28,
+      "attend": true
+    },
+    {
+      "id": 266,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 33,
+      "attend": true
+    },
+    {
+      "id": 267,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 37,
+      "attend": true
+    },
+    {
+      "id": 268,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 269,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 11,
+      "attend": true
+    },
+    {
+      "id": 270,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 16,
+      "attend": true
+    },
+    {
+      "id": 271,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 26,
+      "attend": true
+    },
+    {
+      "id": 272,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 32,
+      "attend": true
+    },
+    {
+      "id": 273,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 9,
+      "attend": true
+    },
+    {
+      "id": 274,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 13,
+      "attend": true
+    },
+    {
+      "id": 275,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 24,
+      "attend": true
+    },
+    {
+      "id": 276,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 29,
+      "attend": true
+    },
+    {
+      "id": 277,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 35,
+      "attend": true
+    },
+    {
+      "id": 278,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 38,
+      "attend": true
+    },
+    {
+      "id": 279,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 10,
+      "attend": true
+    },
+    {
+      "id": 280,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 14,
+      "attend": true
+    },
+    {
+      "id": 281,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 25,
+      "attend": true
+    },
+    {
+      "id": 282,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 30,
+      "attend": true
+    },
+    {
+      "id": 283,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 36,
+      "attend": true
+    },
+    {
+      "id": 284,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 4,
+      "attend": true
+    },
+    {
+      "id": 285,
+      "date": "2022-12-17",
+      "classId": 1,
+      "studentId": 12,
+      "attend": true
     }
   ],
   "classes": [
@@ -1613,7 +2117,7 @@
     },
     {
       "id": 14,
-      "grade": 14,
+      "grade": "KG",
       "bookName": "KG: God Loves Me",
       "bookImg": "http://www.suscopts.org/ssc/wp-content/uploads/2020/09/kindergarten-1-2.jpg",
       "gradeBookPdf": "https://drive.google.com/file/d/1Ga8v0hTuT-IR4RglRVhj-c6C2DOzhz7j/preview",

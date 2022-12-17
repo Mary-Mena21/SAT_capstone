@@ -155,7 +155,7 @@ export const StudentsBirthdays = () => {
                 alt="med1"
             /> */}
             <section className="birthday_container">
-            <h1 className="page_birthday">Birthdays Of The Month!</h1>
+            <h1 className="page_birthday">Birthdays!</h1>
             <div className="button_container">
             <button className="birthday_card_button"
                 onClick={() => {
@@ -176,7 +176,7 @@ export const StudentsBirthdays = () => {
                     setMar(true);
                 }}
             >
-                Mars
+                March
             </button>
             <button className="birthday_card_button"
                 onClick={() => {

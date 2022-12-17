@@ -72,7 +72,7 @@ export const StudentCopy = ({
     return (
         <>
             <section>
-                <div className="students_class">
+                <div /* className="students_class" */>
                     {/* <div className="container"> */}
                     <section key={id} className="student_card_2">
                         <div className="student_card_container">
@@ -81,9 +81,9 @@ export const StudentCopy = ({
                                 src={require(`../images/${studentImg}`)}
                                 className="student_img"
                             />
-                            <Link to={`/students/${id}`}>
+                           {/*  <Link to={`/students/${id}`}> */}
                                 <h3 className="student_info">{studentName}</h3>
-                            </Link>
+                           {/*  </Link> */}
                             <div>
                                 <input
                                     type="checkbox"

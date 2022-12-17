@@ -3,15 +3,15 @@ import { Students } from "../students/Students";
 import { StudentDetails } from "../students/StudentDetail";
 import { StudentForm } from "../students/StudentForm";
 import { StudentEdit } from "../students/StudentEdit";
-import { Attendance } from "../students/Attendance";
-import { StudentAttendance } from "../students/StudentAttendance";
+/* import { Attendance } from "../students/Attendance"; */
+// import { StudentAttendance } from "../students/StudentAttendance";
 import { Student } from "../students/Student";
-import { StudentsCopy } from "../students/StudentsCopy";
+/* import { StudentsCopy } from "../students/StudentsCopy"; */
 import { GradeBookList } from "../gradeBooks/GradeBookList";
 import { StudentsBirthdays } from "../students/StudentsBirthdays";
-import { StudentSearch } from "../students/StudentSearch";
+/* import { StudentSearch } from "../students/StudentSearch"; */
 import { StudentContainer } from "../students/StudentContainer";
-import { StudentAttendanceCalender } from "../students/StudentAttendanceCalender";
+/* import { StudentAttendanceCalender } from "../students/StudentAttendanceCalender"; */
 import { StudentAttendanceContainer } from "../students/StudentAttendanceContainer";
 import { StudentContact } from "../students/StudentContact";
 import { StudentBarChart } from "../students/StudentBarChart";
@@ -25,7 +25,7 @@ export const ApplicationViews = () => {
     return (
         <Routes>
             <Route path="/" element={<Home />} />  
-            <Route path="students/attendance" element={<StudentAttendance />} />  
+           {/*  <Route path="students/attendance" element={<StudentAttendance />} />  */} 
             <Route path="students" element={<Students />} />
             <Route path="studentsCopy" element={<StudentContainer />} />
             <Route path="student" element={<Student />} />

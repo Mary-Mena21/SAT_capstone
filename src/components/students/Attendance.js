@@ -24,20 +24,38 @@ export const Attendance = ({ attendTermState }) => {
                 `http://localhost:8033/studentAttendance?_expand=student&classId=${satUserObject.id}`
             );
             const attendanceArray = await response.json();
-            attendanceArray.sort((a, b) => {
-                return a.fullName === b.fullName ? 0 : a < b ? -1 : 1;
-            });
             setAttendance(attendanceArray);
-            console.log("attendanceArray" + attendanceArray);
         };
         fetchData();
     }, []);
 
+    let newArr = [];
+    let sortArray = [];
+    filterAttendance.forEach((item) => {
+        if (newArr.some((el) => el.studentId === item.studentId) === false) {
+            newArr.push(item);
+        }
+    });
+    // attendanceArray.sort((a, b) => {
+    //     return a.fullName === b.fullName ? 0 : a < b ? -1 : 1;
+    // });
+    sortArray = newArr.sort((a, b) =>
+        a.student.fullName > b.student.fullName
+            ? 1
+            : b.student.fullName > a.student.fullName
+            ? -1
+            : 0
+    );
+    //console.log(newArr.length);
+    //console.log(sortArray[0].date);
+
     return (
         <>
-            <article className="students_class">
-                {/* <h1 className="page_attendance">Attendance</h1> */}
-                {filterAttendance.map((attend) => {
+            <h3 className="student_info_attend">
+                {sortArray.length} student Attend on {sortArray[0]?.date}
+            </h3>
+            <article className="students_class_attendance ">
+                {sortArray.map((attend) => {
                     return (
                         <>
                             <div>
@@ -45,24 +63,28 @@ export const Attendance = ({ attendTermState }) => {
                                     <div className="">
                                         <section
                                             key={attend.id}
-                                            className="student_card_1"
+                                            className="student_card_attendance"
                                         >
-                                            <div className="student_card_container">
-                                                {
+                                            {/* <div className="student_card_container_attendance"> */}
+                                                <div>
                                                     <img
                                                         src={require(`../images/${attend.student.studentImg}`)}
-                                                        className="student_img"
+                                                        className="student_img_attendance"
                                                     />
-                                                }
-                                                
-                                                <div>{attend.attend}</div>
-                                                
-                                                <div>{attend.date}</div>
-                                                
-                                                <h3 className="student_info">
-                                                    {attend.student.fullName}
-                                                </h3>
-                                            </div>
+                                                </div>
+
+                                                {/* <div>{attend.attend}</div> */}
+                                                {/* <br /> */}
+                                                {/* <div>{attend.date}</div> */}
+                                                <div>
+                                                    <h3 className="student_info_attendance">
+                                                        {
+                                                            attend.student
+                                                                .fullName
+                                                        }
+                                                    </h3>
+                                                </div>
+                                            {/* </div> */}
                                         </section>
                                     </div>
                                 ) : (

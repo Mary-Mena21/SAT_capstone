@@ -1,14 +1,21 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+/* import { useNavigate } from "react-router-dom"; */
 import "./NavBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 //import { ToggleButton } from 'react-bootstrap'
 //import background from "../images/SAT_1.jpg";
 
 import { useState } from "react";
-import Alert from "react-bootstrap/Alert";
+/* import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
-import Offcanvas from "react-bootstrap/Offcanvas";
-import { FaBars, FaHome, FaFortAwesome, FaBirthdayCake, FaSignOutAlt } from "react-icons/fa";
+import Offcanvas from "react-bootstrap/Offcanvas"; */
+import {
+    FaBars,
+    FaHome,
+    FaFortAwesome,
+    FaBirthdayCake,
+    FaSignOutAlt,
+} from "react-icons/fa";
 import {
     BsFillCalendar2CheckFill,
     BsFillPersonPlusFill,
@@ -17,9 +24,11 @@ import {
     BsBarChartLineFill,
     BsCameraFill,
     BsBookmarksFill,
+    BsEmojiSmileFill,
+    BsGithub,
 } from "react-icons/bs";
+/* import { StudentSearch } from "../students/StudentSearch"; */
 //import { IoLogOut }from "react-icons/lo";
-
 
 export const NavBar = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -30,12 +39,18 @@ export const NavBar = ({ children }) => {
     // const handleClose = () => setShow(false);
     // const handleShow = () => setShow(true);
 
-    const navigate = useNavigate();
+    /*  const navigate = useNavigate(); */
     const menuItem = [
         {
             path: "/",
             name: "Home",
             icon: <FaHome />,
+            className: "sidebar_2",
+        },
+        {
+            path: "/Students",
+            name: "Students",
+            icon: <BsEmojiSmileFill />,
             className: "sidebar_2",
         },
         {
@@ -59,7 +74,7 @@ export const NavBar = ({ children }) => {
         {
             path: "/birthdays",
             name: "Birthday",
-            icon: <FaBirthdayCake />
+            icon: <FaBirthdayCake />,
         },
         {
             path: "/studentContact",
@@ -100,9 +115,9 @@ export const NavBar = ({ children }) => {
     ];
     return (
         <>
-           { /* <div className="top_bar"></div> */}
-            <div className="sidebar_2"></div>
-{/*             <div className="">
+            {/* <div className="top_bar"></div> */}
+            {/* <div className="sidebar_2"></div> */}
+            {/*             <div className="">
                 <Link
                     className="link_text logout_link"
                     to=""
@@ -139,7 +154,7 @@ export const NavBar = ({ children }) => {
                             to={item.path}
                             key={index}
                             className="link"
-                            activeclassName="active"
+                            /*  activeclassName="active" */
                         >
                             <div className="icon">{item.icon}</div>
                             <div
@@ -150,27 +165,31 @@ export const NavBar = ({ children }) => {
                             </div>
                         </Link>
                     ))}
+                    <hr className="hr_nav" />
+                    <div style={{ display: isOpen ? "block" : "none" }}>
+                        <p className="link_text">
+                            &nbsp;&nbsp;&nbsp;
+                            <a
+                                // style={{
+                                //     color: "#f3b530",
+                                // }}
+                                className="link_text github_icon"
+                                target="_blank"
+                                alt="Github"
+                                title="Github"
+                                href="https://github.com/Mary-Mena21/SAT_capstone"
+                            >
+                                <BsGithub />
+                            </a>&nbsp;
+                            SAT©2022
+                        </p>
+                    </div>
+
+                    {/*  <p className="copyright link link_text">SAT©2022</p> */}
                 </div>
                 <main>{children}</main>
-
-
-{/*                 <li class="border-top my-3"></li>
-                <li class="mb-1">
-                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-                    Account
-                  </button>
-                <div class="collapse" id="account-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a href="#" class="link-dark rounded">Sign out</a></li>
-                </ul>
-                    </div>
-                    </li> */}
-                
             </div>
-            {/* sideNavBar */}
-            <div className=""></div>
-
-           {/*  <div className="bottom_bar"></div> */}
         </>
     );
 };
+// {/* &nbsp;&nbsp;&nbsp; */}{/* <BsGithub /> */}

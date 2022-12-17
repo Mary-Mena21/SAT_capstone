@@ -1,13 +1,29 @@
 /* Import the google web fonts you want to use */
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
 
+
+
+@font-face {
+  font-family: "SUNDAYMORNING-BWQE3";
+  src: local("SUNDAYMORNING-BWQE3"),
+   url("./fonts/SUNDAYMORNING-BWQE3.OTF") format("truetype");
+  font-weight: bold;
+  }
+
+  @font-face {
+    font-family: "Tomatoes-O8L8.ttf";
+    src: local("Tomatoes-O8L8.ttf"),
+     url("./fonts/TOMATOES-O8L8.TTF") format("truetype");
+    font-weight: bold;
+    }
+
 /*Typography
 --------------------------------------------------------------*/
-body,
-button,
+/* button,
 input,
 select,
-textarea {
+textarea */ 
+body{
   color: #404040;
   font-family: "Comfortaa", Arial, sans-serif;
   font-size: 14px;
@@ -19,13 +35,19 @@ textarea {
 /*   background-image: url('./images/light_cross.png'); */
  /*  background-repeat: repeat; */
   
-
+/* background-color:  #2E9C99; */
 
  background-image:  url('./images/sun.png');
  background-size:100%;
-text-align: center;
-background-repeat:no-repeat ;
+ background-repeat:no-repeat ;
+ text-align: center;
 display:sticky;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #eef7f9;
+  }
 }
 
 body {
@@ -46,3 +68,6 @@ p {
   margin-block-end: 0;
 }
 
+Button{
+  box-shadow: #404040 1px 1px 2px;
+}
