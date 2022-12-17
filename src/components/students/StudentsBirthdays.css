@@ -1,67 +1,46 @@
-body{
-
+.birthday_container {
+    margin-left: 0.9rem;
+    display: flex;
+    /*  justify-content: center; */
+    align-items: center;
+    flex-direction: column;
 }
 
-.birthday_container{
-  margin-left: 0.9rem;
-  display: flex;
-  /*  justify-content: center; */
-   align-items: center;
-   flex-direction: column;
+.page_birthday {
+    position: absolute;
+    top: 50px;
+    font-size: 2rem;
+    color: #be6295;
+    font-family: "SUNDAYMORNING-BWQE3", "Roboto";
 }
 
-
-
-.page_birthday{
-  position:absolute;
-  top:50px; 
-  font-size: 2rem;
-  color:#BE6295;
-  /* color:  rgb(5, 96, 96); */
-  font-family: "SUNDAYMORNING-BWQE3","Roboto";
-  /*   text-align: center; */
-/*   list-style-type: none; */
-/* background-color: rgb(220, 181, 119, 0.8); */
-/* padding: 6px; */
-/* border-radius: 5px; */
-}
-
-.button_container{
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width:25rem;
-  /* position:absolute; right: 7%; */
-  top:100px;
-  
+.button_container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 25rem;
+    top: 100px;
 }
 
 .student_birthday_B {
-  /* background-color:rgb(219, 235, 248); */
-  background-color: #dcb577 ;
- /*  border: 1px solid #4F8488; */
-  border-radius: 5px 50px;
-  padding: 0.5rem;
-  margin: 0.3rem;
-  width:18rem;
-/*   max-width: 28rem;
-  min-width: 20rem; */
-  height:10rem;
-  box-shadow: 1px 1px 3px rgb(196, 196, 196);
-  top:100px;
-  left:10px;
-  /* left:63%; */
-position: relative;
-/* background-image:  url('../images/101.png'); */
-background-image:  url('../images/baloon_3.png');
-
-background-size:29%;
-text-align: center;
-background-repeat:no-repeat 
+    background-color: #dcb577;
+    border-radius: 5px 50px;
+    padding: 0.5rem;
+    margin: 0.3rem;
+    width: 18rem;
+    height: 10rem;
+    box-shadow: 1px 1px 3px rgb(196, 196, 196);
+    top: 100px;
+    left: 10px;
+    position: relative;
+    background-image: url("../images/baloon_3.png");
+    background-size: 29%;
+    text-align: center;
+    background-repeat: no-repeat;
 }
 
-      .birthday_card_button{
+.birthday_card_button {
     border: 0;
     height: 3rem;
     width: 8rem;
@@ -74,66 +53,52 @@ background-repeat:no-repeat
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
     background-color: rgb(236, 141, 141);
-    background-image: linear-gradient(to top left,
-                                      rgba(0, 0, 0, .2),
-                                      rgba(0, 0, 0, .2) 30%,
-                                      rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
-                
+    background-image: linear-gradient(
+        to top left,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2) 30%,
+        rgba(0, 0, 0, 0)
+    );
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+        inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 button:hover {
     background-color: rgb(224, 119, 119);
-
 }
 
 button:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+        inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
-.colors{
-    color:#628C67;
-    color:#FDEBC9;
-    color:#4B687E;
-    color:#72A075;
-    color:#ED6C5C;
+.colors {
+    color: #628c67;
+    color: #fdebc9;
+    color: #4b687e;
+    color: #72a075;
+    color: #ed6c5c;
 }
 
 .student_img_B {
-  width: 80px;
-  height: 80px;
-  /* background-size: cover; */
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: #5F5D6B 1px 1px 10px;
-  border: #ED6C5C solid 4PX;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: #5f5d6b 1px 1px 10px;
+    border: #ed6c5c solid 4px;
 }
 
 .student_info_name {
-  font-size: 1.2rem;
- /*  font-weight: lighter; */
-  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", */
-  font-family: "Roboto","Open sans",
-      sans-serif;
-  color: rgb(5, 96, 96);
-  color:#0B1C3B;
-  
+    font-size: 1.2rem;
+    font-family: "Roboto", "Open sans", sans-serif;
+    color: rgb(5, 96, 96);
+    color: #0b1c3b;
 }
 
-.student_info_dob{
-  font-size: 1rem;
-  /* font-weight: lighter; */
-  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", */
-  font-family: "Open sans","Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
-      sans-serif;
-  color: rgb(5, 96, 96);
-  
+.student_info_dob {
+    font-size: 1rem;
+    font-family: "Open sans", "Gill Sans", "Gill Sans MT", "Calibri",
+        "Trebuchet MS", sans-serif;
+    color: rgb(5, 96, 96);
 }
-
-/* .overflow-birthday{
-  overflow-y:scroll;
-  top:10px;
-  height: 50vh;
-} */

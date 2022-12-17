@@ -1,12 +1,8 @@
 
-
 @media screen and (max-width: 480px) {
     .barChart {
         transform: scale(2) rotate(90deg);
-        /* font-size: 2px; */
         position: relative;
         top:300px;
-
     }
-
   }

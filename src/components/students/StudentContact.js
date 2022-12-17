@@ -8,19 +8,16 @@ export const StudentContact = () => {
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
 
-    useEffect(
-        () => {
-            const fetchData = async () => {
-                const response = await fetch(
-                    `http://localhost:8033/students?&classId=${satUserObject.id}`
-                );
-                const StudentsArray = await response.json();
-                setStudents(StudentsArray);
-            };
-            fetchData();
-        },
-        [] // When this array is empty, you are observing initial component state
-    );
+    useEffect(() => {
+        const fetchData = async () => {
+            const response = await fetch(
+                `http://localhost:8033/students?&classId=${satUserObject.id}`
+            );
+            const StudentsArray = await response.json();
+            setStudents(StudentsArray);
+        };
+        fetchData();
+    }, []);
     return (
         <>
             <h1 className="page_contact">Contact!</h1>

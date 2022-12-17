@@ -1,27 +1,7 @@
-/* h1 {
-    font-weight: lighter;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(30, 68, 121);
-} */
-Link,a{
+Link,
+a {
     text-decoration: none;
 }
-
-/* .students {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-} */
-
-
-
-/* @font-face {
-    font-family: "SUNDAYMORNING-BWQE3";
-    src: local("SUNDAYMORNING-BWQE3"),
-     url("../fonts/SUNDAYMORNING-BWQE3.OTF") format("truetype");
-    font-weight: bold;
-    } */
-
 
 /*  */
 .students_class {
@@ -30,9 +10,7 @@ Link,a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* flex-direction: row; */
     justify-content: center;
-    /* align-items: center; */
 }
 
 .students_class_attendance {
@@ -41,7 +19,6 @@ Link,a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* flex-direction: row; */
     justify-content: center;
     align-items: center;
 }
@@ -52,103 +29,63 @@ Link,a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* flex-direction: row; */
     justify-content: center;
     align-items: center;
 }
 
 .student_card_edit {
-    /* background-color:rgb(219, 235, 248); */
-    background-color:#6E665F;
-    /* background-color: #E8B097; */
-    /* border: 1px solid #4F8488; */
-    /* border: 1px dotted rgb(133, 42, 54); */
-   /*  border-radius: 25px 50px 50px 25px; */
+    background-color: #6e665f;
     border-radius: 5px;
     padding: 0.5rem;
     margin: 0.5rem;
-    /* max-width: 26rem; */
     min-width: 20rem;
     box-shadow: 1px 1px 3px rgb(196, 196, 196);
     left: 20px;
     position: relative;
-    /* position: relative; */
-    /* top: 100px; */
-    /*     left:63%; */
     background-image: url("../images/100 (16).png");
-
     background-size: 26%;
     text-align: center;
     background-repeat: no-repeat;
-/*     clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
-    -webkit-box-shadow: 0 0 10px #cecece;
-    box-shadow: 0 0 10px #cecece;
--webkit-transition: all .5s;
--o-transition: all .5s;
-transition: all .5s; */
-box-shadow:#372c40 1px 1px 5px;
-
+    box-shadow: #372c40 1px 1px 5px;
 }
 
-.student_card_edit:hover{
+.student_card_edit:hover {
     transform: skewX(5deg);
 }
 
 .student_card_1 {
-    /* background-color:rgb(219, 235, 248); */
-    background-color:#6E665F;
-    /* background-color: #E8B097; */
-    /* border: 1px solid #4F8488; */
-    /* border: 1px dotted rgb(133, 42, 54); */
+    background-color: #6e665f;
     border-radius: 5px;
     padding: 0.5rem;
     margin: 0.2rem;
-    /* max-width: 26rem; */
     min-width: 20rem;
     box-shadow: 1px 1px 3px rgb(196, 196, 196);
     left: 20px;
     position: relative;
-    /* position: relative; */
-    /* top: 100px; */
-    /*     left:63%; */
     background-image: url("../images/100 (16).png");
-
     background-size: 26%;
     text-align: center;
     background-repeat: no-repeat;
 }
 
 .student_card_2 {
-    /* background-color:rgb(219, 235, 248); */
-    /* background-color: rgba(255, 192, 203, 0.493); */
     background-color: rgb(232, 176, 151, 0.9);
-    /* background-color: #E8B097; */
-    /* border: 1px solid #4F8488; */
-    /* border: 1px dotted rgb(133, 42, 54); */
     border-radius: 35px 1px 1px 35px;
     padding: 0.5rem;
     margin: 0.3rem;
     max-width: 26rem;
     min-width: 20rem;
-    box-shadow: 1px 1px 3px #52B352;
-    /* left: 20px; */
+    box-shadow: 1px 1px 3px #52b352;
     position: relative;
-    /* position: relative; */
-    /* top: 100px; */
-    /*     left:63%; */
-
     background-image: url("../images/101.png");
-
     background-size: 23%;
     text-align: center;
     background-repeat: no-repeat;
-
 }
 
-.student_card_2 :hover{
+.student_card_2 :hover {
     transform: scale(1.05);
 }
-
 
 .student_card_container {
     display: flex;
@@ -158,35 +95,28 @@ box-shadow:#372c40 1px 1px 5px;
     align-items: center;
     flex-wrap: wrap;
     left: 20px;
-    
 }
 
 .student_img {
     width: 60px;
     height: 60px;
-
-    /* background-size: cover; */
     object-fit: cover;
     border-radius: 50%;
     box-shadow: #5f5d6b 1px 1px 10px;
     border: #72a075 solid 4px;
-    
 }
 .student_info {
     font-size: 1rem;
-    /* font-weight: lighter; */
-    font-family: "Roboto", "Gill Sans MT", "Calibri", "Trebuchet MS",
-        sans-serif;
+    font-family: "Roboto", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
     color: rgb(5, 96, 96);
     text-decoration: none;
 }
 
 .student_info_attend {
     font-size: 1rem;
-    /* font-weight: bold; */
-    font-family: 'Montserrat',"Roboto", "Gill Sans MT", "Calibri", "Trebuchet MS",
-        "sans-serif";
-        padding: 5px;
+    font-family: "Montserrat", "Roboto", "Gill Sans MT", "Calibri",
+        "Trebuchet MS", "sans-serif";
+    padding: 5px;
     color: #056060;
     text-decoration: none;
     border-radius: 5px;
@@ -195,92 +125,69 @@ box-shadow:#372c40 1px 1px 5px;
 
 .student_info_edit {
     font-size: 1rem;
-    font-weight:400;
-   text-align: center;
-    font-family: "Roboto", "Gill Sans MT", "Calibri", "Trebuchet MS",
-        sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-family: "Roboto", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
 .student_card_attendance {
-    /* background-color:rgb(219, 235, 248); */
-   display: flex;
+    display: flex;
     flex-direction: column;
-    /*  flex-wrap: wrap; */
-    background-color: #72A075;
-    /* background-color: #E8B097; */
-    /* border: 1px solid #4F8488; */
-    /* border: 1px dotted rgb(133, 42, 54); */
-    justify-content:center;
-    /* text-align: center; */
+    background-color: #72a075;
+    justify-content: center;
     border-radius: 5px 50px;
     padding: 0.5rem;
-    margin: 1.1rem  0.2rem;
-    /* max-width: 26rem; */
+    margin: 1.1rem 0.2rem;
     width: 8rem;
     height: 7rem;
     box-shadow: 1px 1px 3px rgb(196, 196, 196);
-    /* left: 20px; */
     position: relative;
-    /* position: relative; */
-    /* top: 100px; */
-    /*     left:63%; */
     background-image: url("../images/100 (16).png");
-   /*  align-items: center; */
     background-size: 26%;
-   /*  text-align: center; */
     background-repeat: no-repeat;
-    box-shadow: #72A075 1px 1px 10px;
+    box-shadow: #72a075 1px 1px 10px;
 }
 
-.student_card_attendance:hover{
+.student_card_attendance:hover {
     transform: rotate(-5deg);
     transition: all 0.5s;
-    box-shadow: #72A075 1px 1px 10px;
+    box-shadow: #72a075 1px 1px 10px;
     transform: scale(1.1) rotate(-2deg);
 }
 
 .student_img_attendance {
-    position:absolute;
-    top:-30px;
+    position: absolute;
+    top: -30px;
     width: 60px;
     height: 60px;
-/* text-align: center; */
-transform: translateX(-50%);
-    /* background-size: cover; */
+    transform: translateX(-50%);
     object-fit: cover;
     border-radius: 50%;
     box-shadow: #5f5d6b 1px 1px 10px;
-    border: #72A075 solid 4px;
+    border: #72a075 solid 4px;
 }
 .student_info_attendance {
     font-size: 1rem;
-   /*  font-weight: bold; */
-    /* font-weight: lighter; */
-    font-family: "Montserrat","Gill Sans MT", "Calibri", "Trebuchet MS","Tomatoes-O8L8.ttf","Roboto";
-        /* color: rgb(5, 96, 96); */
-        color: #372C40;
+    font-family: "Montserrat", "Gill Sans MT", "Calibri", "Trebuchet MS",
+        "Tomatoes-O8L8.ttf", "Roboto";
+    color: #372c40;
 }
-
 
 .checkbox {
     margin: 1rem;
     height: 30px;
     width: 20px;
-   cursor: pointer;
+    cursor: pointer;
 }
 
 .container_class {
     position: relative;
-    /* top: 50px; */
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
-    /*     overflow-y: scroll;
-    height: 75vh; */
-    /* left: 25%; */
 }
 
 .student_search {
@@ -289,39 +196,33 @@ transform: translateX(-50%);
     border-radius: 5px;
     padding: 3px;
     border-color: #72a075;
-    box-shadow: #72A075 1px 1px 10px;
+    box-shadow: #72a075 1px 1px 10px;
 }
 /*  */
 .page_classroom {
     position: relative;
-    /*     display: flex;
-    justify-content: center; */
-    top:30px; 
+    top: 30px;
     font-size: 2rem;
     text-align: center;
-    font-family: "SUNDAYMORNING-BWQE3","Roboto";
-    color: #628C67;
-    /* background-color: rgb(114, 160, 117, 0.9); */
+    font-family: "SUNDAYMORNING-BWQE3", "Roboto";
+    color: #628c67;
     padding: 6px 10px;
     border-radius: 5px;
     margin-bottom: 20px;
-   
 }
 
-.page_name_class {
-     position: relative;
+/* .page_name_class {
+    position: relative;
     display: flex;
     justify-content: center;
-    top:50px; 
+    top: 50px;
     font-size: 2rem;
-    /*  text-align: center; */
-    font-family: "SUNDAYMORNING-BWQE3","Roboto";
-    color: #BA3981;
-    /* background-color: rgb(220, 181, 119, 0.8); */
+    font-family: "SUNDAYMORNING-BWQE3", "Roboto";
+    color: #ba3981;
     padding: 6px;
     border-radius: 5px;
 }
-
+ */
 /*  */
 .students_btn {
     width: 200px;
@@ -336,81 +237,30 @@ transform: translateX(-50%);
 }
 /*  */
 .btn_container_class {
-position: relative;
-top: 100px;
+    position: relative;
+    top: 100px;
 }
 
 /*  */
 .page_container_class {
-   /*  position: relative; */
-        top: 50px;
+    top: 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-
-    /* background-color: #fed9ff; */
-    /*   width: 600px;
-    height: 100vh;
-    overflow-x: hidden; */
-    /* overflow-y: auto; */
-    /*  text-align: center; */
-    /* padding: 20px; */
-}
-.overflow_students_btn {
-    /*   overflow-y: scroll;
-    height: 67vh; */
 }
 
-.student_card_1 {
-    /* background-color:rgb(219, 235, 248); */
-    /* background-color: rgba(255, 192, 203, 0.493); */
-    /* background-color: rgba(255, 192, 203, 0.493); */
-    /* border: 1px solid #4F8488; */
-    /* border: 1px dotted rgb(133, 42, 54); */
-    /*     border-radius: 15px;
-    padding: 0.5rem;
-    margin: 0.3rem;
-    max-width: 26rem;
-    min-width: 20rem;
-    box-shadow: 1px 1px 3px rgb(196, 196, 196); */
-    /* position: relative; */
-    /* top: 100px; */
-    /*     left:63%; */
-}
 .datePicker {
-    /* text-align: center; */
     width: 18rem;
 }
 
-.page_attendance{
-    /* display: flex; */
-    /* top: 100px; */
+.page_attendance {
     font-size: 2rem;
-    font-family: "SUNDAYMORNING-BWQE3","Roboto";
-    color: #B7B907;
+    font-family: "SUNDAYMORNING-BWQE3", "Roboto";
+    color: #b7b907;
     margin-bottom: 20px;
-    /* background-color: rgb(220, 181, 119, 0.8); */
-  /*   padding: 6px 10px;
-    border-radius: 5px;
-    height: 60px; */
-    /* clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); */
-    /* border: #6e6d6f solid 1px; */
-    /* text-shadow: #5f5d6b 1px 1px 2px; */
-    }
-
-
-/* .page_students_class {
-    display: flex;
-       top:50px; 
-    font-size: 1.6rem;
-    text-align: center;
-    font-family: "Roboto";
-} */
-
-
-
+}
 
 .card_container_calender {
     position: relative;
@@ -420,10 +270,3 @@ top: 100px;
     flex-direction: column;
     top: 50px;
 }
-/* form{
-    justify-self:baseline;
-} */
-
-
-
-

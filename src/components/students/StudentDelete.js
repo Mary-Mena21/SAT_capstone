@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 export const StudentDelete = ({ id,studentName}) => {
     const navigate = useNavigate();
     /* ------------------------delete-------------------------- */
-    //console.log(id,studentName);
+
     return (
         <>
             <Button

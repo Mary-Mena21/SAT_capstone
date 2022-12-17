@@ -1,8 +1,7 @@
 /* Import the google web fonts you want to use */
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
 
-
-
+/* https://www.fontspace.com/ */
 @font-face {
   font-family: "SUNDAYMORNING-BWQE3";
   src: local("SUNDAYMORNING-BWQE3"),
@@ -17,26 +16,11 @@
     font-weight: bold;
     }
 
-/*Typography
---------------------------------------------------------------*/
-/* button,
-input,
-select,
-textarea */ 
 body{
   color: #404040;
   font-family: "Comfortaa", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
-  /* display:flex;
-  flex-wrap: wrap;
-  display: inline-flex; */
- /*  background-color:#ebe8d0; */
-/*   background-image: url('./images/light_cross.png'); */
- /*  background-repeat: repeat; */
-  
-/* background-color:  #2E9C99; */
-
  background-image:  url('./images/sun.png');
  background-size:100%;
  background-repeat:no-repeat ;

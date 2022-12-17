@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { StudentDetails } from "./StudentDetail";
 import { useNavigate, useParams } from "react-router-dom";
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -11,14 +10,13 @@ import "./StudentEdit.css";
 export const StudentEdit = ({
     id,
     studentName,
-    studentEmail,
+/*     studentEmail,
     studentClassId,
     studentPhone,
     studentDob,
     studentAddress,
-    studentImg,
+    studentImg, */
 }) => {
-    //console.log(studentName);
     const navigate = useNavigate();
 
     const { studentDetail_Id } = useParams();
@@ -26,7 +24,6 @@ export const StudentEdit = ({
     const [editStudent, setEditStudent] = useState({
         id: id,
         studentName: studentName,
-
         fullName: "",
         email: "",
         classId: 0,
@@ -36,23 +33,21 @@ export const StudentEdit = ({
         studentImg: "",
     });
     /* -------------Display----------------- */
-    /* async */
     useEffect(() => {
         console.log(id);
         const fetchData = async () => {
             const response = await fetch(
-                //`http://localhost:8088/customers?_expand=user&userId=${honeyUserObject.id}`
                 `http://localhost:8033/students/${studentDetail_Id}`
             );
             const data = await response.json();
-            setEditStudent(data); //Try to make new Ticket and update it? ????????????????
+            setEditStudent(data);
             console.log(data);
         };
         fetchData();
     }, []);
     //here we are fetching the api to display (GET)the existing data from the current user
     //api is the router in the browser
-    /* ------------------------------ */
+
     /* -------------Edit----------------- */
     const editStudentInfo = async (SendToAPI) => {
         const fetchOptions = {
@@ -64,7 +59,6 @@ export const StudentEdit = ({
         };
         const response = await fetch(
             `http://localhost:8033/students/${id}`,
-            //`http://localhost:8033/Students/${studentDetail_Id}`,
             fetchOptions
         );
         navigate("/students");
@@ -77,22 +71,11 @@ export const StudentEdit = ({
     const handleSaveButtonClick = (event) => {
         //event.preventDefault();
         editStudentInfo(editStudent);
-
-        // {      <StudentDetails
-        //       id= {id}
-        //       studentName= {studentName}
-        //       studentEmail= {studentEmail}
-        //       studentClassId= {studentClassId}
-        //       studentDob= {studentDob}
-        //       studentAddress= {studentAddress}
-        //       studentImg= {studentImg}
-        //       />}
     };
     /* ------------------------------ */
     return (
         <>
             <fieldset className="student_form">
-                {/* <h1>Add New Student!</h1> */}
                 <Form.Floating className="mb-2">
                     <Form.Control
                         required
@@ -188,46 +171,4 @@ export const StudentEdit = ({
         </>
     );
 };
-//onChange={(event) => updateEditStudent({...editStudent, fullName: event.target.
-{
-    /*  <br />
-     <li>
-         <label htmlFor="classId">
-             classId:
-             <br />
-             <input
-             required
-             autoFocus
-                 type="number"
-                 name="classId"
-                 value={editStudent.classId}
-                 onChange={(evt) => {
-                     const copy = { ...editStudent };
-                     copy.classId = evt.target.valueAsNumber;
-                     setEditStudent(copy);
-                 }}
-             />
-         </label>
-     </li> */
-}
-{
-    /*  <br />
-                    <li>
-                        <label htmlFor="studentImg">
-                            studentImg:
-                            <br />
-                            <input
-                            required
-                            autoFocus
-                                type="link"
-                                name="studentImg"
-                                value={editStudent.studentImg}
-                                onChange={(evt) => {
-                                    const copy = { ...editStudent };
-                                    copy.studentImg = evt.target.value;
-                                    setEditStudent(copy);
-                                }}
-                            />
-                        </label>
-                    </li> */
-}
+

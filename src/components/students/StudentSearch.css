@@ -1,14 +1,8 @@
 
-/* .student_search {
-    position:absolute;
-    right:7rem;
-    top:10px; 
-} */
 .page_name{
     position:relative;
     display: flex;
     justify-content: center;
-
     top:50px; 
     font-size: 2rem;
     text-align: center;
@@ -24,6 +18,7 @@
     width:200px;
     margin:2px;
 }
+
 .page_container{
     top: 10px;
     display:flex;
@@ -31,18 +26,4 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    
-
-
-    /* background-color: #fed9ff; */
-  /*   width: 600px;
-    height: 100vh;
-    overflow-x: hidden; */
-    /* overflow-y: auto; */
-   /*  text-align: center; */
-    /* padding: 20px; */
-}
-.overflow_students_btn{
-     overflow-y: scroll; 
-height:67vh
 }

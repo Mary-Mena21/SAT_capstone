@@ -62,7 +62,7 @@ export const StudentCopy = ({
     };
 
     /* -------------Delete----------------- */
-/*     const deleteAttendance = async () => {
+    /*     const deleteAttendance = async () => {
         console.log(inputAttend[0]);
         fetch(`http://localhost:8033/studentAttendance?&id=${inputAttend[0]}`, {
             method: "DELETE",
@@ -81,9 +81,9 @@ export const StudentCopy = ({
                                 src={require(`../images/${studentImg}`)}
                                 className="student_img"
                             />
-                           {/*  <Link to={`/students/${id}`}> */}
-                                <h3 className="student_info">{studentName}</h3>
-                           {/*  </Link> */}
+                            {/*  <Link to={`/students/${id}`}> */}
+                            <h3 className="student_info">{studentName}</h3>
+                            {/*  </Link> */}
                             <div>
                                 <input
                                     type="checkbox"
@@ -108,118 +108,6 @@ export const StudentCopy = ({
                     </section>
                 </div>
             </section>
-
-{/* -------card-------- */}
-{/*             <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                ""
-              </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card> */}
-            {/* ------cards------- */}
-            
-
         </>
     );
 };
-
-/* <img src={require('../images/m1.jpg')} className="student_img" /> */
-/* -------------------------------------- */
-//src\components\Images
-//checked={inputAttend.attend}
-//const value = target.type === 'checkbox' ? target.checked : target.value;
-// onClick={(clickEvent) => {
-//     handleSaveButtonClick(clickEvent);
-// }}
-
-// export const StudentAttendance = () => {
-//     const [inputAttend, setInputAttend] = useState({
-//         date: new Date,
-//         classId: 1,
-//         studentId: `{satUserObject.id}`,
-//         attend: false,
-//     });
-
-//     const navigate = useNavigate();
-//     const localSATUser = localStorage.getItem("SAT_user");
-//     const satUserObject = JSON.parse(localSATUser);
-
-// /* ------------------------------ */
-//     //  fetch(`http://localhost:8033/studentAttendance`, {
-//     //     method: "POST",
-//     //     headers: {
-//     //         "Content-Type": "application/json",
-//     //     },
-//     //     body: JSON.stringify(ticketToSendToAPI),
-//     // })
-//     //     .then((response) => response.json())
-//     //     .then(() => {
-//     //        // navigate("/tickets");
-//     //     });
-
-//     /* ------------------------------ */
-//     //Perform the fetch() to POST the object to the API
-//     /* -------------Add----------------- */
-//     const sendAttendance = async (SendToAPI) => {
-//         const fetchOptions = {
-//             method: "POST",
-//             headers: {
-//                 "Content-Type": "application/json",
-//             },
-//             body: JSON.stringify(SendToAPI),
-//         };
-//         const response = await fetch(
-//             `http://localhost:8033/studentAttendance`,
-//             fetchOptions
-//         );
-//         const responseJson = await response.json();
-//         return responseJson;
-//     };
-//     /* ------------------------------ */
-//     const handleSaveButtonClick = (event) => {
-//         event.preventDefault();
-//         sendAttendance(inputAttend);
-//     };
-
-//     // const handleSubmit = (event) => {
-//     //     event.preventDefault();
-//     //     sendAttendance(inputAttend);
-//     //     // navigate("/students");
-//     // };
-//     /* ------------------------------ */
-
-//     //here we are fetching the api to add (POST) new data to api
-//     /* ------------------------------ */
-
-//     return (
-//         <>
-//         <input
-//         type="checkbox"
-//         className="checkbox"
-//         //onchange="handleChange(event)"
-//         onChange={(evt) => {
-//             const copy = { ...inputAttend };
-//             copy.attend = evt.target.checked;
-//             setInputAttend(copy);
-//         }}
-//     />
-
-//                      <section>
-//             <button
-//             onClick={(clickEvent) => {
-//                 handleSaveButtonClick(clickEvent);
-//             }}
-//             className="btn btn-primary"
-//         >
-//             Submit Ticket
-//                 </button>
-//                 </section>
-//         </>
-//     )
-// }
-
-//That girl has total Demin energy ngl

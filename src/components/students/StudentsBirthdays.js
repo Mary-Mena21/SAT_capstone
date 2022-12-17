@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
-//import { Link, useNavigate } from "react-router-dom";
-//import m1 from "../images/m1.jpg";
-//import  "./Images"
 import "./StudentsBirthdays.css"
+
 export const StudentsBirthdays = () => {
     const [birthdays, setBirthdays] = useState([]);
     const [filteredBirthdays, setFilteredBirthdays] = useState([]);
@@ -22,7 +20,6 @@ export const StudentsBirthdays = () => {
 
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
-    //const navigate = useNavigate();
 
     /* --------Jan--------- */
     useEffect(() => {
@@ -146,14 +143,6 @@ export const StudentsBirthdays = () => {
 
     return (
         <>
-            {/*  <img src={Images/m1.jpg}  height="200" width="200" alt="med1" /> */}
-            {/*  <img src={m1}  height="200" width="200" alt="med1" /> */}
-{/*             <img
-                src={require("../images/m1.jpg")}
-                height="200"
-                width="200"
-                alt="med1"
-            /> */}
             <section className="birthday_container">
             <h1 className="page_birthday">Birthdays!</h1>
             <div className="button_container">
@@ -242,18 +231,12 @@ export const StudentsBirthdays = () => {
                 December
             </button>
             </div>
-            <article /* className="overflow-birthday" */>
+            <article>
                 {filteredBirthdays.map((birthday) => {
                     return (
                         <>
                             <div className=""></div>
                             <section key={birthday.id} className="student_birthday_B">
-                                {/*                <img
-                                className="student_img"
-                                src={birthday.studentImg}
-                                height={"10%"}
-                                width={"10%"}
-                                /> */}
                                 <img
                                     src={require(`../images/${birthday.studentImg}`)}
                                     className="student_img_B"

@@ -2,24 +2,22 @@
     position: relative;
     top: 50px;
     font-size: 2rem;
-    font-family: "SUNDAYMORNING-BWQE3","Roboto", "Helvetica Neue";
-    color:#458DF3;
+    font-family: "SUNDAYMORNING-BWQE3", "Roboto", "Helvetica Neue";
+    color: #458df3;
 }
-
-
 
 .student_camera_style {
-  position: relative;
-  top: 80px;
-  background-color: #4F8488;
-  padding: 20px;
-  border-radius: 10px;
+    position: relative;
+    top: 80px;
+    background-color: #4f8488;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-
-.retake_camera ,.capture_camera {
-  position: relative;
-  top: 100px;
-  padding: 10px;
-  border-radius: 10px;
+.retake_camera,
+.capture_camera {
+    position: relative;
+    top: 100px;
+    padding: 10px;
+    border-radius: 10px;
 }
