@@ -1,4 +1,4 @@
-.students{
+/* .students{
     display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -7,16 +7,7 @@
 }
 
 
-.student__header{
-    font-size: larger;
-    font-weight: 700;
-    line-height: 3rem;
-}
 
-.student__footer{
-    margin: 1rem 0 0.25rem 0;
-    font-style: oblique;
-}
 
 .page_Edit{
     position:absolute;
@@ -24,8 +15,8 @@
     font-size: 1.5rem;
     text-align: center;
     font-family: "Roboto";
-  /*   list-style-type: none; */
+    list-style-type: none;
   background-color: rgb(220, 181, 119, 0.8);
   padding: 6px;
   border-radius: 5px;
-}
+} */

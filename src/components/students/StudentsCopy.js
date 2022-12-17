@@ -2,11 +2,9 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { StudentCopy } from "./StudentCopy";
 import Button from "react-bootstrap/Button";
-//import "./StudentCopy.css"
-
-//import Camera from 'react-camera';
-import Webcam from "react-webcam";
 import "./Students.css";
+
+
 
 export const StudentsCopy = ({ searchTermState }) => {
     const [Students, setStudents] = useState([]);
@@ -51,8 +49,7 @@ export const StudentsCopy = ({ searchTermState }) => {
 
     return (
         <>
-            <h1 className="page_classroom">Classroom!</h1>
-            <section className="page_container_class">
+            <h1 className="page_classroom">Classroom!</h1> 
                 <article className="btn_container_class">
                     <Button
                         variant="secondary"
@@ -75,7 +72,7 @@ export const StudentsCopy = ({ searchTermState }) => {
                     </Button>
                 </article>
 
-                <article className="students_class">
+                <div className="students_class">
                     {filteredStudent
                         .sort((a, b) => {
                             return a.fullName === b.fullName
@@ -101,7 +98,7 @@ export const StudentsCopy = ({ searchTermState }) => {
                                 </>
                             );
                         })}
-                </article>
+                </div>
 
                 {/*              <Camera
   ref={(cam) => {
@@ -112,7 +109,7 @@ export const StudentsCopy = ({ searchTermState }) => {
     <i className="fas fa-camera"></i> &nbsp; Take photo
   </Button>
 </Camera>  */}
-            </section>
+           
         </>
     );
 };
@@ -140,6 +137,3 @@ export const StudentsCopy = ({ searchTermState }) => {
         </>
     );
 }; */
-{
-    /*             <img src="image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAAAAQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAAHRyWFlaAAABZAAAABRnWFlaAAABeAAAABRiWFlaAAABjAAAABRyVFJDAAABoAAAAChnVFJDAAABoAAAAChiVFJDAAABoAAAACh3dHB0AAAByAAAABRjcHJ0AAAB3AAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAFgAAAAcAHMAUgBHAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA..."/> */
-}

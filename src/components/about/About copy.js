@@ -14,8 +14,8 @@ import w_color_2 from "../images/w_color_2.jpg";
 export const About = () => {
     return (
         <>
-        <Container>
-        {/* <Navbar sticky="top" /> */}
+       {/*  <Container>
+         <Navbar sticky="top" /> 
            { <Navbar bg="light" expand="lg">
                 <Container fluid>
                     <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
@@ -60,7 +60,7 @@ export const About = () => {
                 </Container>
             </Navbar >}
             </Container>
-            {/* -----Carousel_1------ */}
+            -----Carousel_1------ 
 
             <Carousel variant="dark">
                 <Carousel.Item>
@@ -108,7 +108,7 @@ export const About = () => {
                         </p>
                     </Carousel.Caption>
                 </Carousel.Item>
-            </Carousel>
+            </Carousel> */}
             {/* -----Carousel_2------ */}
 {/*             <div
                 id="carouselExampleControls"

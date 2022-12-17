@@ -67,7 +67,7 @@ export const StudentEdit = ({
             //`http://localhost:8033/Students/${studentDetail_Id}`,
             fetchOptions
         );
-        navigate("/studentsCopy");
+        navigate("/students");
         const responseJson = await response.json();
         return responseJson;
     };

@@ -79,7 +79,7 @@ export const StudentBarChart = () => {
             /* {columns: Z},
          { data: HG} */
             // const DatasetExport = () => {
-                //const multiDataSet =()=>{ [{ columns: Z }, { data: HG }]}
+            //const multiDataSet =()=>{ [{ columns: Z }, { data: HG }]}
             // };
 
             setChartData({
@@ -124,41 +124,43 @@ export const StudentBarChart = () => {
         fetchData();
     }, []);
 
-//console.log(chartData.labels);
-//console.log(chartData.datasets[0].data);
-//console.log(chartData);
+    //console.log(chartData.labels);
+    //console.log(chartData.datasets[0].data);
+    //console.log(chartData);
     // const columns = chartData.datasets.labels;
     // const data = chartData.datasets[0].data;
-//const multiDataSet = [{ columns }, { data}]
- //const multiDataSet = [{ columns: chartData.labels }, { data: chartData.datasets[0].data }]
- //const multiDataSet = [{chartData.labels }, {chartData.datasets[0].data }]
-    
- const multiDataSet = [
-    {
-      columns: [
-     /*    { value: "Name", widthPx: 50 }, // width in pixels
+    //const multiDataSet = [{ columns }, { data}]
+    //const multiDataSet = [{ columns: chartData.labels }, { data: chartData.datasets[0].data }]
+    //const multiDataSet = [{chartData.labels }, {chartData.datasets[0].data }]
+
+    const multiDataSet = [
+        {
+            columns: [
+                /*    { value: "Name", widthPx: 50 }, // width in pixels
         { value: "Date Of Birth", widthPx: 60, widthCh: 20 }, // will check for width in pixels first */
-        { value: "Salary", widthCh: 20 } // width in charachters
-      ],
-      data: [
-        /* ["Swapnil", "11/11/1990", "40k"],
+                { value: "Salary", widthCh: 20 }, // width in charachters
+            ],
+            data: [
+                /* ["Swapnil", "11/11/1990", "40k"],
         ["Amol", "31/12/1995", "70K"], */
-        ["Ashish", "11/10/1997", "60k"]
-      ]
-    }
-  ];
-    
+                ["Ashish", "11/10/1997", "60k"],
+            ],
+        },
+    ];
+
     return (
         <>
-            <div className="overflow-auto_chart">
-                <div className="BarChart">
-                    <Bar options={chartOptions} data={chartData} />
-                </div>
-                <div></div>
+            <div>
+                <Bar
+                    className="barChart"
+                    options={chartOptions}
+                    data={chartData}
+                    style={{fontSize:"8px"}}
+                />
             </div>
 
             {/* Excel Sheet */}
-            <div>
+            {/*             <div>
                 <h3>Export with Dataset</h3>
                 <ExcelFile
                     element={<Button>Download</Button>}
@@ -170,7 +172,8 @@ export const StudentBarChart = () => {
                         name="DataSet"
                     ></ExcelSheet>
                 </ExcelFile>
-            </div>
+            </div> */}
+            {/* ------------------------------------------- */}
 
             {/* <ExcelFile>
           <ExcelSheet data={chartData} name="Employees">

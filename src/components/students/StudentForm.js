@@ -60,9 +60,9 @@ export const StudentForm = () => {
 
     return (
         <>
-            <h1 className="page_studentForm">New Student!</h1>
+            <h1 className="page_studentForm_form">New Student!</h1>
             <section className="form_container">
-                <fieldset className=" page_container">
+                <fieldset className=" page_container_form">
                     <form onSubmit={handleSubmit}>
                         <Form.Floating className="mb-2">
                             <Form.Control
@@ -78,7 +78,7 @@ export const StudentForm = () => {
                                     setInputs(copy);
                                 }}
                             />
-                            <label htmlFor="name">Full name</label>
+                                <label htmlFor="name">Full name</label>
                         </Form.Floating>
 
                         <Form.Floating className="mb-2">
@@ -154,8 +154,8 @@ export const StudentForm = () => {
                         </Form.Floating>
 
                         <Form.Floating className="mb-2">
-                            <Form.Group className="">
-                                {/* <Form.Label>upload Image</Form.Label> */}
+                            <Form.Group >
+                                 <Form.Label className="">upload Image</Form.Label> 
                                 <Form.Control
                                     size="lg"
                                     id="imgs"

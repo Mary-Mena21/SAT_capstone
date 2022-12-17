@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { StudentDelete } from "./StudentDelete";
 
 
-import "./StudentDetail.css";
+import "./StudentEdit.css";
 import { StudentEdit } from "./StudentEdit";
 
 export const StudentDetails = ({
