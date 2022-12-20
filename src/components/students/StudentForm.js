@@ -48,7 +48,7 @@ export const StudentForm = () => {
 
     return (
         <>
-            <h1 className="page_studentForm_form">New Student!</h1>
+            <h1 className="page_studentForm_form">New&nbsp;Student!</h1>
             <section className="form_container">
                 <fieldset className=" page_container_form">
                     <form onSubmit={handleSubmit}>

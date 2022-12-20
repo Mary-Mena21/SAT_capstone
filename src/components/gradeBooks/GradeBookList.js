@@ -15,6 +15,7 @@ export const GradeBookList = () => {
     }, []);
     return (
         <>
+            <section>
         <h1 className="page_book">Curriculum!</h1>
             <article className="book_container">
                 {books.map((book) => {
@@ -34,6 +35,7 @@ export const GradeBookList = () => {
                     );
                 })}
                 </article>
+                </section>
         </>
     );
 };

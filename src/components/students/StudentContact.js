@@ -7,6 +7,8 @@ export const StudentContact = () => {
 
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
+    console.log(satUserObject);
+    
 
     useEffect(() => {
         const fetchData = async () => {

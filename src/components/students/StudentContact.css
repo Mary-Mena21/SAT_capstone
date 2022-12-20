@@ -17,6 +17,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
+    margin-left: 1rem;
 }
 
 .student_contact {
@@ -32,8 +33,8 @@
         "Arial, sans-serif";
 
     width: 21rem;
-    min-width: 20rem;
-    height: 8rem;
+    max-width: 19rem;
+    height: 9rem;
     background-image: url("../images/100 (18).png");
     /* background-image:  url('../images/100_3.png'); */
 
@@ -44,10 +45,11 @@
 }
 
 .student_info_contact {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-family: "Open sans", sans-serif;
     color: rgb(5, 96, 96);
     color: #0b1c3b;
+    line-height: 1.6rem;
 }
 
 .contact_name {

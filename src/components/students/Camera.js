@@ -3,6 +3,7 @@ import Webcam from "react-webcam";
 import Button from "react-bootstrap/Button";
 import { saveAs } from "file-saver";
 import "./Camera.css";
+import { FaCameraRetro } from "react-icons/fa";
 
 export const Camera = () => {
     const [img, setImg] = useState(null);
@@ -45,7 +46,8 @@ export const Camera = () => {
                             className="capture_camera"
                             onClick={capture}
                         >
-                            Capture photo
+                            <FaCameraRetro />&nbsp;
+                            Capture Photo
                         </Button>
                     </>
                 ) : (
@@ -57,7 +59,7 @@ export const Camera = () => {
                             className="retake_camera"
                             onClick={() => setImg(null)}
                         >
-                            Retake
+                            Retake Photo
                         </Button>
                     </>
                 )}

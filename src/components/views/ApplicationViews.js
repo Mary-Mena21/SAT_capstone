@@ -15,17 +15,19 @@ import { StudentContainer } from "../students/StudentContainer";
 import { StudentAttendanceContainer } from "../students/StudentAttendanceContainer";
 import { StudentContact } from "../students/StudentContact";
 import { StudentBarChart } from "../students/StudentBarChart";
-import { Camera} from "../students/Camera";
+import { Camera } from "../students/Camera";
 import { About } from "../about/About";
-import { Home } from "../students/Home";
+import { Home } from "../home/Home";
+import { Teacher } from "../teacher/Teacher";
 //import { Camera } from "@mui/icons-material";
 
-
 export const ApplicationViews = () => {
+    const localSATUser = localStorage.getItem("SAT_user");
+    const satUserObject = JSON.parse(localSATUser);
     return (
         <Routes>
-            <Route path="/" element={<Home />} />  
-           {/*  <Route path="students/attendance" element={<StudentAttendance />} />  */} 
+            <Route path="/" element={<Home />} />
+            {/*  <Route path="students/attendance" element={<StudentAttendance />} />  */}
             <Route path="students" element={<Students />} />
             <Route path="studentsCopy" element={<StudentContainer />} />
             <Route path="student" element={<Student />} />
@@ -33,13 +35,12 @@ export const ApplicationViews = () => {
             <Route path="birthdays" element={<StudentsBirthdays />} />
             <Route path="studentBarChart" element={<StudentBarChart />} />
             <Route path="studentContact" element={<StudentContact />} />
-            <Route path="cameraProfile" element={<Camera/>} />
-            <Route path="about" element={<About/>} />
-
-
+            <Route path="cameraProfile" element={<Camera />} />
+            <Route path="about" element={<About />} />
             <Route path="studentForm" element={<StudentForm />} />
             <Route path="studentEdit" element={<StudentEdit />} />
             <Route path="attendance" element={<StudentAttendanceContainer />} />
+            <Route path="teacher" element={<Teacher />} />
             <Route
                 path="students/:studentDetail_Id"
                 element={<StudentDetails />}

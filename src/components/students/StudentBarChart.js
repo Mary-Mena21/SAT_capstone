@@ -150,9 +150,10 @@ export const StudentBarChart = () => {
 
     return (
         <>
-            <div>
+        <h1 className="page_barChart">BarChart!</h1>
+            <div className="barChart">
                 <Bar
-                    className="barChart"
+                    /* className="barChart" */
                     options={chartOptions}
                     data={chartData}
                     style={{ fontSize: "8px" }}

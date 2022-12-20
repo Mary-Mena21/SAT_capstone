@@ -38,7 +38,7 @@ export const StudentDetails = ({
             <section className="detail_container">
                 <h1 className="page_Edit">Student Details!</h1>
                 <div className="edit_container">
-                    <section key={`student__${id}`} className="student_edit">
+{/*                     <section key={`student__${id}`} className="student_edit">
                         <header className="student__header">
                             {studentDetail?.fullName}
                         </header>
@@ -53,9 +53,9 @@ export const StudentDetails = ({
                             id={studentDetail.id}
                             studentName={studentDetail.fullName}
                         />
-                    </section>
+                    </section> */}
                     <section className="student_edit">
-                        <StudentEdit
+{                        <StudentEdit
                             id={studentDetail.id}
                             studentName={studentDetail.fullName}
                             studentEmail={studentDetail.email}
@@ -64,7 +64,7 @@ export const StudentDetails = ({
                             studentDob={studentDetail.dob}
                             studentAddress={studentDetail.address}
                             studentImg={studentDetail.studentImg}
-                        />
+                        />}
                     </section>
                 </div>
             </section>
