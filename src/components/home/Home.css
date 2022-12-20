@@ -1,0 +1,156 @@
+.container_home{
+    /* position: relative; */
+    background-color: #000000;
+    width: 100%; 
+    height: 100vh;
+    background-image: linear-gradient(0deg,#000000,#04619F)!important;
+    background-attachment: fixed; 
+    
+ }
+
+ Link.home_link{}
+
+ p {
+     margin:20px; 
+     padding: 15px;
+    box-sizing: border-box;
+ }
+
+ .container_home_2{
+/*     position: relative; */
+    /* top:0 !important; */
+    /* box-sizing: border-box; */
+    
+    text-align: justify;
+    font-size: 1.2rem;
+    /* align-items: flex-end; */
+    /* display: inline !important; */
+    
+    
+  }
+
+ 
+@font-face {
+    font-family: "SUNDAYMORNING-BWQE3";
+    src: local("SUNDAYMORNING-BWQE3"),
+     url("../fonts/SUNDAYMORNING-BWQE3.OTF") format("truetype");
+    font-weight: bold;
+    }
+  
+  
+    @font-face {
+      font-family: "Tomatoes-O8L8.ttf";
+      src: local("Tomatoes-O8L8.ttf"),
+       url("../fonts/TOMATOES-O8L8.TTF") format("truetype");
+      font-weight: bold;
+      }
+  
+  
+    @media  only screen and (max-width: 600px) {
+      body {
+        /* background-color: #0B1C3B; */
+        color:azure;
+      
+      }
+/*       .container_home{
+        margin-left: 2rem;
+      } */
+
+      .element_home {
+        width:30vh !important;}
+     
+    }
+  
+
+
+/*     .container_home{
+    display:;
+      
+    } */
+  
+ 
+ .home_link{
+   /*  background-color: #95B8D1; */
+  /*  top:10px; */
+  
+    padding:10px 15px;
+   /*  margin:0px; */
+    position: relative;
+    border-radius: 50%;
+    border: 0.5rem solid #EAC4D5;
+    font-size: 1.6rem;
+    box-shadow: black 1px 1px 10px ;
+    color: #2E9C99;
+    display: inline;
+   /*  text-shadow: #72A075 1px 1px 0px; */
+   
+    
+}
+
+.element_home {
+    width: 45vh;
+    height: 100vh;
+    float: left;
+    background-image: url(../images/SAT_111.jpg);
+    background-size: cover;
+    background-position: -100px 0;
+    background-repeat: no-repeat;
+    -webkit-clip-path: ellipse(90% 70% at 0% 50%);
+    clip-path: ellipse(90% 70% at 0% 50%);
+    -webkit-shape-outside: ellipse(90% 70% at 0% 50%);
+    shape-outside: ellipse(90% 70% at 0% 50%);
+    -webkit-shape-margin: 2em;
+    shape-margin: 2em;
+    /* background-attachment: fixed; */
+  }
+  
+  
+  
+/*   h1.page_home{
+    font-family: "SUNDAYMORNING-BWQE3", "Roboto", "Helvetica Neue";
+    color: #372C40;
+    position: relative;
+    top:150px;
+  } */
+
+  /* ------------------- */
+  
+/*   .home_app {
+    position: relative;
+ 
+    top: 100px;
+  
+    font-size: 4rem;
+    font-family: "SUNDAYMORNING-BWQE3", "Roboto", "Helvetica Neue";
+
+    clip-path: polygon(50% 0%, 63.23% 9.30%, 79.39% 9.55%, 84.62% 24.84%, 97.55% 34.55%, 92.80% 50%, 97.55% 65.45%, 84.62% 75.16%, 79.39% 90.45%, 63.23% 90.70%, 50% 100%, 36.77% 90.70%, 20.61% 90.45%, 15.38% 75.16%, 2.45% 65.45%, 7.20% 50%, 2.45% 34.55%, 15.38% 24.84%, 20.61% 9.55%, 36.77% 9.30%);
+    background-color:rgb(26, 27, 27);
+    background: radial-gradient(#dde89f, #08efffe9);
+    padding:40px;
+
+    min-width: 300px;
+}   */
+
+.home_app:hover{
+  transform: scale(1.2),rotate(1deg);
+}
+
+img.shadow-wrap_home{
+  filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+  color: #946EAE;
+  position: relative;
+  /* display:inline !important; */
+  /* background-attachment: fixed; */
+  /* width: 120px; */
+     /* top: 10px; */
+     /* padding: 50px; */
+/*      margin: 1rem;
+     padding: 0rem; */
+}
+/* .logo_SAT_home{
+
+  
+    clip-path: polygon(50% 0%, 63.23% 9.30%, 79.39% 9.55%, 84.62% 24.84%, 97.55% 34.55%, 92.80% 50%, 97.55% 65.45%, 84.62% 75.16%, 79.39% 90.45%, 63.23% 90.70%, 50% 100%, 36.77% 90.70%, 20.61% 90.45%, 15.38% 75.16%, 2.45% 65.45%, 7.20% 50%, 2.45% 34.55%, 15.38% 24.84%, 20.61% 9.55%, 36.77% 9.30%);
+    background-image:url(../images/SAT_111.jpg);
+
+} */

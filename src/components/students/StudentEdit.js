@@ -165,7 +165,7 @@ export const StudentEdit = ({
                     }}
                     className="btn btn-primary"
                 >
-                    Save Edit Student
+                    SUBMIT
                 </Button>
             </fieldset>
         </>

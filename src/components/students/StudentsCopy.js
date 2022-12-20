@@ -20,6 +20,7 @@ export const StudentsCopy = ({ searchTermState }) => {
                 .startsWith(searchTermState.toLowerCase());
         });
         setFiltered(searchedStudent);
+        
     }, [searchTermState]);
 
     useEffect(
@@ -32,6 +33,7 @@ export const StudentsCopy = ({ searchTermState }) => {
                 setStudents(StudentsArray);
             };
             fetchData();
+            
         },
         [] // When this array is empty, you are observing initial component state
     );
@@ -47,10 +49,10 @@ export const StudentsCopy = ({ searchTermState }) => {
                             setFiltered(Students);
                         }}
                     >
-                        DISPLAY STUDENT
-                    </Button>
+                        DISPLAY STUDENTS
+                    </Button> 
 
-                    <Button
+                   {/*  <Button
                         variant="secondary"
                         onClick={(clickEvent) => {
                             navigate("/attendance");
@@ -58,7 +60,7 @@ export const StudentsCopy = ({ searchTermState }) => {
                         className=" attend_btn"
                     >
                         RECORD ATTENDANCE
-                    </Button>
+                    </Button> */}
                 </article>
 
                 <div className="students_class">
@@ -87,7 +89,7 @@ export const StudentsCopy = ({ searchTermState }) => {
                                 </>
                             );
                         })}
-                </div> 
+            </div> 
         </>
     );
 };

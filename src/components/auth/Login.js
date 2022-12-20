@@ -32,40 +32,45 @@ export const Login = () => {
             });
     };
 
-    return (
+    return (<>
         <main className="container--login">
-            <section>
-                <form className="" onSubmit={handleLogin}>
-                    <h1 className="page_login">Sunday School Attendance Tracker</h1>
-                    <br/>
-                    <h2 className="page_login">Please sign in</h2>
+        {/* <img className="logo" src={require("../images/SAT_2.jpg")} alt="" /> */}
+            <section >
+                <form className="form--login" onSubmit={handleLogin}>
+                   
+                    <br />
+                    <h1 >
+                        Sunday School Attendance Tracker
+                    </h1>
+                    <br />
+                    <h5>Please sign in</h5>
                     <fieldset>
-                        
-                       {/*  <label htmlFor="inputEmail"> Email address </label> */}
+                        {/* <label htmlFor="inputEmail"> Email address </label> */} 
 
                         <Form.Floating className="mb-2">
-                        <Form.Control
-                            required
-                            autoFocus
-                            type="email"
-                            value={email}
-                            onChange={(evt) => set(evt.target.value)}
-                            className="form-control"
-                            placeholder="Email address"
+                            <Form.Control
+                                required
+                                autoFocus
+                                type="email"
+                                value={email}
+                                onChange={(evt) => set(evt.target.value)}
+                                className="form-control"
+                                placeholder="Email address"
                             />
                             <label htmlFor="">Email address</label>
-                            </Form.Floating>
+                        </Form.Floating>
                     </fieldset>
                     <fieldset>
-                        <Button type="submit" variant="secondary" size="md">
+                        <Button className="submit" type="submit" variant="secondary" size="md">
                             Sign in
                         </Button>
                     </fieldset>
-                </form>
-            </section>
-            <section className="link--register">
-                <Link to="/register">Not a member yet?</Link>
-            </section>
+                    </form>
+                    <section className="link--register">
+                    <Link to="/register">Not a member yet?</Link>
+                    </section>
+                    </section>
         </main>
+        </>
     );
 };

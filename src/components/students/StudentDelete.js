@@ -12,7 +12,7 @@ export const StudentDelete = ({ id,studentName}) => {
             type="submit"
             variant="secondary"
             size="md"
-                onClick={() => {
+                onClick={() => {window.confirm( `Are you sure you want to delete ${studentName}?`, ) && 
                     fetch(`http://localhost:8033/students/${id}`, {
                         method: "DELETE",
                     }).then();

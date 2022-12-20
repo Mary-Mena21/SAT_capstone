@@ -15,6 +15,7 @@ import {
     FaFortAwesome,
     FaBirthdayCake,
     FaSignOutAlt,
+    FaUserTie,
 } from "react-icons/fa";
 import {
     BsFillCalendar2CheckFill,
@@ -27,12 +28,15 @@ import {
     BsEmojiSmileFill,
     BsGithub,
 } from "react-icons/bs";
+import { Teacher } from "../teacher/Teacher";
 /* import { StudentSearch } from "../students/StudentSearch"; */
 //import { IoLogOut }from "react-icons/lo";
 
-export const NavBar = ({ children }) => {
+export const NavBar = ({ children, Image }) => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
+    <Teacher Image={Image} />;
+    console.log(Image);
 
     /* sideBar */
     // const [show, setShow] = useState(false);
@@ -41,6 +45,18 @@ export const NavBar = ({ children }) => {
 
     /*  const navigate = useNavigate(); */
     const menuItem = [
+        {
+            path: "/",
+            name: "",
+            icon: <Teacher />,
+            className: "sidebar_2",
+        },
+        // {
+        //     path: "/",
+        //     name: "Teacher",
+        //     icon: <Teacher />,
+        //     className: "sidebar_2",
+        // },
         {
             path: "/",
             name: "Home",
@@ -63,6 +79,18 @@ export const NavBar = ({ children }) => {
             path: "/attendance",
             name: "Attend",
             icon: <BsFillCalendar2CheckFill />,
+            className: "sidebar_2",
+        },
+        {
+            path: "/studentBarChart",
+            name: "Chart",
+            icon: <BsBarChartLineFill />,
+            className: "sidebar_2",
+        },
+        {
+            path: "/cameraProfile",
+            name: "Camera",
+            icon: <BsCameraFill />,
             className: "sidebar_2",
         },
         {
@@ -89,18 +117,6 @@ export const NavBar = ({ children }) => {
             className: "sidebar_2",
         },
         {
-            path: "/studentBarChart",
-            name: "Chart",
-            icon: <BsBarChartLineFill />,
-            className: "sidebar_2",
-        },
-        {
-            path: "/cameraProfile",
-            name: "Camera",
-            icon: <BsCameraFill />,
-            className: "sidebar_2",
-        },
-        {
             path: "/about",
             name: "About",
             icon: <BsBookmarksFill />,
@@ -113,6 +129,7 @@ export const NavBar = ({ children }) => {
             className: "sidebar_2",
         },
     ];
+
     return (
         <>
             {/* <div className="top_bar"></div> */}
@@ -180,8 +197,8 @@ export const NavBar = ({ children }) => {
                                 href="https://github.com/Mary-Mena21/SAT_capstone"
                             >
                                 <BsGithub />
-                            </a>&nbsp;
-                            SAT©2022
+                            </a>
+                            &nbsp; SAT©2022
                         </p>
                     </div>
 

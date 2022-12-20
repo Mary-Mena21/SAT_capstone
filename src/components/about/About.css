@@ -1,18 +1,159 @@
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
+/* 
+
+  .about_parent_container{
+display: flex;
+justify-content: center;
+
   }
 
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
+  .about_app {
+    position: relative;
+ 
+    top: 80px;
+  
+    font-size: 2rem;
+    font-family: "SUNDAYMORNING-BWQE3", "Roboto", "Helvetica Neue";
+
+    clip-path: polygon(50% 0%, 63.23% 9.30%, 79.39% 9.55%, 84.62% 24.84%, 97.55% 34.55%, 92.80% 50%, 97.55% 65.45%, 84.62% 75.16%, 79.39% 90.45%, 63.23% 90.70%, 50% 100%, 36.77% 90.70%, 20.61% 90.45%, 15.38% 75.16%, 2.45% 65.45%, 7.20% 50%, 2.45% 34.55%, 15.38% 24.84%, 20.61% 9.55%, 36.77% 9.30%);
+    background-color:rgb(26, 27, 27);
+    background: radial-gradient(#dde89f, #08efffe9);
+    padding:40px;
+    box-shadow: 10px 3px 5px 2px 5px red; 
+    border: white 5px solid;
+    min-width: 300px;
+}
+
+.about_app:hover{
+  transform: scale(1.2),rotate(1deg);
+}
+
+.shadow-wrap{
+  filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+  position: relative;
+  color: #510d88;
+  
+}
+.about_container {
+  position: absolute;
+    top: 180px;
+  
+    
+    padding: 10px;
+    background-color: #DCB677;
+    max-width: 300px;
+    font-family: "Roboto";
+    padding: 30px;
+    text-align: justify;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+} 
+*/
+
+@font-face {
+  font-family: "SUNDAYMORNING-BWQE3";
+  src: local("SUNDAYMORNING-BWQE3"),
+   url("../fonts/SUNDAYMORNING-BWQE3.OTF") format("truetype");
+  font-weight: bold;
+  }
+
+
+  @font-face {
+    font-family: "Tomatoes-O8L8.ttf";
+    src: local("Tomatoes-O8L8.ttf"),
+     url("../fonts/TOMATOES-O8L8.TTF") format("truetype");
+    font-weight: bold;
+    }
+
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: #0B1C3B;
+      color:azure;
+    }
+    .container_about{
+      color:azure;
+      margin-left: 2rem;
+    }
+    Link ,  h1.page_about{
+      font-size: 2rem;
+      color:aliceblue;
     }
   }
-  header{
-    position:sticky;
-  /*   position:fixed; */
-    z-index:1;
+
+  .container_about{
+    position: relative;
+    bottom: 10px;
+    box-sizing: border-box;
+    text-align: justify;
+    font-size: 1.2rem;
+    
   }
+
+/* * {
+  margin: 0;
+  padding: 0;
+
+  
+} */
+
+/* body {
+  color: #555;
+  font-size: 0.95em;
+  background-color: #eee;
+ 
+  
+} */
+
+/* .container {
+  width: 150vh;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: white;
+} */
+
+.element {
+  width: 45vh;
+  height: 100vh;
+  float: left;
+  background-image: url(../images/SAT_111.jpg);
+  background-size: cover;
+  background-position: -100px 0;
+  background-repeat: no-repeat;
+  -webkit-clip-path: ellipse(90% 70% at 0% 50%);
+  clip-path: ellipse(90% 70% at 0% 50%);
+  -webkit-shape-outside: ellipse(90% 70% at 0% 50%);
+  shape-outside: ellipse(90% 70% at 0% 50%);
+  -webkit-shape-margin: 2em;
+  shape-margin: 2em;
+}
+
+
+
+h1.page_about{
+  font-family: "SUNDAYMORNING-BWQE3", "Roboto", "Helvetica Neue";
+  /* color: #372C40; */
+  position: relative;
+  top:20px;
+}
+
+h1,
+h3 {
+  padding: 1em;
+  margin: 1em;
+}
+
+p {
+  margin:1em;
+  padding:1em;
+  /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+}
+
+ul {
+  list-style: circle;
+  list-style-position: inside;
+}
+
+/* .clear {
+  clear: both;
+  margin-bottom: 20rem;
+} */

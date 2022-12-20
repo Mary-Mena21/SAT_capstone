@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./StudentsBirthdays.css"
+import "./StudentsBirthdays.css";
 
 export const StudentsBirthdays = () => {
     const [birthdays, setBirthdays] = useState([]);
@@ -24,7 +24,7 @@ export const StudentsBirthdays = () => {
     /* --------Jan--------- */
     useEffect(() => {
         const Jan = birthdays.filter((birthday) =>
-            birthday.dob.startsWith("01", 8)
+            birthday.dob.startsWith("01", 5)
         );
         if (Jan) {
             setFilteredBirthdays(Jan);
@@ -33,7 +33,7 @@ export const StudentsBirthdays = () => {
     /* --------Feb--------- */
     useEffect(() => {
         const Feb = birthdays.filter((birthday) =>
-            birthday.dob.startsWith("02", 8)
+            birthday.dob.startsWith("02", 5)
         );
         if (Feb) {
             setFilteredBirthdays(Feb);
@@ -42,7 +42,7 @@ export const StudentsBirthdays = () => {
     /* --------Mar--------- */
     useEffect(() => {
         const Mar = birthdays.filter((birthday) =>
-            birthday.dob.startsWith("03", 8)
+            birthday.dob.startsWith("03", 5)
         );
         if (Mar) {
             setFilteredBirthdays(Mar);
@@ -51,7 +51,7 @@ export const StudentsBirthdays = () => {
     /* --------Apr--------- */
     useEffect(() => {
         const Apr = birthdays.filter((birthday) =>
-            birthday.dob.startsWith("04", 8)
+            birthday.dob.startsWith("04", 5)
         );
         if (Apr) {
             setFilteredBirthdays(Apr);
@@ -60,7 +60,7 @@ export const StudentsBirthdays = () => {
     /* --------May--------- */
     useEffect(() => {
         const May = birthdays.filter((birthday) =>
-            birthday.dob.startsWith("05", 8)
+            birthday.dob.startsWith("05", 5)
         );
         if (May) {
             setFilteredBirthdays(May);
@@ -69,7 +69,7 @@ export const StudentsBirthdays = () => {
     /* --------Jun--------- */
     useEffect(() => {
         const Jun = birthdays.filter((birthday) =>
-            birthday.dob.startsWith("06", 8)
+            birthday.dob.startsWith("06", 5)
         );
         if (Jun) {
             setFilteredBirthdays(Jun);
@@ -78,7 +78,7 @@ export const StudentsBirthdays = () => {
     /* --------Jul--------- */
     useEffect(() => {
         const Jul = birthdays.filter((birthday) =>
-            birthday.dob.startsWith("07", 8)
+            birthday.dob.startsWith("07", 5)
         );
         if (Jul) {
             setFilteredBirthdays(Jul);
@@ -87,7 +87,7 @@ export const StudentsBirthdays = () => {
     /* --------Aug--------- */
     useEffect(() => {
         const Aug = birthdays.filter((birthday) =>
-            birthday.dob.startsWith("08", 8)
+            birthday.dob.startsWith("08", 5)
         );
         if (Aug) {
             setFilteredBirthdays(Aug);
@@ -96,7 +96,7 @@ export const StudentsBirthdays = () => {
     /* --------Sep--------- */
     useEffect(() => {
         const Sep = birthdays.filter((birthday) =>
-            birthday.dob.startsWith("09", 8)
+            birthday.dob.startsWith("09", 5)
         );
         if (Sep) {
             setFilteredBirthdays(Sep);
@@ -105,7 +105,7 @@ export const StudentsBirthdays = () => {
     /* --------Oct--------- */
     useEffect(() => {
         const Oct = birthdays.filter((birthday) =>
-            birthday.dob.startsWith("10", 8)
+            birthday.dob.startsWith("10", 5)
         );
         if (Oct) {
             setFilteredBirthdays(Oct);
@@ -114,7 +114,7 @@ export const StudentsBirthdays = () => {
     /* --------Nov--------- */
     useEffect(() => {
         const Nov = birthdays.filter((birthday) =>
-            birthday.dob.startsWith("11", 8)
+            birthday.dob.startsWith("11", 5)
         );
         if (Nov) {
             setFilteredBirthdays(Nov);
@@ -123,7 +123,7 @@ export const StudentsBirthdays = () => {
     /* --------Dec--------- */
     useEffect(() => {
         const Dec = birthdays.filter((birthday) =>
-            birthday.dob.startsWith("12", 8)
+            birthday.dob.startsWith("12", 5)
         );
         if (Dec) {
             setFilteredBirthdays(Dec);
@@ -144,119 +144,134 @@ export const StudentsBirthdays = () => {
     return (
         <>
             <section className="birthday_container">
-            <h1 className="page_birthday">Birthdays!</h1>
-            <div className="button_container">
-            <button className="birthday_card_button"
-                onClick={() => {
-                    setJan(true);
-                }}
-            >
-                January
-            </button >
-            <button className="birthday_card_button"
-                onClick={() => {
-                    setFeb(true);
-                }}
-            >
-                February
-            </button>
-            <button className="birthday_card_button"
-                onClick={() => {
-                    setMar(true);
-                }}
-            >
-                March
-            </button>
-            <button className="birthday_card_button"
-                onClick={() => {
-                    setApr(true);
-                }}
-            >
-                April
-            </button>
-            <button className="birthday_card_button"
-                onClick={() => {
-                    setMay(true);
-                }}
-            >
-                May
-            </button>
-            <button className="birthday_card_button"
-                onClick={() => {
-                    setJun(true);
-                }}
-            >
-                June
-            </button>
-            <button className="birthday_card_button"
-                onClick={() => {
-                    setJul(true);
-                }}
-            >
-                July
-            </button>
-            <button className="birthday_card_button"
-                onClick={() => {
-                    setAug(true);
-                }}
-            >
-                August
-            </button>
-            <button className="birthday_card_button"
-                onClick={() => {
-                    setSep(true);
-                }}
-            >
-                September
-            </button>
-            <button className="birthday_card_button"
-                onClick={() => {
-                    setOct(true);
-                }}
-            >
-                October
-            </button>
-            <button className="birthday_card_button"
-                onClick={() => {
-                    setNov(true);
-                }}
-            >
-                November
-            </button>
-            <button className="birthday_card_button"
-                onClick={() => {
-                    setDec(true);
-                }}
-            >
-                December
-            </button>
-            </div>
-            <article>
-                {filteredBirthdays.map((birthday) => {
-                    return (
-                        <>
-                            <div className=""></div>
-                            <section key={birthday.id} className="student_birthday_B">
-                                <img
-                                    src={require(`../images/${birthday.studentImg}`)}
-                                    className="student_img_B"
-                                />
-                                <br />
-                                <h3 className="student_info_name">
-                                    {" "}
-                                    {birthday.fullName}
-                                </h3>
-                                <br />
-                                <h3 className="student_info_dob">
-                                {" "}
-                                {birthday.dob}
-                            </h3>
-                            </section>
-                        </>
-                    );
-                })}
+                <h1 className="page_birthday">Birthdays!</h1>
+                <div className="button_container">
+                    <button
+                        className="birthday_card_button"
+                        onClick={() => {
+                            setJan(true);
+                        }}
+                    >
+                        January
+                    </button>
+                    <button
+                        className="birthday_card_button"
+                        onClick={() => {
+                            setFeb(true);
+                        }}
+                    >
+                        February
+                    </button>
+                    <button
+                        className="birthday_card_button"
+                        onClick={() => {
+                            setMar(true);
+                        }}
+                    >
+                        March
+                    </button>
+                    <button
+                        className="birthday_card_button"
+                        onClick={() => {
+                            setApr(true);
+                        }}
+                    >
+                        April
+                    </button>
+                    <button
+                        className="birthday_card_button"
+                        onClick={() => {
+                            setMay(true);
+                        }}
+                    >
+                        May
+                    </button>
+                    <button
+                        className="birthday_card_button"
+                        onClick={() => {
+                            setJun(true);
+                        }}
+                    >
+                        June
+                    </button>
+                    <button
+                        className="birthday_card_button"
+                        onClick={() => {
+                            setJul(true);
+                        }}
+                    >
+                        July
+                    </button>
+                    <button
+                        className="birthday_card_button"
+                        onClick={() => {
+                            setAug(true);
+                        }}
+                    >
+                        August
+                    </button>
+                    <button
+                        className="birthday_card_button"
+                        onClick={() => {
+                            setSep(true);
+                        }}
+                    >
+                        September
+                    </button>
+                    <button
+                        className="birthday_card_button"
+                        onClick={() => {
+                            setOct(true);
+                        }}
+                    >
+                        October
+                    </button>
+                    <button
+                        className="birthday_card_button"
+                        onClick={() => {
+                            setNov(true);
+                        }}
+                    >
+                        November
+                    </button>
+                    <button
+                        className="birthday_card_button"
+                        onClick={() => {
+                            setDec(true);
+                        }}
+                    >
+                        December
+                    </button>
+                </div>
+                <article>
+                    {filteredBirthdays.map((birthday) => {
+                        return (
+                            <>
+                                <div className=""></div>
+                                <section
+                                    key={birthday.id}
+                                    className="student_birthday_B"
+                                >
+                                    <img
+                                        src={require(`../images/${birthday.studentImg}`)}
+                                        className="student_img_B"
+                                    />
+                                    <br />
+                                    <h3 className="student_info_name">
+                                        {" "}
+                                        {birthday.fullName}
+                                    </h3>
+                                    <br />
+                                    <h3 className="student_info_dob">
+                                        {" "}
+                                        {birthday.dob}
+                                    </h3>
+                                </section>
+                            </>
+                        );
+                    })}
                 </article>
-                </section>
+            </section>
         </>
     );
 };

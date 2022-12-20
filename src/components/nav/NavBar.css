@@ -56,7 +56,8 @@ margin: 0;}
 .top_section{
     display: flex;
     align-items:center;
-    padding:15px;
+    padding:10px;
+   
 }
 .logo{
     font-size: 40px;
@@ -64,6 +65,8 @@ margin: 0;}
 /*     font-family:cursive;
     font-family:'Courier New', Courier, monospace; */
     font-family:"Cinzel Decorative","Lobster"," cursive","Josefin Sans", "sans-serif";
+    margin: 0;
+    padding: 10px;
 }
 .bars{
     display: flex;
@@ -99,9 +102,12 @@ a.github_icon:hover{
     color: #000;
 }
 .icon, .link_text{
-    font-size: 1.2rem;
-    
+    font-size: 1.1rem;
 }
+.link_text{
+    justify-content: center;
+}
+
  /* .top_bar{
     position: absolute;
     background-color: #83312c;

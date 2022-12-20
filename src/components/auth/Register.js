@@ -66,8 +66,12 @@ export const Register = (props) => {
 
     return (
         <main style={{ textAlign: "center" }}>
-            <form className="" onSubmit={handleRegister}>
-                <h1 className="page_login" /* "h3 mb-3 font-weight-normal" */>
+{/*             <span class="shadow-wrap">
+        <image src="../images/SAT_111.jpg" className="login_app"    />
+        <h1 className="about_app">About&nbsp;SAT!</h1> 
+        </span> */}
+            <form className="form--login container--login" onSubmit={handleRegister}>
+                <h1 className=/* "page_login"  */ " mb-3 font-weight-normal" >
                     Please Register for Sunday School Attendance Tracker
                 </h1>
                 <fieldset>
