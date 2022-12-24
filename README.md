@@ -1,5 +1,6 @@
 #SAT App!
 SAT(Sunday School Attendance Tracker) is a unique attendance tracking application. Track student attendance more accurately and with less paperwork. The SAT app is designed to improve the Sunday School System by creating a strong connection between teachers, students, and parents. Each user group is assigned a different level of access based on their role and need for the app. Get actionable reporting. Simplify and monitor student attendance. Less administrative effort. Reports in real time.
+![2](https://user-images.githubusercontent.com/85176043/209452917-18a854b5-59fc-4794-94b1-3b94c648d66b.jpg)
 ![2](https://user-images.githubusercontent.com/85176043/209452722-fb246952-42be-4e91-8a56-b1c4322464b7.jpg)
 ![5](https://user-images.githubusercontent.com/85176043/209452725-a1cb5315-a062-4f48-b88c-222b248fc9af.jpg)
 ![8](https://user-images.githubusercontent.com/85176043/209452726-fc908671-b438-493b-8b88-9c1e8c2036ec.jpg)
