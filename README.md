@@ -3,7 +3,7 @@ SAT(Sunday School Attendance Tracker) is a unique attendance tracking applicatio
 
 ![2](https://user-images.githubusercontent.com/85176043/209453022-c7b6fdc8-fa7a-410d-b3e0-3953a06e7767.jpg)
 ![5](https://user-images.githubusercontent.com/85176043/209453039-b18adf49-959b-439b-b8e1-408ced7a089a.jpg)
-![8](https://user-images.githubusercontent.com/85176043/209453047-20ff79c9-6b76-4533-93f3-64e475327df8.jpg)
+![8](https://user-images.githubusercontent.com/85176043/209453075-eb9368d7-f201-4f53-b204-14d9edeba17c.jpg)
 ![1](https://user-images.githubusercontent.com/85176043/209452728-4e5a5621-bdb8-4084-9c3b-4321112bf542.jpg)
 ![4](https://user-images.githubusercontent.com/85176043/209452731-a5b2bbbc-1062-4dc2-966a-73ab93ee9a2b.jpg)
 ![7](https://user-images.githubusercontent.com/85176043/209452733-1cce52af-59f1-4d56-9b52-c57e99506db4.jpg)
