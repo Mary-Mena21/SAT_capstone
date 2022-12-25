@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import { saveAs } from "file-saver";
 import "./Camera.css";
 import { FaCameraRetro } from "react-icons/fa";
+import { borderRadius } from "@mui/system";
 
 export const Camera = () => {
     const [img, setImg] = useState(null);
@@ -24,20 +25,32 @@ export const Camera = () => {
     return (
         <>
             <h1 className="page_camera_style">Camera!</h1>
-            <section>
+            <section className="camera_container">
                 {img === null ? (
                     <>
-                        <Webcam
-                            audio={false}
-                            mirrored={true}
-                            height={300}
-                            width={300}
-                            ref={webcamRef}
-                            screenshotFormat="image/jpeg"
-                            videoConstraints={videoConstraints}
-                            download={img}
-                            className="student_camera_style"
-                        />
+                        <div className="lins_background">
+                            <Webcam
+                                audio={false}
+                                mirrored={true}
+                                height={350}
+                                width={350}
+                                borderRadius={50}
+                                ref={webcamRef}
+                                style={{ borderRadius: "50%" }}
+                                screenshotFormat="image/jpeg"
+                                videoConstraints={videoConstraints}
+                                download={img}
+                                className="student_camera_style"
+                            />
+                            <button
+                                style={{ top: "-12.3rem", position: "relative" , zIndex: 100 }}
+                                className="click"
+                                type="submit"
+                                variant="secondary"
+                                size="md"
+                                onClick={capture}
+                            ></button>
+                        </div>
                         <br />
                         <Button
                             type="submit"
@@ -46,8 +59,8 @@ export const Camera = () => {
                             className="capture_camera"
                             onClick={capture}
                         >
-                            <FaCameraRetro />&nbsp;
-                            Capture Photo
+                            <FaCameraRetro />
+                            &nbsp; Capture Photo
                         </Button>
                     </>
                 ) : (

@@ -19,7 +19,7 @@ import {
 
 import { Bar } from "react-chartjs-2";
 import React, { useState, useEffect } from "react";
-import { Button } from "react-bootstrap";
+/* import { Button } from "react-bootstrap"; */
 
 ChartJS.register(
     CategoryScale,
@@ -64,24 +64,43 @@ export const StudentBarChart = () => {
             let f = 0;
             let HG = [];
             let classCount = [];
+            let newArray = [];
+/* ------------TEST---------------- */
+
+/*             attendanceArray.forEach((item) => {
+                if (newArray.some((el) => (el.studentId && el.date) === (item.studentId && item.date)) === false) {
+                    newArray.push(item);
+                }
+            });
+            console.log("M",newArray);
+            console.log("N",attendanceArray); */
+/* ---------------------------- */
             uniqueDates.map((v) => {
+                console.log(v);
                 attendanceArray.map((student) => {
                     if (student.attend && student.date === v) {
                         f += student.attend;
                         classCount.push(f);
                     }
                 });
+
+               
+
                 HG.push(classCount.length);
                 classCount = [];
-                //console.log(HG);
             });
 
+
+            //console.log("hg", HG);
+            // let newHG = [...new set(HG)]
+            /* console.log("NEW", newHG);
+            console.log(HG); */
             /* {columns: Z},
          { data: HG} */
             // const DatasetExport = () => {
             //const multiDataSet =()=>{ [{ columns: Z }, { data: HG }]}
             // };
-
+           
             setChartData({
                 labels: uniqueDates,
                 datasets: [
@@ -150,7 +169,7 @@ export const StudentBarChart = () => {
 
     return (
         <>
-        <h1 className="page_barChart">BarChart!</h1>
+            {/* <h1 className="page_barChart">BarChart!</h1> */}
             <div className="barChart">
                 <Bar
                     /* className="barChart" */
