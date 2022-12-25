@@ -12,9 +12,9 @@
   }
   .barChart{
     position: relative;
-    width:80%;
+    width:90%;
     left :80px;
-    top:50px;
+    top:10px;
   }
 
   .page_barChart {

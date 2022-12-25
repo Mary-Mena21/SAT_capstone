@@ -1,10 +1,20 @@
+
+
+.welcome_style{
+  position: relative;
+  top: 250px;
+  font-size: 3rem;
+  font-family:  "Tomatoes-O8L8.ttf", "Roboto", "Helvetica Neue";
+  color: #458df3;
+}
+
 .container_home{
     /* position: relative; */
     background-color: #000000;
     width: 100%; 
     height: 100vh;
     background-image: linear-gradient(0deg,#000000,#04619F)!important;
-    background-attachment: fixed; 
+    background-attachment:fixed !important;
     
  }
 
@@ -29,6 +39,8 @@
     
   }
 
+
+
  
 @font-face {
     font-family: "SUNDAYMORNING-BWQE3";
@@ -52,6 +64,31 @@
         color:azure;
       
       }
+   /*     a.home_link{
+        top:90px;
+        height: 90%;
+        width:auto !important;
+      }  */
+
+      .logo_SAT_home{
+        width:0;
+        height: 0;
+      }
+
+      .container_home_2{
+        top:50px;
+        position: relative;
+          }
+
+      .welcome_style{
+        position: relative;
+        top: 25px;
+        font-size: 1.2rem;
+        left: -19px;
+        font-family:  "Tomatoes-O8L8.ttf", "Roboto", "Helvetica Neue";
+        color: #b6cbe6;
+      }
+
 /*       .container_home{
         margin-left: 2rem;
       } */
@@ -61,7 +98,7 @@
      
     }
   
-
+    
 
 /*     .container_home{
     display:;

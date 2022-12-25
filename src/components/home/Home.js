@@ -26,15 +26,19 @@ export const Home = () => {
                     <img
                         src={require("../images/Logo_2.png")}
                         alt="logo"
+                        className="logo_SAT_home"
                         style={{
                             width: "7rem",
+                            position: "relative",
+                            left: "80px",
+                            top: "220px",
                         }}
                     />
                 </span>
-
+                <h1 className="welcome_style">Welcome to SAT app!</h1>
                 <div className="container_home_2">
                     {/*  <div className="clear"></div> */}
-{/*                     <p>
+                    {/*                     <p>
                         <p
                             className="home_link"
                             onClick={() => setOpen((o) => !o)}
@@ -78,7 +82,7 @@ export const Home = () => {
             </div>
             <br />
 
-{/*             <div>
+            {/*             <div>
                 <button
                     type="button"
                     className="button"
@@ -102,4 +106,3 @@ export const Home = () => {
         </>
     );
 };
-
