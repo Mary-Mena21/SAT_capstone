@@ -1,4 +1,4 @@
-import "./StudentSearch.css"
+import "./Students.css"
 
 export const StudentSearch = ({ setterFunction }) => {
     return (

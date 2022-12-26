@@ -2352,6 +2352,55 @@
       "classId": 1,
       "studentId": 17,
       "attend": true
+    },
+    {
+      "id": 359,
+      "date": "2022-12-26",
+      "classId": 1,
+      "studentId": 26,
+      "attend": true
+    },
+    {
+      "id": 360,
+      "date": "2022-12-26",
+      "classId": 1,
+      "studentId": 28,
+      "attend": true
+    },
+    {
+      "id": 361,
+      "date": "2022-12-26",
+      "classId": 1,
+      "studentId": 29,
+      "attend": true
+    },
+    {
+      "id": 362,
+      "date": "2022-12-26",
+      "classId": 1,
+      "studentId": 30,
+      "attend": true
+    },
+    {
+      "id": 363,
+      "date": "2022-12-26",
+      "classId": 1,
+      "studentId": 36,
+      "attend": true
+    },
+    {
+      "id": 364,
+      "date": "2022-12-26",
+      "classId": 1,
+      "studentId": 35,
+      "attend": true
+    },
+    {
+      "id": 365,
+      "date": "2022-12-26",
+      "classId": 1,
+      "studentId": 33,
+      "attend": true
     }
   ],
   "classes": [
