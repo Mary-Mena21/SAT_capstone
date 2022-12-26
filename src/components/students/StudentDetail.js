@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { StudentDelete } from "./StudentDelete";
 
 import "./StudentEdit.css";
-import { StudentEdit } from "./StudentEdit";
+/* import { StudentEdit } from "./StudentEdit"; */
 
 export const StudentDetails = ({
     id,
@@ -38,7 +38,7 @@ export const StudentDetails = ({
             <section className="detail_container">
                 <h1 className="page_Edit">Student Details!</h1>
                 <div className="edit_container">
-{/*                     <section key={`student__${id}`} className="student_edit">
+                    <section key={`student__${id}`} className="student_edit">
                         <header className="student__header">
                             {studentDetail?.fullName}
                         </header>
@@ -53,8 +53,8 @@ export const StudentDetails = ({
                             id={studentDetail.id}
                             studentName={studentDetail.fullName}
                         />
-                    </section> */}
-                    <section className="student_edit">
+                    </section> 
+{/*                     <section className="student_edit">
 {                        <StudentEdit
                             id={studentDetail.id}
                             studentName={studentDetail.fullName}
@@ -65,7 +65,7 @@ export const StudentDetails = ({
                             studentAddress={studentDetail.address}
                             studentImg={studentDetail.studentImg}
                         />}
-                    </section>
+                    </section> */}
                 </div>
             </section>
         </>

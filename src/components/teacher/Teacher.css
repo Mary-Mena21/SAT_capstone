@@ -1,4 +1,4 @@
-.page_teacher {
+/* .page_teacher {
     position: relative;
     display: flex;
     justify-content: center;
@@ -9,21 +9,21 @@
     padding: 6px;
     border-radius: 5px;
     text-shadow: rgba(255, 254, 254, 0.849) 1px 1px 0px;
-}
+} */
 
 .teacher_card {
     position: relative;
-    top:100px;
+    /* top:100px; */
     justify-content: center;
-    background-color: #6e665f;
-    border-radius: 3px;
-    padding: 0.5rem;
+/*     background-color: #6e665f;
+    border-radius: 3px; */
+    padding: 0.0rem;
     /* margin: 0.5rem; */
-    width: 19rem;
-    height: 7rem;
+    width: 20rem;
+    height: auto;
     box-shadow: 1px 1px 3px rgb(196, 196, 196);
-   /*  left: 20px; */
-    position: relative;
+    left: 20px;
+    /* position: relative; */
     background-image: url("../images/100__6__C.png");
     background-size: 100%;
     text-align: center;
@@ -36,9 +36,11 @@
 .teacher_card:hover {
     box-shadow: #372c40 2px 2px 5px;
 }
-li{
+.teacher_ul li{
     list-style-type: none;
-    position: relative;
+    width: 16rem;
+    color: #372c40;
+    /* position: relative; */
     
 }
 
@@ -47,6 +49,7 @@ li{
 }
 
 .teacher_ul{
-    margin-top: 10px;
-    margin-left: -40px;
+    width: 18rem;
+    /* margin-top: 10px; */
+   /*  margin-left: -40px; */
 }

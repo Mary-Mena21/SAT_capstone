@@ -64,7 +64,7 @@ export const Home = () => {
                         </Link>
                     </p>
                     <p>
-                        <Link className="home_link" to="/contacts">
+                        <Link className="home_link" to="/studentContact">
                             <BsFillTelephoneFill />
                         </Link>
                     </p>
