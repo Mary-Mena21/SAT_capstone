@@ -32,11 +32,11 @@ import { Teacher } from "../teacher/Teacher";
 /* import { StudentSearch } from "../students/StudentSearch"; */
 //import { IoLogOut }from "react-icons/lo";
 
-export const NavBar = ({ children, Image }) => {
+export const NavBar = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
-    <Teacher Image={Image} />;
-    console.log(Image);
+    <Teacher/>;
+   // console.log(Image);
 
     /* sideBar */
     // const [show, setShow] = useState(false);
@@ -46,7 +46,7 @@ export const NavBar = ({ children, Image }) => {
     /*  const navigate = useNavigate(); */
     const menuItem = [
         {
-            path: "/",
+            path: "/appe",
             name: "",
             icon: <Teacher />,
             className: "sidebar_2",

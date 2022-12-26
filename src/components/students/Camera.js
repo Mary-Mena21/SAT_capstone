@@ -43,7 +43,7 @@ export const Camera = () => {
                                 className="student_camera_style"
                             />
                             <button
-                                style={{ top: "-12.3rem", position: "relative" , zIndex: 100 }}
+                                style={{ top: "-11.5rem", position: "relative" , zIndex: 100 }}
                                 className="click"
                                 type="submit"
                                 variant="secondary"

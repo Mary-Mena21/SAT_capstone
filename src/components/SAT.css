@@ -21,12 +21,12 @@ body{
   font-family: "Comfortaa", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
+  text-align: center;
  background-image:  url('./images/sun.png');
  background-size:100%;
  background-repeat:no-repeat ;
- text-align: center;
 display:sticky;
-background-attachment: fixed;
+background-attachment:fixed;
 }
 
 @media only screen and (max-width: 600px) {

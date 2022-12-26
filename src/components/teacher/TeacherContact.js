@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Teacher.css";
 
-export const Teacher = () => {
+export const TeacherContact = () => {
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
     //console.log(satUserObject.id);
@@ -28,38 +28,46 @@ export const Teacher = () => {
 
     return (
         <>
-            <article key={"teachers"} className="teacher_container">
-                {teachers.map((teacher) => {
-                    return<>
-                      {/*   // <img
-                        // src={require(`../images/${teacher.teacherImg}`)}
-                        // className="student_img_B"
-                        // style={{
-                        //     width: "40px",
-                        //     height: "40px",
-                        //     marginLeft: "-10px",
-                        //     marginTop: "-10px",
-                        //     padding: "0",
-                        //     left: "-10px",
-                        //     right: "",
-                        // }}
-                        // /> */}
-                        <img
-                        src={require(`../images/Logo_2.png`)}
-                        /* className="student_img_B" */
-                        style={{
-                            width: "40px",
-                            height: "40px",
-                            marginLeft: "-10px",
-                            marginTop: "-10px",
-                            padding: "0",
-                            left: "-10px",
-                            right: "",
-                        }}
-                        />
-                    </>
-                })}
-            </article>
+            {/* <article key={"teachers"} className="teacher_container"> */}
+                            {/* <h2 className="page_teacher">Teacher!</h2> */}
+                            {/* <article  className="teacher_container" > */}
+                    {teachers.map((teacher) => {
+                                    return<>
+                                    <section
+                                        key={
+                                            teacher.id
+                                        } className="teacher_card"
+                                    >
+                                        <ul className="teacher_ul">
+{/*                                             <li>
+                                                {" "}
+                                                <img
+                                                    src={require(`../images/${teacher.teacherImg}`)}
+                                                    className="student_img_B"
+                                                    style={{
+                                                        width: "40px",
+                                                        height: "40px",
+                                                        marginLeft: "-10px",
+                                                        padding: "0",
+                                                        left: "-10px",
+                                                        right: "",
+                                                    }}
+                                                />
+                                            </li> */}
+                                            <br />
+                                            <li>
+                                                Name : {teacher.user.fullName}
+                                            </li>
+                                            <li>
+                                                Email : {teacher.user.email}
+                                            </li>
+                                            <li>Phone : {teacher.phone}</li>
+                                        </ul>
+                                    </section>
+                                    </>
+                                })}
+                            {/* </article> */}
+            {/* </article> */}
         </>
     );
 };

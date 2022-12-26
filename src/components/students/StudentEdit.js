@@ -1,29 +1,21 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "react-datepicker/dist/react-datepicker.css";
-
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-
 import "./StudentEdit.css";
 
-export const StudentEdit = ({
-    id,
-    studentName,
-/*     studentEmail,
-    studentClassId,
-    studentPhone,
-    studentDob,
-    studentAddress,
-    studentImg, */
-}) => {
+
+
+
+export const StudentEdit = () => {
+
     const navigate = useNavigate();
 
-    const { studentDetail_Id } = useParams();
+    const { studentEdit_Id } = useParams();
 
     const [editStudent, setEditStudent] = useState({
-        id: id,
-        studentName: studentName,
+        studentName: "",
         fullName: "",
         email: "",
         classId: 0,
@@ -34,10 +26,9 @@ export const StudentEdit = ({
     });
     /* -------------Display----------------- */
     useEffect(() => {
-        console.log(id);
         const fetchData = async () => {
             const response = await fetch(
-                `http://localhost:8033/students/${studentDetail_Id}`
+                `http://localhost:8033/students/${studentEdit_Id}`
             );
             const data = await response.json();
             setEditStudent(data);
@@ -58,7 +49,7 @@ export const StudentEdit = ({
             body: JSON.stringify(SendToAPI),
         };
         const response = await fetch(
-            `http://localhost:8033/students/${id}`,
+            `http://localhost:8033/students/${studentEdit_Id}`,
             fetchOptions
         );
         navigate("/students");
@@ -69,12 +60,16 @@ export const StudentEdit = ({
     //api is the url for the json file that will be changed
     /* ------------------------------ */
     const handleSaveButtonClick = (event) => {
-        //event.preventDefault();
+        event.preventDefault();
         editStudentInfo(editStudent);
     };
     /* ------------------------------ */
     return (
         <>
+        <section className="detail_container">
+        <h1 className="page_Edit">Student Edit!</h1>
+                <div className="edit_container">
+                <section className="student_edit">
             <fieldset className="student_form">
                 <Form.Floating className="mb-2">
                     <Form.Control
@@ -166,8 +161,12 @@ export const StudentEdit = ({
                     className="btn btn-primary"
                 >
                     SUBMIT
-                </Button>
-            </fieldset>
+                        </Button>
+                        
+                    </fieldset>
+                    </section>
+                    </div>
+                </section>
         </>
     );
 };

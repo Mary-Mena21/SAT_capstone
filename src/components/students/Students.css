@@ -217,7 +217,7 @@ a {
     position: relative;
     display: flex;
     justify-content: center;
-    top: 50px;
+    /* top: 50px; */
     font-size: 2rem;
     font-family: "SUNDAYMORNING-BWQE3", "Roboto";
     color: #ba3981;

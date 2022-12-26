@@ -19,6 +19,10 @@ import { Camera } from "../students/Camera";
 import { About } from "../about/About";
 import { Home } from "../home/Home";
 import { Teacher } from "../teacher/Teacher";
+import { Appe } from "../exportCSV/Appe";
+import { TeacherContact } from "../teacher/TeacherContact";
+// import { ExportCSV } from "../exportCSV/ExportCSV";
+//import { AppE } from "../exportCSV/AppE";
 //import { Camera } from "@mui/icons-material";
 
 export const ApplicationViews = () => {
@@ -39,12 +43,20 @@ export const ApplicationViews = () => {
             <Route path="about" element={<About />} />
             <Route path="studentForm" element={<StudentForm />} />
             <Route path="studentEdit" element={<StudentEdit />} />
+            <Route path="studentDetails" element={<StudentDetails />} />
             <Route path="attendance" element={<StudentAttendanceContainer />} />
+            <Route path="appe" element={<Appe />} />
+            <Route path="teacherContact" element={<TeacherContact />} />
+
             <Route path="teacher" element={<Teacher />} />
             <Route
-                path="students/:studentDetail_Id"
+                path="students/details/:studentDetail_Id"
                 element={<StudentDetails />}
             />
+            <Route
+            path="students/:studentEdit_Id"
+            element={<StudentEdit />}
+        />
         </Routes>
     );
 };
