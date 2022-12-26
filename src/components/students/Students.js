@@ -15,7 +15,6 @@ export const Students = () => {
     const navigate = useNavigate();
     const [Students, setStudents] = useState([]);
 
-
     /* -------------Display----------------- */
     useEffect(() => {
         const fetchData = async () => {
@@ -46,56 +45,51 @@ export const Students = () => {
                     </>;
                     return (
                         <>
-                            <section>
-                                <section
-                                    key={`stu_${student.id}`}
-                                    className="student_card_edit"
-                                >
-                                    <div className="student_card_container">
-                                        <img
-                                            src={require(`../images/${student.studentImg}`)}
-                                            className="student_img"
-                                        />
+                            <section
+                                key={`stu_${student.id}`}
+                                className="student_card_edit"
+                            >
+                                <div className="student_card_container">
+                                    <img
+                                        src={require(`../images/${student.studentImg}`)}
+                                        className="student_img"
+                                    />
 
-                                        <h3 className="student_info_edit">
-                                            {student.fullName}
-                                        </h3>
+                                    <h3 className="student_info_edit">
+                                        {student.fullName}
+                                    </h3>
 
-                                        <Link to={`/students/${student.id}`}>
-                                            <Button
-                                                variant="outline-light"
-                                                size="sm"
-                                            >
-                                                {" "}
-                                                <FaUserEdit />
-                                            </Button>
-                                        </Link>
-
+                                    <Link to={`/students/${student.id}`}>
                                         <Button
                                             variant="outline-light"
                                             size="sm"
-                                            
-                                            onClick={() => {
-                                                window.confirm( `Are you sure you want to delete ${student.fullName}?`, ) && 
+                                        >
+                                            {" "}
+                                            <FaUserEdit />
+                                        </Button>
+                                    </Link>
+
+                                    <Button
+                                        variant="outline-light"
+                                        size="sm"
+                                        onClick={() => {
+                                            window.confirm(
+                                                `Are you sure you want to delete ${student.fullName}?`
+                                            ) &&
                                                 fetch(
                                                     `http://localhost:8033/students/${student.id}`,
                                                     {
                                                         method: "DELETE",
                                                     }
                                                 ).then();
-                                                navigate("/Students");
-                                            }}
-                                            className="btn "
-                                        >
-                                            {" "}
-                                            <FaUserAltSlash />
-                                        </Button>
-
-
-
-
-                                    </div>
-                                </section>
+                                            navigate("/Students");
+                                        }}
+                                        className="btn "
+                                    >
+                                        {" "}
+                                        <FaUserAltSlash />
+                                    </Button>
+                                </div>
                             </section>
                         </>
                     );

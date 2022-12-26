@@ -1,80 +1,80 @@
 @media only screen and (max-width: 500px) {
-   div.lins_background{
-         background-image: none;
+    div.lins_background{
+          background-image: none;
+    }
    }
-  }
-
-  @media only screen and (max-width: 1500px) {
-     button.click{height: 0;
-     width: 0;}
-     Webcam.student_camera_style{background-image: none;}
-   }
-
-.page_camera_style {
-    position: relative;
-    top: 0px;
-    font-size: 2rem;
-    font-family: "SUNDAYMORNING-BWQE3", "Roboto", "Helvetica Neue";
-    color: #FE7EC9;
-    text-shadow: white 1px 1px 1px;
-}
-
-.camera_container{
-justify-content: center;
-display: flex;
-align-items: center;
-/* background: url(../images/camera_2.png) 60%; */
-
-}
-
-.lins_background{
-    top: 5.5rem;
-    position: absolute;
-    background: url(../images/camera_55.png) no-repeat 100px;
-    background-size: 70%;
-    height: 70vh;
-   /*  opacity: 0.25; */
-    width: 800px;
-    
-}
-
-.click{
+ 
+   @media only screen and (max-width: 1500px) {
+      button.click{height: 0;
+      width: 0;}
+      Webcam.student_camera_style{background-image: none;}
+    }
+ 
+ .page_camera_style {
+     position: relative;
+     top: 50px;
+     font-size: 2rem;
+     font-family: "SUNDAYMORNING-BWQE3", "Roboto", "Helvetica Neue";
+     color: #FE7EC9;
+     text-shadow: white 1px 1px 1px;
+ }
+ 
+ .camera_container{
+ justify-content: center;
+ display: flex;
+ align-items: center;
+ /* background: url(../images/camera_2.png) 60%; */
+ 
+ }
+ 
+ .lins_background{
+     top: 5.5rem;
+     position: absolute;
+     background: url(../images/camera_55.png) no-repeat 100px;
+     background-size: 70%;
+     height: 70vh;
+    /*  opacity: 0.25; */
+     width: 800px;
      
-    position: relative;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    border: #FE7EC9;
-
-    background-color: #FE7EC9;
-    background-image:radial-gradient(
-        to top left,
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.2) 30%,
-        rgba(0, 0, 0, 0)
-    );
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-        inset -2px -2px 3px rgba(0, 0, 0, 0.6);
-}
-
-.student_camera_style {
-    position: relative;
-    top: 5.5rem;
-   /*  background-color: #4f8488; */
-    padding:50px;
-    border-radius: 50px;
-    background:url(../images/camera_1.png) 51%;
-    /* box-sizing: border-box; */
-    box-shadow: 5px 5px 25px black;
-}
-
-.retake_camera,
-.capture_camera {
-    position: relative;
-    top: 20px;
-    padding: 10px;
-    border-radius: 10px;
-    justify-content: center;
-    text-align: center;
-    width: 10rem;
-}
+ }
+ 
+ .click{
+      
+     position: relative;
+     width: 70px;
+     height: 70px;
+     border-radius: 50%;
+     border: #FE7EC9;
+ 
+     background-color: #FE7EC9;
+     background-image:radial-gradient(
+         to top left,
+         rgba(0, 0, 0, 0.2),
+         rgba(0, 0, 0, 0.2) 30%,
+         rgba(0, 0, 0, 0)
+     );
+     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+         inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+ }
+ 
+ .student_camera_style {
+     position: relative;
+     top: 5rem;
+    /*  background-color: #4f8488; */
+     padding:50px;
+     border-radius: 50px;
+     background:url(../images/camera_1.png) 51%;
+     /* box-sizing: border-box; */
+     box-shadow: 5px 5px 25px black;
+ }
+ 
+ .retake_camera,
+ .capture_camera {
+     position: relative;
+     top: 70px;
+     padding: 10px;
+     border-radius: 10px;
+     justify-content: center;
+     text-align: center;
+     width: 10rem;
+ }
