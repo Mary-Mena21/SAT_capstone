@@ -1,192 +1,107 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Lobster&family=Montserrat:ital@1&family=Oswald:wght@200;400&family=Palanquin:wght@200;300;500&family=Rubik+Puddles&family=Rubik+Vinyl&family=Sail&display=swap");
 
-/* @media only screen and (min-width: 1024px) {
-    .background{display:flex;}
-} */
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     text-decoration: none;
-    /* background-color: #5F5D6B; */
-   /*  background: #ebe8d0; */
-    /* background-color:#ebe8d0; */
 }
-body {padding: 0;
+body {
+    padding: 0;
     top: 0;
-margin: 0;}
-/* .container{
-    display:flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  display: inline-flex;
-} */
-/* main{
-    width: 100%;
-    padding: 20px;
-} */
-.sidebar{
-    /* background: #6D7C8E; */
-    background: #6D7C8E;
-    color:  #f3b530;
-   height: 100vh;
-   /*  width: 500px; */
-     transition: all 0.5s;
-    /* position:absolute; */
-    z-index: 1;
-    left:0;
-    top:0;
-    bottom:0;
-    position: -webkit-sticky;
-    position:fixed;
-    
+    margin: 0;
 }
 
-/* .sidebar_2{
-    background: #ebe8d0;
-    color:  #f3b530;
-    width:100%;
-    height: 100%;
-    transition: all 0.5s;
-    position:fixed;
-    z-index: -300;
-    top:48px;
-    bottom:20px;
-} */
-
-.top_section{
-    display: flex;
-    align-items:center;
-    padding:10px;
-   
-}
-.logo{
-    font-size: 40px;
+.sidebar {
+    background: #6d7c8e;
     color: #f3b530;
-/*     font-family:cursive;
-    font-family:'Courier New', Courier, monospace; */
-    font-family:"Cinzel Decorative","Lobster"," cursive","Josefin Sans", "sans-serif";
+    height: 100vh;
+    transition: all 0.5s;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position: -webkit-sticky;
+    position: fixed;
+}
+
+.top_section {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.logo {
+    font-size: 30px;
+    color: #f3b530;
+    font-family: "Cinzel Decorative", "Lobster", " cursive", "Josefin Sans",
+        "sans-serif";
     margin: 0;
     padding: 10px;
 }
-.bars{
+.bars {
     display: flex;
     font-size: 25px;
     margin-left: 50px;
 }
-.link{
+.link {
     display: flex;
     color: #fff;
-    padding: 8px 15px;
+    padding: 6px 15px;
     gap: 10px;
     transition: all 0.5s;
     text-decoration: none;
-    font-family: "Roboto","Open sans","sans-serif";
-    /* text-align: start; */
+    font-family: "Roboto", "Open sans", "sans-serif";
 }
 
-a.github_icon{
+a.github_icon {
     color: #f3b530;
 }
-a.github_icon:hover{
-    color: #0B1C3B;
+a.github_icon:hover {
+    color: #0b1c3b;
     transition: all 0.5s;
 }
 
-.link:hover{
-    background:#DCB677;
-    color: #0B1C3B;
+.link:hover {
+    background: #dcb677;
+    color: #0b1c3b;
     transition: all 0.5s;
 }
-.active{
+.active {
     background: lightskyblue;
     color: #000;
 }
-.icon, .link_text{
+.icon,
+.link_text {
     font-size: 1.1rem;
 }
-.link_text{
+.link_text {
     justify-content: center;
 }
 
- /* .top_bar{
-    position: absolute;
-    background-color: #83312c;
-    height:48px;
+.logout_link {
+    position: -webkit-sticky;
+    position: fixed;
     text-decoration: none;
-    left:0;
-    right:0;
-    top:0;
-    width: 100%;
-    
-} 
-.bottom_bar{
-    position: absolute;
-    background-color: #83312c;
-    height:48px;
-    text-decoration: none;
-    left:0;
-    right:0;
-    bottom:0;
-    width: 100%;
-    padding: 0;
-    bottom:0;
-}  */
-
- .logout_link{
-  /*   position: absolute; */
-  position: -webkit-sticky;
-  position:fixed;
-    text-decoration: none;
-    /* left: 80%; */
-    right:2rem;
+    right: 2rem;
     top: 5px;
     cursor: pointer;
-   /*  color: #fff; */
     color: #f3b530;
-    /* font-family: cursive; */
-    font-family:"Open Sans" ,"Josefin Sans", "sans-serif";
+    font-family: "Open Sans", "Josefin Sans", "sans-serif";
 }
 
-/* .background{
-    z-index: auto;
-    margin: 48px 0 0 0;
-    position: relative;
-    top: 50%;
-    left: 0px;
-    height: auto;
-    width: 47.55%;
+X {
+    font-family: "Cinzel Decorative", cursive;
+    font-family: "Dancing Script", cursive;
+    font-family: "Great Vibes", cursive;
+    font-family: "Lobster", cursive;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-family: "Palanquin", sans-serif;
+    font-family: "Rubik Puddles", cursive;
+    font-family: "Rubik Vinyl", cursive;
+    font-family: "Sail", cursive;
 }
 
-
-.background_2{
-    z-index: auto;
-    margin: 0;
-    padding: 0;
-    margin: 16px 0;
-    position: relative;
-    display: inline-block !important;
-} */
-
-/* background-image: url("/static/media/SAT_4.6739d98e7adfe186333c.jpg"); background-position: center center; background-size: cover; background-repeat: no-repeat; height: 768.8px; width: 1477.6px; */
-
-/* position: relative; left: -45px; top: -1015px; width: 994.6px; */
-
-
-X{
-font-family: 'Cinzel Decorative', cursive;
-font-family: 'Dancing Script', cursive;
-font-family: 'Great Vibes', cursive;
-font-family: 'Lobster', cursive;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Oswald', sans-serif;
-font-family: 'Palanquin', sans-serif;
-font-family: 'Rubik Puddles', cursive;
-font-family: 'Rubik Vinyl', cursive;
-font-family: 'Sail', cursive;
-}
-
-.hr_nav{
-    color:#ffffff;
+.hr_nav {
+    color: #ffffff;
     background-color: #ffffff;
 }
-

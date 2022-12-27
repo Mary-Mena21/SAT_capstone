@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import "./GradeBookList.css"
+import "./GradeBookList.css";
 
 export const GradeBookList = () => {
     const [books, setBooks] = useState([]);
@@ -16,26 +16,26 @@ export const GradeBookList = () => {
     return (
         <>
             <section>
-        <h1 className="page_book">Curriculum!</h1>
-            <article className="book_container">
-                {books.map((book) => {
-                    return (
-                        <>
-                            <article className="student_book">
-                                <div>{book.grade}</div> 
-                            <a href={book.gradeBookPdf} target="_blank">
-                                <img 
-                                    src={book.bookImg}
-                                    height={"auto"}
-                                    width={"120rem"}
-                                />
-                            </a>
-                            </article>
-                        </>
-                    );
-                })}
+                <h1 className="page_book">Curriculum!</h1>
+                <article className="book_container">
+                    {books.map((book) => {
+                        return (
+                            <>
+                                <article className="student_book">
+                                    <div>{book.grade}</div>
+                                    <a href={book.gradeBookPdf} target="_blank">
+                                        <img
+                                            src={book.bookImg}
+                                            height={"auto"}
+                                            width={"120rem"}
+                                        />
+                                    </a>
+                                </article>
+                            </>
+                        );
+                    })}
                 </article>
-                </section>
+            </section>
         </>
     );
 };

@@ -2,7 +2,7 @@
     .page_container_form {
         max-width: 21em;
     }
-  }
+}
 
 .page_studentForm_form {
     position: relative;
@@ -15,10 +15,10 @@
 }
 
 .page_container_form {
-    background-color: #95B8D1;
+    background-color: #95b8d1;
     padding: 20px 0px;
     border-radius: 10px;
-    margin: 10px; 
+    margin: 10px;
     border: 1px solid #fe7ec9;
     box-shadow: #6d7c8e 2px 2px 10px;
 }

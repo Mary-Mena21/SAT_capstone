@@ -1,4 +1,12 @@
 {
+  "admin": [
+    {
+      "id": 1,
+      "email": "admin_teacher@me.com",
+      "name": "Admin_123",
+      "admin": true
+    }
+  ],
   "users": [
     {
       "id": 1,
@@ -13,16 +21,16 @@
       "isTeacher": true
     },
     {
-      "id": 4,
-      "fullName": "Thomas Mena",
+      "id": 3,
+      "fullName": "Verena Danial",
       "email": "tmena@me.com",
       "isTeacher": true
     },
     {
-      "email": "sanymamdoh@yahoo.com",
-      "fullName": "sany yousif",
+      "email": "nyousif_n@me.com",
+      "fullName": "Nancy Yousif",
       "isTeacher": false,
-      "id": 5
+      "id": 4
     }
   ],
   "teachers": [
@@ -42,16 +50,16 @@
       "dob": "1880-05-02",
       "phone": "785-153-5478",
       "address": "1008 Meb Ct, Mt. Juliet, TN 37122",
-      "teacherImg": "Me0.png"
+      "teacherImg": "teacher_2.jpg"
     },
     {
-      "id": 4,
-      "userId": 4,
+      "id": 3,
+      "userId": 3,
       "classId": 3,
       "dob": "1885-01-01",
       "phone": "785-153-5478",
       "address": "1008 Meb Ct, Mt. Juliet, TN 37122",
-      "teacherImg": "Me0.png"
+      "teacherImg": "teacher_3.jpg"
     }
   ],
   "students": [
@@ -196,7 +204,7 @@
       "studentImg": "Sany Mena.jpg"
     },
     {
-      "fullName": "Karla Yousif",
+      "fullName": "Karla Parker",
       "email": "yousifk@me.com",
       "classId": 1,
       "dob": "2022-12-13",
@@ -2400,6 +2408,118 @@
       "date": "2022-12-26",
       "classId": 1,
       "studentId": 33,
+      "attend": true
+    },
+    {
+      "id": 366,
+      "date": "2022-12-27",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 367,
+      "date": "2022-12-27",
+      "classId": 1,
+      "studentId": 11,
+      "attend": true
+    },
+    {
+      "id": 368,
+      "date": "2022-12-27",
+      "classId": 1,
+      "studentId": 16,
+      "attend": true
+    },
+    {
+      "id": 369,
+      "date": "2022-12-27",
+      "classId": 1,
+      "studentId": 26,
+      "attend": true
+    },
+    {
+      "id": 370,
+      "date": "2022-12-27",
+      "classId": 1,
+      "studentId": 4,
+      "attend": true
+    },
+    {
+      "id": 371,
+      "date": "2022-12-27",
+      "classId": 1,
+      "studentId": 12,
+      "attend": true
+    },
+    {
+      "id": 372,
+      "date": "2022-12-27",
+      "classId": 1,
+      "studentId": 28,
+      "attend": true
+    },
+    {
+      "id": 373,
+      "date": "2022-12-27",
+      "classId": 1,
+      "studentId": 33,
+      "attend": true
+    },
+    {
+      "id": 374,
+      "date": "2022-12-27",
+      "classId": 1,
+      "studentId": 39,
+      "attend": true
+    },
+    {
+      "id": 375,
+      "date": "2022-12-27",
+      "classId": 1,
+      "studentId": 29,
+      "attend": true
+    },
+    {
+      "id": 376,
+      "date": "2022-12-27",
+      "classId": 1,
+      "studentId": 24,
+      "attend": true
+    },
+    {
+      "id": 377,
+      "date": "2022-12-27",
+      "classId": 1,
+      "studentId": 13,
+      "attend": true
+    },
+    {
+      "id": 378,
+      "date": "2022-12-27",
+      "classId": 1,
+      "studentId": 9,
+      "attend": true
+    },
+    {
+      "id": 379,
+      "date": "2022-12-27",
+      "classId": 1,
+      "studentId": 30,
+      "attend": true
+    },
+    {
+      "id": 380,
+      "date": "2022-12-27",
+      "classId": 1,
+      "studentId": 25,
+      "attend": true
+    },
+    {
+      "id": 381,
+      "date": "2022-12-27",
+      "classId": 1,
+      "studentId": 14,
       "attend": true
     }
   ],

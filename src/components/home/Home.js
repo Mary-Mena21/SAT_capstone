@@ -22,7 +22,6 @@ export const Home = () => {
                 <div className="element_home"></div>
 
                 <span className="shadow-wrap_home">
-                    {/* <div className="logo_SAT_home "></div> */}
                     <img
                         src={require("../images/Logo_2.png")}
                         alt="logo"
@@ -37,22 +36,11 @@ export const Home = () => {
                 </span>
                 <h1 className="welcome_style">Welcome to SAT app!</h1>
                 <div className="container_home_2">
-                    {/*  <div className="clear"></div> */}
-                    {/*                     <p>
-                        <p
-                            className="home_link"
-                            onClick={() => setOpen((o) => !o)}
-                        >
-                            <BsEmojiSmileFill />
-                        </p>
-                    </p>
- */}
                     <p>
                         <Link className="home_link" to="/students">
                             <BsEmojiSmileFill />
                         </Link>
                     </p>
-
                     <p>
                         <Link className="home_link" to="/attendance">
                             <BsFillCalendar2CheckFill />
@@ -81,28 +69,6 @@ export const Home = () => {
                 </div>
             </div>
             <br />
-
-            {/*             <div>
-                <button
-                    type="button"
-                    className="button"
-                    onClick={() => setOpen((o) => !o)}
-                >
-                    Controlled Popup
-                </button>
-                <Popup open={open} closeOnDocumentClick onClose={closeModal}>
-                    <div className="modal">
-                        <a className="close" onClick={closeModal}>
-                            &times;
-                        </a>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Beatae magni omnis delectus nemo, maxime molestiae
-                        dolorem numquam mollitia, voluptate ea, accusamus
-                        excepturi deleniti ratione sapiente! Laudantium, aperiam
-                        doloribus. Odit, aut.
-                    </div>
-                </Popup>
-            </div> */}
         </>
     );
 };

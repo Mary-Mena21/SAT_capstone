@@ -30,104 +30,25 @@ export const Teacher = () => {
         <>
             <article key={"teachers"} className="teacher_container">
                 {teachers.map((teacher) => {
-                    return <>
-                    <img
-                    src={require(`../images/Logo_2_B.png`)}
-                    /* className="student_img_B" */
-                    style={{
-                        width: "40px",
-                        height: "40px",
-                        marginLeft: "-10px",
-                        display:"block",
-                        marginBottom: "20px",
-                        padding: "0",
-                        left: "-10px",
-                        right: "",
-                        backgroundColor: "white",
-                        borderRadius:"50%"
-                    }}
-                    />
-                      <img
-                        src={require(`../images/${teacher.teacherImg}`)}
-                        className="student_img_B"
-                        style={{
-                            width: "40px",
-                            height: "40px",
-                            marginLeft: "-10px",
-                            marginTop: "-10px",
-                            padding: "0",
-                            left: "-10px",
-                            right: "",
-                        }}
-                        />
-
-                    </>
+                    return (
+                        <>
+                            <img
+                                src={require(`../images/${teacher.teacherImg}`)}
+                                className="student_img_B"
+                                style={{
+                                    width: "40px",
+                                    height: "40px",
+                                    marginLeft: "-10px",
+                                    marginTop: "-10px",
+                                    padding: "0",
+                                    left: "-10px",
+                                    right: "",
+                                }}
+                            />
+                        </>
+                    );
                 })}
             </article>
         </>
     );
 };
-
-{
-    /* <h2 className="page_teacher">Teacher!</h2> */
-}
-///* <ul className="teacher_ul" > */
-/*  </ul> */
-
-//     {/* <Teacher
-//         Image={teacher.teacherImg}
-//     /> */}
-//    {/*
-//         <Teacher
-//         Image={teacher.teacherImg}
-//     />  */}
-
-//        {/* <section key={teacher.id} > */}
-
-//             {/*  <li> */}
-
-//               {/*   <img
-//                         src={require(`../images/${teacher.teacherImg}`)}
-//                         className="student_img_B"
-//                         style={{width:"40px", height:"40px", marginLeft:"-10px", padding:"0",left:"-10px", right:""}}
-//                 /> */}
-//                {/*  </li> */}
-//                  {/* <br />
-//             <li>Name : {teacher.user.fullName}</li>
-//             <li>Email : {teacher.user.email}</li>
-//                 <li>Phone : {teacher.phone}</li>*/}
-
-//         {/* </section>  */}
-
-// <>
-// {/* <h2 className="page_teacher">Teacher!</h2> */}
-// <article /* className="teacher_container" */>
-//     {teachers.map((teacher) => {
-//         {/* <Teacher
-//             Image={teacher.teacherImg}
-//         /> */}
-//        {/*
-//             <Teacher
-//             Image={teacher.teacherImg}
-//         />  */}
-
-//            <section key={teacher.id} /* className="teacher_card" */>
-
-//                 {/*  <li> */}
-//                     {" "}
-//                     <img
-//                             src={require(`../images/${teacher.teacherImg}`)}
-//                             className="student_img_B"
-//                             style={{width:"40px", height:"40px", marginLeft:"-10px", padding:"0",left:"-10px", right:""}}
-//                     />
-//                    {/*  </li> */}
-//                      {/* <br />
-//                 <li>Name : {teacher.user.fullName}</li>
-//                 <li>Email : {teacher.user.email}</li>
-//                     <li>Phone : {teacher.phone}</li>*/}
-
-//             </section>
-
-//     })}
-// </article>
-// </>

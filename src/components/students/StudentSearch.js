@@ -1,9 +1,9 @@
-import "./Students.css"
+import "./Students.css";
 
 export const StudentSearch = ({ setterFunction }) => {
     return (
         <div>
-           <input
+            <input
                 className="student_search"
                 onChange={(evt) => {
                     setterFunction(evt.target.value);
@@ -11,7 +11,7 @@ export const StudentSearch = ({ setterFunction }) => {
                 }}
                 type="text"
                 placeholder="Student Search"
-            /> 
+            />
         </div>
     );
 };

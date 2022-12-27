@@ -6,7 +6,6 @@ import "./Teacher.css";
 export const TeacherContact = () => {
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
-    //console.log(satUserObject.id);
 
     const navigate = useNavigate();
     const [teachers, setTeachers] = useState([]);
@@ -28,110 +27,20 @@ export const TeacherContact = () => {
 
     return (
         <>
-            {/* <article key={"teachers"} className="teacher_container"> */}
-                            {/* <h2 className="page_teacher">Teacher!</h2> */}
-                            {/* <article  className="teacher_container" > */}
-                    {teachers.map((teacher) => {
-                                    return<>
-                                    <section
-                                        key={
-                                            teacher.id
-                                        } className="teacher_card"
-                                    >
-                                        <ul className="teacher_ul">
-{/*                                             <li>
-                                                {" "}
-                                                <img
-                                                    src={require(`../images/${teacher.teacherImg}`)}
-                                                    className="student_img_B"
-                                                    style={{
-                                                        width: "40px",
-                                                        height: "40px",
-                                                        marginLeft: "-10px",
-                                                        padding: "0",
-                                                        left: "-10px",
-                                                        right: "",
-                                                    }}
-                                                />
-                                            </li> */}
-                                            <br />
-                                            <li>
-                                                Name : {teacher.user.fullName}
-                                            </li>
-                                            <li>
-                                                Email : {teacher.user.email}
-                                            </li>
-                                            <li>Phone : {teacher.phone}</li>
-                                        </ul>
-                                    </section>
-                                    </>
-                                })}
-                            {/* </article> */}
-            {/* </article> */}
+            {teachers.map((teacher) => {
+                return (
+                    <>
+                        <section key={teacher.id} className="teacher_card">
+                            <ul className="teacher_ul">
+                                <br />
+                                <li>Name : {teacher.user.fullName}</li>
+                                <li>Email : {teacher.user.email}</li>
+                                <li>Phone : {teacher.phone}</li>
+                            </ul>
+                        </section>
+                    </>
+                );
+            })}
         </>
     );
 };
-
-{
-    /* <h2 className="page_teacher">Teacher!</h2> */
-}
-///* <ul className="teacher_ul" > */
-/*  </ul> */
-
-//     {/* <Teacher
-//         Image={teacher.teacherImg}
-//     /> */}
-//    {/*
-//         <Teacher
-//         Image={teacher.teacherImg}
-//     />  */}
-
-//        {/* <section key={teacher.id} > */}
-
-//             {/*  <li> */}
-
-//               {/*   <img
-//                         src={require(`../images/${teacher.teacherImg}`)}
-//                         className="student_img_B"
-//                         style={{width:"40px", height:"40px", marginLeft:"-10px", padding:"0",left:"-10px", right:""}}
-//                 /> */}
-//                {/*  </li> */}
-//                  {/* <br />
-//             <li>Name : {teacher.user.fullName}</li>
-//             <li>Email : {teacher.user.email}</li>
-//                 <li>Phone : {teacher.phone}</li>*/}
-
-//         {/* </section>  */}
-
-// <>
-// {/* <h2 className="page_teacher">Teacher!</h2> */}
-// <article /* className="teacher_container" */>
-//     {teachers.map((teacher) => {
-//         {/* <Teacher
-//             Image={teacher.teacherImg}
-//         /> */}
-//        {/*
-//             <Teacher
-//             Image={teacher.teacherImg}
-//         />  */}
-
-//            <section key={teacher.id} /* className="teacher_card" */>
-
-//                 {/*  <li> */}
-//                     {" "}
-//                     <img
-//                             src={require(`../images/${teacher.teacherImg}`)}
-//                             className="student_img_B"
-//                             style={{width:"40px", height:"40px", marginLeft:"-10px", padding:"0",left:"-10px", right:""}}
-//                     />
-//                    {/*  </li> */}
-//                      {/* <br />
-//                 <li>Name : {teacher.user.fullName}</li>
-//                 <li>Email : {teacher.user.email}</li>
-//                     <li>Phone : {teacher.phone}</li>*/}
-
-//             </section>
-
-//     })}
-// </article>
-// </>

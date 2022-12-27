@@ -4,7 +4,7 @@ import { TableContainer, Table, TableHead, TableBody, TableRow, TableCell, Paper
 export const UserTable = ({ headers, userData }) => {
     return (
         <TableContainer component={Paper}>
-            <Table /* sx={{ minWidth: 500 }} */ size="small" aria-label="a dense table">
+            <Table sx={{ minWidth: 500 }} size="small" aria-label="a dense table">
                 <TableHead>
                     <TableRow>
                         {headers.map(row => {
