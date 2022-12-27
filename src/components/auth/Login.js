@@ -32,21 +32,17 @@ export const Login = () => {
             });
     };
 
-    return (<>
-        <main className="container--login">
-        {/* <img className="logo" src={require("../images/SAT_2.jpg")} alt="" /> */}
-            <section >
+    return (
+        <>
+            <main className="container--login" style={{ textAlign: "center" }}>
                 <form className="form--login" onSubmit={handleLogin}>
-                   
                     <br />
-                    <h1 >
+                    <h1 className="page_login">
                         Sunday School Attendance Tracker
                     </h1>
                     <br />
-                    <h5>Please sign in</h5>
+                    <h1 className="page_login">Please sign in</h1>
                     <fieldset>
-                        {/* <label htmlFor="inputEmail"> Email address </label> */} 
-
                         <Form.Floating className="mb-2">
                             <Form.Control
                                 required
@@ -61,16 +57,20 @@ export const Login = () => {
                         </Form.Floating>
                     </fieldset>
                     <fieldset>
-                        <Button className="submit" type="submit" variant="secondary" size="md">
+                        <Button
+                            className="submit"
+                            type="submit"
+                            variant="secondary"
+                            size="md"
+                        >
                             Sign in
                         </Button>
                     </fieldset>
-                    </form>
                     <section className="link--register">
-                    <Link to="/register">Not a member yet?</Link>
+                        <Link to="/register">Not a member yet?</Link>
                     </section>
-                    </section>
-        </main>
+                </form>
+            </main>
         </>
     );
 };

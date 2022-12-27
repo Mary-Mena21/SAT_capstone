@@ -1,127 +1,82 @@
-
-
-.welcome_style{
-  position: relative;
-  top: 250px;
-  font-size: 3rem;
-  font-family:  "Tomatoes-O8L8.ttf", "Roboto", "Helvetica Neue";
-  color: #458df3;
+.welcome_style {
+    position: relative;
+    top: 250px;
+    font-size: 3rem;
+    font-family: "Tomatoes-O8L8.ttf", "Roboto", "Helvetica Neue";
+    color: #458df3;
 }
 
-.container_home{
-    /* position: relative; */
+.container_home {
     background-color: #000000;
-    width: 100%; 
+    width: 100%;
     height: 100vh;
-    background-image: linear-gradient(0deg,#000000,#04619F)!important;
-    background-attachment:fixed !important;
-    
- }
+    background-image: linear-gradient(0deg, #000000, #04619f) !important;
+    background-attachment: fixed !important;
+}
 
- Link.home_link{}
-
- p {
-     margin:20px; 
-     padding: 15px;
+p {
+    margin: 20px;
+    padding: 15px;
     box-sizing: border-box;
- }
+}
 
- .container_home_2{
-/*     position: relative; */
-    /* top:0 !important; */
-    /* box-sizing: border-box; */
-    
+.container_home_2 {
     text-align: justify;
     font-size: 1.2rem;
-    /* align-items: flex-end; */
-    /* display: inline !important; */
-    
-    
-  }
+}
 
-
-
- 
 @font-face {
     font-family: "SUNDAYMORNING-BWQE3";
     src: local("SUNDAYMORNING-BWQE3"),
-     url("../fonts/SUNDAYMORNING-BWQE3.OTF") format("truetype");
+        url("../fonts/SUNDAYMORNING-BWQE3.OTF") format("truetype");
     font-weight: bold;
+}
+
+@font-face {
+    font-family: "Tomatoes-O8L8.ttf";
+    src: local("Tomatoes-O8L8.ttf"),
+        url("../fonts/TOMATOES-O8L8.TTF") format("truetype");
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        color: azure;
     }
-  
-  
-    @font-face {
-      font-family: "Tomatoes-O8L8.ttf";
-      src: local("Tomatoes-O8L8.ttf"),
-       url("../fonts/TOMATOES-O8L8.TTF") format("truetype");
-      font-weight: bold;
-      }
-  
-  
-    @media  only screen and (max-width: 600px) {
-      body {
-        /* background-color: #0B1C3B; */
-        color:azure;
-      
-      }
-   /*     a.home_link{
-        top:90px;
-        height: 90%;
-        width:auto !important;
-      }  */
 
-      .logo_SAT_home{
-        width:0;
+    .logo_SAT_home {
+        width: 0;
         height: 0;
-      }
+    }
 
-      .container_home_2{
-        top:50px;
+    .container_home_2 {
+        top: 50px;
         position: relative;
-          }
+    }
 
-      .welcome_style{
+    .welcome_style {
         position: relative;
         top: 25px;
         font-size: 1.2rem;
         left: -19px;
-        font-family:  "Tomatoes-O8L8.ttf", "Roboto", "Helvetica Neue";
+        font-family: "Tomatoes-O8L8.ttf", "Roboto", "Helvetica Neue";
         color: #b6cbe6;
-      }
-
-/*       .container_home{
-        margin-left: 2rem;
-      } */
-
-      .element_home {
-        width:30vh !important;}
-     
     }
-  
-    
 
-/*     .container_home{
-    display:;
-      
-    } */
-  
- 
- .home_link{
-   /*  background-color: #95B8D1; */
-  /*  top:10px; */
-  
-    padding:10px 15px;
-   /*  margin:0px; */
+    .element_home {
+        width: 30vh !important;
+    }
+}
+
+.home_link {
+    padding: 10px 15px;
     position: relative;
     border-radius: 50%;
-    border: 0.5rem solid #EAC4D5;
+    border: 0.5rem solid #eac4d5;
     font-size: 1.6rem;
-    box-shadow: black 1px 1px 10px ;
-    color: #2E9C99;
+    box-shadow: black 1px 1px 10px;
+    color: #2e9c99;
     display: inline;
-   /*  text-shadow: #72A075 1px 1px 0px; */
-   
-    
 }
 
 .element_home {
@@ -138,56 +93,14 @@
     shape-outside: ellipse(90% 70% at 0% 50%);
     -webkit-shape-margin: 2em;
     shape-margin: 2em;
-    /* background-attachment: fixed; */
-  }
-  
-  
-  
-/*   h1.page_home{
-    font-family: "SUNDAYMORNING-BWQE3", "Roboto", "Helvetica Neue";
-    color: #372C40;
-    position: relative;
-    top:150px;
-  } */
-
-  /* ------------------- */
-  
-/*   .home_app {
-    position: relative;
- 
-    top: 100px;
-  
-    font-size: 4rem;
-    font-family: "SUNDAYMORNING-BWQE3", "Roboto", "Helvetica Neue";
-
-    clip-path: polygon(50% 0%, 63.23% 9.30%, 79.39% 9.55%, 84.62% 24.84%, 97.55% 34.55%, 92.80% 50%, 97.55% 65.45%, 84.62% 75.16%, 79.39% 90.45%, 63.23% 90.70%, 50% 100%, 36.77% 90.70%, 20.61% 90.45%, 15.38% 75.16%, 2.45% 65.45%, 7.20% 50%, 2.45% 34.55%, 15.38% 24.84%, 20.61% 9.55%, 36.77% 9.30%);
-    background-color:rgb(26, 27, 27);
-    background: radial-gradient(#dde89f, #08efffe9);
-    padding:40px;
-
-    min-width: 300px;
-}   */
-
-.home_app:hover{
-  transform: scale(1.2),rotate(1deg);
 }
 
-img.shadow-wrap_home{
-  filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
-  color: #946EAE;
-  position: relative;
-  /* display:inline !important; */
-  /* background-attachment: fixed; */
-  /* width: 120px; */
-     /* top: 10px; */
-     /* padding: 50px; */
-/*      margin: 1rem;
-     padding: 0rem; */
+.home_app:hover {
+    transform: scale(1.2), rotate(1deg);
 }
-/* .logo_SAT_home{
 
-  
-    clip-path: polygon(50% 0%, 63.23% 9.30%, 79.39% 9.55%, 84.62% 24.84%, 97.55% 34.55%, 92.80% 50%, 97.55% 65.45%, 84.62% 75.16%, 79.39% 90.45%, 63.23% 90.70%, 50% 100%, 36.77% 90.70%, 20.61% 90.45%, 15.38% 75.16%, 2.45% 65.45%, 7.20% 50%, 2.45% 34.55%, 15.38% 24.84%, 20.61% 9.55%, 36.77% 9.30%);
-    background-image:url(../images/SAT_111.jpg);
-
-} */
+img.shadow-wrap_home {
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+    color: #946eae;
+    position: relative;
+}

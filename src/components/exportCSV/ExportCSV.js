@@ -2,8 +2,6 @@ import { Button } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import { CSVLink } from "react-csv";
 import { UserTable } from "./UserTable";
-// import UserTable from './UserTable';
-//const axios = require('axios');
 import "./Appe.css";
 
 export const ExportCSV = () => {
@@ -28,21 +26,17 @@ export const ExportCSV = () => {
         setLoading(true);
         //return fetch('https://jsonplaceholder.typicode.com/users')
         try {
-            const response = await fetch("http://localhost:8033/students?&classId=1");
+            const response = await fetch(
+                "http://localhost:8033/students?&classId=1"
+            );
             const StudentsArray = await response.json();
 
             let sortArray = [];
             sortArray = StudentsArray.sort((a, b) =>
-                a.fullName > b.fullName
-                    ? 1
-                    : b.fullName > a.fullName
-                    ? -1
-                    : 0);
-
-
+                a.fullName > b.fullName ? 1 : b.fullName > a.fullName ? -1 : 0
+            );
 
             setUserData(sortArray);
-            //console.log("MMM", StudentsArray);
             setLoading(false);
         } catch (err) {
             console.log("Error: ", err);
@@ -51,7 +45,7 @@ export const ExportCSV = () => {
     };
 
     return (
-        <div className="container">
+        <div className="container_appe">
             <Button variant="contained" color="primary" className="export-btn">
                 <CSVLink
                     headers={headers}

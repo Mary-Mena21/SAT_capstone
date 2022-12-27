@@ -4,7 +4,6 @@ import Button from "react-bootstrap/Button";
 import { saveAs } from "file-saver";
 import "./Camera.css";
 import { FaCameraRetro } from "react-icons/fa";
-import { borderRadius } from "@mui/system";
 
 export const Camera = () => {
     const [img, setImg] = useState(null);
@@ -43,7 +42,11 @@ export const Camera = () => {
                                 className="student_camera_style"
                             />
                             <button
-                                style={{ top: "-11.5rem", position: "relative" , zIndex: 100 }}
+                                style={{
+                                    top: "-11.5rem",
+                                    position: "relative",
+                                    zIndex: 100,
+                                }}
                                 className="click"
                                 type="submit"
                                 variant="secondary"

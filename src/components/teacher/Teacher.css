@@ -1,55 +1,23 @@
-/* .page_teacher {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: 50px;
-    font-size: 2rem;
-    font-family: "SUNDAYMORNING-BWQE3", "Roboto";
-    color: #DCB677;
-    padding: 6px;
-    border-radius: 5px;
-    text-shadow: rgba(255, 254, 254, 0.849) 1px 1px 0px;
-} */
-
 .teacher_card {
     position: relative;
-    /* top:100px; */
+    top: 30px;
     justify-content: center;
-/*     background-color: #6e665f;
-    border-radius: 3px; */
-    padding: 0.0rem;
-    /* margin: 0.5rem; */
     width: 20rem;
     height: auto;
-    box-shadow: 1px 1px 3px rgb(196, 196, 196);
-    left: 20px;
-    /* position: relative; */
+    left: 25px;
     background-image: url("../images/100__6__C.png");
     background-size: 100%;
-    text-align: center;
     background-repeat: no-repeat;
-    box-shadow: #372c40 1px 1px 5px;
     display: inline-block;
     justify-content: center;
-    
 }
-.teacher_card:hover {
-    box-shadow: #372c40 2px 2px 5px;
-}
-.teacher_ul li{
+
+.teacher_ul li {
     list-style-type: none;
     width: 16rem;
     color: #372c40;
-    /* position: relative; */
-    
 }
 
-.teacher_container{
- 
-}
-
-.teacher_ul{
-    width: 18rem;
-    /* margin-top: 10px; */
-   /*  margin-left: -40px; */
+.student_img_B {
+    padding: 0px;
 }

@@ -20,7 +20,6 @@ export const StudentsCopy = ({ searchTermState }) => {
                 .startsWith(searchTermState.toLowerCase());
         });
         setFiltered(searchedStudent);
-        
     }, [searchTermState]);
 
     useEffect(
@@ -33,64 +32,48 @@ export const StudentsCopy = ({ searchTermState }) => {
                 setStudents(StudentsArray);
             };
             fetchData();
-            
         },
         [] // When this array is empty, you are observing initial component state
     );
 
     return (
         <>
-            <h1 className="page_classroom">Classroom!</h1> 
-                <article className="btn_container_class">
-                    <Button
-                        variant="secondary"
-                        className=" students_btn"
-                        onClick={() => {
-                            setFiltered(Students);
-                        }}
-                    >
-                        DISPLAY STUDENTS
-                    </Button> 
+            <h1 className="page_classroom">Classroom!</h1>
+            <article className="btn_container_class">
+                <Button
+                    variant="secondary"
+                    className=" students_btn"
+                    onClick={() => {
+                        setFiltered(Students);
+                    }}
+                >
+                    DISPLAY STUDENTS
+                </Button>
+            </article>
 
-                   {/*  <Button
-                        variant="secondary"
-                        onClick={(clickEvent) => {
-                            navigate("/attendance");
-                        }}
-                        className=" attend_btn"
-                    >
-                        RECORD ATTENDANCE
-                    </Button> */}
-                </article>
-
-                <div className="students_class">
-                    {filteredStudent
-                        .sort((a, b) => {
-                            return a.fullName === b.fullName
-                                ? 0
-                                : a < b
-                                ? -1
-                                : 1;
-                        })
-                        .map((student) => {
-                            return (
-                                <>
-                                    <StudentCopy
-                                        key={`student__${student.id}`}
-                                        id={student.id}
-                                        studentName={student.fullName}
-                                        studentEmail={student.email}
-                                        studentClassId={student.classIs}
-                                        studentDob={student.dob}
-                                        studentPhone={student.phone}
-                                        studentAddress={student.address}
-                                        studentImg={student.studentImg}
-                                    />
-                                </>
-                            );
-                        })}
-            </div> 
+            <div className="students_class">
+                {filteredStudent
+                    .sort((a, b) => {
+                        return a.fullName === b.fullName ? 0 : a < b ? -1 : 1;
+                    })
+                    .map((student) => {
+                        return (
+                            <>
+                                <StudentCopy
+                                    key={`student__${student.id}`}
+                                    id={student.id}
+                                    studentName={student.fullName}
+                                    studentEmail={student.email}
+                                    studentClassId={student.classIs}
+                                    studentDob={student.dob}
+                                    studentPhone={student.phone}
+                                    studentAddress={student.address}
+                                    studentImg={student.studentImg}
+                                />
+                            </>
+                        );
+                    })}
+            </div>
         </>
     );
 };
-

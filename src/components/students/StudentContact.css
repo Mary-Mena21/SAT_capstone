@@ -31,13 +31,10 @@
     top: 0px;
     font-family: "Open sans", "Franklin Gothic Medium", "Arial Narrow",
         "Arial, sans-serif";
-
     width: 21rem;
     max-width: 19rem;
     height: 9rem;
     background-image: url("../images/100 (18).png");
-    /* background-image:  url('../images/100_3.png'); */
-
     background-size: 15%;
     right: 0px;
     text-align: center;

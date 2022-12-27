@@ -1,24 +1,11 @@
-import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { StudentDelete } from "./StudentDelete";
-
 import "./StudentEdit.css";
-/* import { StudentEdit } from "./StudentEdit"; */
 
-export const StudentDetails = ({
-    id,
-    /*     studentName,
-    studentEmail,
-    studentClassId,
-    studentPhone,
-    studentDob,
-    studentAddress,
-    studentImg, */
-}) => {
+export const StudentDetails = ({ id }) => {
     const { studentDetail_Id } = useParams();
     const [studentDetail, setStudentDetail] = useState({});
-    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchData = async () => {
@@ -26,8 +13,7 @@ export const StudentDetails = ({
                 `http://localhost:8033/students/${studentDetail_Id}`
             );
             const student = await response.json();
-            console.log(studentDetail_Id);
-            console.log(id);
+            //console.log(studentDetail_Id);
             setStudentDetail(student);
         };
         fetchData();
@@ -53,19 +39,7 @@ export const StudentDetails = ({
                             id={studentDetail.id}
                             studentName={studentDetail.fullName}
                         />
-                    </section> 
-{/*                     <section className="student_edit">
-{                        <StudentEdit
-                            id={studentDetail.id}
-                            studentName={studentDetail.fullName}
-                            studentEmail={studentDetail.email}
-                            studentClassId={studentDetail.classId}
-                            studentPhone={studentDetail.phone}
-                            studentDob={studentDetail.dob}
-                            studentAddress={studentDetail.address}
-                            studentImg={studentDetail.studentImg}
-                        />}
-                    </section> */}
+                    </section>
                 </div>
             </section>
         </>

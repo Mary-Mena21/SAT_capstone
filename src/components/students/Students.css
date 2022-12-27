@@ -3,7 +3,6 @@ a {
     text-decoration: none;
 }
 
-/*  */
 .students_class {
     position: relative;
     top: 80px;
@@ -74,7 +73,6 @@ a {
     border-radius: 35px 35px;
     padding: 0.5rem;
     margin: 0.2rem;
-    /* max-width: 26rem; */
     min-width: 20rem;
     box-shadow: 1px 1px 3px #52b352;
     position: relative;
@@ -83,10 +81,6 @@ a {
     text-align: center;
     background-repeat: no-repeat;
 }
-
-/* section.student_card_2 :hover {
-    box-shadow: #372c40 1px 1px 10px;
-} */
 
 .student_card_container {
     display: flex;
@@ -199,7 +193,7 @@ a {
     border-color: #72a075;
     box-shadow: #72a075 1px 1px 10px;
 }
-/*  */
+
 .page_classroom {
     position: relative;
     top: 10px;
@@ -226,25 +220,22 @@ a {
     text-shadow: rgba(255, 254, 254, 0.849) 1px 1px 0px;
 }
 
-/*  */
 .students_btn {
     width: 200px;
     margin: 2px;
     justify-content: right;
 }
 
-/*  */
 .attend_btn {
     width: 200px;
     margin: 2px;
 }
-/*  */
+
 .btn_container_class {
     position: relative;
     top: 70px;
 }
 
-/*  */
 .page_container_class {
     top: 50px;
     display: flex;

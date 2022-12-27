@@ -1,46 +1,36 @@
 @media only screen and (max-width: 600px) {
-  .App_container_export {
-      /* max-width: 21em; */
-      overflow:  scroll;
-      font-size: 0.2rem;
-      flex-wrap: nowrap;
-  }
-  div.container {
-    
-    padding: 0.2rem;
-    width: auto;
-    margin-left: 50px;
-  }
-  td.MuiTableCell-root{
-    font-size: 1rem;
-  }
+    .App_container_export {
+        overflow: scroll;
+        font-size: 0.2rem;
+        flex-wrap: nowrap;
+    }
+    div.container_appe {
+        flex-wrap: nowrap;
+        margin: 60px 10px 60px 60px;
+        overflow: scroll;
+    }
+    td.MuiTableCell-root {
+        font-size: 0.8rem;
+        margin: 0px;
+        padding: 10px;
+    }
 }
 
-/* body{
-  background-image: none !important;
-} */
-.App_container_export {
-    text-align: center;
-    overflow:  scroll;
-  }
-  .container {
-    margin: 12px 250px 50px 250px
-  }
-  .export-btn {
+.container_appe {
+    position: relative;
+    margin: 70px;
+}
+.export-btn {
     float: right;
     margin-bottom: 10px !important;
-  }
+}
 
-  .css-1q1u3t4-MuiTableRow-root:hover{
+.css-1q1u3t4-MuiTableRow-root:hover {
     background-color: rgba(255, 127, 80, 0.276);
-  }
-  /* tr:nth-child(even) {background-color: #f2f2f2;} */
+}
 
-  .container_overflow_appe{
-    overflow:  scroll;
-  }
-  td.MuiTableCell-root{
-    padding: 5px 15px ;
+td.MuiTableCell-root {
+    padding: 5px 15px;
     margin: 10px;
     min-width: 150px;
-  }
+}

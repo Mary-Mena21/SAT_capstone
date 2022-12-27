@@ -1,21 +1,13 @@
 import { Link } from "react-router-dom";
-/* import { useNavigate } from "react-router-dom"; */
 import "./NavBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-//import { ToggleButton } from 'react-bootstrap'
-//import background from "../images/SAT_1.jpg";
-
 import { useState } from "react";
-/* import Alert from "react-bootstrap/Alert";
-import Button from "react-bootstrap/Button";
-import Offcanvas from "react-bootstrap/Offcanvas"; */
 import {
     FaBars,
     FaHome,
     FaFortAwesome,
     FaBirthdayCake,
     FaSignOutAlt,
-    FaUserTie,
 } from "react-icons/fa";
 import {
     BsFillCalendar2CheckFill,
@@ -29,21 +21,12 @@ import {
     BsGithub,
 } from "react-icons/bs";
 import { Teacher } from "../teacher/Teacher";
-/* import { StudentSearch } from "../students/StudentSearch"; */
-//import { IoLogOut }from "react-icons/lo";
 
 export const NavBar = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
-    <Teacher/>;
-   // console.log(Image);
+    <Teacher />;
 
-    /* sideBar */
-    // const [show, setShow] = useState(false);
-    // const handleClose = () => setShow(false);
-    // const handleShow = () => setShow(true);
-
-    /*  const navigate = useNavigate(); */
     const menuItem = [
         {
             path: "/appe",
@@ -51,12 +34,6 @@ export const NavBar = ({ children }) => {
             icon: <Teacher />,
             className: "sidebar_2",
         },
-        // {
-        //     path: "/",
-        //     name: "Teacher",
-        //     icon: <Teacher />,
-        //     className: "sidebar_2",
-        // },
         {
             path: "/",
             name: "Home",
@@ -132,21 +109,6 @@ export const NavBar = ({ children }) => {
 
     return (
         <>
-            {/* <div className="top_bar"></div> */}
-            {/* <div className="sidebar_2"></div> */}
-            {/*             <div className="">
-                <Link
-                    className="link_text logout_link"
-                    to=""
-                    onClick={() => {
-                        localStorage.removeItem("SAT_user");
-                        navigate("/", { replace: true });
-                    }}
-                >
-                    Logout
-                </Link>
-            </div> */}
-            {/* sideNavBar */}
             <div className="container ">
                 <div
                     style={{ width: isOpen ? "200px" : "50px" }}
@@ -159,6 +121,7 @@ export const NavBar = ({ children }) => {
                         >
                             SAT
                         </h1>
+
                         <div
                             style={{ marginLeft: isOpen ? "50px" : "0px" }}
                             className="bars"
@@ -166,13 +129,25 @@ export const NavBar = ({ children }) => {
                             <FaBars onClick={toggle} />
                         </div>
                     </div>
+
+                    <img
+                        src={require(`../images/Logo_2_B.png`)}
+                        className="logo_navbar"
+                        style={{
+                            width: "40px",
+                            height: "40px",
+                            marginLeft: "5px",
+                            display: "block",
+                            marginBottom: "10px",
+                            padding: "0",
+                            right: "",
+                            backgroundColor: "white",
+                            borderRadius: "50%",
+                        }}
+                    />
+
                     {menuItem.map((item, index) => (
-                        <Link
-                            to={item.path}
-                            key={index}
-                            className="link"
-                            /*  activeclassName="active" */
-                        >
+                        <Link to={item.path} key={index} className="link">
                             <div className="icon">{item.icon}</div>
                             <div
                                 style={{ display: isOpen ? "block" : "none" }}
@@ -187,9 +162,6 @@ export const NavBar = ({ children }) => {
                         <p className="link_text">
                             &nbsp;&nbsp;&nbsp;
                             <a
-                                // style={{
-                                //     color: "#f3b530",
-                                // }}
                                 className="link_text github_icon"
                                 target="_blank"
                                 alt="Github"
@@ -201,12 +173,9 @@ export const NavBar = ({ children }) => {
                             &nbsp; SAT©2022
                         </p>
                     </div>
-
-                    {/*  <p className="copyright link link_text">SAT©2022</p> */}
                 </div>
                 <main>{children}</main>
             </div>
         </>
     );
 };
-// {/* &nbsp;&nbsp;&nbsp; */}{/* <BsGithub /> */}

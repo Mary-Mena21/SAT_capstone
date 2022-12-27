@@ -65,17 +65,12 @@ export const Register = (props) => {
     };
 
     return (
-        <main style={{ textAlign: "center" }}>
-{/*             <span class="shadow-wrap">
-        <image src="../images/SAT_111.jpg" className="login_app"    />
-        <h1 className="about_app">About&nbsp;SAT!</h1> 
-        </span> */}
-            <form className="form--login container--login" onSubmit={handleRegister}>
-                <h1 className=/* "page_login"  */ " mb-3 font-weight-normal" >
-                    Please Register for Sunday School Attendance Tracker
-                </h1>
+        <main className=" container--login" style={{ textAlign: "center" }}>
+            <form className="form--login" onSubmit={handleRegister}>
+                <h1 className="page_login">Please Register for:</h1>
+                <br />
+                <h1 className="page_login">Sunday School Attendance Tracker</h1>
                 <fieldset>
-                    {/* <label htmlFor="fullName"> Full Name </label> */}
                     <Form.Floating className="mb-2">
                         <Form.Control
                             onChange={updateUser}
@@ -90,7 +85,6 @@ export const Register = (props) => {
                     </Form.Floating>
                 </fieldset>
                 <fieldset>
-                    {/* <label htmlFor="email"> Email address </label> */}
                     <Form.Floating className="mb-2">
                         <Form.Control
                             onChange={updateUser}
@@ -100,7 +94,6 @@ export const Register = (props) => {
                             placeholder="Email address"
                             required
                             autoFocus
-                            /* width={"20em"} */
                         />
                         <label htmlFor="">Email address</label>
                     </Form.Floating>
@@ -115,12 +108,17 @@ export const Register = (props) => {
                         type="checkbox"
                         id="isTeacher"
                     />
-                    <label htmlFor="email"> I am a Teacher </label>
+
+                    <label htmlFor="email">I am a Teacher </label>
                 </fieldset>
                 <fieldset>
-                    <Button type="submit" variant="secondary" size="md">
-                        {" "}
-                        Register{" "}
+                    <Button
+                        className="submit"
+                        type="submit"
+                        variant="secondary"
+                        size="md"
+                    >
+                        Register
                     </Button>
                 </fieldset>
             </form>

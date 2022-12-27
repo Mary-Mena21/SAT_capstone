@@ -1,15 +1,7 @@
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { useNavigate } from "react-router-dom";
-//import { Students } from "./Students";
 import { Link } from "react-router-dom";
-
-//import Button from 'react-bootstrap/Button';
-//import Card from 'react-bootstrap/Card';
-//import "./Students.css";
 import "./Students.css";
-//import "../Images"
-//import Image from "../Images."
-
 export const StudentCopy = ({
     id,
     studentName,

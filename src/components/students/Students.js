@@ -1,17 +1,14 @@
-/* import { ButtonBase } from "@mui/material"; */
 import { useEffect, useState } from "react";
 import { Button } from "react-bootstrap";
 import { FaUserAltSlash, FaUserEdit } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
-/* import { DialogAction } from "./DialogAction"; */
-
 import "./Students.css";
 
 export const Students = () => {
     //let NewDate = new Date(Date.now()).toLocaleDateString();
     const localSATUser = localStorage.getItem("SAT_user");
     const satUserObject = JSON.parse(localSATUser);
-
+    //console.log(satUserObject);
     const navigate = useNavigate();
     const [Students, setStudents] = useState([]);
 

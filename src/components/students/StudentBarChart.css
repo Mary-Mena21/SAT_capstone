@@ -1,26 +1,14 @@
-
 @media screen and (max-width: 480px) {
     canvas {
         transform: scale(1.6) rotate(90deg);
         position: relative;
-        top:200px;
-        color:azure;
+        top: 200px;
+        color: azure;
     }
-    .page_barChart{
-        
-    }
-  }
-  .barChart{
+}
+.barChart {
     position: relative;
-    width:90%;
-    left :80px;
-    top:10px;
-  }
-
-/*   .page_barChart {
-    position: relative;
-    top: 40px;
-    font-size: 2rem;
-    font-family: "SUNDAYMORNING-BWQE3", "Roboto", "Helvetica Neue";
-    color: #809BCE;
-} */
+    width: 90%;
+    left: 80px;
+    top: 10px;
+}
