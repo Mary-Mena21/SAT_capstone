@@ -5,7 +5,7 @@
     width: 20rem;
     height: auto;
     left: 25px;
-    background-image: url("../images/100__6__C.png");
+    background-image:url("../images/100__6__C.png") ;
     background-size: 100%;
     background-repeat: no-repeat;
     display: inline-block;
