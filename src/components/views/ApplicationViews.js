@@ -15,6 +15,7 @@ import { Home } from "../home/Home";
 import { Teacher } from "../teacher/Teacher";
 import { Appe } from "../exportCSV/Appe";
 import { TeacherContact } from "../teacher/TeacherContact";
+import { Popup_Details } from "../popup/Popup_Details";
 
 
 export const ApplicationViews = () => {
@@ -23,6 +24,7 @@ export const ApplicationViews = () => {
     return (
         <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="popupDetails" element={<Popup_Details />} />
             <Route path="about" element={<About />} />
             <Route path="gradeBook" element={<GradeBookList />} />
             {satUserObject.teacher === true ? (
