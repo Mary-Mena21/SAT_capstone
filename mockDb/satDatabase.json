@@ -2521,6 +2521,97 @@
       "classId": 1,
       "studentId": 14,
       "attend": true
+    },
+    {
+      "id": 382,
+      "date": "2022-12-30",
+      "classId": 1,
+      "studentId": 4,
+      "attend": true
+    },
+    {
+      "id": 383,
+      "date": "2022-12-30",
+      "classId": 1,
+      "studentId": 12,
+      "attend": true
+    },
+    {
+      "id": 384,
+      "date": "2022-12-30",
+      "classId": 1,
+      "studentId": 17,
+      "attend": true
+    },
+    {
+      "id": 385,
+      "date": "2022-12-30",
+      "classId": 1,
+      "studentId": 28,
+      "attend": true
+    },
+    {
+      "id": 386,
+      "date": "2022-12-30",
+      "classId": 1,
+      "studentId": 33,
+      "attend": true
+    },
+    {
+      "id": 387,
+      "date": "2022-12-30",
+      "classId": 1,
+      "studentId": 9,
+      "attend": true
+    },
+    {
+      "id": 388,
+      "date": "2022-12-30",
+      "classId": 1,
+      "studentId": 13,
+      "attend": true
+    },
+    {
+      "id": 389,
+      "date": "2022-12-30",
+      "classId": 1,
+      "studentId": 24,
+      "attend": true
+    },
+    {
+      "id": 390,
+      "date": "2022-12-30",
+      "classId": 1,
+      "studentId": 29,
+      "attend": true
+    },
+    {
+      "id": 391,
+      "date": "2022-12-30",
+      "classId": 1,
+      "studentId": 35,
+      "attend": true
+    },
+    {
+      "id": 392,
+      "date": "2022-12-30",
+      "classId": 1,
+      "studentId": 39,
+      "attend": true
+    },
+    {
+      "id": 393,
+      "date": "2022-12-30",
+      "classId": 1,
+      "studentId": 38,
+      "attend": true
+    },
+    {
+      "id": 394,
+      "date": "2022-12-30",
+      "classId": 1,
+      "studentId": 37,
+      "attend": true
     }
   ],
   "classes": [
