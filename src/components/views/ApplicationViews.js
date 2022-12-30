@@ -9,7 +9,7 @@ import { StudentContainer } from "../students/StudentContainer";
 import { StudentAttendanceContainer } from "../students/StudentAttendanceContainer";
 import { StudentContact } from "../students/StudentContact";
 import { StudentBarChart } from "../students/StudentBarChart";
-import { Camera } from "../students/Camera";
+import { Camera } from "../camera/Camera";
 import { About } from "../about/About";
 import { Home } from "../home/Home";
 import { Teacher } from "../teacher/Teacher";
