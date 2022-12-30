@@ -19,6 +19,7 @@ export const StudentContact = () => {
         };
         fetchData();
     }, []);
+
     return (
         <>
             <h1 className="page_contact">Contact!</h1>
@@ -72,3 +73,5 @@ export const StudentContact = () => {
         </>
     );
 };
+
+/* $ 000FFFFCD30  002100484A2 (000007F0000, 000007F0101, 00000000001, 00000000000) */
