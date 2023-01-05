@@ -55,7 +55,8 @@ export const Students = () => {
                                     <h3 className="student_info_edit">
                                         {student.fullName}
                                     </h3>
-
+                                    
+                                    <div>
                                     <Link to={`/students/${student.id}`}>
                                         <Button
                                             variant="outline-light"
@@ -65,7 +66,7 @@ export const Students = () => {
                                             <FaUserEdit />
                                         </Button>
                                     </Link>
-
+                                    {" "}
                                     <Button
                                         variant="outline-light"
                                         size="sm"
@@ -85,7 +86,7 @@ export const Students = () => {
                                     >
                                         {" "}
                                         <FaUserAltSlash />
-                                    </Button>
+                                    </Button> </div>
                                 </div>
                             </section>
                         </>
