@@ -5,8 +5,12 @@ SAT(Sunday School Attendance Tracker) is a unique attendance tracking applicatio
 ![4](https://user-images.githubusercontent.com/85176043/209452731-a5b2bbbc-1062-4dc2-966a-73ab93ee9a2b.jpg)
 ![6](https://user-images.githubusercontent.com/85176043/209452741-1565858c-698b-4a24-bc7f-2d6c8b1a7f76.jpg)
 ![3](https://user-images.githubusercontent.com/85176043/209452737-da68e2d1-9b02-420f-babc-54d71c6e4fc0.jpg)
-
-
+![10](https://user-images.githubusercontent.com/85176043/210911973-64d36463-528c-442d-9b43-cd1646055ef1.jpg)
+![11](https://user-images.githubusercontent.com/85176043/210911974-016616c4-e84d-466d-933f-97ffe8f85b44.jpg)
+![12](https://user-images.githubusercontent.com/85176043/210911975-c404824f-d0cb-4a9f-a40c-abf820779783.jpg)
+![13](https://user-images.githubusercontent.com/85176043/210912058-c2384a06-23f4-4fa3-a749-f8ec23257f7a.jpg)
+![14](https://user-images.githubusercontent.com/85176043/210912060-d42265d4-78e1-4b12-aefc-2e27d5131700.jpg)
+![15](https://user-images.githubusercontent.com/85176043/210912061-02a46114-fb5e-47cb-9f32-8cdf998cafbc.jpg)
 
 # Getting Started with Create React App
 
