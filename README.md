@@ -1,6 +1,7 @@
 ## SAT App!
 SAT(Sunday School Attendance Tracker) is a unique attendance tracking application. Track student attendance more accurately and with less paperwork. Birthdays and student contact information are included. The SAT app is designed to improve the Sunday School System by creating a strong connection between teachers, students, and parents. Each user group is assigned a different level of access based on their role and need for the app. Get actionable reporting. Simplify and monitor student attendance. Less administrative effort. Reports in real time.
 
+![1](https://user-images.githubusercontent.com/85176043/210916798-2fe55df7-88f6-473c-b6f4-be7bcb879db6.jpg)
 ![2](https://user-images.githubusercontent.com/85176043/210915552-a6d411e4-f83f-4bd3-b51e-d2a548c15f2f.jpg)
 ![5](https://user-images.githubusercontent.com/85176043/210915561-bcd3d9ec-798e-4f48-972c-c4e04ba37263.jpg)
 ![8](https://user-images.githubusercontent.com/85176043/210915570-84429987-37ef-4764-b28d-0804a8b02fa0.jpg)
@@ -10,9 +11,10 @@ SAT(Sunday School Attendance Tracker) is a unique attendance tracking applicatio
 ![13](https://user-images.githubusercontent.com/85176043/210912058-c2384a06-23f4-4fa3-a749-f8ec23257f7a.jpg)
 ![14](https://user-images.githubusercontent.com/85176043/210912060-d42265d4-78e1-4b12-aefc-2e27d5131700.jpg)
 ![15](https://user-images.githubusercontent.com/85176043/210912061-02a46114-fb5e-47cb-9f32-8cdf998cafbc.jpg)
-![4](https://user-images.githubusercontent.com/85176043/209452731-a5b2bbbc-1062-4dc2-966a-73ab93ee9a2b.jpg)
-![6](https://user-images.githubusercontent.com/85176043/209452741-1565858c-698b-4a24-bc7f-2d6c8b1a7f76.jpg)
-![3](https://user-images.githubusercontent.com/85176043/209452737-da68e2d1-9b02-420f-babc-54d71c6e4fc0.jpg)
+![4](https://user-images.githubusercontent.com/85176043/210916923-1f1fd834-dbd7-4c57-9084-36747a92eb44.jpg)
+![6](https://user-images.githubusercontent.com/85176043/210916888-5db94e42-0063-4fce-9a76-ad5decb1ccbf.jpg)
+![3](https://user-images.githubusercontent.com/85176043/210916838-ec30e213-5e3c-40a3-ac8b-9e77867725b5.jpg)
+
 
 # Getting Started with Create React App
 
