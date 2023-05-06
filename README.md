@@ -13,7 +13,7 @@
 ![15](https://user-images.githubusercontent.com/85176043/236589541-e33a4102-da16-41f2-b98e-3791e7b582e5.jpg)
 ![2](https://user-images.githubusercontent.com/85176043/236589543-49d1fd85-0480-45f3-a01d-4de6f4507760.jpg)
 ![5](https://user-images.githubusercontent.com/85176043/236589532-43576c1f-3edd-4015-b965-480f60aa9056.jpg)
-![Uploading 16.jpg…]()
+
 # Sunday School Attendance Tracker (SAT)
 
 
