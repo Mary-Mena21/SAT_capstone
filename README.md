@@ -3,7 +3,6 @@
 
 ![3](https://user-images.githubusercontent.com/85176043/236589530-30e01d66-c0e9-46ba-a005-21311105d762.jpg)
 ![4](https://user-images.githubusercontent.com/85176043/236589531-03263563-e2e8-4124-8bed-3b6c28d885b5.jpg)
-![5](https://user-images.githubusercontent.com/85176043/236589532-43576c1f-3edd-4015-b965-480f60aa9056.jpg)
 ![6](https://user-images.githubusercontent.com/85176043/236589533-ff7e28cf-6184-4326-97bd-8ef66a4c636a.jpg)
 ![7](https://user-images.githubusercontent.com/85176043/236589534-f328cd49-e97c-4fc7-9054-03ae2821cfcf.jpg)
 ![8](https://user-images.githubusercontent.com/85176043/236589535-10a1489a-e5ab-4796-a35d-ab49ba11b286.jpg)
@@ -14,7 +13,7 @@
 ![14](https://user-images.githubusercontent.com/85176043/236589540-543ec78f-7caa-4286-a7f1-5716dd164e4b.jpg)
 ![15](https://user-images.githubusercontent.com/85176043/236589541-e33a4102-da16-41f2-b98e-3791e7b582e5.jpg)
 ![2](https://user-images.githubusercontent.com/85176043/236589543-49d1fd85-0480-45f3-a01d-4de6f4507760.jpg)
-![1](https://user-images.githubusercontent.com/85176043/236589642-2e30ce7b-428a-4a31-9ed5-36c1abe277cc.jpg)
+![5](https://user-images.githubusercontent.com/85176043/236589532-43576c1f-3edd-4015-b965-480f60aa9056.jpg)
 
 # Sunday School Attendance Tracker (SAT)![Uploading 16.jpg…]()
 
