@@ -4,7 +4,6 @@
 ![3](https://user-images.githubusercontent.com/85176043/236589530-30e01d66-c0e9-46ba-a005-21311105d762.jpg)
 ![4](https://user-images.githubusercontent.com/85176043/236589531-03263563-e2e8-4124-8bed-3b6c28d885b5.jpg)
 ![6](https://user-images.githubusercontent.com/85176043/236589533-ff7e28cf-6184-4326-97bd-8ef66a4c636a.jpg)
-![7](https://user-images.githubusercontent.com/85176043/236589534-f328cd49-e97c-4fc7-9054-03ae2821cfcf.jpg)
 ![8](https://user-images.githubusercontent.com/85176043/236589535-10a1489a-e5ab-4796-a35d-ab49ba11b286.jpg)
 ![10](https://user-images.githubusercontent.com/85176043/236589536-c0383c3b-0471-48e2-8c18-97b7d5a1590f.jpg)
 ![11](https://user-images.githubusercontent.com/85176043/236589537-c9265ce8-02dd-4cca-9efd-61b77e6026bf.jpg)
@@ -44,7 +43,7 @@ To get started with SAT, follow these steps:
 2. Install the necessary dependencies using `npm install`.
 3. Start the application using `npm start`.
 4. Open your browser and navigate to `http://localhost:3000` to view the application.
-
+![7](https://user-images.githubusercontent.com/85176043/236589534-f328cd49-e97c-4fc7-9054-03ae2821cfcf.jpg)
 ## Usage
 
 To use SAT, you can log in as a teacher to track your students and class birthdays, attendance, and contact information. Different levels of access are assigned based on the user's role, allowing teachers, students, and parents to use the app for their specific needs.
