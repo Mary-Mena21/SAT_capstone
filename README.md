@@ -16,73 +16,45 @@ SAT(Sunday School Attendance Tracker) is a unique attendance tracking applicatio
 ![3](https://user-images.githubusercontent.com/85176043/210916838-ec30e213-5e3c-40a3-ac8b-9e77867725b5.jpg)
 
 
-# Getting Started with Create React App
+Sure, here's an example README file you can use for your SAT Capstone project:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Sunday School Attendance Tracker (SAT)
 
-## Available Scripts
+SAT is a unique attendance tracking application designed to simplify and monitor student attendance in Sunday School. With SAT, you can track student attendance more accurately and with less paperwork. The app also includes birthdays and student contact information, making it easy to stay connected with students and parents.
 
-In the project directory, you can run:
+## Key Features
 
-### `npm start`
+- Accurate attendance tracking
+- Student contact information and birthdays included
+- Different levels of access for teachers, students, and parents
+- Real-time reporting
+- Simplified administrative effort
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React JavaScript
+- HTML/CSS
+- Figma for design
+- DBDiagram for database modeling
+- NPM libraries
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get started with SAT, follow these steps:
 
-### `npm run build`
+1. Clone the repository to your local machine.
+2. Install the necessary dependencies using `npm install`.
+3. Start the application using `npm start`.
+4. Open your browser and navigate to `http://localhost:3000` to view the application.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To use SAT, you can log in as a teacher to track your students and class birthdays, attendance, and contact information. Different levels of access are assigned based on the user's role, allowing teachers, students, and parents to use the app for their specific needs.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+As a teacher, you can:
 
-### `npm run eject`
+- View a list of your classes and students
+- Record attendance for each student in your class
+- View student contact information and birthdays
+- Generate real-time reports on student attendance
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
