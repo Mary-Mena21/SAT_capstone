@@ -20,7 +20,7 @@ export const Attendance = ({ attendTermState }) => {
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch(
-                `http://localhost:8033/studentAttendance?_expand=student&classId=${satUserObject.id}`
+                `http://localhost:5000/studentAttendance?_expand=student&classId=${satUserObject.id}`
             );
             const attendanceArray = await response.json();
             setAttendance(attendanceArray);

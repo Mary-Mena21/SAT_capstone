@@ -10,7 +10,7 @@ export const StudentDetails = ({ id }) => {
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch(
-                `http://localhost:8033/students/${studentDetail_Id}`
+                `http://localhost:5000/students/${studentDetail_Id}`
             );
             const student = await response.json();
             //console.log(studentDetail_Id);

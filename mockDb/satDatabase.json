@@ -31,6 +31,12 @@
       "fullName": "Nancy Yousif",
       "isTeacher": false,
       "id": 4
+    },
+    {
+      "email": "MasonKlara@yahoo.com",
+      "fullName": "MARIANA MENA",
+      "isTeacher": true,
+      "id": 5
     }
   ],
   "teachers": [
@@ -69,7 +75,7 @@
       "email": "hmarkos@me.com",
       "classId": 1,
       "dob": "2013-01-01",
-      "phone": "785-153-5478",
+      "phone": "785-153-5470",
       "address": "1008 Meb Ct, Mt. Juliet, TN 37122",
       "studentImg": "Holy Markos.jpg"
     },
@@ -88,7 +94,7 @@
       "fullName": "Thomas Samy",
       "email": "tsamy@me.com",
       "classId": 1,
-      "dob": "2017-09-04",
+      "dob": "2014-09-04",
       "phone": "458-658-2624",
       "address": "11902 Lebanon Rd, Mt. Juliet, TN 37122",
       "studentImg": "Thomas Samy.jpg"
@@ -158,7 +164,7 @@
       "fullName": "George Philip",
       "email": "gphilip@me.com",
       "classId": 1,
-      "dob": "2017-03-07",
+      "dob": "2014-03-07",
       "phone": "615-606-9166",
       "address": "9315 Lebanon Rd, Mt. Juliet, TN 37122",
       "studentImg": "Goerge Mena.jpg"
@@ -207,7 +213,7 @@
       "fullName": "Karla Parker",
       "email": "yousifk@me.com",
       "classId": 1,
-      "dob": "2022-12-13",
+      "dob": "2013-12-13",
       "phone": "359-687-6547",
       "address": "598, British Woods Dr ,Nashville TN, 37122",
       "studentImg": "9.jpg",
@@ -257,7 +263,7 @@
       "fullName": "Jake Carlos",
       "email": "gcarlos@me.com",
       "classId": 1,
-      "dob": "2017-07-24",
+      "dob": "2014-07-24",
       "phone": "325-954-3214",
       "address": "358 British Woods Dr, Nashville, TN 37122",
       "studentImg": "31.jpg",
@@ -287,7 +293,7 @@
       "fullName": "Steven John",
       "email": "johnmalak@me.com",
       "classId": 1,
-      "dob": "2017-02-21",
+      "dob": "2014-02-21",
       "phone": "147-547-3658",
       "address": "324 David Lane, Nashvile 37154",
       "studentImg": "15.jpg",
@@ -342,6 +348,16 @@
       "address": "1010 5th Ave, Nasville, TN 37199",
       "studentImg": "50.jpg",
       "id": 39
+    },
+    {
+      "fullName": "Klara Mason",
+      "email": "MasonKlara@yahoo.com",
+      "classId": 1,
+      "dob": "2014-01-07",
+      "phone": "617-658-4113",
+      "address": "925 Nobel Lane",
+      "studentImg": "1 Klara Mason.jpg",
+      "id": 40
     }
   ],
   "studentAttendance": [
@@ -2609,6 +2625,349 @@
     {
       "id": 394,
       "date": "2022-12-30",
+      "classId": 1,
+      "studentId": 37,
+      "attend": true
+    },
+    {
+      "id": 395,
+      "date": "2023-01-05",
+      "classId": 1,
+      "studentId": 4,
+      "attend": true
+    },
+    {
+      "id": 396,
+      "date": "2023-01-05",
+      "classId": 1,
+      "studentId": 11,
+      "attend": true
+    },
+    {
+      "id": 397,
+      "date": "2023-01-05",
+      "classId": 1,
+      "studentId": 14,
+      "attend": true
+    },
+    {
+      "id": 398,
+      "date": "2023-01-05",
+      "classId": 1,
+      "studentId": 24,
+      "attend": true
+    },
+    {
+      "id": 399,
+      "date": "2023-01-05",
+      "classId": 1,
+      "studentId": 28,
+      "attend": true
+    },
+    {
+      "id": 400,
+      "date": "2023-01-05",
+      "classId": 1,
+      "studentId": 32,
+      "attend": true
+    },
+    {
+      "id": 401,
+      "date": "2023-01-05",
+      "classId": 1,
+      "studentId": 36,
+      "attend": true
+    },
+    {
+      "id": 402,
+      "date": "2023-01-06",
+      "classId": 1,
+      "studentId": 39,
+      "attend": true
+    },
+    {
+      "id": 403,
+      "date": "2023-01-06",
+      "classId": 1,
+      "studentId": 38,
+      "attend": true
+    },
+    {
+      "id": 404,
+      "date": "2023-01-06",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 405,
+      "date": "2023-01-06",
+      "classId": 1,
+      "studentId": 4,
+      "attend": true
+    },
+    {
+      "id": 406,
+      "date": "2023-01-06",
+      "classId": 1,
+      "studentId": 9,
+      "attend": true
+    },
+    {
+      "id": 407,
+      "date": "2023-01-06",
+      "classId": 1,
+      "studentId": 11,
+      "attend": true
+    },
+    {
+      "id": 408,
+      "date": "2023-01-06",
+      "classId": 1,
+      "studentId": 13,
+      "attend": true
+    },
+    {
+      "id": 409,
+      "date": "2023-01-06",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 410,
+      "date": "2023-01-06",
+      "classId": 1,
+      "studentId": 4,
+      "attend": true
+    },
+    {
+      "id": 411,
+      "date": "2023-01-06",
+      "classId": 1,
+      "studentId": 9,
+      "attend": true
+    },
+    {
+      "id": 412,
+      "date": "2023-01-06",
+      "classId": 1,
+      "studentId": 10,
+      "attend": true
+    },
+    {
+      "id": 413,
+      "date": "2023-01-07",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 414,
+      "date": "2023-01-07",
+      "classId": 1,
+      "studentId": 11,
+      "attend": true
+    },
+    {
+      "id": 415,
+      "date": "2023-01-07",
+      "classId": 1,
+      "studentId": 16,
+      "attend": true
+    },
+    {
+      "id": 416,
+      "date": "2023-01-07",
+      "classId": 1,
+      "studentId": 26,
+      "attend": true
+    },
+    {
+      "id": 417,
+      "date": "2023-01-07",
+      "classId": 1,
+      "studentId": 32,
+      "attend": true
+    },
+    {
+      "id": 418,
+      "date": "2023-01-07",
+      "classId": 1,
+      "studentId": 4,
+      "attend": true
+    },
+    {
+      "id": 419,
+      "date": "2023-01-07",
+      "classId": 1,
+      "studentId": 12,
+      "attend": true
+    },
+    {
+      "id": 420,
+      "date": "2023-01-07",
+      "classId": 1,
+      "studentId": 17,
+      "attend": true
+    },
+    {
+      "id": 421,
+      "date": "2023-01-07",
+      "classId": 1,
+      "studentId": 28,
+      "attend": true
+    },
+    {
+      "id": 422,
+      "date": "2023-01-07",
+      "classId": 1,
+      "studentId": 33,
+      "attend": true
+    },
+    {
+      "id": 423,
+      "date": "2023-01-09",
+      "classId": 2,
+      "studentId": 2,
+      "attend": true
+    },
+    {
+      "id": 424,
+      "date": "2023-01-09",
+      "classId": 2,
+      "studentId": 5,
+      "attend": true
+    },
+    {
+      "id": 425,
+      "date": "2023-01-09",
+      "classId": 2,
+      "studentId": 6,
+      "attend": true
+    },
+    {
+      "id": 426,
+      "date": "2023-01-09",
+      "classId": 2,
+      "studentId": 8,
+      "attend": true
+    },
+    {
+      "id": 427,
+      "date": "2023-01-09",
+      "classId": 2,
+      "studentId": 7,
+      "attend": true
+    },
+    {
+      "id": 428,
+      "date": "2023-05-21",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 429,
+      "date": "2023-05-21",
+      "classId": 1,
+      "studentId": 12,
+      "attend": true
+    },
+    {
+      "id": 430,
+      "date": "2023-05-21",
+      "classId": 1,
+      "studentId": 24,
+      "attend": true
+    },
+    {
+      "id": 431,
+      "date": "2023-05-21",
+      "classId": 1,
+      "studentId": 30,
+      "attend": true
+    },
+    {
+      "id": 432,
+      "date": "2023-05-21",
+      "classId": 1,
+      "studentId": 4,
+      "attend": true
+    },
+    {
+      "id": 433,
+      "date": "2023-05-21",
+      "classId": 1,
+      "studentId": 13,
+      "attend": true
+    },
+    {
+      "id": 434,
+      "date": "2023-05-21",
+      "classId": 1,
+      "studentId": 25,
+      "attend": true
+    },
+    {
+      "id": 435,
+      "date": "2023-05-21",
+      "classId": 1,
+      "studentId": 32,
+      "attend": true
+    },
+    {
+      "id": 436,
+      "date": "2023-06-23",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 437,
+      "date": "2023-06-23",
+      "classId": 1,
+      "studentId": 11,
+      "attend": true
+    },
+    {
+      "id": 438,
+      "date": "2023-12-26",
+      "classId": 1,
+      "studentId": 1,
+      "attend": true
+    },
+    {
+      "id": 439,
+      "date": "2023-12-26",
+      "classId": 1,
+      "studentId": 11,
+      "attend": true
+    },
+    {
+      "id": 440,
+      "date": "2023-12-26",
+      "classId": 1,
+      "studentId": 16,
+      "attend": true
+    },
+    {
+      "id": 441,
+      "date": "2023-12-26",
+      "classId": 1,
+      "studentId": 26,
+      "attend": true
+    },
+    {
+      "id": 442,
+      "date": "2023-12-26",
+      "classId": 1,
+      "studentId": 32,
+      "attend": true
+    },
+    {
+      "id": 443,
+      "date": "2023-12-26",
       "classId": 1,
       "studentId": 37,
       "attend": true

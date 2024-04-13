@@ -43,8 +43,7 @@ export const ApplicationViews = () => {
             <Route path="teacherContact" element={<TeacherContact />} />
             <Route path="teacher" element={<Teacher />} />
             <Route
-                path="students/details/:studentDetail_Id"
-                element={<StudentDetails />}
+                path="students/details/:studentDetail_Id" element={<StudentDetails />}
             />
             <Route
             path="students/:studentEdit_Id"

@@ -27,7 +27,7 @@ export const ExportCSV = () => {
         //return fetch('https://jsonplaceholder.typicode.com/users')
         try {
             const response = await fetch(
-                "http://localhost:8033/students?&classId=1"
+                "http://localhost:5000/students?&classId=1"
             );
             const StudentsArray = await response.json();
 

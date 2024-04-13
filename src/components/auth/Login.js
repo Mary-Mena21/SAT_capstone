@@ -13,7 +13,7 @@ export const Login = () => {
     const handleLogin = (e) => {
         e.preventDefault();
 
-        return fetch(`http://localhost:8033/users?email=${email}`)
+        return fetch(`http://localhost:5000/users?email=${email}`)
             .then((res) => res.json())
             .then((foundUsers) => {
                 if (foundUsers.length === 1) {

@@ -15,7 +15,7 @@ export const StudentDelete = ({ id, studentName }) => {
                     window.confirm(
                         `Are you sure you want to delete ${studentName}?`
                     ) &&
-                        fetch(`http://localhost:8033/students/${id}`, {
+                        fetch(`http://localhost:5000/students/${id}`, {
                             method: "DELETE",
                         }).then();
                     navigate("/Students");

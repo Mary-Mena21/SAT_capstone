@@ -16,7 +16,7 @@ export const Students = () => {
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch(
-                `http://localhost:8033/students?&classId=${satUserObject.id}`
+                `http://localhost:5000/students?&classId=${satUserObject.id}`
             );
             const StudentsArray = await response.json();
             setStudents(StudentsArray);
@@ -55,38 +55,38 @@ export const Students = () => {
                                     <h3 className="student_info_edit">
                                         {student.fullName}
                                     </h3>
-                                    
+
                                     <div>
-                                    <Link to={`/students/${student.id}`}>
+                                        <Link to={`/students/${student.id}`}>
+                                            <Button
+                                                variant="outline-light"
+                                                size="sm"
+                                            >
+                                                {" "}
+                                                <FaUserEdit />
+                                            </Button>
+                                        </Link>{" "}
                                         <Button
                                             variant="outline-light"
                                             size="sm"
+                                            onClick={() => {
+                                                window.confirm(
+                                                    `Are you sure you want to delete ${student.fullName}?`
+                                                ) &&
+                                                    fetch(
+                                                        `http://localhost:5000/students/${student.id}`,
+                                                        {
+                                                            method: "DELETE",
+                                                        }
+                                                    ).then();
+                                                navigate("/Students");
+                                            }}
+                                            className="btn "
                                         >
                                             {" "}
-                                            <FaUserEdit />
-                                        </Button>
-                                    </Link>
-                                    {" "}
-                                    <Button
-                                        variant="outline-light"
-                                        size="sm"
-                                        onClick={() => {
-                                            window.confirm(
-                                                `Are you sure you want to delete ${student.fullName}?`
-                                            ) &&
-                                                fetch(
-                                                    `http://localhost:8033/students/${student.id}`,
-                                                    {
-                                                        method: "DELETE",
-                                                    }
-                                                ).then();
-                                            navigate("/Students");
-                                        }}
-                                        className="btn "
-                                    >
-                                        {" "}
-                                        <FaUserAltSlash />
-                                    </Button> </div>
+                                            <FaUserAltSlash />
+                                        </Button>{" "}
+                                    </div>
                                 </div>
                             </section>
                         </>

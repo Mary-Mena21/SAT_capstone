@@ -133,7 +133,7 @@ export const StudentsBirthdays = () => {
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch(
-                `http://localhost:8033/students?&classId=${satUserObject.id}`
+                `http://localhost:5000/students?&classId=${satUserObject.id}`
             );
             const birthdaysArray = await response.json();
             setBirthdays(birthdaysArray);

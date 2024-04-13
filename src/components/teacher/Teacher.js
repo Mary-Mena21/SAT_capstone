@@ -15,7 +15,7 @@ export const Teacher = () => {
         () => {
             const fetchData = async () => {
                 const response = await fetch(
-                    `http://localhost:8033/teachers?_expand=user&id=${satUserObject.id}`
+                    `http://localhost:5000/teachers?_expand=user&id=${satUserObject.id}`
                 );
                 const teacherArray = await response.json();
                 setTeachers(teacherArray);
