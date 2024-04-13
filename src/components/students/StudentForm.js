@@ -32,7 +32,7 @@ export const StudentForm = () => {
             body: JSON.stringify(SendToAPI),
         };
         const response = await fetch(
-            `http://localhost:8033/students`,
+            `http://localhost:5000/students`,
             fetchOptions
         );
         navigate("/students");

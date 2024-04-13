@@ -15,8 +15,8 @@ export const Register = (props) => {
 
     const registerNewUser = () => {
         return fetch(
-            "http://localhost:8033/users",
-            //`http://localhost:8033/teachers?_expand=user`
+            "http://localhost:5000/users",
+            //`http://localhost:5000/teachers?_expand=user`
             {
                 method: "POST",
                 headers: {
@@ -43,7 +43,7 @@ export const Register = (props) => {
 
     const handleRegister = (e) => {
         e.preventDefault();
-        return fetch(`http://localhost:8033/users?email=${user.email}`)
+        return fetch(`http://localhost:5000/users?email=${user.email}`)
             .then((res) => res.json())
             .then((response) => {
                 if (response.length > 0) {

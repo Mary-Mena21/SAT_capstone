@@ -167,6 +167,7 @@ export const NavBar = ({ children }) => {
                                 alt="Github"
                                 title="Github"
                                 href="https://github.com/Mary-Mena21/SAT_capstone"
+                                rel="noreferrer"
                             >
                                 <BsGithub />
                             </a>
@@ -179,3 +180,21 @@ export const NavBar = ({ children }) => {
         </>
     );
 };
+
+//In your terminal, make sure you are in the top-level project directory, and not in the `public` or `src` sub-directory,
+//and type the following command.`npm start`
+//The process of building your React application will begin and the following things will happen.
+//Your browser will automatically open the `http://localhost:3000` URL.
+
+/* npx kill-port 3000  //Kill-port
+npm i json-server 
+json-server -p 5000 satDatabase.json //start json-server or
+
+//start react
+============================================================
+
+cd mockDb
+json-server satDatabase.json -p 5000 -w 
+npm start   
+=============================================================
+*/

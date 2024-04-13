@@ -7,7 +7,7 @@ export const GradeBookList = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch(`http://localhost:8033/gradeBooks`);
+            const response = await fetch(`http://localhost:5000/gradeBooks`);
             const booksArray = await response.json();
             setBooks(booksArray);
         };

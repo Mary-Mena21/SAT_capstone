@@ -24,7 +24,7 @@ export const StudentEdit = () => {
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch(
-                `http://localhost:8033/students/${studentEdit_Id}`
+                `http://localhost:5000/students/${studentEdit_Id}`
             );
             const data = await response.json();
             setEditStudent(data);
@@ -45,7 +45,7 @@ export const StudentEdit = () => {
             body: JSON.stringify(SendToAPI),
         };
         const response = await fetch(
-            `http://localhost:8033/students/${studentEdit_Id}`,
+            `http://localhost:5000/students/${studentEdit_Id}`,
             fetchOptions
         );
         navigate("/students");

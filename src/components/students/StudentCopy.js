@@ -1,4 +1,4 @@
-import {  useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./Students.css";
@@ -46,7 +46,7 @@ export const StudentCopy = ({
             body: JSON.stringify(SendToAPI),
         };
         const response = await fetch(
-            `http://localhost:8033/studentAttendance`,
+            `http://localhost:5000/studentAttendance`,
             fetchOptions
         );
         const responseJson = await response.json();
@@ -54,11 +54,11 @@ export const StudentCopy = ({
     };
 
     /* -------------Delete----------------- */
-/*         const deleteAttendance = async (x) => {
+    /*         const deleteAttendance = async (x) => {
         console.log(inputAttend[0]);
         console.log(x);
-            fetch(`http://localhost:8033/studentAttendance?&id=${x.id}`, {
-            //fetch(`http://localhost:8033/studentAttendance?&id=${inputAttend[0]}`, {
+            fetch(`http://localhost:5000/studentAttendance?&id=${x.id}`, {
+            //fetch(`http://localhost:5000/studentAttendance?&id=${inputAttend[0]}`, {
             method: "DELETE",
         });
     };  */
@@ -75,9 +75,9 @@ export const StudentCopy = ({
                                 src={require(`../images/${studentImg}`)}
                                 className="student_img"
                             />
-                         <Link to={`/students/details/${id}`}> 
-                            <h3 className="student_info">{studentName}</h3>
-                              </Link> 
+                            <Link to={`/students/details/${id}`}>
+                                <h3 className="student_info">{studentName}</h3>
+                            </Link>
                             <div>
                                 <input
                                     type="checkbox"
@@ -90,7 +90,7 @@ export const StudentCopy = ({
                                         ) {
                                             setInputAttend(copy);
                                             sendAttendance(copy);
-                                        }/*   else {
+                                        } /*   else {
                                             console.log("test");
                                             console.log(copy);
                                             deleteAttendance(copy);

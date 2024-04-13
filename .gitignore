@@ -45,3 +45,7 @@ amplifytools.xcconfig
 .secret-*
 **.sample
 #amplify-do-not-edit-end
+/db.json
+/package.json
+/satDatabase.json
+/package-lock.json

@@ -12,7 +12,7 @@ export const StudentContact = () => {
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch(
-                `http://localhost:8033/students?&classId=${satUserObject.id}`
+                `http://localhost:5000/students?&classId=${satUserObject.id}`
             );
             const StudentsArray = await response.json();
             setStudents(StudentsArray);
@@ -73,4 +73,3 @@ export const StudentContact = () => {
         </>
     );
 };
-
