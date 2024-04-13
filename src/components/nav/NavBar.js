@@ -131,8 +131,9 @@ export const NavBar = ({ children }) => {
                     </div>
 
                     <img
-                        src={require(`../images/Logo_2_B.png`)}
+                        src={require(`../images/Logo2b.png`)}
                         className="logo_navbar"
+                        alt="Logo"
                         style={{
                             width: "40px",
                             height: "40px",

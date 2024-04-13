@@ -2,7 +2,7 @@ import "./Home.css";
 /* import SAT_1 from "../images/SAT_1.jpg"; */
 import React, { useState } from "react";
 /* import Warper from './Warper';  */
-import Popup from "reactjs-popup";
+//import Popup from "reactjs-popup";
 import { FaBirthdayCake } from "react-icons/fa";
 
 import Modal from "react-bootstrap/Modal";
@@ -15,7 +15,7 @@ import {
     BsEmojiSmileFill,
 } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
+//import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 export const Home = () => {
     const [open, setOpen] = useState(false);
@@ -67,21 +67,22 @@ export const Home = () => {
                             centered
                             /* className="modal-body" */
                         >
-                            
-                            <img src={require(`../images/frame_pop_1.png`)}
-                            style={{
-                                width: "auto",
-                                height: "18rem",
-                                margin: "0px",
-                                padding: "0px",
-                              /*   marginLeft: "5px",
+                            <img
+                                src={require(`../images/frame_pop_1.png`)}
+                                alt="frame_pop"
+                                style={{
+                                    width: "auto",
+                                    height: "18rem",
+                                    margin: "0px",
+                                    padding: "0px",
+                                    /*   marginLeft: "5px",
                                 display: "block",
                                 marginBottom: "10px",
                                 padding: "0",
                                 right: "", */
-                           /*      backgroundColor: "white",
+                                    /*      backgroundColor: "white",
                                 borderRadius: "50%", */
-                            }} 
+                                }}
                             />
                         </Modal>
                     </p>

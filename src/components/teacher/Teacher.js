@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 import "./Teacher.css";
 
 export const Teacher = () => {
@@ -8,7 +8,7 @@ export const Teacher = () => {
     const satUserObject = JSON.parse(localSATUser);
     //console.log(satUserObject.id);
 
-    const navigate = useNavigate();
+    //const navigate = useNavigate();
     const [teachers, setTeachers] = useState([]);
 
     useEffect(
@@ -22,18 +22,19 @@ export const Teacher = () => {
                 //console.log(teacherArray);
             };
             fetchData();
-        },
-        [] // When this array is empty, you are observing initial component state
+        }
+        //[] // When this array is empty, you are observing initial component state
     );
 
     return (
         <>
-            <article key={"teachers"} className="teacher_container">
+            <article key={teachers.id} className="teacher_container">
                 {teachers.map((teacher) => {
                     return (
                         <>
                             <img
                                 src={require(`../images/${teacher.teacherImg}`)}
+                                alt={teacher.teacherName}
                                 className="student_img_B"
                                 style={{
                                     width: "40px",
